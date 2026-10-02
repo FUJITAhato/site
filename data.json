@@ -178,31 +178,51 @@
           "name": "吉野 三月",
           "relation": "恋人",
           "owner": "からこさん",
-          "desc": "",
-          "personality": "",
+          "desc": "溺愛ポメラニアン",
+          "personality": "オカルトマニア(好きなものは都市伝説と星占い)。\n特技は12星座当て。宝物は本場のイギリスで買ったウィジャ盤。\n実家は裕福な開業医。",
           "profile": {
-            "kana": "",
-            "age": "",
-            "sex": "",
-            "height": "",
+            "kana": "よしの みつき",
+            "age": "17",
+            "sex": " 男性",
+            "height": "173",
             "weight": "",
-            "job": "",
+            "job": "高校生",
             "birthplace": "",
-            "hair": "",
-            "eye": "",
-            "first": "",
-            "second": "",
-            "birthday": "",
-            "blood": "",
-            "likes": "",
-            "dislikes": "",
-            "color": "",
+            "hair": "桜色",
+            "eye": "茶",
+            "first": "俺",
+            "second": "君",
+            "birthday": "3/1",
+            "blood": "O",
+            "likes": "「祝が作ってくれるオムライス」\n折鶴祝\n桜餅\nおしるこ",
+            "dislikes": "もずく、虫",
+            "color": "#fef4f4",
             "extra": []
           },
           "lines": [
-            "うむ！／今日は大安吉日だ！"
+            "うむ！／今日は大安吉日だ！",
+            "君はしし座か…王者の風格があるな",
+            "さそり座は一途な星だ。蠍の一刺しのごとく思いを貫き通せるのが君の強さだ",
+            "俺の占いは当たる"
           ],
-          "poses": [],
+          "poses": [
+            {
+              "name": "同棲開始",
+              "src": "images/c-muqv9ztx6yp.png",
+              "lines": [
+                "はじめてのふたり暮らし。／明日はカーテン、今日はソファ／少しずつ、揃えていこう／テーブルはひとつ、／だけどイスは／ひとつじゃ足りないね。"
+              ],
+              "faces": []
+            },
+            {
+              "name": "最期の親友時代",
+              "src": "images/c-muqv5ncl5p0.png",
+              "lines": [
+                "堪忍ね。／僕みたいなんが／奪って。"
+              ],
+              "faces": []
+            }
+          ],
           "tags": {
             "fusetter": [
               "SS",
@@ -2637,7 +2657,9 @@
       "members": [
         {
           "cid": "cmuodxom57j",
-          "with": []
+          "with": [
+            "吉野 三月"
+          ]
         }
       ],
       "kp": "",
@@ -2684,7 +2706,9 @@
       "members": [
         {
           "cid": "cmuodxom57j",
-          "with": []
+          "with": [
+            "吉野 三月"
+          ]
         }
       ],
       "kp": "からこさん",
@@ -2843,7 +2867,9 @@
       "members": [
         {
           "cid": "cmuodxom57j",
-          "with": []
+          "with": [
+            "吉野 三月"
+          ]
         }
       ],
       "kp": "",
@@ -2943,7 +2969,9 @@
       "members": [
         {
           "cid": "cmuodxom57j",
-          "with": []
+          "with": [
+            "吉野 三月"
+          ]
         }
       ],
       "kp": "",
@@ -3043,7 +3071,9 @@
       "members": [
         {
           "cid": "cmuodxom57j",
-          "with": []
+          "with": [
+            "吉野 三月"
+          ]
         }
       ],
       "kp": "",
@@ -3135,12 +3165,7 @@
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
-      "members": [
-        {
-          "cid": "cmuodxom57j",
-          "with": []
-        }
-      ],
+      "members": [],
       "kp": "",
       "pls": "",
       "format": "",
@@ -3244,7 +3269,9 @@
       "members": [
         {
           "cid": "cmuodxom57j",
-          "with": []
+          "with": [
+            "吉野 三月"
+          ]
         }
       ],
       "kp": "",
@@ -3286,7 +3313,9 @@
       "members": [
         {
           "cid": "cmuodxom57j",
-          "with": []
+          "with": [
+            "吉野 三月"
+          ]
         }
       ],
       "kp": "",
@@ -3307,7 +3336,9 @@
       "members": [
         {
           "cid": "cmuodxom57j",
-          "with": []
+          "with": [
+            "吉野 三月"
+          ]
         }
       ],
       "kp": "",
