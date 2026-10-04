@@ -1812,25 +1812,35 @@
         {
           "name": "日本旅行",
           "src": "images/c-muq9nyqlnk4.png",
-          "lines": [],
+          "lines": [
+            "酒♪温泉♪日本旅行♪",
+            "※またしても／因習村行きを／知らないおじさん"
+          ],
           "faces": []
         },
         {
           "name": "子供化",
           "src": "images/c-muq9oid2kfu.png",
-          "lines": [],
+          "lines": [
+            "おいちゃん⋯／キュートに／なってるぅ！"
+          ],
           "faces": []
         },
         {
           "name": "TS：メイド",
-          "src": "images/c-muq9p79abro.png",
-          "lines": [],
+          "src": "images/c-mus8f4uvowk.png",
+          "lines": [
+            "お兄ちゃん♡／シャンパン飲みたいな♡",
+            "※『おばさんがノリノリで／ロリ枠をやる』／という鳩の性癖。"
+          ],
           "faces": []
         },
         {
           "name": "TS：浴衣",
           "src": "images/c-muq9pkchf40.png",
-          "lines": [],
+          "lines": [
+            "ふぃ〜⋯／温泉さいこ〜⋯"
+          ],
           "faces": []
         },
         {
@@ -1845,7 +1855,7 @@
         "医療"
       ],
       "listImg": {
-        "src": "images/c-muq9mwfx03f.png"
+        "src": "images/c-mus8es5q4pj.png"
       },
       "tags": {
         "fusetter": [
@@ -2114,29 +2124,32 @@
       "en": "ARAGUMA MOTOHARU",
       "role": "",
       "desc": "",
-      "personality": "",
+      "personality": "昭和根性の貧乏大学生\n\n白黒ハッキリさせたい性格で、中途半端が嫌い……というか苦手。看過できず首を突っ込んでしまう。\nそのせいで様々な役員を押し付けられがち。自分の巻いた種なので多少無理してでも引き受ける。柔和で優しくイマドキの考え方になりたいと思いつつ、生きることに必死で余裕がない。",
       "more": "",
       "origin": "406号室の隣人",
       "profile": {
         "kana": "あらぐま もとはる",
-        "age": "",
-        "sex": "",
-        "height": "",
-        "weight": "",
-        "job": "",
-        "birthplace": "",
-        "hair": "",
-        "eye": "",
-        "first": "",
-        "second": "",
-        "birthday": "",
-        "blood": "",
-        "likes": "",
-        "dislikes": "",
+        "age": "21歳",
+        "sex": "男性",
+        "height": "185cm",
+        "weight": "普通体型",
+        "job": "大学生（看護学部）",
+        "birthplace": "長崎",
+        "hair": "黒",
+        "eye": "灰",
+        "first": "俺",
+        "second": "お前",
+        "birthday": "4月8日",
+        "blood": "A型",
+        "likes": "洗濯\nリンゴ\n洗い物",
+        "dislikes": "納豆\n白黒つかないこと\n洗い物以外の家事",
         "color": "#e48875",
         "extra": []
       },
-      "lines": [],
+      "lines": [
+        "⋯⋯気色悪い。",
+        "マトモになれよ。／それが無理なら…／はやく死ねよ。"
+      ],
       "poses": [
         {
           "name": "立ち絵 ",
