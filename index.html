@@ -850,6 +850,12 @@ dialog.bigdlg [aria-pressed="true"] .thumb-s{ border-color:#fff; outline:1px sol
 }
 .home-quiet{ display:none; }
 .p2-body{ gap:0; padding:1rem 0; }
+
+.ed-seg{ display:grid; gap:.4rem; }
+.ed-segbtns{ display:flex; gap:.7rem; }
+.seg-b{ min-width:5em; padding:.55em 1.3em; border:1.5px solid var(--mute); border-radius:999px; font-size:.86rem; letter-spacing:.16em; color:var(--mute); cursor:pointer; transition:background .2s,color .2s,border-color .2s; }
+.seg-b:hover{ border-color:var(--ink); color:var(--ink); }
+.seg-b[aria-pressed="true"]{ background:var(--ink); border-color:var(--ink); color:var(--bg); }
 </style>
 </head>
 <body data-view="home">
@@ -1331,11 +1337,11 @@ const SITE = {
       profile: { color: "#c6879c" } }
   ],
   sessions: [
-    { id: "s1", title: "シナリオ名 1", date: "2026.09.12", system: "CoC 6版", role: "PL", kp: "KPさん", pls: "PL1さん、PL2さん", format: "通話", partners: ["うちよそ相手 A"], note: "ここに感想やメモを書きます。", url: "",
+    { id: "s1", title: "シナリオ名 1", date: "2026.09.12", system: "CoC 6版", kp: "KPさん", pls: "PL1さん、PL2さん", format: "PL", partners: ["うちよそ相手 A"], note: "ここに感想やメモを書きます。", url: "",
       members: [{ cid: "a", with: ["うちよそ相手 A"] }] },
-    { id: "s2", title: "シナリオ名 2", date: "2026.08.03", system: "CoC 6版", role: "KP", kp: "FUJITA HATO", pls: "PL1さん", format: "テキセ", note: "", url: "",
+    { id: "s2", title: "シナリオ名 2", date: "2026.08.03", system: "CoC 6版", kp: "FUJITA HATO", pls: "PL1さん", format: "KP", note: "", url: "",
       members: [{ cid: "a", with: [] }, { cid: "b", with: [] }] },
-    { id: "s3", title: "シナリオ名 3", date: "2026.05.21", system: "CoC 7版", role: "PL", note: "", url: "",
+    { id: "s3", title: "シナリオ名 3", date: "2026.05.21", system: "CoC 7版", format: "PL", note: "", url: "",
       members: [{ cid: "b", with: [] }] }
   ],
   gallery: [
@@ -1522,7 +1528,11 @@ function normPartner(u, i){
 function normSession(s, i){
   s = s && typeof s === "object" ? s : {};
   s.id = dstr(s.id) || ("s" + (i + 1));
-  ["title","date","system","role","note","url","others","kp","pls","format"].forEach(k => { s[k] = dstr(s[k]); });
+  const oldRole = dstr(s.role).trim();
+  ["title","date","system","note","url","others","kp","pls","format"].forEach(k => { s[k] = dstr(s[k]); });
+  if(!s.format.trim() && /^(kp|pl)$/i.test(oldRole)) s.format = oldRole;
+  if(/^(kp|pl)$/i.test(s.format.trim())) s.format = s.format.trim().toUpperCase();
+  delete s.role;
   s.partners = normTags(s.partners).filter(Boolean);
   s.rooms = (Array.isArray(s.rooms) ? s.rooms : []).map(r => ({ src: dstr(r && r.src), t: dstr(r && r.t), _data: r && r._data }));
   s.members = (Array.isArray(s.members) ? s.members : []).map(m => ({ cid: dstr(m && m.cid), with: normTags(m && m.with) })).filter(m => m.cid);
@@ -2450,7 +2460,7 @@ function sessMatches(s){
   const q = sessQ.trim().toLowerCase();
   if(q){
     const names = s.members.map(m => { const c = SITE.characters.find(x => x.id === m.cid); return (c ? c.name : "") + " " + m.with.join(" "); }).join(" ");
-    const hay = [s.title, s.note, s.others, s.system, s.role, s.date, s.kp, s.pls, s.format, s.partners.join(" "), names].join(" ").toLowerCase();
+    const hay = [s.title, s.note, s.others, s.system, s.date, s.kp, s.pls, s.format, s.partners.join(" "), names].join(" ").toLowerCase();
     if(!hay.includes(q)) return false;
   }
   return true;
@@ -2504,7 +2514,7 @@ function showSession(id){
     <div class="sd-info">
       <p class="scard-d">${esc(s.date || "日付未設定")}</p>
       <h2 class="sd-title">${esc(s.title)}</h2>
-      ${(s.system || s.format || s.role) ? `<div class="scard-p">${s.system ? pill(s.system) : ""}${s.format ? pill(s.format) : ""}${s.role ? pill(s.role) : ""}</div>` : ""}
+      ${(s.system || s.format) ? `<div class="scard-p">${s.system ? pill(s.system) : ""}${s.format ? pill(s.format) : ""}</div>` : ""}
       ${(s.kp || s.pls || s.partners.length) ? `<dl class="rows sd-rows">${s.kp ? `<div><dt>KP</dt><dd>${esc(s.kp)}</dd></div>` : ""}${s.pls ? `<div><dt>同卓PL</dt><dd>${esc(s.pls)}</dd></div>` : ""}${s.partners.length ? `<div><dt>うちよそ</dt><dd class="sess-w">${s.partners.map(n => pill(n)).join("")}</dd></div>` : ""}</dl>` : ""}
       ${s.note ? `<p class="prose-pre">${esc(s.note)}</p>` : ""}
       ${mem ? `<div class="sess-ms">${mem}</div>` : ""}
@@ -2925,9 +2935,10 @@ function edSession(s, si){
     <summary class="ed-csum"><span>${esc(s.title || "（タイトルなし）")}</span><span class="ed-cen">${esc(s.date)}</span></summary>
     <div class="ed-cbody"><div class="ed-fields">
       ${fl("シナリオタイトル", SP + ".title", s.title)}
-      <div class="ed-2">${fl("KP", SP + ".kp", s.kp)}${fl("同卓PL", SP + ".pls", s.pls)}${fl("形式", SP + ".format", s.format, "通話・テキセ など").replace("<input ", '<input list="fmtList" ')}</div>
+      <div class="ed-2">${fl("KP", SP + ".kp", s.kp)}${fl("同卓PL", SP + ".pls", s.pls)}</div>
+      <div class="ed-seg" role="group" aria-label="形式"><span class="ed-lab">形式（タップかクリックで選びます。もう一度押すと外れます）</span><span class="ed-segbtns">${["KP", "PL"].map(v => `<button type="button" class="seg-b" data-fmt="${v}" data-si="${si}" aria-pressed="${s.format === v}">${v}</button>`).join("")}</span></div>
       ${ar("うちよそ（1行に1人。キャラクターのUCYSの名前と同じなら、自動で結び付きます）", SP + ".partners", s.partners, 2, "lines")}
-      <div class="ed-2">${fl("日付", SP + ".date", s.date, "2026.09.12")}${fl("システム", SP + ".system", s.system, "CoC 6版 など").replace("<input ", '<input list="sysList" ')}${fl("立場（PL・KPなど）", SP + ".role", s.role, "PL").replace("<input ", '<input list="roleList" ')}</div>
+      <div class="ed-2">${fl("日付", SP + ".date", s.date, "2026.09.12")}${fl("システム", SP + ".system", s.system, "CoC 6版 など").replace("<input ", '<input list="sysList" ')}</div>
       ${ar("メモ・感想（SESSIONページで開くと読めます）", SP + ".note", s.note, 4)}
       ${fl("詳細・ログのURL（Notionなど。任意）", SP + ".url", s.url, "https://…")}
       <div class="ed-faces"><span class="ed-lab">ココフォリアの部屋画像（SESSION一覧のカードに表示されます。なければ自動の飾りになります）</span>
@@ -3002,7 +3013,7 @@ function renderEditor(){
   } else if(tab === "session"){
     const systems = [...new Set(draft.sessions.map(s => s.system).filter(Boolean))];
     $("#edList").innerHTML = sessImportBox() +
-      `<datalist id="sysList">${systems.map(t => `<option value="${esc(t)}">`).join("")}</datalist><datalist id="roleList"><option value="PL"><option value="KP"></datalist><datalist id="fmtList">${[...new Set(draft.sessions.map(s => s.format).filter(Boolean))].map(t => `<option value="${esc(t)}">`).join("")}</datalist>` +
+      `<datalist id="sysList">${systems.map(t => `<option value="${esc(t)}">`).join("")}</datalist>` +
       (draft.sessions.length ? draft.sessions.map(edSession).join("") : `<p class="empty">まだありません。下のボタンで追加するか、上から取り込んでください。</p>`);
   } else {
     const cats = [...new Set(draft.gallery.map(g => g.c).filter(Boolean))];
@@ -3154,6 +3165,13 @@ function blankFor(arrPath){
   return { t: "新しい作品", c: "", d: today(), by: "", src: "" };
 }
 $("#edList").addEventListener("click", e => {
+  const fmtBtn = e.target.closest("[data-fmt]");
+  if(fmtBtn){
+    const s2 = draft.sessions[+fmtBtn.dataset.si]; if(!s2) return;
+    s2.format = s2.format === fmtBtn.dataset.fmt ? "" : fmtBtn.dataset.fmt;
+    $$(`[data-fmt][data-si="${fmtBtn.dataset.si}"]`).forEach(x => x.setAttribute("aria-pressed", String(x.dataset.fmt === s2.format)));
+    markDirty(); return;
+  }
   const dayBtn = e.target.closest("[data-cal]");
   if(dayBtn){
     const arr = draft.profile.schedule.busy, k = dayBtn.dataset.cal, at = arr.indexOf(k);
@@ -3296,7 +3314,6 @@ function importSessions(text){
     kp: find(["kp", "キーパー", "gm"]),
     pls: find(["同卓pl", "同卓者", "同卓", "参加pl"]),
     format: find(["形式", "卓形式", "format"]),
-    role: find(["立場", "役割", "role"]),
     chars: find(["キャラクター", "キャラ", "探索者", "pc", "参加者", "characters"]),
     partners: find(["うちよそ", "よその子", "相手", "ucys"]),
     note: find(["メモ", "感想", "概要", "備考", "note"]),
@@ -3315,7 +3332,7 @@ function importSessions(text){
     const title = stripNotion(cell(r, "title")); if(!title) return;
     const date = normDate(cell(r, "date"));
     if(have.has(title + "|" + date)){ dup++; return; }
-    const s = normSession({ id: "s" + Date.now().toString(36) + n + Math.random().toString(36).slice(2, 4), title, date, system: cell(r, "system"), role: cell(r, "role"), format: cell(r, "format"), kp: cleanList(cell(r, "kp")), pls: cleanList(cell(r, "pls")), note: cell(r, "note"), url: safeUrl(cell(r, "url")) ? cell(r, "url") : "" }, draft.sessions.length);
+    const s = normSession({ id: "s" + Date.now().toString(36) + n + Math.random().toString(36).slice(2, 4), title, date, system: cell(r, "system"), format: cell(r, "format"), kp: cleanList(cell(r, "kp")), pls: cleanList(cell(r, "pls")), note: cell(r, "note"), url: safeUrl(cell(r, "url")) ? cell(r, "url") : "" }, draft.sessions.length);
     s.partners = toks(cell(r, "partners"));
     const others = [];
     if(selCid && draft.characters.some(c => c.id === selCid)) s.members.push({ cid: selCid, with: [] });
@@ -3423,7 +3440,7 @@ function collectAssets(x){
 $("#edExport").addEventListener("click", async () => {
   if(!draft) return;
   const out = { characters: stripData(draft.characters), gallery: stripData(draft.gallery), sessions: stripData(draft.sessions), profile: stripData(draft.profile), charTags: clone(draft.charTags) };
-  const news = collectAssets([draft.characters, draft.gallery]);
+  const news = collectAssets([draft.characters, draft.gallery, draft.sessions]);
   setState("書き出し中…");
   try{
     await loadJSZip();
