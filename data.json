@@ -218,7 +218,7 @@
               "name": "同棲開始",
               "src": "images/c-muqv9ztx6yp.png",
               "lines": [
-                "はじめてのふたり暮らし。／明日はカーテン、今日はソファ／少しずつ、揃えていこう／テーブルはひとつ、／だけどイスは／ひとつじゃ足りないね。"
+                "共に暮らすとは、共に生きること。"
               ],
               "faces": []
             },
@@ -246,12 +246,190 @@
           "fusetter": [],
           "art": [],
           "coc": {
-            "edition": "",
+            "edition": "6版",
             "memo": "",
-            "source": "",
-            "stats": [],
-            "derived": [],
-            "skills": [],
+            "source": "https://iachara.com/view/11720407",
+            "stats": [
+              {
+                "l": "STR",
+                "v": 6
+              },
+              {
+                "l": "CON",
+                "v": 14
+              },
+              {
+                "l": "POW",
+                "v": 17
+              },
+              {
+                "l": "DEX",
+                "v": 14
+              },
+              {
+                "l": "APP",
+                "v": 16
+              },
+              {
+                "l": "SIZ",
+                "v": 13
+              },
+              {
+                "l": "INT",
+                "v": 15
+              },
+              {
+                "l": "EDU",
+                "v": 11
+              }
+            ],
+            "derived": [
+              {
+                "l": "HP",
+                "v": 14,
+                "max": 14
+              },
+              {
+                "l": "MP",
+                "v": 17,
+                "max": 17
+              },
+              {
+                "l": "SAN",
+                "v": 57,
+                "max": 57
+              }
+            ],
+            "skills": [
+              {
+                "n": "目星",
+                "v": 64
+              },
+              {
+                "n": "聞き耳",
+                "v": 75
+              },
+              {
+                "n": "図書館",
+                "v": 64
+              },
+              {
+                "n": "回避",
+                "v": 83
+              },
+              {
+                "n": "こぶし（パンチ）",
+                "v": 52
+              },
+              {
+                "n": "投擲",
+                "v": 28
+              },
+              {
+                "n": "ナイフ",
+                "v": 70
+              },
+              {
+                "n": "杖",
+                "v": 22
+              },
+              {
+                "n": "応急手当",
+                "v": 71
+              },
+              {
+                "n": "隠れる",
+                "v": 44
+              },
+              {
+                "n": "登攀",
+                "v": 48
+              },
+              {
+                "n": "機械修理",
+                "v": 30
+              },
+              {
+                "n": "乗馬",
+                "v": 15
+              },
+              {
+                "n": "水泳",
+                "v": 27
+              },
+              {
+                "n": "製作（菓子）",
+                "v": 6
+              },
+              {
+                "n": "跳躍",
+                "v": 36
+              },
+              {
+                "n": "製作：土偶",
+                "v": 15
+              },
+              {
+                "n": "信用",
+                "v": 33
+              },
+              {
+                "n": "説得",
+                "v": 24
+              },
+              {
+                "n": "値切り",
+                "v": 21
+              },
+              {
+                "n": "英語",
+                "v": 41
+              },
+              {
+                "n": "猫語",
+                "v": 1
+              },
+              {
+                "n": "医学",
+                "v": 37
+              },
+              {
+                "n": "オカルト",
+                "v": 74
+              },
+              {
+                "n": "クトゥルフ神話",
+                "v": 11
+              },
+              {
+                "n": "芸術（テイスティング）",
+                "v": 7
+              },
+              {
+                "n": "コンピューター",
+                "v": 9
+              },
+              {
+                "n": "心理学",
+                "v": 55
+              },
+              {
+                "n": "地質学",
+                "v": 6
+              },
+              {
+                "n": "天文学",
+                "v": 61
+              },
+              {
+                "n": "博物学",
+                "v": 11
+              },
+              {
+                "n": "歴史",
+                "v": 55
+              }
+            ],
             "spells": [],
             "spoiler": false,
             "after": []
@@ -733,14 +911,16 @@
             "blood": "",
             "likes": "",
             "dislikes": "",
-            "color": "",
+            "color": "#fff265",
             "extra": [],
             "traits": [
               "",
               ""
             ]
           },
-          "lines": [],
+          "lines": [
+            "死ねよ、お前なんか。／死んじまえ。"
+          ],
           "poses": [],
           "tags": {
             "fusetter": [
@@ -786,12 +966,126 @@
           ],
           "art": [],
           "coc": {
-            "edition": "",
+            "edition": "6版",
             "memo": "",
-            "source": "",
-            "stats": [],
-            "derived": [],
-            "skills": [],
+            "source": "https://iachara.com/view/14688843",
+            "stats": [
+              {
+                "l": "STR",
+                "v": 12
+              },
+              {
+                "l": "CON",
+                "v": 14
+              },
+              {
+                "l": "POW",
+                "v": 13
+              },
+              {
+                "l": "DEX",
+                "v": 14
+              },
+              {
+                "l": "APP",
+                "v": 15
+              },
+              {
+                "l": "SIZ",
+                "v": 15
+              },
+              {
+                "l": "INT",
+                "v": 14
+              },
+              {
+                "l": "EDU",
+                "v": 18
+              }
+            ],
+            "derived": [
+              {
+                "l": "HP",
+                "v": 15,
+                "max": 15
+              },
+              {
+                "l": "MP",
+                "v": 13,
+                "max": 13
+              },
+              {
+                "l": "SAN",
+                "v": 58,
+                "max": 58
+              }
+            ],
+            "skills": [
+              {
+                "n": "目星",
+                "v": 70
+              },
+              {
+                "n": "聞き耳",
+                "v": 56
+              },
+              {
+                "n": "図書館",
+                "v": 75
+              },
+              {
+                "n": "回避",
+                "v": 71
+              },
+              {
+                "n": "こぶし（パンチ）",
+                "v": 50
+              },
+              {
+                "n": "キック",
+                "v": 50
+              },
+              {
+                "n": "応急手当",
+                "v": 52
+              },
+              {
+                "n": "運転（自動車）",
+                "v": 55
+              },
+              {
+                "n": "言いくるめ",
+                "v": 70
+              },
+              {
+                "n": "説得",
+                "v": 40
+              },
+              {
+                "n": "値切り",
+                "v": 35
+              },
+              {
+                "n": "クトゥルフ神話",
+                "v": 4
+              },
+              {
+                "n": "芸術（演技）",
+                "v": 50
+              },
+              {
+                "n": "経理",
+                "v": 20
+              },
+              {
+                "n": "コンピューター",
+                "v": 42
+              },
+              {
+                "n": "心理学",
+                "v": 75
+              }
+            ],
             "spells": [],
             "spoiler": false,
             "after": []
@@ -800,7 +1094,7 @@
       ],
       "coc": {
         "edition": "6版",
-        "memo": "PC：獅童 杏（しどう　きょう）\nPL：ふじた鳩\n24歳 / 男 / 198cm",
+        "memo": "",
         "source": "https://charahub.vercel.app/characters/d5107c2b-0767-43b7-9584-e5727bc394b2/view",
         "stats": [
           {
@@ -885,6 +1179,10 @@
           {
             "n": "組み付き",
             "v": 75
+          },
+          {
+            "n": "マーシャルアーツ",
+            "v": 76
           },
           {
             "n": "拳銃",
@@ -995,7 +1293,104 @@
           "lines": [
             "君の全てを叶えるよ／俺の愛しい婚約者"
           ],
-          "faces": []
+          "faces": [
+            {
+              "name": "基本",
+              "src": "images/c-muu01y66m9u.png"
+            },
+            {
+              "name": "お手をどうぞ",
+              "src": "images/c-muu01xo72sa.png"
+            },
+            {
+              "name": "キラキラ",
+              "src": "images/c-muu01xs0prp.png"
+            },
+            {
+              "name": "…",
+              "src": "images/c-muu01xi7sd2.png"
+            },
+            {
+              "name": "え？",
+              "src": "images/c-muu01xk8svf.png"
+            },
+            {
+              "name": "おねがい♡",
+              "src": "images/c-muu01xm2co5.png"
+            },
+            {
+              "name": "こ、こうしよ",
+              "src": "images/c-muu01xu5mzq.png"
+            },
+            {
+              "name": "しゅん",
+              "src": "images/c-muu01xw6e3x.png"
+            },
+            {
+              "name": "ソレ本気?",
+              "src": "images/c-muu01xy7qd1.png"
+            },
+            {
+              "name": "？？",
+              "src": "images/c-muu01xg6bv0.png"
+            },
+            {
+              "name": "きゅるる",
+              "src": "images/c-muu01xq1eo0.png"
+            },
+            {
+              "name": "はあ！？",
+              "src": "images/c-muu01y06pxy.png"
+            },
+            {
+              "name": "ブレ",
+              "src": "images/c-muu01y275yn.png"
+            },
+            {
+              "name": "めそめそ",
+              "src": "images/c-muu01y454ye.png"
+            },
+            {
+              "name": "寄越せよ",
+              "src": "images/c-muu01y8a1wd.png"
+            },
+            {
+              "name": "嫌",
+              "src": "images/c-muu01ye7yg7.png"
+            },
+            {
+              "name": "頬掻き",
+              "src": "images/c-muu01yoazy4.png"
+            },
+            {
+              "name": "口尖らせ",
+              "src": "images/c-muu01yg97hg.png"
+            },
+            {
+              "name": "困ったな",
+              "src": "images/c-muu01yk3gl1.png"
+            },
+            {
+              "name": "爆笑",
+              "src": "images/c-muu01ym9776.png"
+            },
+            {
+              "name": "恐怖",
+              "src": "images/c-muu01yc28qj.png"
+            },
+            {
+              "name": "恐怖 2",
+              "src": "images/c-muu01ya7fdw.png"
+            },
+            {
+              "name": "黒塗り",
+              "src": "images/c-muu01yi4s61.png"
+            },
+            {
+              "name": "命乞い",
+              "src": "images/c-muu01ypywib.png"
+            }
+          ]
         },
         {
           "name": "超高校級の婚約者",
@@ -1012,11 +1407,71 @@
           "faces": [
             {
               "name": "♡",
-              "src": "images/c-muq357bl8jf.png"
+              "src": "images/c-muu07iagi3n.png"
             },
             {
-              "name": "差分 2",
-              "src": ""
+              "name": "おねがい",
+              "src": "images/c-muu07iehoef.png"
+            },
+            {
+              "name": "てれ…",
+              "src": "images/c-muu07iiinpd.png"
+            },
+            {
+              "name": "にこっ",
+              "src": "images/c-muu07ikmnor.png"
+            },
+            {
+              "name": "は？",
+              "src": "images/c-muu07imogvb.png"
+            },
+            {
+              "name": "やる気",
+              "src": "images/c-muu07ios1mj.png"
+            },
+            {
+              "name": "嫌笑い",
+              "src": "images/c-muu07isw2jj.png"
+            },
+            {
+              "name": "口尖らせ",
+              "src": "images/c-muu07ixccy4.png"
+            },
+            {
+              "name": "しんど…",
+              "src": "images/c-muu07igg1bq.png"
+            },
+            {
+              "name": "笑顔！",
+              "src": "images/c-muu07j1kkaj.png"
+            },
+            {
+              "name": "笑顔♡",
+              "src": "images/c-muu07j3licy.png"
+            },
+            {
+              "name": "大爆笑",
+              "src": "images/c-muu07j7qpgo.png"
+            },
+            {
+              "name": "目逸らし…",
+              "src": "images/c-muu07j9seri.png"
+            },
+            {
+              "name": "目逸らし",
+              "src": "images/c-muu07jbu0s8.png"
+            },
+            {
+              "name": "危機",
+              "src": "images/c-muu07iqqq6i.png"
+            },
+            {
+              "name": "黒笑顔",
+              "src": "images/c-muu07izhmk5.png"
+            },
+            {
+              "name": "真面目キレ",
+              "src": "images/c-muu07j5ond9.png"
             }
           ]
         }
@@ -1706,25 +2161,35 @@
         {
           "name": "日本旅行",
           "src": "images/c-muq9nyqlnk4.png",
-          "lines": [],
+          "lines": [
+            "酒♪温泉♪日本旅行♪",
+            "※またしても／因習村行きを／知らないおじさん"
+          ],
           "faces": []
         },
         {
           "name": "子供化",
           "src": "images/c-muq9oid2kfu.png",
-          "lines": [],
+          "lines": [
+            "おいちゃん⋯／キュートに／なってるぅ！"
+          ],
           "faces": []
         },
         {
           "name": "TS：メイド",
           "src": "images/c-muq9p79abro.png",
-          "lines": [],
+          "lines": [
+            "お兄ちゃん♡／シャンパン飲みたいな♡",
+            "※『おばさんがノリノリで／ロリ枠をやる』／という鳩の性癖。"
+          ],
           "faces": []
         },
         {
           "name": "TS：浴衣",
           "src": "images/c-muq9pkchf40.png",
-          "lines": [],
+          "lines": [
+            "ふぃ〜⋯／温泉さいこ〜⋯"
+          ],
           "faces": []
         },
         {
@@ -2368,7 +2833,8 @@
           "name": "立ち絵 ",
           "src": "images/c-muqaeyojtfi.png",
           "lines": [
-            "気持ち悪い。"
+            "⋯⋯気色悪い。",
+            "マトモになれよ。／それが無理なら…／はやく死ねよ。"
           ],
           "faces": []
         }
