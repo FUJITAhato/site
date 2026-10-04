@@ -6,8 +6,8 @@
       "en": "OZ IORI",
       "role": "オカルト部 部長",
       "desc": "",
-      "personality": "**天上天下唯我独尊のマイペース人間。**\n自信家のビックマウスだが、ポンコツ。\n好奇心旺盛なお祭り男で、判断基準は『おもろい』か『おもろくない』か。\n距離感が近くデリカシーは皆無だが、無理強いはしないよう気をつけている。\n\n特定のタイプにかなり惚れやすい悪癖がある。",
-      "more": "▌外向…………的？\n\nうるさいくらいに明るく元気！\n……で、いようと心がけている。非常に負けず嫌いのため、あらゆる喧嘩や勝負を買っているうちに『明るく元気、へこたれない』のイメージがついてしまった。まあそっちのほうが人好きされるし、いっか！と本人も別に否定しない。むしろラッキー！\n\n負けず嫌いが絡まない限り、かなり穏やか。\n\n自覚は無いが、眠い時や親密な相手と気負いなく話している時は「僕」「君」など柔らかな言葉遣い。\n\n内省やクールダウンを挟むため、ひとりの時間を大事にする傾向がかなり強い。気を許した相手にしか言わないが、自分の性格を「かなりの根暗」「弩級のネガティブ」だと思っている。\n\nついでに『自己評価が低い』と親友 兼 恋人に指摘されているが本人にまったくその自覚は無い。心配をかけないように直そうと頑張ってはいる。\n\n▌身体よりも頭を使う方がラク\n身体を酷使するよりも『問題集100冊解かなければ出れない部屋』のほうがよっぽど良い。\n\n就職組のため普通科にいるが、進学校で学年3位をキープしている。\n\n頭が良いというよりも、記憶力がいい。\n\n運動なら見て聞いて頭で何度も模倣して憶える。\n\n勉強なら教科書が配られた日にすべて読んで必要そうなところに目星をつけ、教師の話を聞きながら更に重要点を絞り、そこだけを憶える。\n\n勉強も運動も初見で5割、練習をすれば7、8割は出来るがそれ以上の習得には時間がかかる器用貧乏。\n\n\n▌サボり癖\n\nよく授業をサボっているが、前述の「内省やクールダウン」の時間として使っていることが多い。\n\nまた、無意識に色々な情報を拾い、やや疲れやすい特性がある。\n\n3年特有の受験でピリついた空気に引きずられ滅入ってしまいそうな自覚もあるため、眠るか喫煙することで外界の情報を完全遮断して、頭を休めている。\n\n（最近はこの”ひとり時間”に**とある子(うちよそ項目参照)**を連れて行くことが増えた）\n\n▌バイト先\n\nメインは骨董品屋で配送や収集、鑑定のバイトをしている。\n\n給料が手渡し、ひたすら暇なのが最高！店長とは非常に仲が良く、色々とお世話になっている。口約束だが遺産として骨董品屋をくれるとまで言ってくれている。ガチか。\n\n▌未来の話　　　　　　　　　　　　\n\nヒモ……ではなく、主夫8割、趣味の延長的な仕事2割\n弁護士のスーパーダーリンハニーがいるので主夫をしつつ、メールでの骨董品にまつわる鑑定依頼や収集依頼があれば、継いだ骨董品屋で依頼をこなす。彫り師の資格も得たので、趣味の延長でタトゥーデザインから彫りまで行っている。\n\n",
+      "personality": "",
+      "more": "",
       "profile": {
         "kana": "おづ いおり",
         "age": "17歳",
@@ -27,8 +27,8 @@
         "color": "#D82115",
         "extra": [],
         "traits": [
-          "俊敏",
-          "戦士"
+          "",
+          ""
         ]
       },
       "lines": [
@@ -218,7 +218,7 @@
               "name": "同棲開始",
               "src": "images/c-muqv9ztx6yp.png",
               "lines": [
-                "共に暮らすとは、共に生きること。"
+                "はじめてのふたり暮らし。／明日はカーテン、今日はソファ／少しずつ、揃えていこう／テーブルはひとつ、／だけどイスは／ひとつじゃ足りないね。"
               ],
               "faces": []
             },
@@ -235,317 +235,23 @@
             "fusetter": [
               "SS",
               "R18",
-              "花ヶ丘",
-              "その他"
+              "その他",
+              "ネタバレ無"
             ],
             "art": [
               "イラスト",
               "その他"
             ]
           },
-          "fusetter": [
-            {
-              "t": "子供についての話",
-              "url": "https://fse.tw/Rtv8u0Wk",
-              "note": "真面目に○○○○○○○○○○○○○○○○んですけど…………  🗝お弁当",
-              "tags": [
-                "R18"
-              ]
-            },
-            {
-              "t": "終わっている話。",
-              "url": "https://fse.tw/Hs7F11k5",
-              "note": "バレはなにもないけど本当に終わってる。 終わってる𝒔𝒖𝒌𝒆𝒃𝒆伏せなのに1万字ある。🗝お弁当の名前",
-              "tags": [
-                "R18"
-              ]
-            },
-            {
-              "t": "恥じらいの話。",
-              "url": "https://fse.tw/L4MF2WKV",
-              "note": "恥じらいを求めてくる折鶴に 『……ならば、応えるのがつ、つ、つ……妻(←恥じらい)　の役割！！！』って意気込んで１ヶ月みっちり放課後には遊ばず休みの日は朝から晩まで役者の教育受けてきた三月くんかわいいいよね、って話。クソ伏せ。  🗝お弁当",
-              "tags": [
-                "R18"
-              ]
-            },
-            {
-              "t": "シナリオの話。",
-              "url": "https://fse.tw/BfMjH7tf",
-              "note": "🗝お弁当",
-              "tags": [
-                "花ヶ丘"
-              ]
-            },
-            {
-              "t": "スーツの話",
-              "url": "https://fse.tw/03dZz0FO",
-              "note": "スーツのはなしがすっっごくよくって、ぺよぺよになっちゃったやつ……好きだ　大好きだ…… 吉野三月と、吉野家　どちらもこれからずっと守っていきたいな…………  🗝吉野三月の誕生日",
-              "tags": [
-                "その他"
-              ]
-            },
-            {
-              "t": "オオカミポメの話。",
-              "url": "https://fse.tw/vCl8pVtj",
-              "note": "🗝お弁当",
-              "tags": [
-                "R18"
-              ]
-            },
-            {
-              "t": "魅惑のリンゴとお菓子の世界",
-              "url": "https://fse.tw/ffCzNa1h",
-              "note": "導入なので特にバレはない",
-              "tags": [
-                "その他"
-              ]
-            },
-            {
-              "t": "米津といおみつ",
-              "url": "これは本当の本当の本当に事前に決まってることなので合わせたとか！そういうのじゃないんですけど！あの！！  魅惑のリンゴの導入、○○○○○○○○○○○○○○○○○○○  🗝お弁当 https://fse.tw/xgZtl45z",
-              "note": "米津さん、三月くん曲○○○○○○○○○ないのかなーと思ったら初っ端にこれ出てきて声でた　 なんでも出てくるじゃん……！！！！",
-              "tags": [
-                "花ヶ丘"
-              ]
-            },
-            {
-              "t": "新しい投稿",
-              "url": "これは本当の本当の本当に事前に決まってることなので合わせたとか！そういうのじゃないんですけど！あの！！  魅惑のリンゴの導入、○○○○○○○○○○○○○○○○○○○  🗝お弁当 https://fse.tw/xgZtl45z",
-              "note": "",
-              "tags": [
-                "花ヶ丘"
-              ]
-            },
-            {
-              "t": "よかった話。",
-              "url": "https://fse.tw/bMTMPMgh",
-              "note": "からこさんのがガチで良かったので書き散らし 🗝いおみつ誕生日",
-              "tags": [
-                "R18",
-                "花ヶ丘"
-              ]
-            },
-            {
-              "t": "我思うこと。",
-              "url": "https://fse.tw/z00Ynk3v",
-              "note": "でも最近ログ読んでてすごい思う。  ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○  🗝いおみつ誕生日",
-              "tags": [
-                "R18",
-                "花ヶ丘"
-              ]
-            },
-            {
-              "t": "タイムスリップする話",
-              "url": "https://fse.tw/d7LyDp7D",
-              "note": "🗝いおみつ誕生日合計",
-              "tags": [
-                "花ヶ丘"
-              ]
-            },
-            {
-              "t": "オメガバースの話。",
-              "url": "https://fse.tw/Vl8ASQCc",
-              "note": "",
-              "tags": [
-                "R18",
-                "花ヶ丘"
-              ]
-            },
-            {
-              "t": "布団から出てこないみっちゃん。",
-              "url": "https://fse.tw/pJtjxv9O",
-              "note": "",
-              "tags": [
-                "R18"
-              ]
-            }
-          ],
+          "fusetter": [],
           "art": [],
           "coc": {
-            "edition": "6版",
+            "edition": "",
             "memo": "",
-            "source": "https://iachara.com/view/11720407",
-            "stats": [
-              {
-                "l": "STR",
-                "v": 6
-              },
-              {
-                "l": "CON",
-                "v": 14
-              },
-              {
-                "l": "POW",
-                "v": 17
-              },
-              {
-                "l": "DEX",
-                "v": 14
-              },
-              {
-                "l": "APP",
-                "v": 16
-              },
-              {
-                "l": "SIZ",
-                "v": 13
-              },
-              {
-                "l": "INT",
-                "v": 15
-              },
-              {
-                "l": "EDU",
-                "v": 11
-              }
-            ],
-            "derived": [
-              {
-                "l": "HP",
-                "v": 14,
-                "max": 14
-              },
-              {
-                "l": "MP",
-                "v": 17,
-                "max": 17
-              },
-              {
-                "l": "SAN",
-                "v": 57,
-                "max": 57
-              }
-            ],
-            "skills": [
-              {
-                "n": "目星",
-                "v": 64
-              },
-              {
-                "n": "聞き耳",
-                "v": 75
-              },
-              {
-                "n": "図書館",
-                "v": 64
-              },
-              {
-                "n": "回避",
-                "v": 83
-              },
-              {
-                "n": "こぶし（パンチ）",
-                "v": 52
-              },
-              {
-                "n": "投擲",
-                "v": 28
-              },
-              {
-                "n": "ナイフ",
-                "v": 70
-              },
-              {
-                "n": "杖",
-                "v": 22
-              },
-              {
-                "n": "応急手当",
-                "v": 71
-              },
-              {
-                "n": "隠れる",
-                "v": 44
-              },
-              {
-                "n": "登攀",
-                "v": 48
-              },
-              {
-                "n": "機械修理",
-                "v": 30
-              },
-              {
-                "n": "乗馬",
-                "v": 15
-              },
-              {
-                "n": "水泳",
-                "v": 27
-              },
-              {
-                "n": "製作（菓子）",
-                "v": 6
-              },
-              {
-                "n": "跳躍",
-                "v": 36
-              },
-              {
-                "n": "製作：土偶",
-                "v": 15
-              },
-              {
-                "n": "信用",
-                "v": 33
-              },
-              {
-                "n": "説得",
-                "v": 24
-              },
-              {
-                "n": "値切り",
-                "v": 21
-              },
-              {
-                "n": "英語",
-                "v": 41
-              },
-              {
-                "n": "猫語",
-                "v": 1
-              },
-              {
-                "n": "医学",
-                "v": 37
-              },
-              {
-                "n": "オカルト",
-                "v": 74
-              },
-              {
-                "n": "クトゥルフ神話",
-                "v": 11
-              },
-              {
-                "n": "芸術（テイスティング）",
-                "v": 7
-              },
-              {
-                "n": "コンピューター",
-                "v": 9
-              },
-              {
-                "n": "心理学",
-                "v": 55
-              },
-              {
-                "n": "地質学",
-                "v": 6
-              },
-              {
-                "n": "天文学",
-                "v": 61
-              },
-              {
-                "n": "博物学",
-                "v": 11
-              },
-              {
-                "n": "歴史",
-                "v": 55
-              }
-            ],
+            "source": "",
+            "stats": [],
+            "derived": [],
+            "skills": [],
             "spells": [],
             "spoiler": false,
             "after": []
@@ -554,7 +260,7 @@
       ],
       "coc": {
         "edition": "6版",
-        "memo": "",
+        "memo": "PC：折鶴 祝（おづ　いおり）\nPL：ふじた鳩\n17歳 / 男 / 185cm",
         "source": "https://charahub.vercel.app/characters/38546bf9-cf1b-42c6-81ce-3160bcc0b0ba/view",
         "stats": [
           {
@@ -603,8 +309,8 @@
           },
           {
             "l": "SAN",
-            "v": 90,
-            "max": 90
+            "v": 105,
+            "max": 105
           }
         ],
         "skills": [
@@ -910,16 +616,7 @@
           }
         ],
         "spoiler": false,
-        "after": [
-          {
-            "name": "",
-            "onset": "",
-            "cured": "",
-            "detail": "",
-            "more": "",
-            "showInProfile": true
-          }
-        ],
+        "after": [],
         "spells": []
       },
       "origin": "花ヶ丘高校秘密倶楽部",
@@ -931,8 +628,7 @@
           "SS",
           "R18",
           "その他",
-          "花ヶ丘",
-          "Jane do"
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -941,51 +637,7 @@
           "R18"
         ]
       },
-      "fusetter": [
-        {
-          "t": "ふと思った話。",
-          "url": " https://fse.tw/j53ZaoEp",
-          "note": "ふと思ったんだけど○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○思ったらだいぶ　アツい………な……　🗝お弁当",
-          "tags": [
-            "Jane do"
-          ]
-        },
-        {
-          "t": "セッション曲の話。",
-          "url": "https://fse.tw/rpz8eUzr",
-          "note": "大した内容じゃない。 ただただ、お部屋で流してくださった曲、本当にいいな……のポスト　🗝お弁当",
-          "tags": [
-            "Jane do"
-          ]
-        },
-        {
-          "t": "溢れた話。",
-          "url": "https://fse.tw/I9mm26V5",
-          "note": "ポストしたいことが多すぎたのでそのまとめ 🗝いおみつ誕生日",
-          "tags": [
-            "花ヶ丘",
-            "Jane do"
-          ]
-        },
-        {
-          "t": "勝ちてえ話。",
-          "url": "https://fse.tw/3MeK9eVy",
-          "note": "じぇーんどぅの立ち絵○○○○○○○○結婚式だから（強火）  🗝いおみつ誕生日",
-          "tags": [
-            "花ヶ丘",
-            "Jane do"
-          ]
-        },
-        {
-          "t": "1日目にして感無量。",
-          "url": "https://fse.tw/qfXX21yp",
-          "note": "じぇーんどぅのはなし……ほんっとうによかった1日目…………………ふたりの、知らなかった色んなことをしれた。  激重感情すぎるかもしれないけど、  🗝いおみつ誕生日",
-          "tags": [
-            "Jane do",
-            "花ヶ丘"
-          ]
-        }
-      ]
+      "fusetter": []
     },
     {
       "id": "cmuoe7kg8tn",
@@ -994,7 +646,7 @@
       "role": "民間SP",
       "desc": "",
       "personality": "不遜で物怖じしない京楽主義者。\nキュートアグレッション癖があり、頑張り屋を見るとつい構いたくなる。\nアップダウンの少ない性格が間延びして抑揚のない喋り方に現れているが、家族のことに関してだけは至極真面目になる。",
-      "more": "▌大手の民間SP派遣会社の社員\n\n様々な部門があり、マニアやコレクター向けにオカルト諸々のグッズを手に入れてきたり護衛したりの部門担当。危ない仕事をする度、ボーナスまで出ている。\n\n比較的若いことと、体格、厳つい見た目から高級ラウンジや敷居の高い風俗店の警護に回されることも多い。\n\n\n\n▌家族\n\nシングルマザーの母に代わりに幼い弟を、歳の近い妹と二人で面倒みていた。家族仲はかなり良好で現在も稼ぎのほとんどを家族に仕送りしている。\n\n\n\n▌半生\n\n・中学時代\n柔道競技の選手だったが、大きな交通事故により脚が故障したことで将来を断念（低DEX低APP理由）\nこの一件で自身の体質を自覚した。\n（背中の傷や火傷跡、耳が欠けたのはこの事故が原因）\n\n家族に迷惑をかけないよう中学卒業のタイミングで上京。現在の会社に就職。\n現在も仕送りとして給料をほとんど家族口座と妹の口座に振り込んでいるため貧乏。\n\nとはいえ、経費でなんでも落としてくれる会社のため、金銭面の自由度は高い。",
+      "more": "▌大手の民間SP派遣会社の社員\n\n様々な部門があり、マニアやコレクター向けにオカルト諸々のグッズを手に入れてきたり護衛したりの部門担当。危ない仕事をする度、ボーナスまで出ている。\n\n比較的若いことと、体格、厳つい見た目から高級ラウンジや敷居の高い風俗店の警護に回されることも多い。\n\n\n\n▌家族\n\nシングルマザーの母に代わりに幼い弟を、歳の近い妹と二人で面倒みていた。家族仲はかなり良好で現在も稼ぎのほとんどを家族に仕送りしている。\n\n\n\n▌半生\n\n・中学時代\n柔道競技の選手だったが、大きな交通事故により脚が故障したことで将来を断念（低DEX低APP理由）\nこの一件で寄せ餌体質であることも自覚した。\n（背中の傷や火傷跡、耳が欠けたのはこの事故が原因）\n\n家族に迷惑をかけないよう中学卒業のタイミングで上京。現在の会社に就職。\n現在も仕送りとして給料をほとんど家族口座と妹の口座に振り込んでいるため貧乏。\n\nとはいえ、経費でなんでも落としてくれる会社のため、金銭面の自由度は高い。",
       "profile": {
         "kana": "しどう きょう",
         "age": "24歳",
@@ -1081,7 +733,7 @@
             "blood": "",
             "likes": "",
             "dislikes": "",
-            "color": "#fff265",
+            "color": "",
             "extra": [],
             "traits": [
               "",
@@ -1134,126 +786,12 @@
           ],
           "art": [],
           "coc": {
-            "edition": "6版",
+            "edition": "",
             "memo": "",
-            "source": "https://iachara.com/view/14688843",
-            "stats": [
-              {
-                "l": "STR",
-                "v": 12
-              },
-              {
-                "l": "CON",
-                "v": 14
-              },
-              {
-                "l": "POW",
-                "v": 13
-              },
-              {
-                "l": "DEX",
-                "v": 14
-              },
-              {
-                "l": "APP",
-                "v": 15
-              },
-              {
-                "l": "SIZ",
-                "v": 15
-              },
-              {
-                "l": "INT",
-                "v": 14
-              },
-              {
-                "l": "EDU",
-                "v": 18
-              }
-            ],
-            "derived": [
-              {
-                "l": "HP",
-                "v": 15,
-                "max": 15
-              },
-              {
-                "l": "MP",
-                "v": 13,
-                "max": 13
-              },
-              {
-                "l": "SAN",
-                "v": 58,
-                "max": 58
-              }
-            ],
-            "skills": [
-              {
-                "n": "目星",
-                "v": 70
-              },
-              {
-                "n": "聞き耳",
-                "v": 56
-              },
-              {
-                "n": "図書館",
-                "v": 75
-              },
-              {
-                "n": "回避",
-                "v": 71
-              },
-              {
-                "n": "こぶし（パンチ）",
-                "v": 50
-              },
-              {
-                "n": "キック",
-                "v": 50
-              },
-              {
-                "n": "応急手当",
-                "v": 52
-              },
-              {
-                "n": "運転（自動車）",
-                "v": 55
-              },
-              {
-                "n": "言いくるめ",
-                "v": 70
-              },
-              {
-                "n": "説得",
-                "v": 40
-              },
-              {
-                "n": "値切り",
-                "v": 35
-              },
-              {
-                "n": "クトゥルフ神話",
-                "v": 4
-              },
-              {
-                "n": "芸術（演技）",
-                "v": 50
-              },
-              {
-                "n": "経理",
-                "v": 20
-              },
-              {
-                "n": "コンピューター",
-                "v": 42
-              },
-              {
-                "n": "心理学",
-                "v": 75
-              }
-            ],
+            "source": "",
+            "stats": [],
+            "derived": [],
+            "skills": [],
             "spells": [],
             "spoiler": false,
             "after": []
@@ -1457,104 +995,7 @@
           "lines": [
             "君の全てを叶えるよ／俺の愛しい婚約者"
           ],
-          "faces": [
-            {
-              "name": "基本",
-              "src": "images/c-mutiphvr2i0.png"
-            },
-            {
-              "name": "お手をどうぞ",
-              "src": "images/c-mutiphlsokw.png"
-            },
-            {
-              "name": "え？",
-              "src": "images/c-mutiphjlcok.png"
-            },
-            {
-              "name": "…",
-              "src": "images/c-mutiphih9zj.png"
-            },
-            {
-              "name": "キラキラ",
-              "src": "images/c-mutiphnxzlm.png"
-            },
-            {
-              "name": "こうしよ",
-              "src": "images/c-mutiphp3ym3.png"
-            },
-            {
-              "name": "おねがい♡",
-              "src": "images/c-mutiphklwzc.png"
-            },
-            {
-              "name": "困ったな",
-              "src": "images/c-mutipi3e7rr.png"
-            },
-            {
-              "name": "ソレ本気?",
-              "src": "images/c-mutiphrbj3v.png"
-            },
-            {
-              "name": "しゅん",
-              "src": "images/c-mutiphq7arl.png"
-            },
-            {
-              "name": "爆笑",
-              "src": "images/c-mutipi4llk4.png"
-            },
-            {
-              "name": "？？",
-              "src": "images/c-mutiphhdobf.png"
-            },
-            {
-              "name": "きゅるる",
-              "src": "images/c-mutiphmu2mr.png"
-            },
-            {
-              "name": "はあ！？",
-              "src": "images/c-mutiphsfeg2.png"
-            },
-            {
-              "name": "ブレ",
-              "src": "images/c-mutiphtj6ut.png"
-            },
-            {
-              "name": "めそめそ",
-              "src": "images/c-mutiphunh5e.png"
-            },
-            {
-              "name": "寄越せよ",
-              "src": "images/c-mutiphwxehn.png"
-            },
-            {
-              "name": "嫌",
-              "src": "images/c-mutipi071ws.png"
-            },
-            {
-              "name": "口尖らせ",
-              "src": "images/c-mutipi1bgey.png"
-            },
-            {
-              "name": "頬掻き",
-              "src": "images/c-mutipi5pl4v.png"
-            },
-            {
-              "name": "恐怖",
-              "src": "images/c-mutiphz1vs0.png"
-            },
-            {
-              "name": "恐怖 2",
-              "src": "images/c-mutiphxzz4t.png"
-            },
-            {
-              "name": "命乞い",
-              "src": "images/c-mutipi6ng55.png"
-            },
-            {
-              "name": "黒塗り",
-              "src": "images/c-mutipi2cf1g.png"
-            }
-          ]
+          "faces": []
         },
         {
           "name": "超高校級の婚約者",
@@ -1574,72 +1015,8 @@
               "src": "images/c-muq357bl8jf.png"
             },
             {
-              "name": "♡",
-              "src": "images/c-mutixn5qit2.png"
-            },
-            {
-              "name": "てれ…",
-              "src": "images/c-mutixn94pyh.png"
-            },
-            {
-              "name": "おねがい",
-              "src": "images/c-mutixn6tce1.png"
-            },
-            {
-              "name": "にこっ",
-              "src": "images/c-mutixnaansr.png"
-            },
-            {
-              "name": "は？",
-              "src": "images/c-mutixnbi92w.png"
-            },
-            {
-              "name": "やる気",
-              "src": "images/c-mutixncofps.png"
-            },
-            {
-              "name": "口尖らせ",
-              "src": "images/c-mutixnhg5w6.png"
-            },
-            {
-              "name": "嫌笑い",
-              "src": "images/c-mutixnezybc.png"
-            },
-            {
-              "name": "笑顔！",
-              "src": "images/c-mutixnjr0zl.png"
-            },
-            {
-              "name": "笑顔♡",
-              "src": "images/c-mutixnkvvs6.png"
-            },
-            {
-              "name": "大爆笑",
-              "src": "images/c-mutixnn628m.png"
-            },
-            {
-              "name": "目逸らし…",
-              "src": "images/c-mutixnobntf.png"
-            },
-            {
-              "name": "目逸らし",
-              "src": "images/c-mutixnpg4mk.png"
-            },
-            {
-              "name": "しんど…",
-              "src": "images/c-mutixn7yr5t.png"
-            },
-            {
-              "name": "真面目キレ",
-              "src": "images/c-mutixnm1jo1.png"
-            },
-            {
-              "name": "危機",
-              "src": "images/c-mutixnds7af.png"
-            },
-            {
-              "name": "黒笑顔",
-              "src": "images/c-mutixnim5e3.png"
+              "name": "差分 2",
+              "src": ""
             }
           ]
         }
@@ -2053,21 +1430,21 @@
       "more": "",
       "origin": "GODARCA",
       "profile": {
-        "kana": "",
-        "age": "",
-        "sex": "",
-        "height": "",
-        "weight": "",
-        "job": "",
-        "birthplace": "",
-        "hair": "",
-        "eye": "",
-        "first": "",
-        "second": "",
-        "birthday": "",
-        "blood": "",
-        "likes": "",
-        "dislikes": "",
+        "kana": "Ribbon Jerryfish",
+        "age": "23歳",
+        "sex": "男性",
+        "height": "178cm",
+        "weight": "アスリート体型",
+        "job": "雑誌編集者",
+        "birthplace": "ロンドン",
+        "hair": "青",
+        "eye": "白",
+        "first": "俺",
+        "second": "あなた　〇〇氏",
+        "birthday": "3月10日",
+        "blood": "AB型",
+        "likes": "花や果実の砂糖漬け\n手芸",
+        "dislikes": "ワイン\n面白い話をすること",
         "color": "#81a3f8",
         "extra": [],
         "traits": [
@@ -2101,52 +1478,7 @@
           "lines": [
             "未来のお嫁さんに／百本の薔薇を！／野郎共には、はい ゴボウ。"
           ],
-          "faces": [
-            {
-              "name": "えー",
-              "src": "images/c-mutjcur0s9o.png"
-            },
-            {
-              "name": "基本",
-              "src": "images/c-mutjcuv386x.png"
-            },
-            {
-              "name": "キラキラ",
-              "src": "images/c-mutjcurjw0p.png"
-            },
-            {
-              "name": "にこっ",
-              "src": "images/c-mutjcus19l0.png"
-            },
-            {
-              "name": "はわ",
-              "src": "images/c-mutjcusjx9a.png"
-            },
-            {
-              "name": "ふふん！",
-              "src": "images/c-mutjcut1df9.png"
-            },
-            {
-              "name": "ブレ",
-              "src": "images/c-mutjcutkmci.png"
-            },
-            {
-              "name": "むっ",
-              "src": "images/c-mutjcuu3sey.png"
-            },
-            {
-              "name": "ん？",
-              "src": "images/c-mutjcuulc0d.png"
-            },
-            {
-              "name": "笑顔",
-              "src": "images/c-mutjcuvldde.png"
-            },
-            {
-              "name": "白目",
-              "src": "images/c-mutjcuw3eii.png"
-            }
-          ]
+          "faces": []
         },
         {
           "name": "GODARCA",
@@ -2341,25 +1673,25 @@
       "en": "Judge Leone",
       "role": "HO審判",
       "desc": "",
-      "personality": "",
+      "personality": "いつもヘラヘラふらふらの酔っ払いフリーランス医師\nマイペースで楽観的なちゃらんぽらん\n1週間のうち6日は酒が飲みたいからと病院勤務はせず、6.5日休んで0.5日だけバイト医をする正真正銘のちゃらんぽらん。当然金もない。\nスリルジャンキーのアドレナリン中毒気味",
       "more": "",
       "origin": "GODARCA",
       "profile": {
-        "kana": "",
-        "age": "",
-        "sex": "",
-        "height": "",
-        "weight": "",
-        "job": "",
-        "birthplace": "",
-        "hair": "",
-        "eye": "",
-        "first": "",
-        "second": "",
-        "birthday": "",
-        "blood": "",
-        "likes": "",
-        "dislikes": "",
+        "kana": "Jude Leone",
+        "age": "29",
+        "sex": "男性",
+        "height": "178cm",
+        "weight": "細身",
+        "job": "浮浪者（元軍医）",
+        "birthplace": "ロンドン",
+        "hair": "赤",
+        "eye": "緑",
+        "first": "俺",
+        "second": "おいちゃん／君",
+        "birthday": "8月18日",
+        "blood": "O型",
+        "likes": "笑顔\n戦場、酒、喧嘩の観戦",
+        "dislikes": "運動\n平和すぎること",
         "color": "#6c0800",
         "extra": [],
         "traits": [
@@ -2367,40 +1699,32 @@
           ""
         ]
       },
-      "lines": [],
+      "lines": [
+        "楽しく元気に／いこーじゃないのぉ！"
+      ],
       "poses": [
         {
           "name": "日本旅行",
           "src": "images/c-muq9nyqlnk4.png",
-          "lines": [
-            "酒♪温泉♪日本旅行♪",
-            "※またしても／因習村行きを／知らないおじさん"
-          ],
+          "lines": [],
           "faces": []
         },
         {
           "name": "子供化",
           "src": "images/c-muq9oid2kfu.png",
-          "lines": [
-            "おいちゃん⋯／キュートに／なってるぅ！"
-          ],
+          "lines": [],
           "faces": []
         },
         {
           "name": "TS：メイド",
-          "src": "images/c-mus8f4uvowk.png",
-          "lines": [
-            "お兄ちゃん♡／シャンパン飲みたいな♡",
-            "※『おばさんがノリノリで／ロリ枠をやる』／という鳩の性癖。"
-          ],
+          "src": "images/c-muq9p79abro.png",
+          "lines": [],
           "faces": []
         },
         {
           "name": "TS：浴衣",
           "src": "images/c-muq9pkchf40.png",
-          "lines": [
-            "ふぃ〜⋯／温泉さいこ〜⋯"
-          ],
+          "lines": [],
           "faces": []
         },
         {
@@ -2415,7 +1739,7 @@
         "医療"
       ],
       "listImg": {
-        "src": "images/c-mus8es5q4pj.png"
+        "src": "images/c-muq9mwfx03f.png"
       },
       "tags": {
         "fusetter": [
@@ -2606,25 +1930,25 @@
       "en": "",
       "role": "HO：PIG",
       "desc": "",
-      "personality": "",
+      "personality": "気分屋で好奇心旺盛、飽きるのも早い。\n気分がノッていれば調子が良く、そうでなければ壊滅的なこともしばしば。\n飽きないことが、『噛む度に味がするから』『色んな種類があるから』という理由で食事しかない",
       "more": "",
       "origin": "MANIKISS",
       "profile": {
-        "kana": "ピート・イリヤ・グッドオール",
-        "age": "",
-        "sex": "",
-        "height": "",
-        "weight": "",
-        "job": "",
-        "birthplace": "",
-        "hair": "",
-        "eye": "",
-        "first": "",
-        "second": "",
-        "birthday": "",
-        "blood": "",
-        "likes": "",
-        "dislikes": "",
+        "kana": "Peat Ilija Goodall",
+        "age": "26歳",
+        "sex": "男性",
+        "height": "190cm",
+        "weight": "アスリート体型",
+        "job": "財閥跡取り 兼 デスゲーム主催者",
+        "birthplace": "英国",
+        "hair": "黒",
+        "eye": "黒・青",
+        "first": "気分次第",
+        "second": "気分次第",
+        "birthday": "11月19日",
+        "blood": "O型",
+        "likes": "食べ物全般\n虫以外の生物",
+        "dislikes": " 虫・空腹",
         "color": "#F45B83",
         "extra": [],
         "traits": [
@@ -2640,7 +1964,128 @@
           "name": "囚人服",
           "src": "images/c-muqav5nlsut.png",
           "lines": [],
-          "faces": []
+          "faces": [
+            {
+              "name": "基本",
+              "src": "images/c-mutwc9gu8ca.png"
+            },
+            {
+              "name": "えーとお",
+              "src": "images/c-mutwc8zuolw.png"
+            },
+            {
+              "name": "ダブルピース",
+              "src": "images/c-mutwc93b0i6.png"
+            },
+            {
+              "name": "うーん",
+              "src": "images/c-mutwc8yonar.png"
+            },
+            {
+              "name": "イライラ",
+              "src": "images/c-mutwc8xgg1p.png"
+            },
+            {
+              "name": "しおしお",
+              "src": "images/c-mutwc9285bd.png"
+            },
+            {
+              "name": "にこ…",
+              "src": "images/c-mutwc94hldt.png"
+            },
+            {
+              "name": "にこっ！",
+              "src": "images/c-mutwc95mbey.png"
+            },
+            {
+              "name": "んべっ",
+              "src": "images/c-mutwc9eki4z.png"
+            },
+            {
+              "name": "キス…",
+              "src": "images/c-mutwc913v04.png"
+            },
+            {
+              "name": "ノーサンキュー",
+              "src": "images/c-mutwc96qpxr.png"
+            },
+            {
+              "name": "はわわ…",
+              "src": "images/c-mutwc97vufr.png"
+            },
+            {
+              "name": "ピース",
+              "src": "images/c-mutwc98z97p.png"
+            },
+            {
+              "name": "ふーん",
+              "src": "images/c-mutwc9a4d75.png"
+            },
+            {
+              "name": "ぶりっ子",
+              "src": "images/c-mutwc9b8qvi.png"
+            },
+            {
+              "name": "焦り",
+              "src": "images/c-mutwc9lbaa5.png"
+            },
+            {
+              "name": "もういやッ",
+              "src": "images/c-mutwc9degt2.png"
+            },
+            {
+              "name": "ブレ",
+              "src": "images/c-mutwc9cavmp.png"
+            },
+            {
+              "name": "悪巧み",
+              "src": "images/c-mutwc9fpg8n.png"
+            },
+            {
+              "name": "勝利ピース",
+              "src": "images/c-mutwc9k71it.png"
+            },
+            {
+              "name": "白目",
+              "src": "images/c-mutwc9mfygh.png"
+            },
+            {
+              "name": "死刑",
+              "src": "images/c-mutwc9j3e4k.png"
+            },
+            {
+              "name": "ガチギレ",
+              "src": "images/c-mutwc9hynh5.png"
+            },
+            {
+              "name": "……",
+              "src": "images/c-mutz3d3dhxf.png"
+            },
+            {
+              "name": "基本",
+              "src": "images/c-mutz3d9lfhf.png"
+            },
+            {
+              "name": "べっ",
+              "src": "images/c-mutz3d8bjr9.png"
+            },
+            {
+              "name": "ふーん",
+              "src": "images/c-mutz3d715g3.png"
+            },
+            {
+              "name": "はあ…",
+              "src": "images/c-mutz3d5sqah.png"
+            },
+            {
+              "name": "──",
+              "src": "images/c-mutz3d4jydc.png"
+            },
+            {
+              "name": "⬛︎⬛︎⬛︎⬛︎",
+              "src": "images/c-mutz3daoh1r.png"
+            }
+          ]
         },
         {
           "name": "私服",
@@ -2648,7 +2093,96 @@
           "lines": [
             "みんなで仲良く／食べ食べしよやぁ♡"
           ],
-          "faces": []
+          "faces": [
+            {
+              "name": "基本",
+              "src": "images/c-mutwhpxvvnr.png"
+            },
+            {
+              "name": "年収",
+              "src": "images/c-mutwhq3dt83.png"
+            },
+            {
+              "name": "イラッ…",
+              "src": "images/c-mutwhpnqt9j.png"
+            },
+            {
+              "name": "イラッ文字無し",
+              "src": "images/c-mutwhpoiua7.png"
+            },
+            {
+              "name": "えへへー！",
+              "src": "images/c-mutwhppbstm.png"
+            },
+            {
+              "name": "キメ顔",
+              "src": "images/c-mutwhpq3hxb.png"
+            },
+            {
+              "name": "ぐすん…",
+              "src": "images/c-mutwhprm0t8.png"
+            },
+            {
+              "name": "ぐすぐす文字",
+              "src": "images/c-mutwhpqv9v8.png"
+            },
+            {
+              "name": "たはー！",
+              "src": "images/c-mutwhpsf63s.png"
+            },
+            {
+              "name": "は？",
+              "src": "images/c-mutwhpt7y4c.png"
+            },
+            {
+              "name": "はあ…",
+              "src": "images/c-mutwhptzdmm.png"
+            },
+            {
+              "name": "ペロッ",
+              "src": "images/c-mutwhpur3lh.png"
+            },
+            {
+              "name": "ほよよ",
+              "src": "images/c-mutwhpvjvb3.png"
+            },
+            {
+              "name": "飴",
+              "src": "images/c-mutwhpwbwke.png"
+            },
+            {
+              "name": "顔で誤魔化す",
+              "src": "images/c-mutwhpx3bi0.png"
+            },
+            {
+              "name": "血",
+              "src": "images/c-mutwhpyn2pa.png"
+            },
+            {
+              "name": "血キメ",
+              "src": "images/c-mutwhpzgor7.png"
+            },
+            {
+              "name": "血はあ",
+              "src": "images/c-mutwhq08lpa.png"
+            },
+            {
+              "name": "血ペロッ",
+              "src": "images/c-mutwhq11qpb.png"
+            },
+            {
+              "name": "黒",
+              "src": "images/c-mutwhq1uqmg.png"
+            },
+            {
+              "name": "笑顔",
+              "src": "images/c-mutwhq2mnlv.png"
+            },
+            {
+              "name": "返り血ペロッ",
+              "src": "images/c-mutwhq49iuq.png"
+            }
+          ]
         }
       ],
       "art": [],
@@ -2675,12 +2209,122 @@
       "fusetter": [],
       "ucys": [],
       "coc": {
-        "edition": "",
+        "edition": "6版",
         "memo": "",
-        "source": "",
-        "stats": [],
-        "derived": [],
-        "skills": [],
+        "source": "https://iachara.com/view/10727767",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 11
+          },
+          {
+            "l": "CON",
+            "v": 14
+          },
+          {
+            "l": "POW",
+            "v": 16
+          },
+          {
+            "l": "DEX",
+            "v": 11
+          },
+          {
+            "l": "APP",
+            "v": 9
+          },
+          {
+            "l": "SIZ",
+            "v": 16
+          },
+          {
+            "l": "INT",
+            "v": 15
+          },
+          {
+            "l": "EDU",
+            "v": 15
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 15,
+            "max": 15
+          },
+          {
+            "l": "MP",
+            "v": 16,
+            "max": 16
+          },
+          {
+            "l": "SAN",
+            "v": 58,
+            "max": 58
+          }
+        ],
+        "skills": [
+          {
+            "n": "目星",
+            "v": 75
+          },
+          {
+            "n": "聞き耳",
+            "v": 75
+          },
+          {
+            "n": "図書館",
+            "v": 80
+          },
+          {
+            "n": "回避",
+            "v": 73
+          },
+          {
+            "n": "こぶし（パンチ）",
+            "v": 50
+          },
+          {
+            "n": "キック",
+            "v": 80
+          },
+          {
+            "n": "マーシャルアーツ",
+            "v": 76
+          },
+          {
+            "n": "拳銃",
+            "v": 65
+          },
+          {
+            "n": "水泳",
+            "v": 29
+          },
+          {
+            "n": "製作（デスゲーム）",
+            "v": 65
+          },
+          {
+            "n": "信用",
+            "v": 65
+          },
+          {
+            "n": "母国語（（英語））",
+            "v": 80
+          },
+          {
+            "n": "医学",
+            "v": 13
+          },
+          {
+            "n": "クトゥルフ神話",
+            "v": 11
+          },
+          {
+            "n": "芸術（（美食））",
+            "v": 30
+          }
+        ],
         "spoiler": false,
         "after": [],
         "spells": []
@@ -2692,41 +2336,40 @@
       "en": "ARAGUMA MOTOHARU",
       "role": "",
       "desc": "",
-      "personality": "昭和根性の貧乏大学生\n\n白黒ハッキリさせたい性格で、中途半端が嫌い……というか苦手。看過できず首を突っ込んでしまう。\nそのせいで様々な役員を押し付けられがち。自分の巻いた種なので多少無理してでも引き受ける。柔和で優しくイマドキの考え方になりたいと思いつつ、生きることに必死で余裕がない。",
-      "more": "",
+      "personality": "【昭和根性の貧乏大学生】\n\n・『昭和の頑固オヤジ』や『武士』と友人に言われがち。\n・白黒ハッキリさせたい性格で、中途半端が嫌い……というか苦手。看過できず首を突っ込んでしまう。\n・そのせいで様々な役員を押し付けられがち。自分の巻いた種なので多少無理してでも引き受ける。\n・貧乏性でなにかとケチ　な、くせに良い格好しいで金遣いが下手。\n\n・そんな自分を変えたい、柔和で優しくイマドキの考え方になりたいと思いつつ、生きることに必死で余裕がない。",
+      "more": "▼半生\n\n　・家族構成\n母、妹、弟\n（父は中学の頃に病死。仲の良い家族。\nただ、治療費でかなり家計が切迫し、その後も母の手ひとつで子供3人を育てる大変さを間近で見ているため、独り立ちしてバイト代を仕送りしている）\n\n　・学生時代〜社会人\n私立大学 　看護部　看護科\n（奨学金と、成績優秀者学費免除制度で通えている）\n人を救いたい等の高尚な理由はなく、将来はもう金銭面で苦しみたくないから。医学部より短期間で様々な国家資格を取れるため、今苦労して未来でラクをしたい。はやく稼げるようになりたい。",
       "origin": "406号室の隣人",
       "profile": {
         "kana": "あらぐま もとはる",
-        "age": "21歳",
+        "age": "21",
         "sex": "男性",
-        "height": "185cm",
-        "weight": "普通体型",
-        "job": "大学生（看護学部）",
+        "height": "185 cm",
+        "weight": "70 kg",
+        "job": "大学生",
         "birthplace": "長崎",
         "hair": "黒",
-        "eye": "灰",
+        "eye": "灰色",
         "first": "俺",
         "second": "お前",
         "birthday": "4月8日",
         "blood": "A型",
-        "likes": "洗濯\nリンゴ\n洗い物",
+        "likes": "リンゴ\n洗濯\n洗い物",
         "dislikes": "納豆\n白黒つかないこと\n洗い物以外の家事",
         "color": "#e48875",
         "extra": [],
         "traits": [
-          "",
-          ""
+          "2-5  鋭い洞察力",
+          "3-8  信頼のおける人"
         ]
       },
-      "lines": [
-        "⋯⋯気色悪い。",
-        "マトモになれよ。／それが無理なら…／はやく死ねよ。"
-      ],
+      "lines": [],
       "poses": [
         {
           "name": "立ち絵 ",
           "src": "images/c-muqaeyojtfi.png",
-          "lines": [],
+          "lines": [
+            "気持ち悪い。"
+          ],
           "faces": []
         }
       ],
@@ -2915,56 +2558,7 @@
           "name": "制服",
           "src": "images/c-muqb2ckk004.png",
           "lines": [],
-          "faces": [
-            {
-              "name": "かお",
-              "src": "images/c-mutim5zy62p.png"
-            },
-            {
-              "name": "基本",
-              "src": "images/c-mutikny8avp.png"
-            },
-            {
-              "name": "…",
-              "src": "images/c-mutiknq3okz.png"
-            },
-            {
-              "name": "あ？",
-              "src": "images/c-mutiknraf33.png"
-            },
-            {
-              "name": "おこ！",
-              "src": "images/c-mutiknsgmmz.png"
-            },
-            {
-              "name": "きらい",
-              "src": "images/c-mutikntnzed.png"
-            },
-            {
-              "name": "は…？",
-              "src": "images/c-mutiknusgvo.png"
-            },
-            {
-              "name": "はっ",
-              "src": "images/c-mutiknvy2vk.png"
-            },
-            {
-              "name": "ふーん",
-              "src": "images/c-mutiknx4lrl.png"
-            },
-            {
-              "name": "基本血",
-              "src": "images/c-mutiknzcvtd.png"
-            },
-            {
-              "name": "目逸らし",
-              "src": "images/c-mutiko0itda.png"
-            },
-            {
-              "name": "涙…",
-              "src": "images/c-mutiko1orti.png"
-            }
-          ]
+          "faces": []
         }
       ],
       "art": [],
@@ -3425,6 +3019,528 @@
         "after": [],
         "spells": []
       }
+    },
+    {
+      "id": "cmutwzkhvq2",
+      "name": "馬銜良 廉太郎",
+      "en": "HAMIRA RENTARO",
+      "role": "",
+      "desc": "",
+      "personality": "おおらかな町のお巡りさん。\n真面目だけれど融通の効くタイプ。人当たりの良い平凡な顔立ちと話し方のため、気難しい交通違反者や酔っぱらい、未成年の対応に当たることが多い。\nノーと言わない雰囲気のくせに、わりとしっかりノーと言う等、無自覚にちゃっかりしている。",
+      "more": "",
+      "origin": "あの子に発狂",
+      "profile": {
+        "kana": "はみら れんたろう",
+        "age": "26歳",
+        "sex": "男",
+        "height": "185cm",
+        "weight": "どっしり",
+        "job": "警察官",
+        "birthplace": "沖縄",
+        "hair": "黒青",
+        "eye": "青黒",
+        "first": "ジブン(勤務中)／俺",
+        "second": "お前",
+        "birthday": "7月21日",
+        "blood": "B型",
+        "likes": "蕎麦\n焼き鳥（タレ派）",
+        "dislikes": "ゴーヤ",
+        "color": "#0082c6",
+        "extra": [],
+        "traits": [
+          "2-8　芸術的才能",
+          "5-5   おおらか"
+        ]
+      },
+      "lines": [
+        "こんにちは。　今日もご苦労様です！"
+      ],
+      "poses": [
+        {
+          "name": "服立ち絵",
+          "src": "images/c-mutx1vp0inr.png",
+          "lines": [
+            "ジブンに…／拒否権ってあります…？"
+          ],
+          "faces": []
+        },
+        {
+          "name": "？",
+          "src": "images/c-mutxga4vrt5.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "むっ！",
+          "src": "images/c-mutxga7zeoj.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "ん…",
+          "src": "images/c-mutxga8zmhr.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "勘弁…",
+          "src": "images/c-mutxga9zjzt.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "焦り",
+          "src": "images/c-mutxgaaxrry.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "照れ",
+          "src": "images/c-mutxgabw0wk.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "通常",
+          "src": "images/c-mutxgacu1ld.png",
+          "lines": [],
+          "faces": []
+        }
+      ],
+      "art": [],
+      "cats": [
+        "警察"
+      ],
+      "listImg": {
+        "src": "images/c-mutxs5nim1j.png"
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [
+        {
+          "id": "umutxbco0eg",
+          "name": "中出 紫乃",
+          "relation": "恋人",
+          "owner": "",
+          "desc": "ハイパースーパービックディックエナジー",
+          "personality": "",
+          "profile": {
+            "kana": "",
+            "age": "",
+            "sex": "",
+            "height": "",
+            "weight": "",
+            "job": "",
+            "birthplace": "",
+            "hair": "",
+            "eye": "",
+            "first": "",
+            "second": "",
+            "birthday": "",
+            "blood": "",
+            "likes": "",
+            "dislikes": "",
+            "color": "",
+            "extra": [],
+            "traits": [
+              "",
+              ""
+            ]
+          },
+          "lines": [],
+          "poses": [],
+          "tags": {
+            "fusetter": [
+              "SS",
+              "R18",
+              "その他",
+              "ネタバレ無"
+            ],
+            "art": [
+              "ディスプレイ",
+              "skeb",
+              "イラスト",
+              "R18"
+            ]
+          },
+          "fusetter": [],
+          "coc": {
+            "edition": "",
+            "memo": "",
+            "source": "",
+            "stats": [],
+            "derived": [],
+            "skills": [],
+            "spells": [],
+            "spoiler": false,
+            "after": []
+          },
+          "art": []
+        }
+      ],
+      "coc": {
+        "edition": "6版",
+        "memo": "",
+        "source": "https://iachara.com/view/12329413",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 16
+          },
+          {
+            "l": "CON",
+            "v": 13
+          },
+          {
+            "l": "POW",
+            "v": 10
+          },
+          {
+            "l": "DEX",
+            "v": 9
+          },
+          {
+            "l": "APP",
+            "v": 10
+          },
+          {
+            "l": "SIZ",
+            "v": 15
+          },
+          {
+            "l": "INT",
+            "v": 11
+          },
+          {
+            "l": "EDU",
+            "v": 16
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 14,
+            "max": 14
+          },
+          {
+            "l": "MP",
+            "v": 10,
+            "max": 10
+          },
+          {
+            "l": "SAN",
+            "v": 50,
+            "max": 50
+          }
+        ],
+        "skills": [
+          {
+            "n": "目星",
+            "v": 75
+          },
+          {
+            "n": "聞き耳",
+            "v": 75
+          },
+          {
+            "n": "図書館",
+            "v": 65
+          },
+          {
+            "n": "回避",
+            "v": 48
+          },
+          {
+            "n": "こぶし（パンチ）",
+            "v": 50
+          },
+          {
+            "n": "組み付き",
+            "v": 75
+          },
+          {
+            "n": "応急手当",
+            "v": 70
+          },
+          {
+            "n": "追跡",
+            "v": 60
+          },
+          {
+            "n": "説得",
+            "v": 65
+          },
+          {
+            "n": "芸術（書道）",
+            "v": 38
+          },
+          {
+            "n": "心理学",
+            "v": 70
+          },
+          {
+            "n": "法律",
+            "v": 10
+          }
+        ],
+        "spells": [],
+        "spoiler": false,
+        "after": [
+          {
+            "name": "発情する器",
+            "onset": "",
+            "cured": "1セッション",
+            "detail": "発情や性交に関する《POW》判定に《補正-20》を得る。",
+            "more": "て堪らない。\n\nふたなりである彼女や、男性を見るとどうしても股間に目が行く。ああ、アレがほしい。",
+            "showInProfile": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "cmutxt6rn0t",
+      "name": "久白 縁",
+      "en": "KUJIRA YUKAYI",
+      "role": "",
+      "desc": "",
+      "personality": "・好奇心旺盛で、明るく朗らか。よく喋る。\n・粘り強い。人が好きな三下太鼓持ち気質。\n・ことをあらだてるのが苦手。折れたり、我慢しがち。けれどどうしても必要だと思えば、我を通す強さもある。\n（家族に1年かけて交渉し、高校進学を許して貰えた）",
+      "more": "　▼半生\n　・出生（家族構成）\n祖父、祖母、父、母、自分（他、父の弟家族6名）\n大衆演劇を営む家の長男として生まれる。\n\n・関西を拠点に巡業していたため、様々な関西弁が混ざった似非関西弁。\n・『由緒正しい』とは言うが旧いだけの貧乏家族\n・なにか有名で名を残しているわけでもない\n・典型的な『親の趣味の我儘に付き合わされる子供』の無限ループ\n\n▼学生時代（現在）\n・一座を継ぐことが生まれながらに決まっている。\n・結婚相手も決められている。10歳も上の父親が贔屓にしている旅館の娘さん。\n・推し文化がはびこる時代柄『異性役』をすると客ウケが良いため、ヒロイン役ばかりを演じさせられている。\n・稽古事や公演で忙しく、学校はほとんど早退で友達もあまりいない。学校行事にも最後まで参加したことがない。\n\n時代錯誤な大衆演劇も、なにもかもが嫌。\n毎日が嫌で仕方ない。誰かに攫って欲しい。\n",
+      "origin": "灰になってよかった",
+      "profile": {
+        "kana": "くじら ゆかり",
+        "age": "17",
+        "sex": "男",
+        "height": "180",
+        "weight": "細身",
+        "job": "高校2年生",
+        "birthplace": "関西",
+        "hair": "黒",
+        "eye": "灰",
+        "first": "ボク",
+        "second": "あなた",
+        "birthday": "6/28",
+        "blood": "A型",
+        "likes": "卵焼き（あまいやつ）\n",
+        "dislikes": "梅干し、大衆演劇",
+        "color": "#4A6B8F",
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
+      },
+      "lines": [
+        "お兄さん／ボクのこと攫ってくれはんの？"
+      ],
+      "poses": [
+        {
+          "name": "久白縁立ち絵",
+          "src": "images/c-mutxwmxu70y.png",
+          "lines": [
+            "ボクは、一緒に帰る／お友達が欲しいんです",
+            "…そないな我儘／言うたら／あきませんね"
+          ],
+          "faces": [
+            {
+              "name": "通常",
+              "src": "images/c-mutxxdrx5hq.png"
+            },
+            {
+              "name": "へら…",
+              "src": "images/c-mutxxdattsp.png"
+            },
+            {
+              "name": "じとお……",
+              "src": "images/c-mutxxd6z0lz.png"
+            },
+            {
+              "name": "基本",
+              "src": "images/c-mutxxdfyy2h.png"
+            },
+            {
+              "name": "てれてれ",
+              "src": "images/c-mutxxd8q17o.png"
+            },
+            {
+              "name": "んぐぐ",
+              "src": "images/c-mutxxdclr7w.png"
+            },
+            {
+              "name": "汗",
+              "src": "images/c-mutxxde9zki.png"
+            },
+            {
+              "name": "恐怖…",
+              "src": "images/c-mutxxdjcfdz.png"
+            },
+            {
+              "name": "苦笑い",
+              "src": "images/c-mutxxdl4qob.png"
+            },
+            {
+              "name": "青ざめ",
+              "src": "images/c-mutxxdq8x5a.png"
+            },
+            {
+              "name": "目逸らし",
+              "src": "images/c-mutxxdtnonj.png"
+            },
+            {
+              "name": "笑顔",
+              "src": "images/c-mutxxdokpip.png"
+            },
+            {
+              "name": "笑顔…",
+              "src": "images/c-mutxxdmrc2a.png"
+            },
+            {
+              "name": "泣き笑い",
+              "src": "images/c-mutxxdhn4kp.png"
+            }
+          ]
+        }
+      ],
+      "art": [],
+      "cats": [
+        "高校生"
+      ],
+      "listImg": {
+        "src": "images/c-mutydt0waar.png"
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [],
+      "coc": {
+        "edition": "6版",
+        "memo": "",
+        "source": "https://iachara.com/view/11622997",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 10
+          },
+          {
+            "l": "CON",
+            "v": 7
+          },
+          {
+            "l": "POW",
+            "v": 15
+          },
+          {
+            "l": "DEX",
+            "v": 10
+          },
+          {
+            "l": "APP",
+            "v": 18
+          },
+          {
+            "l": "SIZ",
+            "v": 14
+          },
+          {
+            "l": "INT",
+            "v": 16
+          },
+          {
+            "l": "EDU",
+            "v": 11
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 11,
+            "max": 11
+          },
+          {
+            "l": "MP",
+            "v": 15,
+            "max": 15
+          },
+          {
+            "l": "SAN",
+            "v": 75,
+            "max": 75
+          }
+        ],
+        "skills": [
+          {
+            "n": "目星",
+            "v": 80
+          },
+          {
+            "n": "聞き耳",
+            "v": 70
+          },
+          {
+            "n": "図書館",
+            "v": 80
+          },
+          {
+            "n": "回避",
+            "v": 70
+          },
+          {
+            "n": "こぶし（パンチ）",
+            "v": 50
+          },
+          {
+            "n": "キック",
+            "v": 75
+          },
+          {
+            "n": "説得",
+            "v": 75
+          },
+          {
+            "n": "オカルト",
+            "v": 50
+          },
+          {
+            "n": "芸術（舞踊）",
+            "v": 50
+          },
+          {
+            "n": "心理学",
+            "v": 85
+          },
+          {
+            "n": "芸術（演技）",
+            "v": 88
+          }
+        ],
+        "spells": [],
+        "spoiler": false,
+        "after": []
+      }
     }
   ],
   "gallery": [
@@ -3456,7 +3572,6 @@
       "title": "帳の里へようこそ",
       "date": "2026.09.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -3477,7 +3592,6 @@
       "title": "どりぃ〜むらんどへようこそ",
       "date": "2026.09.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ジュード・レオーネ (https:、app.notion.com、p、1aad914ce7e2800783d4e8b3a9b5c2f9?pvs=21)",
@@ -3498,7 +3612,6 @@
       "title": "久遠の呼び声",
       "date": "2026.09.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -3521,7 +3634,6 @@
       "title": "メイフラワーの咲く森で",
       "date": "2026.09.03",
       "system": "",
-      "role": "PL",
       "note": "たのしかったーーーーーーー！！！！\n\nどれだけ清楚なシナリオやメンバーがいても\n\n### やっぱCoCって最後は出目なんだな。\n\nこんなに穏やかでたのしくて可愛らしいシナリオ初めてでした！嬉しいことしかおこらない！\n\n参加したメンバーも穏やか清楚なメンツが揃っていたにもかかわらず全てを**”””””出目”””””**がぶち壊していくところにダイスゲームの面白さが詰まっていて、ずっと笑いが絶えないオモロ継続でした！\n\nこれ色んな人に回したい！と思えるシナリオだ〜〜〜！\n\nそう思えたのはKPまめさんのキーパリングと、PLのみなさんと遊べたおかげなので感謝感謝です！\n\nまだまだ沢山の継続予定があってうれしーー！\n\n今後も100班！よろしくお願いいたします！",
       "url": "https://accurate-dinghy-8de.notion.site/3d1d914ce7e280129e45d89b6d3988cc?source=copy_link",
       "others": "リボン・ジェリーフィッシュ (https:、app.notion.com、p、1aad914ce7e280a4a99ad5aa069ef202?pvs=21)",
@@ -3547,7 +3659,6 @@
       "title": "深夜送迎",
       "date": "2026.08.29",
       "system": "",
-      "role": "PL",
       "note": "念願のいおみつ深夜送迎！\n\nありがとうございました！\n\n**こわすぎんだろ？？？？？？？？？？？？**\n\n思っていた方向性と60000%違ったうえに、KPの演出で喚くしかできないなっさけない鳩になっていました。ありえない。こんなダーリン捨ておいて行け。\n\nシナリオは『いっそ読んじゃうか……』と思っていたので本当に！本当に！本当に！！！読まなくてよかった！！！！！！！！！！\n\nPL通過できてよかったです！！大好きだこのシナリオ！！！！！！！！改めて急なお願いにも関わらずこうして回してくださりありがとうございましたからこさん！怖たのしかったーー！\n\n様子のおかしい三月くんはこんなにも折鶴にとって怖いんだ…という新発見。毎日健やかに元気で可愛い吉野三月でいてくれ、愛してる。",
       "url": "https://accurate-dinghy-8de.notion.site/3cbd914ce7e280b189cee1278b27890f?source=copy_link",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -3575,7 +3686,6 @@
       "title": "パーフェクト・パルフェ",
       "date": "2026.08.27",
       "system": "",
-      "role": "PL",
       "note": "**みんなかわいーーーー！！！！！！！！**\n\nK9の予備日で回していただきました！\n\nりうさんありがとうございます！！！\n\nこれ…………………………………………\n\n**アニメイト予約特典別冊漫画とか！**\n\n**大人気御礼OVAアニメとか！**\n\n**スピンオフ30分ドラマだ……！**\n\n夜1でさくっと可愛くわちゃつけて幸だ！とてもとてもCUTEでした……どんどん自陣への好きと愛が深まってゆく……過去をちょっと知れたりなんかしちゃったりもして！？みんな大好きセバスワンがあれやこれやあったりして！？こんな最高ってあるかよ〜〜！\n\nまたドタバタ可愛いみんなに会えるのが楽しみです！\n\nそれでは豪華客船で会うその時まで！みなさまごきげんよう〜〜〜！！！\n\n",
       "url": "https://accurate-dinghy-8de.notion.site/3c9d914ce7e2803883f5da4853a4c333?source=copy_link",
       "others": "",
@@ -3601,7 +3711,6 @@
       "title": "K9-COLLECT.PP",
       "date": "2026.08.10",
       "system": "",
-      "role": "PL",
       "note": "# らいます。\n\n最高だった！！！！！！！！！！！何だこのシナリオ！！！！！！！！！！！！！！『このカッコイイ概要でコメディ？？？？』と通過前は頭を捻っておりましたが実際に通過してみると**紛うことなきコメディ。**キングオブコメディ。\n\nとてもゲームシナリオとしての満足感が高く、毎回『3時間でこの満足度！？』と驚いていました！疾走感とPCの掛け合い、そして**本格的な大人のキッザニアをさせてくださるのに重くなりすぎないシナリオ構成…………これ、好きや……………………………………………………**\n\n脳を灼かれると宣言された箇所ではしっっっかりと脳を灼かれむちゃくちゃになり、予定外のところでもむちゃくちゃになり、HO3が天職だと泣き叫び、喜び、とても思い出深いのは、『カッコイイ概要なのに紛うことなきコメディだ！』と思いながら駆け抜けていたのに最後にはアチアチの展開でぐしゃぐしゃに泣き崩れ、ドラマの中にいるような「…………やった…ぁ……っ」「よかった……っ」という興奮で声が震える体験をすることができました！\n\n**どんどん仲良くなっていく自陣のことがだーーーーーーいすきになるシナリオでした！**\n\nKPをしてくださった椎さん！\n\nそして共に駆け抜けてくださったPLの皆様本当にありがとうございました！\n\nまだまだもっと沢山！お仕事をするみんなの姿を見て行けたらHappyです！最高にたのしかったーーー！！！！",
       "url": "https://accurate-dinghy-8de.notion.site/K9-COLLECT-PP-3c9d914ce7e280dd92a3fe7300836554?source=copy_link",
       "others": "",
@@ -3627,7 +3736,6 @@
       "title": "勝手に死んでろ。",
       "date": "2026.08.08",
       "system": "",
-      "role": "KP",
       "note": "",
       "url": "https://app.notion.com/p/3ccd914ce7e280bc8417d4d82cfebed9?source=copy_link",
       "others": "",
@@ -3655,7 +3763,6 @@
       "title": "31FISHING",
       "date": "2026.08.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "天谷地 晴 (https:、app.notion.com、p、b73fa998f04b41b8829912e12d308994?pvs=21)",
@@ -3671,7 +3778,6 @@
       "title": "FISH FOR FISHING",
       "date": "2026.08.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -3687,7 +3793,6 @@
       "title": "406号室の隣人",
       "date": "2026.07.13",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "荒熊 元春 (https:、app.notion.com、p、3aad914ce7e280429ec3f5843c03055c?pvs=21)",
@@ -3708,7 +3813,6 @@
       "title": "可惜夜明けて此岸に伏す",
       "date": "2026.06.11",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -3731,7 +3835,6 @@
       "title": "催眠ダーリンLv1",
       "date": "2026.05.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鷽崎 朔良 (https:、app.notion.com、p、25fd914ce7e28016aa0bf04f6d7e800f?pvs=21)",
@@ -3747,7 +3850,6 @@
       "title": "お前が結婚するってマジ!?",
       "date": "2026.05.19",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "震鐘 愛逢 (https:、app.notion.com、p、324d914ce7e280dc8925c2af82f61705?pvs=21)",
@@ -3768,7 +3870,6 @@
       "title": "下ごしらえはよく揉み込んで",
       "date": "2026.05.09",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "震鐘 愛逢 (https:、app.notion.com、p、324d914ce7e280dc8925c2af82f61705?pvs=21)",
@@ -3789,7 +3890,6 @@
       "title": "こわいはなしと言ったでしょ？",
       "date": "2026.05.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "震鐘 愛逢 (https:、app.notion.com、p、324d914ce7e280dc8925c2af82f61705?pvs=21)",
@@ -3810,7 +3910,6 @@
       "title": "シェアルームイズシェアライフ",
       "date": "2026.04.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -3833,7 +3932,6 @@
       "title": "CONFLICT[]CONCERTO",
       "date": "2026.04.13",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "リボン・ジェリーフィッシュ (https:、app.notion.com、p、1aad914ce7e280a4a99ad5aa069ef202?pvs=21)",
@@ -3854,7 +3952,6 @@
       "title": "ゾディアック・スクール",
       "date": "2026.04.03",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "震鐘 愛逢 (https:、app.notion.com、p、324d914ce7e280dc8925c2af82f61705?pvs=21)",
@@ -3875,7 +3972,6 @@
       "title": "同じ空には昇れない。",
       "date": "2026.03.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "浦戸カグヤ (https:、app.notion.com、p、324d914ce7e280bd8c97f14e4987d608?pvs=21)",
@@ -3891,7 +3987,6 @@
       "title": "奇奇怪怪同好会Chapter2",
       "date": "2026.02.21",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -3912,7 +4007,6 @@
       "title": "魅惑のリンゴとお菓子な世界",
       "date": "2026.02.15",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -3935,7 +4029,6 @@
       "title": "Paranormal Crime",
       "date": "2026.02.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "シルヴェスター・S・リード (https:、app.notion.com、p、S-2edd914ce7e2802f8be3e5fcff826acd?pvs=21)",
@@ -3951,7 +4044,6 @@
       "title": "謎肉食べ食べ委員会",
       "date": "2026.01.21",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ピート・イリヤ・グッドオール (https:、app.notion.com、p、258d914ce7e280fb95dbd315a0d04034?pvs=21)",
@@ -3972,7 +4064,6 @@
       "title": "じぇーんどぅ",
       "date": "2026.01.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -3988,7 +4079,6 @@
       "title": "ぬれてにわらわ",
       "date": "2026.01.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ジュード・レオーネ (https:、app.notion.com、p、1aad914ce7e2800783d4e8b3a9b5c2f9?pvs=21)",
@@ -4009,18 +4099,10 @@
       "title": "ケソルカ",
       "date": "2025.12.29",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
-      "members": [
-        {
-          "cid": "cmuodxom57j",
-          "with": [
-            "吉野 三月"
-          ]
-        }
-      ],
+      "members": [],
       "kp": "",
       "pls": "",
       "format": "",
@@ -4032,7 +4114,6 @@
       "title": "cRocK",
       "date": "2025.12.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -4048,7 +4129,6 @@
       "title": "make ME CUTE!",
       "date": "2025.12.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "リボン・ジェリーフィッシュ (https:、app.notion.com、p、1aad914ce7e280a4a99ad5aa069ef202?pvs=21)",
@@ -4069,7 +4149,6 @@
       "title": "芋虫。",
       "date": "2025.12.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "興経 弦 (https:、app.notion.com、p、2c6d914ce7e280e986c0db8d02407b03?pvs=21)",
@@ -4085,7 +4164,6 @@
       "title": "ケソルカ",
       "date": "2025.12.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鷽崎 朔良 (https:、app.notion.com、p、25fd914ce7e28016aa0bf04f6d7e800f?pvs=21)",
@@ -4101,7 +4179,6 @@
       "title": "同窓会V",
       "date": "2025.11.14",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "水月 寿臣 (https:、app.notion.com、p、14ad914ce7e280dea1b8d94ef7e3b860?pvs=21)",
@@ -4117,7 +4194,6 @@
       "title": "放課後 フードコートに集合で！",
       "date": "2025.11.08",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -4140,7 +4216,6 @@
       "title": "ネコ忍者の襲撃！",
       "date": "2025.11.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -4161,7 +4236,6 @@
       "title": "奇奇怪怪同好会　Chapter1",
       "date": "2025.11.04",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -4184,7 +4258,6 @@
       "title": "ファーストピアスとツバキ",
       "date": "2025.10.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -4207,7 +4280,6 @@
       "title": "Escape",
       "date": "2025.10.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -4223,7 +4295,6 @@
       "title": "milkmilkcoffeemilk",
       "date": "2025.10.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "十亀 圭介 (https:、app.notion.com、p、850c6028b9324e37988333900b5543c4?pvs=21)",
@@ -4244,7 +4315,6 @@
       "title": "「きなよ」",
       "date": "2025.10.15",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -4260,7 +4330,6 @@
       "title": "英雄たちへ。",
       "date": "2025.10.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -4285,7 +4354,6 @@
       "title": "エウレカの証明",
       "date": "2025.10.05",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -4301,7 +4369,6 @@
       "title": "私立花ヶ丘高校秘密倶楽部",
       "date": "2025.09.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "app.notion.com、p、28fd914ce7e28025a573d6622896e528?pvs=21)",
@@ -4322,11 +4389,17 @@
       "title": "あの子に発狂",
       "date": "2025.08.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "馬銜良 廉太郎 (https:、app.notion.com、p、258d914ce7e280debf5ef06c43abfdff?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmutwzkhvq2",
+          "with": [
+            "中出 紫乃"
+          ]
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -4338,7 +4411,6 @@
       "title": "謎肉食べたべ委員会",
       "date": "2025.08.19",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "リボン・ジェリーフィッシュ (https:、app.notion.com、p、1aad914ce7e280a4a99ad5aa069ef202?pvs=21)",
@@ -4359,7 +4431,6 @@
       "title": "MANKISS",
       "date": "2025.08.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ピート・イリヤ・グッドオール (https:、app.notion.com、p、258d914ce7e280fb95dbd315a0d04034?pvs=21)",
@@ -4380,7 +4451,6 @@
       "title": "スイサイダルアクト",
       "date": "2025.07.29",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鷽崎 朔良 (https:、app.notion.com、p、25fd914ce7e28016aa0bf04f6d7e800f?pvs=21)",
@@ -4396,7 +4466,6 @@
       "title": "かいま視",
       "date": "2025.07.28",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "十亀 圭介 (https:、app.notion.com、p、850c6028b9324e37988333900b5543c4?pvs=21)",
@@ -4417,7 +4486,6 @@
       "title": "地獄かもしれない",
       "date": "2025.07.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鯉渕 庵司 (https:、app.notion.com、p、1f4d914ce7e280c5b4cbf2fd9fae04da?pvs=21)",
@@ -4433,7 +4501,6 @@
       "title": "クロック・クラック・ラック",
       "date": "2025.06.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -4449,11 +4516,15 @@
       "title": "灰になってよかった",
       "date": "2025.06.13",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "久白 縁 (https:、app.notion.com、p、211d914ce7e280078325eeb8217be40a?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmutxt6rn0t",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -4465,7 +4536,6 @@
       "title": "ハイドアユートピア",
       "date": "2025.06.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "リュカ・スワン・ホワイト (https:、app.notion.com、p、207d914ce7e280849ca4ed9ef8e4cfd5?pvs=21)",
@@ -4481,7 +4551,6 @@
       "title": "ネタバレなので秘密（春好）",
       "date": "2025.05.28",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "春好 美晴 (https:、app.notion.com、p、8610b66be18e46a6a2000265def8767b?pvs=21)",
@@ -4497,7 +4566,6 @@
       "title": "羅刹の檻",
       "date": "2025.05.27",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "リボン・ジェリーフィッシュ (https:、app.notion.com、p、1aad914ce7e280a4a99ad5aa069ef202?pvs=21)",
@@ -4518,7 +4586,6 @@
       "title": "環牢の無号車",
       "date": "2025.05.21",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -4534,7 +4601,6 @@
       "title": "真綿のクベース",
       "date": "2025.05.19",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "？？？ (https:、app.notion.com、p、1f8d914ce7e280a58382d08ba7b1ccfe?pvs=21)",
@@ -4550,7 +4616,6 @@
       "title": "辜月のN",
       "date": "2025.05.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鯉渕 庵司 (https:、app.notion.com、p、1f4d914ce7e280c5b4cbf2fd9fae04da?pvs=21)",
@@ -4566,7 +4631,6 @@
       "title": "GODARCA",
       "date": "2025.04.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ジュード・レオーネ (https:、app.notion.com、p、1aad914ce7e2800783d4e8b3a9b5c2f9?pvs=21)、リボン・ジェリーフィッシュ (https:、app.notion.com、p、1aad914ce7e280a4a99ad5aa069ef202?pvs=21)",
@@ -4591,7 +4655,6 @@
       "title": "DRAWING・UR・PARK",
       "date": "2025.03.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "水月 寿臣 (https:、app.notion.com、p、14ad914ce7e280dea1b8d94ef7e3b860?pvs=21)",
@@ -4607,7 +4670,6 @@
       "title": "水月兄弟継続",
       "date": "2025.02.22",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "水月 寿臣 (https:、app.notion.com、p、14ad914ce7e280dea1b8d94ef7e3b860?pvs=21)",
@@ -4623,7 +4685,6 @@
       "title": "773",
       "date": "2025.02.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "宇佐木 隼人 (https:、app.notion.com、p、138d914ce7e2805b9281db2e59db47be?pvs=21)",
@@ -4639,7 +4700,6 @@
       "title": "名前を呼ぶ度KPCが絶頂する部屋",
       "date": "2025.02.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "芥生 秀治 (https:、app.notion.com、p、184d914ce7e280e7a3e8cd44a62f47b3?pvs=21)",
@@ -4655,7 +4715,6 @@
       "title": "キブンゼ",
       "date": "2025.02.04",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "酢橘 朔太郎 (https:、app.notion.com、p、190d914ce7e280429581efeda5d8b958?pvs=21)",
@@ -4671,7 +4730,6 @@
       "title": "The Hog Game",
       "date": "2025.01.25",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "水月 寿臣 (https:、app.notion.com、p、14ad914ce7e280dea1b8d94ef7e3b860?pvs=21)",
@@ -4687,7 +4745,6 @@
       "title": "先生、もう僕達しかいませんよ。",
       "date": "2025.01.21",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "芥生 秀治 (https:、app.notion.com、p、184d914ce7e280e7a3e8cd44a62f47b3?pvs=21)",
@@ -4703,7 +4760,6 @@
       "title": "ピリオド・アズール",
       "date": "2025.01.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "水月 寿臣 (https:、app.notion.com、p、14ad914ce7e280dea1b8d94ef7e3b860?pvs=21)",
@@ -4719,7 +4775,6 @@
       "title": "君の胴",
       "date": "2025.01.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "居加 幸太郎 (https:、app.notion.com、p、4e5a392855f74e9ca684d56b4de1e846?pvs=21)",
@@ -4735,7 +4790,6 @@
       "title": "038",
       "date": "2025.01.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "早乙女 兎姫 (https:、app.notion.com、p、138d914ce7e2808a8f28c57b3e04ddfc?pvs=21)",
@@ -4751,7 +4805,6 @@
       "title": "あしの下でねむる",
       "date": "2024.12.28",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "浅倉 大洋 (https:、app.notion.com、p、7a9dcbb2f071447ab40f73a74995286e?pvs=21)",
@@ -4767,7 +4820,6 @@
       "title": "Hello new world",
       "date": "2024.12.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "酢橘 朔太郎 (https:、app.notion.com、p、190d914ce7e280429581efeda5d8b958?pvs=21)",
@@ -4783,7 +4835,6 @@
       "title": "1:15",
       "date": "2024.12.15",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鶴来 繍 (https:、app.notion.com、p、144d914ce7e280f8870efc5c2488cb65?pvs=21)",
@@ -4799,7 +4850,6 @@
       "title": "OC×On",
       "date": "2024.12.14",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鶴来 繍 (https:、app.notion.com、p、144d914ce7e280f8870efc5c2488cb65?pvs=21)",
@@ -4815,7 +4865,6 @@
       "title": "ケソルカ",
       "date": "2024.11.28",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "生島 桜琉 (https:、app.notion.com、p、136d914ce7e280f395dcee306bfa89bf?pvs=21)",
@@ -4831,7 +4880,6 @@
       "title": "夜明けのカーテンコール",
       "date": "2024.11.26",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "黄河 琥珀 (https:、app.notion.com、p、136d914ce7e28055981eef5e26095456?pvs=21)",
@@ -4847,7 +4895,6 @@
       "title": "先生、もう僕達しかいませんよ。",
       "date": "2024.10.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "生島 桜琉 (https:、app.notion.com、p、136d914ce7e280f395dcee306bfa89bf?pvs=21)",
@@ -4863,7 +4910,6 @@
       "title": "ブレスレス・ゲーム",
       "date": "2024.08.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "四條 白 (https:、app.notion.com、p、136d914ce7e28068a850f3c437878bff?pvs=21)",
@@ -4879,7 +4925,6 @@
       "title": "幸福なコウモリ",
       "date": "2024.07.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "紺野 天和 (https:、app.notion.com、p、6eed5fba8ad34ac19656de3bb59fd210?pvs=21)",
@@ -4895,7 +4940,6 @@
       "title": "うえからでられない",
       "date": "2024.05.16",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "甘崎 (https:、app.notion.com、p、a6ed78982c964dafb0f2cd5b7ec3cd7d?pvs=21)",
@@ -4911,7 +4955,6 @@
       "title": "おひとりさまデストラップダンジョン",
       "date": "2024.05.11",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "甘崎 辰巳 (https:、app.notion.com、p、b83d764309ba460f84e0beed6ef2b94b?pvs=21)",
@@ -4927,7 +4970,6 @@
       "title": "ヤゼル",
       "date": "2024.01.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "空久保 蛍 (https:、app.notion.com、p、c2f70f7e469848ff8b60b3768b999c51?pvs=21)",
@@ -4943,7 +4985,6 @@
       "title": "怪物α",
       "date": "2023.12.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "レビ・パンテーラ (https:、app.notion.com、p、fcd370d9495d4c8c9e02c59379e2aec6?pvs=21)",
@@ -4959,7 +5000,6 @@
       "title": "ケソルカ",
       "date": "2023.12.03",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "十亀 圭介 (https:、app.notion.com、p、850c6028b9324e37988333900b5543c4?pvs=21)",
@@ -4980,7 +5020,6 @@
       "title": "勝手に死んでろ",
       "date": "2023.10.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "十亀 圭介 (https:、app.notion.com、p、850c6028b9324e37988333900b5543c4?pvs=21)",
@@ -5001,7 +5040,6 @@
       "title": "31LOCKERs",
       "date": "2023.10.14",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "土岐 美咲 (https:、app.notion.com、p、97cadf9684e141f2b6caaff949c4b115?pvs=21)",
@@ -5017,7 +5055,6 @@
       "title": "Freak",
       "date": "2023.10.09",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "灰江 夏彦 (https:、app.notion.com、p、101a98389863437d94e04ee52ac46aae?pvs=21)",
@@ -5033,7 +5070,6 @@
       "title": "終焉賛歌救済論≒EF-Elyfine-",
       "date": "2023.10.08",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5049,7 +5085,6 @@
       "title": "かいぶつたちとマホラカルト",
       "date": "2023.06.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鬼 (https:、app.notion.com、p、c62097d37f7a468e82da69b9be43d734?pvs=21)",
@@ -5065,7 +5100,6 @@
       "title": "英雄たちのフェルンヴェー",
       "date": "2023.05.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "勒生 (https:、app.notion.com、p、1c79539a1d474dfd948c94ecba154207?pvs=21)",
@@ -5081,7 +5115,6 @@
       "title": "ネタバレなので秘密（丹羽）",
       "date": "2023.04.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "丹羽 桔平 (https:、app.notion.com、p、2d30a78730814276b566b385d5763489?pvs=21)",
@@ -5097,7 +5130,6 @@
       "title": "機械は慈悲を知らない",
       "date": "2023.04.03",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "土岐 美咲 (https:、app.notion.com、p、97cadf9684e141f2b6caaff949c4b115?pvs=21)",
@@ -5113,7 +5145,6 @@
       "title": "解剖侵処",
       "date": "2023.04.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "土岐 美咲 (https:、app.notion.com、p、97cadf9684e141f2b6caaff949c4b115?pvs=21)",
@@ -5129,7 +5160,6 @@
       "title": "雨惑",
       "date": "2023.03.22",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "知多 渉 (https:、app.notion.com、p、6fa5f5d0934b4d6fa39d5af76aa87482?pvs=21)",
@@ -5145,7 +5175,6 @@
       "title": "機械は慈悲を知らない",
       "date": "2023.02.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -5161,7 +5190,6 @@
       "title": "自涜の手引き",
       "date": "2023.02.19",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "宇鷹 春哉 (https:、app.notion.com、p、f60d9851666542bb898c900ba975a2cf?pvs=21)",
@@ -5177,7 +5205,6 @@
       "title": "誘う昏がり",
       "date": "2023.02.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -5193,7 +5220,6 @@
       "title": "先生、もう僕達しかいませんよ",
       "date": "2023.01.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "紺野 天和 (https:、app.notion.com、p、6eed5fba8ad34ac19656de3bb59fd210?pvs=21)",
@@ -5209,7 +5235,6 @@
       "title": "ようこそ！迷冥市役所都市伝説課へ！",
       "date": "2023.01.09",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鶺鴒 (https:、app.notion.com、p、11d749b94f3f4d6e9063b6766a719c93?pvs=21)",
@@ -5225,7 +5250,6 @@
       "title": "膿み堕とし",
       "date": "2023.01.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "春好 美晴 (https:、app.notion.com、p、8610b66be18e46a6a2000265def8767b?pvs=21)",
@@ -5241,7 +5265,6 @@
       "title": "付き合ってはいけない",
       "date": "2023.01.05",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "伊良子 貴楽 (https:、app.notion.com、p、d25f4252f9814bca9f887b0fc4c3bef9?pvs=21)",
@@ -5257,7 +5280,6 @@
       "title": "Lou Tenet Proe!",
       "date": "2022.12.29",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "難波 元良 (https:、app.notion.com、p、7825f2be5a3447bdab0a69b91bb8a303?pvs=21)、北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)、北辻 満波 (https:、app.notion.com、p、175f826f1ba34e1b878e3f550e742db3?pvs=21)",
@@ -5273,7 +5295,6 @@
       "title": "グラトニーの心臓",
       "date": "2022.12.04",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "難波 元良 (https:、app.notion.com、p、7825f2be5a3447bdab0a69b91bb8a303?pvs=21)",
@@ -5289,7 +5310,6 @@
       "title": "クロック・クラック・ラック",
       "date": "2022.11.28",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5305,7 +5325,6 @@
       "title": "void",
       "date": "2022.11.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "勒生 (https:、app.notion.com、p、1c79539a1d474dfd948c94ecba154207?pvs=21)",
@@ -5321,7 +5340,6 @@
       "title": "つぎはぎロマンス",
       "date": "2022.11.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5337,7 +5355,6 @@
       "title": "どちらかが死ぬ",
       "date": "2022.11.13",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5353,7 +5370,6 @@
       "title": "ネタバレなので秘密（蜂須賀）",
       "date": "2022.10.26",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "蜂須賀 芽女 (https:、app.notion.com、p、31310a4ff07c4f4fb1083db32d71cca3?pvs=21)",
@@ -5369,7 +5385,6 @@
       "title": "地球三個分の婚約指輪",
       "date": "2022.10.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北辻 満波 (https:、app.notion.com、p、175f826f1ba34e1b878e3f550e742db3?pvs=21)",
@@ -5385,7 +5400,6 @@
       "title": "紙魚のうた",
       "date": "2022.10.16",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5401,7 +5415,6 @@
       "title": "淫暑に蝉籠",
       "date": "2022.10.10",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -5417,7 +5430,6 @@
       "title": "タイトル秘匿",
       "date": "2022.10.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "宇鷹 春哉 (https:、app.notion.com、p、f60d9851666542bb898c900ba975a2cf?pvs=21)",
@@ -5433,7 +5445,6 @@
       "title": "大量受９悩処",
       "date": "2022.10.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -5449,7 +5460,6 @@
       "title": "第██問",
       "date": "2022.10.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -5465,7 +5475,6 @@
       "title": "新シキ世界／アウター・プロトコル",
       "date": "2022.10.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "仁科 夏智 (https:、app.notion.com、p、f53ab164cfb94cdfb8b6390401a4600d?pvs=21)",
@@ -5481,7 +5490,6 @@
       "title": "クロッカスはリナリアを見ない",
       "date": "2022.09.25",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "尾鈴木 一途 (https:、app.notion.com、p、8ae67d4b8bc842ad92df6287f5e38241?pvs=21)",
@@ -5497,7 +5505,6 @@
       "title": "それでは苦痛をはじめます。",
       "date": "2022.09.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -5513,7 +5520,6 @@
       "title": "HELLO HERO",
       "date": "2022.09.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "花隈 陽朗 (https:、app.notion.com、p、233c5e19a6ec46a08ce55039e5072afd?pvs=21)",
@@ -5529,7 +5535,6 @@
       "title": "同窓会",
       "date": "2022.09.04",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -5545,7 +5550,6 @@
       "title": "ロスタイム・ブギダンス",
       "date": "2022.08.31",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -5561,7 +5565,6 @@
       "title": "ネタバレなので秘密",
       "date": "2022.08.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北辻 満波 (https:、app.notion.com、p、175f826f1ba34e1b878e3f550e742db3?pvs=21)、北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -5577,7 +5580,6 @@
       "title": "シンデレラノイズ",
       "date": "2022.08.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "グレイ・ナイトジャー (https:、app.notion.com、p、f846f8bae8e24e28afd83c6cf627d535?pvs=21)",
@@ -5593,7 +5595,6 @@
       "title": "メルヒェン メルヒェン",
       "date": "2022.08.05",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "リュコス・アガット (https:、app.notion.com、p、e12ab243890a4659b853e2fe0b43fed2?pvs=21)",
@@ -5609,7 +5610,6 @@
       "title": "Good  morning ALL",
       "date": "2022.07.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "瓶尾 玲臣 (https:、app.notion.com、p、e5a9c482637e42dfaa52cf9ac36fd008?pvs=21)",
@@ -5625,7 +5625,6 @@
       "title": "凸凹！～ダメな大人と近所のロリショタ～",
       "date": "2022.07.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "斑目 勝敏 (https:、app.notion.com、p、5a9651328319477cb4daebc80275a696?pvs=21)",
@@ -5641,7 +5640,6 @@
       "title": "壊胎",
       "date": "2022.07.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "市前 永政 (https:、app.notion.com、p、713036e013ae42b29f22de0076feba79?pvs=21)",
@@ -5657,7 +5655,6 @@
       "title": "フカシカ▲▲▲",
       "date": "2022.07.11",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "佐久間 望 (https:、app.notion.com、p、b36547c43b694c65b90c38f79f858649?pvs=21)",
@@ -5673,7 +5670,6 @@
       "title": "navigator",
       "date": "2022.07.10",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "波問ヨミ (https:、app.notion.com、p、6a924754919945e680707ee4080879c3?pvs=21)",
@@ -5689,7 +5685,6 @@
       "title": "アルストゥリティック・ラブ",
       "date": "2022.07.05",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鯱久 実勒 (https:、app.notion.com、p、c90749d180dc4cab81466531cc4e367f?pvs=21)",
@@ -5705,7 +5700,6 @@
       "title": "アシッドバッツにコカイーナ",
       "date": "2022.07.04",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -5721,7 +5715,6 @@
       "title": "とある家",
       "date": "2022.07.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "丹羽 桔平 (https:、app.notion.com、p、2d30a78730814276b566b385d5763489?pvs=21)",
@@ -5737,7 +5730,6 @@
       "title": "片恋性リマ症候群",
       "date": "2022.06.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "難波 元良 (https:、app.notion.com、p、7825f2be5a3447bdab0a69b91bb8a303?pvs=21)",
@@ -5753,7 +5745,6 @@
       "title": "純愛性リマ症候群",
       "date": "2022.06.05",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "難波 元良 (https:、app.notion.com、p、7825f2be5a3447bdab0a69b91bb8a303?pvs=21)",
@@ -5769,7 +5760,6 @@
       "title": "晩夏の聖処女 改メ",
       "date": "2022.06.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "安宮 世鳥 (https:、app.notion.com、p、fcf0901fd2754b3db78d9c2b59e36a03?pvs=21)",
@@ -5785,7 +5775,6 @@
       "title": "餞",
       "date": "2022.06.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5801,7 +5790,6 @@
       "title": "夢獄",
       "date": "2022.05.28",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5817,7 +5805,6 @@
       "title": "ひとかわむいたら",
       "date": "2022.05.11",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鯱久 実勒 (https:、app.notion.com、p、c90749d180dc4cab81466531cc4e367f?pvs=21)",
@@ -5833,7 +5820,6 @@
       "title": "rat little rat",
       "date": "2022.05.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鰐口 宵子 (https:、app.notion.com、p、296a3874f6514f719cf498e5e6967e24?pvs=21)",
@@ -5849,7 +5835,6 @@
       "title": "初恋性ストックホルム症候群",
       "date": "2022.05.04",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5865,7 +5850,6 @@
       "title": "Hand out Hand over",
       "date": "2022.04.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "語部 虎治 (https:、app.notion.com、p、4504bab7a44d4330a63937742ef1e40b?pvs=21)",
@@ -5881,7 +5865,6 @@
       "title": "カタシロ",
       "date": "2022.04.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5897,7 +5880,6 @@
       "title": "オーダーメイド",
       "date": "2022.04.19",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5913,7 +5895,6 @@
       "title": "怖いお兄さんは好きですか？",
       "date": "2022.04.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5929,7 +5910,6 @@
       "title": "ソープスクール",
       "date": "2022.04.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "紺野 天和 (https:、app.notion.com、p、6eed5fba8ad34ac19656de3bb59fd210?pvs=21)",
@@ -5945,7 +5925,6 @@
       "title": "虫虫虫",
       "date": "2022.03.29",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "初春 鴻志 (https:、app.notion.com、p、e83e85a689964c8ba2293ebaf1451322?pvs=21)",
@@ -5961,7 +5940,6 @@
       "title": "ドロディス",
       "date": "2022.03.28",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5977,7 +5955,6 @@
       "title": "夢獄",
       "date": "2022.03.22",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -5993,7 +5970,6 @@
       "title": "女王が食むは、強欲であれ。",
       "date": "2022.03.21",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6009,7 +5985,6 @@
       "title": "×ックスしないと殺される部屋",
       "date": "2022.03.19",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "佐久間 望 (https:、app.notion.com、p、b36547c43b694c65b90c38f79f858649?pvs=21)",
@@ -6025,7 +6000,6 @@
       "title": "KPCが猫拾ったって言ってるけどどう見ても猫じゃない件",
       "date": "2022.03.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -6041,7 +6015,6 @@
       "title": "Midnight pool",
       "date": "2022.03.13",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -6057,7 +6030,6 @@
       "title": "忘却のゴミヶ原",
       "date": "2022.03.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "浅倉 大洋 (https:、app.notion.com、p、7a9dcbb2f071447ab40f73a74995286e?pvs=21)",
@@ -6073,7 +6045,6 @@
       "title": "不眠怪異聞",
       "date": "2022.02.22",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "栗花落 桃狗 (https:、app.notion.com、p、de3b8d1e06dd410580e7775e1e863127?pvs=21)",
@@ -6089,7 +6060,6 @@
       "title": "片鱗",
       "date": "2022.02.21",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "宇崎 陽乃 (https:、app.notion.com、p、9ccd162c3f0c4aa9b82dc43cbfee24ad?pvs=21)",
@@ -6105,7 +6075,6 @@
       "title": "真綿のクベース",
       "date": "2022.02.14",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6121,7 +6090,6 @@
       "title": "リラが枯れる頃",
       "date": "2022.02.13",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -6137,7 +6105,6 @@
       "title": "桐と枸櫞",
       "date": "2022.02.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6153,7 +6120,6 @@
       "title": "甘に宿鳥",
       "date": "2022.01.30",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -6169,7 +6135,6 @@
       "title": "舐薬",
       "date": "2022.01.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "宇鷹 春哉 (https:、app.notion.com、p、f60d9851666542bb898c900ba975a2cf?pvs=21)",
@@ -6185,7 +6150,6 @@
       "title": "狂気の沙汰で穴二つ",
       "date": "2022.01.16",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "李 龍 (https:、app.notion.com、p、80d76e0377e641f1928f1422dc7098c9?pvs=21)",
@@ -6201,7 +6165,6 @@
       "title": "スーサイデッドメアリンク",
       "date": "2022.01.11",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6217,7 +6180,6 @@
       "title": "終焉賛歌救済論≒ef─elyfine─",
       "date": "2021.12.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6233,7 +6195,6 @@
       "title": "華色幸福論",
       "date": "2021.12.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6249,7 +6210,6 @@
       "title": "くねくね",
       "date": "2021.12.11",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "初春 鴻志 (https:、app.notion.com、p、e83e85a689964c8ba2293ebaf1451322?pvs=21)",
@@ -6265,7 +6225,6 @@
       "title": "ラズラバ",
       "date": "2021.12.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "狐狗狸 三 (https:、app.notion.com、p、7d2b597cccdc4e9ebaf332fb5e9c148d?pvs=21)",
@@ -6281,7 +6240,6 @@
       "title": "新シキ世界・アウタープロトコル",
       "date": "2021.12.05",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6297,7 +6255,6 @@
       "title": "脱獄は乙女の嗜み",
       "date": "2021.12.03",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "安心院 莉鶴 (https:、app.notion.com、p、d074e7125bfc48609bb492e0375aa014?pvs=21)",
@@ -6313,7 +6270,6 @@
       "title": "ハッピーすきすきラブルーム",
       "date": "2021.12.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "難波 元良 (https:、app.notion.com、p、7825f2be5a3447bdab0a69b91bb8a303?pvs=21)",
@@ -6329,7 +6285,6 @@
       "title": "初恋性ストックホルム症候群",
       "date": "2021.11.27",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "難波 元良 (https:、app.notion.com、p、7825f2be5a3447bdab0a69b91bb8a303?pvs=21)",
@@ -6345,7 +6300,6 @@
       "title": "マフィア珍道中",
       "date": "2021.11.25",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "リリィ・オルカ (https:、app.notion.com、p、460b8f63e7b04cd3be6679e7cbd5d08c?pvs=21)",
@@ -6361,7 +6315,6 @@
       "title": "烏有館殺人事件",
       "date": "2021.11.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6377,7 +6330,6 @@
       "title": "虜",
       "date": "2021.11.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6393,7 +6345,6 @@
       "title": "魅惑のリンゴとお菓子な世界",
       "date": "2021.11.10",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6409,7 +6360,6 @@
       "title": "誰がロックを殺すのか",
       "date": "2021.11.09",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
@@ -6425,7 +6375,6 @@
       "title": "ドロップアウト・ディスパイア",
       "date": "2021.10.31",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6441,7 +6390,6 @@
       "title": "腐乱腐乱",
       "date": "2021.10.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "牛若 真太郎 (https:、app.notion.com、p、83c6cd35409643088778d3b16999134a?pvs=21)",
@@ -6457,7 +6405,6 @@
       "title": "刹夏",
       "date": "2021.10.19",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "笹川 花鮇 (https:、app.notion.com、p、a1f9b5bcb9c64993b42054f0470c51ee?pvs=21)",
@@ -6473,7 +6420,6 @@
       "title": "マフィア珍道中",
       "date": "2021.10.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6489,7 +6435,6 @@
       "title": "エンジェル・デビル・インプロパー",
       "date": "2021.10.11",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鯱久 実勒 (https:、app.notion.com、p、c90749d180dc4cab81466531cc4e367f?pvs=21)",
@@ -6505,7 +6450,6 @@
       "title": "ジャンヌの猟犬",
       "date": "2021.09.16",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ルーヴ・ヴォルビリス (https:、app.notion.com、p、1024a010d46741338dc87cb161141d63?pvs=21)",
@@ -6521,7 +6465,6 @@
       "title": "Alice in break story",
       "date": "2021.09.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "主人 公 (https:、app.notion.com、p、3459bc6c0f2b412c90697359deb7e6f0?pvs=21)",
@@ -6537,7 +6480,6 @@
       "title": "LCCより愛をこめて",
       "date": "2021.09.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ヴァニラ・メルクーリオ (https:、app.notion.com、p、7d8c797c756c458c832fd3f1ff122159?pvs=21)",
@@ -6553,7 +6495,6 @@
       "title": "紡命論とシンギュラリティ",
       "date": "2021.08.10",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6569,7 +6510,6 @@
       "title": "魔女に捧げるアンプロンプチュ",
       "date": "2021.07.05",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "隠神 太郎 (https:、app.notion.com、p、4aceda40cc0449aeacb31f3ebb94a649?pvs=21)、鵺倉 未知子 (https:、app.notion.com、p、842455a2b3b44a769b621d1366a8ca5d?pvs=21)",
@@ -6585,7 +6525,6 @@
       "title": "晩夏の聖処女",
       "date": "2021.06.23",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "希林 ハイネ (https:、app.notion.com、p、f3d9065ce01a47238e4a383dec317072?pvs=21)",
@@ -6601,7 +6540,6 @@
       "title": "新シキ世界／アウター・プロトコル",
       "date": "2021.06.19",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "蜂須賀 芽女 (https:、app.notion.com、p、31310a4ff07c4f4fb1083db32d71cca3?pvs=21)",
@@ -6617,7 +6555,6 @@
       "title": "彼は誰時に逢いましょう",
       "date": "2021.06.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "足利 道真 (https:、app.notion.com、p、e015af4617f1428d81846044211a6446?pvs=21)",
@@ -6633,7 +6570,6 @@
       "title": "久遠の呼び声",
       "date": "2021.06.07",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "斑鳩 文 (https:、app.notion.com、p、8e6efc3c5cf045feb05f93bd2b1536d0?pvs=21)",
@@ -6649,7 +6585,6 @@
       "title": "破顔",
       "date": "2021.06.06",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "甘崎 辰巳 (https:、app.notion.com、p、b83d764309ba460f84e0beed6ef2b94b?pvs=21)",
@@ -6665,7 +6600,6 @@
       "title": "灰色の犀",
       "date": "2021.06.05",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鮫島 直也 (https:、app.notion.com、p、92b444d04ede43ed9d40ed35e0ac7d84?pvs=21)",
@@ -6681,7 +6615,6 @@
       "title": "同居人",
       "date": "2021.05.13",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "金猫 朔良 (https:、app.notion.com、p、8cd852fc8ae34c70806c29bd2ace73ac?pvs=21)",
@@ -6697,7 +6630,6 @@
       "title": "愛飢ヲワル",
       "date": "2021.05.09",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鹿山 一華 (https:、app.notion.com、p、7678aa43234447ecba3917b99aba5fc3?pvs=21)",
@@ -6713,7 +6645,6 @@
       "title": "魅惑のリンゴとお菓子な世界",
       "date": "2021.04.29",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6729,7 +6660,6 @@
       "title": "十二星座館 殺人事件",
       "date": "2021.04.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ハオ・Z・サジタリウス (https:、app.notion.com、p、Z-9b25411913e94ef5907e205cfa75cc15?pvs=21)",
@@ -6745,7 +6675,6 @@
       "title": "つぎはぎロマンス（ゆきかけ）",
       "date": "2021.04.14",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "井本 架流 (https:、app.notion.com、p、e37c563d8cde4004b2e71a055195a940?pvs=21)",
@@ -6761,7 +6690,6 @@
       "title": "庭師は何を口遊む。",
       "date": "2021.03.16",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6777,7 +6705,6 @@
       "title": "魔法少女オレガ★マサカ",
       "date": "2021.03.04",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鮫島 仁兵衛 (https:、app.notion.com、p、a07a1f95dcbe4e53a59b5e7559436901?pvs=21)",
@@ -6793,7 +6720,6 @@
       "title": "静穏の子ら",
       "date": "2021.02.26",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6809,7 +6735,6 @@
       "title": "烏有館事件",
       "date": "2021.02.22",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6825,7 +6750,6 @@
       "title": "黄昏回廊",
       "date": "2021.02.13",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6841,7 +6765,6 @@
       "title": "崩れたケーキで息を死体",
       "date": "2021.01.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "山口喜虎 (https:、app.notion.com、p、7e9cebbd70dc46e498cb24b88c879fa0?pvs=21)",
@@ -6857,7 +6780,6 @@
       "title": "んがまだんぎな",
       "date": "2020.12.25",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鮫島 直也 (https:、app.notion.com、p、92b444d04ede43ed9d40ed35e0ac7d84?pvs=21)",
@@ -6873,7 +6795,6 @@
       "title": "庭師は何を口遊む",
       "date": "2020.12.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6889,7 +6810,6 @@
       "title": "心臓がちょっと早く動くだけ",
       "date": "2020.12.15",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6905,7 +6825,6 @@
       "title": "AND HAND",
       "date": "2020.10.26",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "花田 獅丸 (https:、app.notion.com、p、49293571bf704e308bc2d80d2ef5ed6a?pvs=21)",
@@ -6921,7 +6840,6 @@
       "title": "命短し愛せやお止",
       "date": "2020.08.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "牛若 真太郎 (https:、app.notion.com、p、83c6cd35409643088778d3b16999134a?pvs=21)",
@@ -6937,7 +6855,6 @@
       "title": "迷いの先にある選択",
       "date": "2019.12.02",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6953,7 +6870,6 @@
       "title": "嗤う人間師",
       "date": "2019.10.29",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "ラヴィ•フィーマン (https:、app.notion.com、p、79d928078dbe451090190e8d40d2c719?pvs=21)",
@@ -6969,7 +6885,6 @@
       "title": "紡命論とシンギュラリティ",
       "date": "2019.09.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -6985,7 +6900,6 @@
       "title": "この手にナイフをあなたに× を",
       "date": "2019.07.26",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "萩原 彩魚 (https:、app.notion.com、p、fc2492dca0c34c1d92d32c821188b04c?pvs=21)",
@@ -7001,7 +6915,6 @@
       "title": "サイコメイズ",
       "date": "2019.01.25",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "高森 明夫 (https:、app.notion.com、p、536a2899b7b243e1a9a26cb5f7183b6d?pvs=21)",
@@ -7017,7 +6930,6 @@
       "title": "罪業シリーズ",
       "date": "2019.01.09",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鰐口 宵子 (https:、app.notion.com、p、296a3874f6514f719cf498e5e6967e24?pvs=21)",
@@ -7033,7 +6945,6 @@
       "title": "Life GOES on",
       "date": "2018.12.16",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "亀田 金太郎 (https:、app.notion.com、p、53d0e5a2aa434b809b8f34e029d11637?pvs=21)",
@@ -7049,7 +6960,6 @@
       "title": "シナリオタイトル",
       "date": "2018.12.16",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7065,7 +6975,6 @@
       "title": "そして《O》へ還る",
       "date": "2018.12.10",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7081,7 +6990,6 @@
       "title": "ヒガンの君へ",
       "date": "2018.12.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鮫島 直也 (https:、app.notion.com、p、92b444d04ede43ed9d40ed35e0ac7d84?pvs=21)",
@@ -7097,7 +7005,6 @@
       "title": "ネタバレなので秘密",
       "date": "2018.11.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "雀野 結 (https:、app.notion.com、p、5ea7ea3e13574f4699ba6cb847d2b218?pvs=21)、エミル・クレーエ (https:、app.notion.com、p、5a95df5bfedb4eaba2b177f330694a15?pvs=21)",
@@ -7113,7 +7020,6 @@
       "title": "殺人裁判",
       "date": "2018.11.09",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "居加 幸太郎 (https:、app.notion.com、p、4e5a392855f74e9ca684d56b4de1e846?pvs=21)",
@@ -7129,7 +7035,6 @@
       "title": "扼痕",
       "date": "2018.11.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "居加 幸太郎 (https:、app.notion.com、p、4e5a392855f74e9ca684d56b4de1e846?pvs=21)",
@@ -7145,7 +7050,6 @@
       "title": "誰がウサギを食べたのか？",
       "date": "2018.10.14",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7161,7 +7065,6 @@
       "title": "魔女の夢の終わりに",
       "date": "2018.08.12",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7177,7 +7080,6 @@
       "title": "私の愛した探偵",
       "date": "2018.08.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7193,7 +7095,6 @@
       "title": "手紙の宛先は遥か",
       "date": "2018.07.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "李 龍 (https:、app.notion.com、p、80d76e0377e641f1928f1422dc7098c9?pvs=21)",
@@ -7209,7 +7110,6 @@
       "title": "蠢く島",
       "date": "2018.01.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "根住 千夏 (https:、app.notion.com、p、b8d7dcd3930a463684dc21f59498cb74?pvs=21)",
@@ -7225,7 +7125,6 @@
       "title": "いあいあ！夢叶学園！",
       "date": "2017.12.18",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "倉華 遊助 (https:、app.notion.com、p、d8e38480f8fc48d0bcc871ee0c8cc40a?pvs=21)",
@@ -7241,7 +7140,6 @@
       "title": "家の中を歩いてみよう。",
       "date": "2017.11.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "牛若 真太郎 (https:、app.notion.com、p、83c6cd35409643088778d3b16999134a?pvs=21)",
@@ -7257,7 +7155,6 @@
       "title": "十月は黄昏の国",
       "date": "2017.10.26",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "甘崎 辰巳 (https:、app.notion.com、p、b83d764309ba460f84e0beed6ef2b94b?pvs=21)",
@@ -7273,7 +7170,6 @@
       "title": "月が綺麗なので",
       "date": "2017.07.03",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "鹿山 一華 (https:、app.notion.com、p、7678aa43234447ecba3917b99aba5fc3?pvs=21)",
@@ -7289,7 +7185,6 @@
       "title": "砂糖菓子七つ",
       "date": "2017.06.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "日辻 純 (https:、app.notion.com、p、aefc70e034a04ba59c6f11a15dc1a5ae?pvs=21)",
@@ -7305,7 +7200,6 @@
       "title": "『　』～だから、２人の世界は～",
       "date": "2017.05.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7321,7 +7215,6 @@
       "title": "闇を行く者達の宴",
       "date": "2017.04.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "花田 獅丸 (https:、app.notion.com、p、49293571bf704e308bc2d80d2ef5ed6a?pvs=21)",
@@ -7337,7 +7230,6 @@
       "title": "魔術師はBARにいる",
       "date": "2017.04.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "蛙野 撫子 (https:、app.notion.com、p、7ccda17eaf8848bcadedc3dfcbde43c5?pvs=21)",
@@ -7353,7 +7245,6 @@
       "title": "gokou",
       "date": "2017.04.08",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "甘崎 辰巳 (https:、app.notion.com、p、b83d764309ba460f84e0beed6ef2b94b?pvs=21)",
@@ -7369,7 +7260,6 @@
       "title": "沼男は誰だ？",
       "date": "2017.03.09",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "吉根 元春 (https:、app.notion.com、p、33de2f82e363433884741e3d2e8e34a2?pvs=21)",
@@ -7385,7 +7275,6 @@
       "title": "毒入りスープ",
       "date": "2016.11.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "亀田 金太郎 (https:、app.notion.com、p、53d0e5a2aa434b809b8f34e029d11637?pvs=21)",
@@ -7401,7 +7290,6 @@
       "title": "アオのあなたへ",
       "date": "2016.11.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "マダガスカル宇佐子 (https:、app.notion.com、p、ce4d40b738994245abadd4c20acdf24d?pvs=21)",
@@ -7417,7 +7305,6 @@
       "title": "うちのパパしりませんか？",
       "date": "2016.09.24",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "雀野 結 (https:、app.notion.com、p、5ea7ea3e13574f4699ba6cb847d2b218?pvs=21)",
@@ -7433,7 +7320,6 @@
       "title": "終わりなき病の処方箋",
       "date": "2016.09.01",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "田貫 陽太 (https:、app.notion.com、p、f484d66d489641938bb4dfa892ddf803?pvs=21)",
@@ -7449,7 +7335,6 @@
       "title": "ゲームは一日一時間",
       "date": "2016.08.22",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "亀田 金太郎 (https:、app.notion.com、p、53d0e5a2aa434b809b8f34e029d11637?pvs=21)",
@@ -7465,7 +7350,6 @@
       "title": "探偵達の宴",
       "date": "2016.08.17",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "馬田・P・号 (https:、app.notion.com、p、P-51dc6fab9519464486e0019420c51278?pvs=21)",
@@ -7481,7 +7365,6 @@
       "title": "living",
       "date": "2016.06.20",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "黄木 太陽 (https:、app.notion.com、p、00a759a6bd6744c4831f1dc99bd6c283?pvs=21)",
@@ -7497,7 +7380,6 @@
       "title": "？",
       "date": "2016.04.27",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "アリソン・エストレーラ (https:、app.notion.com、p、fbcf349fbe67412d8e093996a14bebda?pvs=21)",
@@ -7513,7 +7395,6 @@
       "title": "NOBODY*2",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "兎々村 サク (https:、app.notion.com、p、138d914ce7e280e58554cf7677e9ab7d?pvs=21)",
@@ -7529,7 +7410,6 @@
       "title": "773",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7545,7 +7425,6 @@
       "title": "死にたがり電車",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "亀田 金太郎 (https:、app.notion.com、p、53d0e5a2aa434b809b8f34e029d11637?pvs=21)",
@@ -7561,7 +7440,6 @@
       "title": "ネタバレなので秘密（雀野）",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "雀野 結 (https:、app.notion.com、p、5ea7ea3e13574f4699ba6cb847d2b218?pvs=21)",
@@ -7577,7 +7455,6 @@
       "title": "ピーターパンシンドローム",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "難波 元良 (https:、app.notion.com、p、7825f2be5a3447bdab0a69b91bb8a303?pvs=21)",
@@ -7593,7 +7470,6 @@
       "title": "どちらかが死ぬ",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "音来玲司 (https:、app.notion.com、p、be54a9ba3c8344a68baba8ecd8d79d95?pvs=21)",
@@ -7609,7 +7485,6 @@
       "title": "シーソーゲームは箱の中",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "天谷地 晴 (https:、app.notion.com、p、b73fa998f04b41b8829912e12d308994?pvs=21)",
@@ -7625,7 +7500,6 @@
       "title": "無題ｰUNTITLEDｰ",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "居加 幸太郎 (https:、app.notion.com、p、4e5a392855f74e9ca684d56b4de1e846?pvs=21)",
@@ -7641,7 +7515,6 @@
       "title": "333さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7657,7 +7530,6 @@
       "title": "鳩",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7673,7 +7545,6 @@
       "title": "藍乃さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7689,7 +7560,6 @@
       "title": "ちのさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7705,7 +7575,6 @@
       "title": "はるこさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7721,7 +7590,6 @@
       "title": "すぺさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7737,7 +7605,6 @@
       "title": "おいかわさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7753,7 +7620,6 @@
       "title": "しまこさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7769,7 +7635,6 @@
       "title": "まめよしさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7785,7 +7650,6 @@
       "title": "ロッテさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7801,7 +7665,6 @@
       "title": "しろがねさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7817,7 +7680,6 @@
       "title": "柚瀬さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7833,7 +7695,6 @@
       "title": "いぬさわさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7849,7 +7710,6 @@
       "title": "木枯さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7865,7 +7725,6 @@
       "title": "さえきさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7881,7 +7740,6 @@
       "title": "つつじさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7897,7 +7755,6 @@
       "title": "抹茶さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7913,7 +7770,6 @@
       "title": "かまちさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7929,7 +7785,6 @@
       "title": "紅花さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7945,7 +7800,6 @@
       "title": "紅音さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7961,7 +7815,6 @@
       "title": "ぁゃさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7977,7 +7830,6 @@
       "title": "こまつさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -7993,7 +7845,6 @@
       "title": "すざくさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8009,7 +7860,6 @@
       "title": "佐倉さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8025,7 +7875,6 @@
       "title": "おしりさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8041,7 +7890,6 @@
       "title": "ケイさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8057,7 +7905,6 @@
       "title": "ましもさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8073,7 +7920,6 @@
       "title": "にこらさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8089,7 +7935,6 @@
       "title": "リオンさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8105,7 +7950,6 @@
       "title": "あさきさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8121,7 +7965,6 @@
       "title": "りんさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8137,7 +7980,6 @@
       "title": "KPレス",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8153,7 +7995,6 @@
       "title": "明日原さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8169,7 +8010,6 @@
       "title": "ちゃっぴさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8185,7 +8025,6 @@
       "title": "すだちさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8201,7 +8040,6 @@
       "title": "かんらさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8217,7 +8055,6 @@
       "title": "かんら",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8233,7 +8070,6 @@
       "title": "てつたろうさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8249,7 +8085,6 @@
       "title": "花さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8265,7 +8100,6 @@
       "title": "ミフコさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8281,7 +8115,6 @@
       "title": "あぎぎさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8297,7 +8130,6 @@
       "title": "けとるさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8313,7 +8145,6 @@
       "title": "すそのさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8329,7 +8160,6 @@
       "title": "なつおさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8345,7 +8175,6 @@
       "title": "あねよさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8361,7 +8190,6 @@
       "title": "じおんさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8377,7 +8205,6 @@
       "title": "かつきさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8393,7 +8220,6 @@
       "title": "フユキさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8409,7 +8235,6 @@
       "title": "めんこさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8425,7 +8250,6 @@
       "title": "あじたまごはんさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8441,7 +8265,6 @@
       "title": "いなり寿司さん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8457,7 +8280,6 @@
       "title": "ぱよさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8473,7 +8295,6 @@
       "title": "やまかさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8489,7 +8310,6 @@
       "title": "cotocoさん",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8505,7 +8325,6 @@
       "title": "しおしお",
       "date": "",
       "system": "",
-      "role": "",
       "note": "",
       "url": "",
       "others": "",
@@ -8521,7 +8340,6 @@
       "title": "帳の里へようこそ",
       "date": "2026.09.20",
       "system": "",
-      "role": "",
       "format": "半テキ／PL",
       "kp": "",
       "pls": "",
@@ -8558,10 +8376,6 @@
       [
         "連絡先",
         "X のDM"
-      ],
-      [
-        "連絡頻度",
-        "土日祝は対応できません"
       ]
     ],
     "likes": [
@@ -8577,7 +8391,7 @@
         "blocks": [
           {
             "t": "予定の組み方について",
-            "body": "▌平日 21:00〜25:00\n▌土日祝13:00〜18:00 21:00〜25:00\n\n（丸一日とることも出来ますが、休憩を挟んでくださるとうれしいです！）\nあくまで目安なので融通が効くかと思います\n遊んでくださるみなさんに合わせられれば幸いです！"
+            "body": "平日 21:00〜25:00\n土日祝13:00〜18:00 21:00〜25:00\n（丸一日とることも出来ますが、休憩を挟んでくださるとうれしいです！）\nあくまで目安なので融通が効くかと思います\n遊んでくださるみなさんに合わせられれば幸いです！"
           }
         ]
       },
@@ -8588,7 +8402,7 @@
         "blocks": [
           {
             "t": "探索・推理 ＞ RP ＞ PLのぐちゃ",
-            "body": "PLとPCは別と考えています！\nPLがやりたいことをPCにやらせるため、どう辻褄を合わせてRPをするか等が楽しいタイプです！\n\n基本は全生還目指していますが同卓者さんが満足してくだされば何でもハッピー！\nみんなで楽しんで遊ぶことを第一目標にしています！"
+            "body": "PLとPCは別と考えています！\nPLがやりたいことをPCにやらせるため、どう辻褄を合わせてRPをするか等が楽しいタイプです！\n基本は全生還目指していますが同卓者さんが満足してくだされば何でもハッピー！\nみんなで楽しんで遊ぶことを第一目標にしています！"
           }
         ]
       },
