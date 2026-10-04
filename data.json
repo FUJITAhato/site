@@ -25,7 +25,11 @@
         "likes": "",
         "dislikes": "",
         "color": "#D82115",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "俊敏",
+          "戦士"
+        ]
       },
       "lines": [
         "俺が四方谷オカルト部／部長の折鶴や！"
@@ -197,7 +201,11 @@
             "likes": "「祝が作ってくれるオムライス」\n折鶴祝\n桜餅\nおしるこ",
             "dislikes": "もずく、虫",
             "color": "#fef4f4",
-            "extra": []
+            "extra": [],
+            "traits": [
+              "",
+              ""
+            ]
           },
           "lines": [
             "うむ！／今日は大安吉日だ！",
@@ -352,7 +360,196 @@
               ]
             }
           ],
-          "art": []
+          "art": [],
+          "coc": {
+            "edition": "6版",
+            "memo": "",
+            "source": "https://iachara.com/view/11720407",
+            "stats": [
+              {
+                "l": "STR",
+                "v": 6
+              },
+              {
+                "l": "CON",
+                "v": 14
+              },
+              {
+                "l": "POW",
+                "v": 17
+              },
+              {
+                "l": "DEX",
+                "v": 14
+              },
+              {
+                "l": "APP",
+                "v": 16
+              },
+              {
+                "l": "SIZ",
+                "v": 13
+              },
+              {
+                "l": "INT",
+                "v": 15
+              },
+              {
+                "l": "EDU",
+                "v": 11
+              }
+            ],
+            "derived": [
+              {
+                "l": "HP",
+                "v": 14,
+                "max": 14
+              },
+              {
+                "l": "MP",
+                "v": 17,
+                "max": 17
+              },
+              {
+                "l": "SAN",
+                "v": 57,
+                "max": 57
+              }
+            ],
+            "skills": [
+              {
+                "n": "目星",
+                "v": 64
+              },
+              {
+                "n": "聞き耳",
+                "v": 75
+              },
+              {
+                "n": "図書館",
+                "v": 64
+              },
+              {
+                "n": "回避",
+                "v": 83
+              },
+              {
+                "n": "こぶし（パンチ）",
+                "v": 52
+              },
+              {
+                "n": "投擲",
+                "v": 28
+              },
+              {
+                "n": "ナイフ",
+                "v": 70
+              },
+              {
+                "n": "杖",
+                "v": 22
+              },
+              {
+                "n": "応急手当",
+                "v": 71
+              },
+              {
+                "n": "隠れる",
+                "v": 44
+              },
+              {
+                "n": "登攀",
+                "v": 48
+              },
+              {
+                "n": "機械修理",
+                "v": 30
+              },
+              {
+                "n": "乗馬",
+                "v": 15
+              },
+              {
+                "n": "水泳",
+                "v": 27
+              },
+              {
+                "n": "製作（菓子）",
+                "v": 6
+              },
+              {
+                "n": "跳躍",
+                "v": 36
+              },
+              {
+                "n": "製作：土偶",
+                "v": 15
+              },
+              {
+                "n": "信用",
+                "v": 33
+              },
+              {
+                "n": "説得",
+                "v": 24
+              },
+              {
+                "n": "値切り",
+                "v": 21
+              },
+              {
+                "n": "英語",
+                "v": 41
+              },
+              {
+                "n": "猫語",
+                "v": 1
+              },
+              {
+                "n": "医学",
+                "v": 37
+              },
+              {
+                "n": "オカルト",
+                "v": 74
+              },
+              {
+                "n": "クトゥルフ神話",
+                "v": 11
+              },
+              {
+                "n": "芸術（テイスティング）",
+                "v": 7
+              },
+              {
+                "n": "コンピューター",
+                "v": 9
+              },
+              {
+                "n": "心理学",
+                "v": 55
+              },
+              {
+                "n": "地質学",
+                "v": 6
+              },
+              {
+                "n": "天文学",
+                "v": 61
+              },
+              {
+                "n": "博物学",
+                "v": 11
+              },
+              {
+                "n": "歴史",
+                "v": 55
+              }
+            ],
+            "spells": [],
+            "spoiler": false,
+            "after": []
+          }
         }
       ],
       "coc": {
@@ -715,14 +912,15 @@
         "spoiler": false,
         "after": [
           {
-            "name": "新しい後遺症",
+            "name": "",
             "onset": "",
             "cured": "",
             "detail": "",
             "more": "",
             "showInProfile": true
           }
-        ]
+        ],
+        "spells": []
       },
       "origin": "花ヶ丘高校秘密倶楽部",
       "cats": [
@@ -796,7 +994,7 @@
       "role": "民間SP",
       "desc": "",
       "personality": "不遜で物怖じしない京楽主義者。\nキュートアグレッション癖があり、頑張り屋を見るとつい構いたくなる。\nアップダウンの少ない性格が間延びして抑揚のない喋り方に現れているが、家族のことに関してだけは至極真面目になる。",
-      "more": "▌大手の民間SP派遣会社の社員\n\n様々な部門があり、マニアやコレクター向けにオカルト諸々のグッズを手に入れてきたり護衛したりの部門担当。危ない仕事をする度、ボーナスまで出ている。\n\n比較的若いことと、体格、厳つい見た目から高級ラウンジや敷居の高い風俗店の警護に回されることも多い。\n\n\n\n▌家族\n\nシングルマザーの母に代わりに幼い弟を、歳の近い妹と二人で面倒みていた。家族仲はかなり良好で現在も稼ぎのほとんどを家族に仕送りしている。\n\n\n\n▌半生\n\n・中学時代\n柔道競技の選手だったが、大きな交通事故により脚が故障したことで将来を断念（低DEX低APP理由）\nこの一件で寄せ餌体質であることも自覚した。\n（背中の傷や火傷跡、耳が欠けたのはこの事故が原因）\n\n家族に迷惑をかけないよう中学卒業のタイミングで上京。現在の会社に就職。\n現在も仕送りとして給料をほとんど家族口座と妹の口座に振り込んでいるため貧乏。\n\nとはいえ、経費でなんでも落としてくれる会社のため、金銭面の自由度は高い。",
+      "more": "▌大手の民間SP派遣会社の社員\n\n様々な部門があり、マニアやコレクター向けにオカルト諸々のグッズを手に入れてきたり護衛したりの部門担当。危ない仕事をする度、ボーナスまで出ている。\n\n比較的若いことと、体格、厳つい見た目から高級ラウンジや敷居の高い風俗店の警護に回されることも多い。\n\n\n\n▌家族\n\nシングルマザーの母に代わりに幼い弟を、歳の近い妹と二人で面倒みていた。家族仲はかなり良好で現在も稼ぎのほとんどを家族に仕送りしている。\n\n\n\n▌半生\n\n・中学時代\n柔道競技の選手だったが、大きな交通事故により脚が故障したことで将来を断念（低DEX低APP理由）\nこの一件で自身の体質を自覚した。\n（背中の傷や火傷跡、耳が欠けたのはこの事故が原因）\n\n家族に迷惑をかけないよう中学卒業のタイミングで上京。現在の会社に就職。\n現在も仕送りとして給料をほとんど家族口座と妹の口座に振り込んでいるため貧乏。\n\nとはいえ、経費でなんでも落としてくれる会社のため、金銭面の自由度は高い。",
       "profile": {
         "kana": "しどう きょう",
         "age": "24歳",
@@ -819,6 +1017,10 @@
             "家族構成",
             "母、妹、弟"
           ]
+        ],
+        "traits": [
+          "",
+          ""
         ]
       },
       "lines": [
@@ -879,8 +1081,12 @@
             "blood": "",
             "likes": "",
             "dislikes": "",
-            "color": "",
-            "extra": []
+            "color": "#fff265",
+            "extra": [],
+            "traits": [
+              "",
+              ""
+            ]
           },
           "lines": [],
           "poses": [],
@@ -926,7 +1132,132 @@
               ]
             }
           ],
-          "art": []
+          "art": [],
+          "coc": {
+            "edition": "6版",
+            "memo": "",
+            "source": "https://iachara.com/view/14688843",
+            "stats": [
+              {
+                "l": "STR",
+                "v": 12
+              },
+              {
+                "l": "CON",
+                "v": 14
+              },
+              {
+                "l": "POW",
+                "v": 13
+              },
+              {
+                "l": "DEX",
+                "v": 14
+              },
+              {
+                "l": "APP",
+                "v": 15
+              },
+              {
+                "l": "SIZ",
+                "v": 15
+              },
+              {
+                "l": "INT",
+                "v": 14
+              },
+              {
+                "l": "EDU",
+                "v": 18
+              }
+            ],
+            "derived": [
+              {
+                "l": "HP",
+                "v": 15,
+                "max": 15
+              },
+              {
+                "l": "MP",
+                "v": 13,
+                "max": 13
+              },
+              {
+                "l": "SAN",
+                "v": 58,
+                "max": 58
+              }
+            ],
+            "skills": [
+              {
+                "n": "目星",
+                "v": 70
+              },
+              {
+                "n": "聞き耳",
+                "v": 56
+              },
+              {
+                "n": "図書館",
+                "v": 75
+              },
+              {
+                "n": "回避",
+                "v": 71
+              },
+              {
+                "n": "こぶし（パンチ）",
+                "v": 50
+              },
+              {
+                "n": "キック",
+                "v": 50
+              },
+              {
+                "n": "応急手当",
+                "v": 52
+              },
+              {
+                "n": "運転（自動車）",
+                "v": 55
+              },
+              {
+                "n": "言いくるめ",
+                "v": 70
+              },
+              {
+                "n": "説得",
+                "v": 40
+              },
+              {
+                "n": "値切り",
+                "v": 35
+              },
+              {
+                "n": "クトゥルフ神話",
+                "v": 4
+              },
+              {
+                "n": "芸術（演技）",
+                "v": 50
+              },
+              {
+                "n": "経理",
+                "v": 20
+              },
+              {
+                "n": "コンピューター",
+                "v": 42
+              },
+              {
+                "n": "心理学",
+                "v": 75
+              }
+            ],
+            "spells": [],
+            "spoiler": false,
+            "after": []
+          }
         }
       ],
       "coc": {
@@ -1063,7 +1394,8 @@
           }
         ],
         "spoiler": false,
-        "after": []
+        "after": [],
+        "spells": []
       },
       "origin": "勝手に死んでろ。",
       "cats": [],
@@ -1071,7 +1403,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -1108,7 +1441,11 @@
         "likes": "ドラゴンの剣のお土産\n好かれること\n桃まん・竜田揚\nブライダル雑誌\n実姉",
         "dislikes": "負けること\n努力しない人間\n実父、実母、実兄",
         "color": "#F3A1B2",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [
         "好かれたくて何が悪いのさ／好かれるためなら／何でもやるよ？"
@@ -1120,7 +1457,104 @@
           "lines": [
             "君の全てを叶えるよ／俺の愛しい婚約者"
           ],
-          "faces": []
+          "faces": [
+            {
+              "name": "基本",
+              "src": "images/c-mutiphvr2i0.png"
+            },
+            {
+              "name": "お手をどうぞ",
+              "src": "images/c-mutiphlsokw.png"
+            },
+            {
+              "name": "え？",
+              "src": "images/c-mutiphjlcok.png"
+            },
+            {
+              "name": "…",
+              "src": "images/c-mutiphih9zj.png"
+            },
+            {
+              "name": "キラキラ",
+              "src": "images/c-mutiphnxzlm.png"
+            },
+            {
+              "name": "こうしよ",
+              "src": "images/c-mutiphp3ym3.png"
+            },
+            {
+              "name": "おねがい♡",
+              "src": "images/c-mutiphklwzc.png"
+            },
+            {
+              "name": "困ったな",
+              "src": "images/c-mutipi3e7rr.png"
+            },
+            {
+              "name": "ソレ本気?",
+              "src": "images/c-mutiphrbj3v.png"
+            },
+            {
+              "name": "しゅん",
+              "src": "images/c-mutiphq7arl.png"
+            },
+            {
+              "name": "爆笑",
+              "src": "images/c-mutipi4llk4.png"
+            },
+            {
+              "name": "？？",
+              "src": "images/c-mutiphhdobf.png"
+            },
+            {
+              "name": "きゅるる",
+              "src": "images/c-mutiphmu2mr.png"
+            },
+            {
+              "name": "はあ！？",
+              "src": "images/c-mutiphsfeg2.png"
+            },
+            {
+              "name": "ブレ",
+              "src": "images/c-mutiphtj6ut.png"
+            },
+            {
+              "name": "めそめそ",
+              "src": "images/c-mutiphunh5e.png"
+            },
+            {
+              "name": "寄越せよ",
+              "src": "images/c-mutiphwxehn.png"
+            },
+            {
+              "name": "嫌",
+              "src": "images/c-mutipi071ws.png"
+            },
+            {
+              "name": "口尖らせ",
+              "src": "images/c-mutipi1bgey.png"
+            },
+            {
+              "name": "頬掻き",
+              "src": "images/c-mutipi5pl4v.png"
+            },
+            {
+              "name": "恐怖",
+              "src": "images/c-mutiphz1vs0.png"
+            },
+            {
+              "name": "恐怖 2",
+              "src": "images/c-mutiphxzz4t.png"
+            },
+            {
+              "name": "命乞い",
+              "src": "images/c-mutipi6ng55.png"
+            },
+            {
+              "name": "黒塗り",
+              "src": "images/c-mutipi2cf1g.png"
+            }
+          ]
         },
         {
           "name": "超高校級の婚約者",
@@ -1140,8 +1574,72 @@
               "src": "images/c-muq357bl8jf.png"
             },
             {
-              "name": "差分 2",
-              "src": ""
+              "name": "♡",
+              "src": "images/c-mutixn5qit2.png"
+            },
+            {
+              "name": "てれ…",
+              "src": "images/c-mutixn94pyh.png"
+            },
+            {
+              "name": "おねがい",
+              "src": "images/c-mutixn6tce1.png"
+            },
+            {
+              "name": "にこっ",
+              "src": "images/c-mutixnaansr.png"
+            },
+            {
+              "name": "は？",
+              "src": "images/c-mutixnbi92w.png"
+            },
+            {
+              "name": "やる気",
+              "src": "images/c-mutixncofps.png"
+            },
+            {
+              "name": "口尖らせ",
+              "src": "images/c-mutixnhg5w6.png"
+            },
+            {
+              "name": "嫌笑い",
+              "src": "images/c-mutixnezybc.png"
+            },
+            {
+              "name": "笑顔！",
+              "src": "images/c-mutixnjr0zl.png"
+            },
+            {
+              "name": "笑顔♡",
+              "src": "images/c-mutixnkvvs6.png"
+            },
+            {
+              "name": "大爆笑",
+              "src": "images/c-mutixnn628m.png"
+            },
+            {
+              "name": "目逸らし…",
+              "src": "images/c-mutixnobntf.png"
+            },
+            {
+              "name": "目逸らし",
+              "src": "images/c-mutixnpg4mk.png"
+            },
+            {
+              "name": "しんど…",
+              "src": "images/c-mutixn7yr5t.png"
+            },
+            {
+              "name": "真面目キレ",
+              "src": "images/c-mutixnm1jo1.png"
+            },
+            {
+              "name": "危機",
+              "src": "images/c-mutixnds7af.png"
+            },
+            {
+              "name": "黒笑顔",
+              "src": "images/c-mutixnim5e3.png"
             }
           ]
         }
@@ -1408,7 +1906,8 @@
             "more": "",
             "showInProfile": false
           }
-        ]
+        ],
+        "spells": []
       }
     },
     {
@@ -1437,7 +1936,11 @@
         "likes": "500円玉\n金色\nりんご\n運動\n人間観察",
         "dislikes": "チョコレート\nネギ類\n猛暑",
         "color": "#ffa958",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [
         "至極の『至』でゴール読みッス／キラキラしててめーーっちゃ／良い名前ッスよね！"
@@ -1516,7 +2019,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -1535,7 +2039,8 @@
         "derived": [],
         "skills": [],
         "spoiler": false,
-        "after": []
+        "after": [],
+        "spells": []
       }
     },
     {
@@ -1564,7 +2069,11 @@
         "likes": "",
         "dislikes": "",
         "color": "#81a3f8",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [
         "え、なに！結婚しますか！"
@@ -1592,7 +2101,52 @@
           "lines": [
             "未来のお嫁さんに／百本の薔薇を！／野郎共には、はい ゴボウ。"
           ],
-          "faces": []
+          "faces": [
+            {
+              "name": "えー",
+              "src": "images/c-mutjcur0s9o.png"
+            },
+            {
+              "name": "基本",
+              "src": "images/c-mutjcuv386x.png"
+            },
+            {
+              "name": "キラキラ",
+              "src": "images/c-mutjcurjw0p.png"
+            },
+            {
+              "name": "にこっ",
+              "src": "images/c-mutjcus19l0.png"
+            },
+            {
+              "name": "はわ",
+              "src": "images/c-mutjcusjx9a.png"
+            },
+            {
+              "name": "ふふん！",
+              "src": "images/c-mutjcut1df9.png"
+            },
+            {
+              "name": "ブレ",
+              "src": "images/c-mutjcutkmci.png"
+            },
+            {
+              "name": "むっ",
+              "src": "images/c-mutjcuu3sey.png"
+            },
+            {
+              "name": "ん？",
+              "src": "images/c-mutjcuulc0d.png"
+            },
+            {
+              "name": "笑顔",
+              "src": "images/c-mutjcuvldde.png"
+            },
+            {
+              "name": "白目",
+              "src": "images/c-mutjcuw3eii.png"
+            }
+          ]
         },
         {
           "name": "GODARCA",
@@ -1610,7 +2164,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -1776,7 +2331,8 @@
             "more": "",
             "showInProfile": true
           }
-        ]
+        ],
+        "spells": []
       }
     },
     {
@@ -1805,7 +2361,11 @@
         "likes": "",
         "dislikes": "",
         "color": "#6c0800",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [],
       "poses": [
@@ -1861,7 +2421,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -2035,7 +2596,8 @@
             "more": "",
             "showInProfile": true
           }
-        ]
+        ],
+        "spells": []
       }
     },
     {
@@ -2064,7 +2626,11 @@
         "likes": "",
         "dislikes": "",
         "color": "#F45B83",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [
         "ボクは、親切で優しい／お兄さんやさかい／困ったらオレに頼りや／儂が助けちゃるからね！"
@@ -2096,7 +2662,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -2115,7 +2682,8 @@
         "derived": [],
         "skills": [],
         "spoiler": false,
-        "after": []
+        "after": [],
+        "spells": []
       }
     },
     {
@@ -2144,7 +2712,11 @@
         "likes": "洗濯\nリンゴ\n洗い物",
         "dislikes": "納豆\n白黒つかないこと\n洗い物以外の家事",
         "color": "#e48875",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [
         "⋯⋯気色悪い。",
@@ -2169,7 +2741,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -2298,7 +2871,8 @@
           }
         ],
         "spoiler": false,
-        "after": []
+        "after": [],
+        "spells": []
       }
     },
     {
@@ -2327,7 +2901,11 @@
         "likes": "",
         "dislikes": "",
         "color": "#3F7D5A",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [
         "ウッザ／それオレがやる必要ないだろ？"
@@ -2337,7 +2915,56 @@
           "name": "制服",
           "src": "images/c-muqb2ckk004.png",
           "lines": [],
-          "faces": []
+          "faces": [
+            {
+              "name": "かお",
+              "src": "images/c-mutim5zy62p.png"
+            },
+            {
+              "name": "基本",
+              "src": "images/c-mutikny8avp.png"
+            },
+            {
+              "name": "…",
+              "src": "images/c-mutiknq3okz.png"
+            },
+            {
+              "name": "あ？",
+              "src": "images/c-mutiknraf33.png"
+            },
+            {
+              "name": "おこ！",
+              "src": "images/c-mutiknsgmmz.png"
+            },
+            {
+              "name": "きらい",
+              "src": "images/c-mutikntnzed.png"
+            },
+            {
+              "name": "は…？",
+              "src": "images/c-mutiknusgvo.png"
+            },
+            {
+              "name": "はっ",
+              "src": "images/c-mutiknvy2vk.png"
+            },
+            {
+              "name": "ふーん",
+              "src": "images/c-mutiknx4lrl.png"
+            },
+            {
+              "name": "基本血",
+              "src": "images/c-mutiknzcvtd.png"
+            },
+            {
+              "name": "目逸らし",
+              "src": "images/c-mutiko0itda.png"
+            },
+            {
+              "name": "涙…",
+              "src": "images/c-mutiko1orti.png"
+            }
+          ]
         }
       ],
       "art": [],
@@ -2349,7 +2976,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -2368,7 +2996,8 @@
         "derived": [],
         "skills": [],
         "spoiler": false,
-        "after": []
+        "after": [],
+        "spells": []
       }
     },
     {
@@ -2397,7 +3026,11 @@
         "likes": "",
         "dislikes": "",
         "color": "#252326",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [
         "俺は悪くない。／悪いのは全部お前だよ。"
@@ -2437,7 +3070,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -2456,7 +3090,8 @@
         "derived": [],
         "skills": [],
         "spoiler": false,
-        "after": []
+        "after": [],
+        "spells": []
       }
     },
     {
@@ -2485,7 +3120,11 @@
         "likes": "",
         "dislikes": "",
         "color": "#3F9FCB",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [],
       "poses": [
@@ -2515,7 +3154,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -2550,7 +3190,11 @@
             "likes": "",
             "dislikes": "",
             "color": "",
-            "extra": []
+            "extra": [],
+            "traits": [
+              "",
+              ""
+            ]
           },
           "lines": [],
           "poses": [
@@ -2567,7 +3211,8 @@
             "fusetter": [
               "SS",
               "R18",
-              "その他"
+              "その他",
+              "ネタバレ無"
             ],
             "art": [
               "ディスプレイ",
@@ -2577,7 +3222,18 @@
             ]
           },
           "fusetter": [],
-          "art": []
+          "art": [],
+          "coc": {
+            "edition": "",
+            "memo": "",
+            "source": "",
+            "stats": [],
+            "derived": [],
+            "skills": [],
+            "spells": [],
+            "spoiler": false,
+            "after": []
+          }
         }
       ],
       "coc": {
@@ -2690,7 +3346,8 @@
           }
         ],
         "spoiler": false,
-        "after": []
+        "after": [],
+        "spells": []
       }
     },
     {
@@ -2719,7 +3376,11 @@
         "likes": "",
         "dislikes": "",
         "color": "#24506B",
-        "extra": []
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
       },
       "lines": [],
       "poses": [
@@ -2741,7 +3402,8 @@
         "fusetter": [
           "SS",
           "R18",
-          "その他"
+          "その他",
+          "ネタバレ無"
         ],
         "art": [
           "ディスプレイ",
@@ -2760,7 +3422,8 @@
         "derived": [],
         "skills": [],
         "spoiler": false,
-        "after": []
+        "after": [],
+        "spells": []
       }
     }
   ],
@@ -7895,6 +8558,10 @@
       [
         "連絡先",
         "X のDM"
+      ],
+      [
+        "連絡頻度",
+        "土日祝は対応できません"
       ]
     ],
     "likes": [
@@ -7910,7 +8577,7 @@
         "blocks": [
           {
             "t": "予定の組み方について",
-            "body": "平日 21:00〜25:00\n土日祝13:00〜18:00 21:00〜25:00\n（丸一日とることも出来ますが、休憩を挟んでくださるとうれしいです！）\nあくまで目安なので融通が効くかと思います\n遊んでくださるみなさんに合わせられれば幸いです！"
+            "body": "▌平日 21:00〜25:00\n▌土日祝13:00〜18:00 21:00〜25:00\n\n（丸一日とることも出来ますが、休憩を挟んでくださるとうれしいです！）\nあくまで目安なので融通が効くかと思います\n遊んでくださるみなさんに合わせられれば幸いです！"
           }
         ]
       },
@@ -7921,7 +8588,7 @@
         "blocks": [
           {
             "t": "探索・推理 ＞ RP ＞ PLのぐちゃ",
-            "body": "PLとPCは別と考えています！\nPLがやりたいことをPCにやらせるため、どう辻褄を合わせてRPをするか等が楽しいタイプです！\n基本は全生還目指していますが同卓者さんが満足してくだされば何でもハッピー！\nみんなで楽しんで遊ぶことを第一目標にしています！"
+            "body": "PLとPCは別と考えています！\nPLがやりたいことをPCにやらせるため、どう辻褄を合わせてRPをするか等が楽しいタイプです！\n\n基本は全生還目指していますが同卓者さんが満足してくだされば何でもハッピー！\nみんなで楽しんで遊ぶことを第一目標にしています！"
           }
         ]
       },
