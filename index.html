@@ -790,6 +790,66 @@ body[data-view="home"] footer{ background:#222326; color:#9a9ea8; }
 .p1-body{ gap:clamp(1.4rem,4.6vw,2.6rem); }
 .pc a{ margin:.06rem 0; }
 .pc-cap{ margin-bottom:.2rem; }
+
+/* ===== STATUS: quieter numbers, radar chart, spells, comparison ===== */
+.statgrid{ grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:10px 14px; margin-bottom:1.1rem; }
+.stat .sl{ font-size:.62rem; letter-spacing:.16em; }
+.stat .sv{ font-size:1.2rem; line-height:1.15; }
+.stat .sv small{ font-size:.7rem; }
+.radar-wrap{ display:grid; justify-items:center; margin:.2rem 0 1.4rem; color:var(--ink); }
+.radar{ width:min(100%,330px); height:auto; overflow:visible; }
+.spells{ list-style:none; margin:0 0 1.4rem; padding:0; }
+.spells li{ display:grid; gap:.15rem; padding:.55rem 0; border-bottom:1px solid var(--line); }
+.sp-n{ font-family:var(--serif); font-size:1.02rem; }
+.sp-d{ font-size:.78rem; color:var(--mute); line-height:1.7; }
+.cmp-legend{ display:flex; flex-wrap:wrap; gap:.4rem 1.4rem; font-size:.8rem; margin:0 0 .4rem; }
+.cmp-legend span{ display:inline-flex; align-items:center; gap:.5em; }
+.cmp-legend i{ display:inline-block; width:1.5em; height:.6em; border-radius:2px; }
+.cmp-legend i.dash{ background:none; height:0; border-top:2px dashed; }
+.cmp-table{ width:100%; border-collapse:collapse; margin-top:.4rem; font-size:.86rem; }
+.cmp-table th,.cmp-table td{ padding:.4rem .5rem; text-align:center; border-bottom:1px solid var(--line); font-weight:400; }
+.cmp-table thead th{ font-size:.7rem; letter-spacing:.08em; color:var(--mute); }
+.cmp-table tbody th{ text-align:left; font-size:.68rem; letter-spacing:.16em; color:var(--mute); }
+.cmp-hi{ font-weight:700 !important; }
+.cmp-n{ color:var(--mute); }
+/* FUSE */
+.fuse-warn{ margin:0 0 1rem; padding:.8rem 1rem; font-size:.78rem; line-height:1.85; color:var(--mute); border-left:2px solid #FFC64F; background:color-mix(in srgb, var(--ink) 4%, transparent); }
+.fuse-bar{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:.3rem 1rem; }
+.fuse-bar .tagbar{ margin-bottom:.8rem; }
+.fuse-order{ font-size:.58rem; letter-spacing:.2em; color:var(--mute); opacity:.75; margin-bottom:.8rem; }
+/* big viewer (PC) */
+dialog.bigdlg{ border:0; padding:0; margin:0; max-width:none; max-height:none; width:100vw; height:100dvh; background:rgba(14,15,18,.94); }
+dialog.bigdlg[open]{ display:grid; grid-template-rows:minmax(0,1fr) auto; }
+.big-img{ display:flex; justify-content:center; align-items:flex-end; min-height:0; padding:3.2rem 2rem 0; cursor:zoom-out; }
+.big-img img{ max-width:100%; max-height:100%; object-fit:contain; display:block; }
+.big-img svg{ height:100%; width:auto; max-width:100%; }
+.big-strip{ display:grid; gap:.6rem; padding:.8rem 1.6rem 1.2rem; max-height:34vh; overflow:auto; }
+.big-row{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+dialog.bigdlg .pose,dialog.bigdlg .face{ color:#aab0bb; }
+dialog.bigdlg .pose[aria-pressed="true"],dialog.bigdlg .face[aria-pressed="true"]{ color:#fff; }
+dialog.bigdlg .thumb-s{ border-color:#3a3d44; }
+dialog.bigdlg [aria-pressed="true"] .thumb-s{ border-color:#fff; outline:1px solid #fff; }
+@media (hover:hover) and (pointer:fine){ .cd-img{ cursor:zoom-in; } }
+/* editor: more room to write */
+.view[data-view="edit"] .wrap{ max-width:1080px; }
+.ed-addrow{ display:flex; flex-wrap:wrap; gap:.6rem 1.4rem; align-items:center; margin:.4rem 0; }
+.ed-sec{ padding:.1rem .8rem; }
+.ed-face.ed-one{ padding:.8rem 0; border-top:1px solid var(--line); }
+.ed-fields textarea{ min-height:5.2em; }
+@media (max-width:640px){
+  .view[data-view="edit"] .wrap{ padding-left:10px; padding-right:10px; }
+  .ed-sec{ padding:.1rem .5rem; }
+  .ed-cbody{ gap:.7rem; }
+  .ed-face{ grid-template-columns:52px minmax(0,1fr); gap:8px; }
+  .ed-face.ed-one{ grid-template-columns:minmax(0,1fr); }
+}
+@media (min-width:900px){
+  .ed-face.ed-one .ed-fields{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .ed-face.ed-one .ed-fields>*{ min-width:0; }
+  .ed-face.ed-one .ed-fields>.ed-tagchk,.ed-face.ed-one .ed-fields>.ed-ops,.ed-face.ed-one .ed-fields>label:has(textarea){ grid-column:1 / -1; }
+}
+.home-quiet{ display:none; }
+.p2-body{ gap:0; padding:1rem 0; }
 </style>
 </head>
 <body data-view="home">
@@ -834,7 +894,6 @@ body[data-view="home"] footer{ background:#222326; color:#9a9ea8; }
         <div class="pc tr"><a data-x-href href="https://x.com/Lv103000" target="_blank" rel="noopener noreferrer"><span data-x-id>@Lv103000</span></a></div>
         <div class="p2-body">
           <span class="yline" aria-hidden="true"><b id="yrA">20</b><i></i><b id="yrB">26</b></span>
-          <p class="phrase" id="tPhrase"><span>Welcome <em>to</em></span></p>
         </div>
         <div class="pc bl"><span id="tCopy">© 2026</span><span>A PERSONAL ARCHIVE</span></div>
         <button class="pc br scroll2" type="button" id="scrollBtn" aria-label="下へスクロール"><span>SCROLL</span><span aria-hidden="true">↓</span></button>
@@ -859,10 +918,9 @@ body[data-view="home"] footer{ background:#222326; color:#9a9ea8; }
       </div>
     </section>
 
-    <section class="hs hs-x" id="homeX" aria-labelledby="hxT">
+    <section class="hs hs-x" id="homeX" aria-label="Xでフォロー">
       <div class="hs-in hs-xin">
         <p class="hs-k">FOLLOW ON X</p>
-        <h2 class="hs-t" id="hxT"><em>Say</em> hello.</h2>
         <a class="hs-xlink" data-x-href href="https://x.com/Lv103000" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span data-x-id>@Lv103000</span></a>
         <p class="hs-xnote">更新・お知らせ・ご連絡は、Xでどうぞ。</p>
         <a class="hs-btn dark" data-x-href href="https://x.com/Lv103000" target="_blank" rel="noopener noreferrer">Xを開く <span aria-hidden="true">↗</span></a>
@@ -1037,6 +1095,12 @@ body[data-view="home"] footer{ background:#222326; color:#9a9ea8; }
 <dialog id="sessDlg" class="sdlg" aria-label="シナリオの詳細">
   <button type="button" class="sd-close" id="sessDlgClose">CLOSE</button>
   <div id="sessDlgBody"></div>
+</dialog>
+
+<dialog id="bigDlg" class="bigdlg" aria-label="立ち絵を大きく表示">
+  <button type="button" class="zoom-close" id="bigClose">CLOSE</button>
+  <div class="big-img" id="bigImg"></div>
+  <div class="big-strip" id="bigStrip"></div>
 </dialog>
 
 <dialog id="zoomDlg" class="zoom" aria-label="画像を大きく表示">
@@ -1350,8 +1414,6 @@ requestAnimationFrame(fitTitle);
   $("#tpH").setAttribute("aria-label", SITE.name);
   if(T.kickerA) $("#tkA").textContent = T.kickerA; if(T.kickerB) $("#tkB").textContent = T.kickerB;
   if(T.subA) $("#tsA").textContent = T.subA; if(T.subB) $("#tsB").textContent = T.subB;
-  const phrase = String(T.phrase || "").split("/").map(l => esc(l.trim()).replace(/\*([^*]+)\*/g, "<em>$1</em>"));
-  $("#tPhrase").innerHTML = phrase.map(l => `<span>${l}</span>`).join("");
   const y = String(new Date().getFullYear());
   $("#yrA").textContent = y.slice(0, 2); $("#yrB").textContent = y.slice(2);
   $("#tCopy").textContent = "© " + y;
@@ -1424,15 +1486,27 @@ function normProfile(o){
   const p = (o.profile && typeof o.profile === "object") ? o.profile : (o.profile = {});
   PKEYS.forEach(k => { p[k] = dstr(p[k]); });
   if(!Array.isArray(p.extra)) p.extra = [];
+  const tr = Array.isArray(p.traits) ? p.traits : [];
+  p.traits = [dstr(tr[0]), dstr(tr[1])];
   return p;
 }
 const normTags = a => Array.isArray(a) ? a.map(String) : [];
 function normFuse(o){
   const t = (o.tags && typeof o.tags === "object") ? o.tags : (o.tags = {});
-  t.fusetter = normTags(t.fusetter).filter(Boolean); if(!t.fusetter.length) t.fusetter = ["SS", "R18", "その他"];
+  t.fusetter = normTags(t.fusetter).filter(Boolean); if(!t.fusetter.length) t.fusetter = ["SS", "R18", "その他", "ネタバレ無"];
+  if(t.fusetter.join("|") === "SS|R18|その他") t.fusetter.push("ネタバレ無");   // 旧い標準タグの一覧には、「ネタバレ無」を足す
   t.art = normTags(t.art).filter(Boolean); if(!t.art.length) t.art = ["ディスプレイ", "skeb", "イラスト", "R18"];
   o.fusetter = Array.isArray(o.fusetter) ? o.fusetter : [];
   o.fusetter.forEach(x => { x.t = dstr(x.t); x.url = dstr(x.url); x.note = dstr(x.note); x.tags = normTags(x.tags); });
+}
+function normCoc(k){
+  k = (k && typeof k === "object") ? k : {};
+  k.edition = dstr(k.edition); k.memo = dstr(k.memo); k.source = dstr(k.source);
+  ["stats","derived","skills"].forEach(key => { if(!Array.isArray(k[key])) k[key] = []; });
+  k.spells = (Array.isArray(k.spells) ? k.spells : []).filter(Array.isArray).map(a => [dstr(a[0]), dstr(a[1])]);
+  k.spoiler = k.spoiler === true;
+  k.after = (Array.isArray(k.after) ? k.after : []).map(a => ({ name: dstr(a && a.name), onset: dstr(a && a.onset), cured: dstr(a && a.cured), detail: dstr(a && a.detail), more: dstr(a && a.more), showInProfile: !(a && a.showInProfile === false) }));
+  return k;
 }
 function normPartner(u, i){
   u = u && typeof u === "object" ? u : {};
@@ -1440,6 +1514,7 @@ function normPartner(u, i){
   ["name","relation","owner","desc","personality"].forEach(k => { u[k] = dstr(u[k]); });
   normProfile(u); normPoses(u);
   normFuse(u);
+  u.coc = normCoc(u.coc);
   u.art = Array.isArray(u.art) ? u.art : [];
   u.art.forEach(x => { x.t = dstr(x.t); x.src = dstr(x.src); x.tags = normTags(x.tags); });
   return u;
@@ -1476,11 +1551,7 @@ function normChar(c, i){
     c.ucys.push(normPartner({ id: "u1", name: "うちよそ", desc: dstr(old.intro), profile: { extra: Array.isArray(old.items) ? old.items : [] } }, 0));
   }
   delete c.uchiyoso;
-  const k = (c.coc && typeof c.coc === "object") ? c.coc : (c.coc = {});
-  k.edition = dstr(k.edition); k.memo = dstr(k.memo); k.source = dstr(k.source);
-  ["stats","derived","skills"].forEach(key => { if(!Array.isArray(k[key])) k[key] = []; });
-  k.spoiler = k.spoiler === true;
-  k.after = (Array.isArray(k.after) ? k.after : []).map(a => ({ name: dstr(a && a.name), onset: dstr(a && a.onset), cured: dstr(a && a.cured), detail: dstr(a && a.detail), more: dstr(a && a.more), showInProfile: !(a && a.showInProfile === false) }));
+  c.coc = normCoc(c.coc);
   return c;
 }
 function normSiteProfile(p){
@@ -1557,7 +1628,7 @@ function parseImportText(text){
 }
 function convertImported(o){
   if(!o || typeof o !== "object") return null;
-  const out = { kind: "", profile: {}, stats: [], derived: [], skills: [], memo: "", source: "", name: "", edition: "", notes: [] };
+  const out = { kind: "", profile: {}, stats: [], derived: [], skills: [], memo: "", source: "", name: "", edition: "", color: "", notes: [] };
   const pushDerived = (l, v, max) => { if(l && !out.derived.some(x => x.l === l)) out.derived.push(max != null ? { l, v, max } : { l, v }); };
   const numOrStr = v => { const n = /^\s*-?\d+(?:\.\d+)?\s*$/.test(String(v)) ? Number(v) : null; return n != null ? n : String(v == null ? "" : v); };
 
@@ -1567,6 +1638,7 @@ function convertImported(o){
     out.name = d.name || "";
     out.memo = typeof d.memo === "string" ? d.memo : "";
     out.source = typeof d.externalUrl === "string" ? d.externalUrl : "";
+    out.color = typeof d.color === "string" ? d.color : "";   // ココフォリア駒のテーマカラー
     (d.status || []).forEach(x => {
       const l = String((x && x.label) || "").trim(); if(!l) return;
       const v = num(x.value), m = num(x.max);
@@ -1593,6 +1665,7 @@ function convertImported(o){
     out.profile = { kana: g("pc_kana", "pc_yomi"), age: g("age"), sex: g("sex"), height: g("pc_height"), weight: g("pc_weight"),
       hair: g("color_hair"), eye: g("color_eye"), job: g("shuzoku", "pc_job", "job", "syokugyo", "shokugyo"), birthplace: g("pc_birthplace", "shusshin", "pc_shusshin") };
     out.memo = g("pc_making_memo");
+    out.color = g("themeColor", "theme_color", "color_theme", "imageColor", "image_color", "pc_color", "color");
     if(o.data_id != null) out.source = "https://charasheet.vampire-blood.net/" + o.data_id;
     const isCoc = o.game === undefined || /coc|cthulhu/i.test(String(o.game));
     if(!isCoc){ out.notes.push("クトゥルフ以外のシステム（" + o.game + "）のようです。能力値は取り込みませんでした。"); }
@@ -1840,6 +1913,8 @@ function dataRows(o){
   add("髪色 / 瞳色", join(p.hair, p.eye));
   add("一人称 / 二人称", join(p.first, p.second));
   add("誕生日 / 血液型", join(p.birthday, p.blood));
+  const tr = (p.traits || []).filter(x => x && x.trim());
+  if(tr.length) rows.push(["特徴表", tr.map(esc).join("<br>")]);
   const multi = txt => { const a = String(txt || "").split("\n").map(x => x.trim()).filter(Boolean).slice(0, 4); return a.length ? `<span class="pref-main">${esc(a[0])}</span>${a.length > 1 ? `<span class="pref-sub">${a.slice(1).map(esc).join("<i>／</i>")}</span>` : ""}` : ""; };
   const likes = multi(p.likes), dislikes = multi(p.dislikes);
   if(likes) rows.push(["好きなもの", likes]);
@@ -1870,15 +1945,37 @@ function afterHtml(k){
   const items = k.after.map((a, i) => ({ a, i, s: afterState(a) })).sort((x, y) => order[x.s] - order[y.s] || x.i - y.i);
   return `<h3 class="h3 rv">後遺症</h3><ul class="aft-list">${items.map(({ a, s }, n) => `<li class="aft ${s} rv" style="transition-delay:${Math.min(n, 6) * 50}ms">
     <div class="aft-h"><span class="aft-name">${esc(a.name || "（名称なし）")}</span>${s === "perm" ? `<span class="aft-tag perm">永久後遺症</span>` : s === "done" ? `<span class="aft-tag">完治済み</span>` : ""}</div>
-    <p class="aft-d">${esc(a.onset || "発症日不明")} 〜 ${esc(a.cured || "（完治日なし）")}</p>
+    ${(a.onset || a.cured) ? `<p class="aft-d">${esc(a.onset)}${a.cured ? " 〜 " + esc(a.cured) : " 〜"}${!a.onset && a.cured ? "" : ""}</p>` : ""}
     ${a.detail ? `<p class="aft-t prose-pre">${esc(a.detail)}</p>` : ""}
     ${a.more ? `<details class="aft-more"><summary>さらに詳しく</summary><div class="prose-pre">${esc(a.more)}</div></details>` : ""}
   </li>`).join("")}</ul>`;
 }
+/* レーダーチャート（複数の系列を重ねて比べられます） */
+function radarSvg(series){
+  const base = series.find(x => x.stats.length >= 3); if(!base) return "";
+  const axes = base.stats.map(x => x.l), n = axes.length, R = 88, cx = 150, cy = 116;
+  const pt = (i, f) => { const a = -Math.PI / 2 + i * 2 * Math.PI / n; return [cx + Math.cos(a) * R * f, cy + Math.sin(a) * R * f]; };
+  const ring = f => axes.map((_, i) => pt(i, f).map(v => v.toFixed(1)).join(",")).join(" ");
+  const grid = [.25, .5, .75, 1].map(f => `<polygon points="${ring(f)}" fill="none" stroke="var(--line)" stroke-width="1"/>`).join("");
+  const spokes = axes.map((_, i) => { const [x, y] = pt(i, 1); return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--line)" stroke-width="1"/>`; }).join("");
+  const labels = axes.map((l, i) => { const [x, y] = pt(i, 1.22); const an = Math.abs(x - cx) < 8 ? "middle" : (x > cx ? "start" : "end"); return `<text x="${x.toFixed(1)}" y="${(y + 3).toFixed(1)}" text-anchor="${an}" font-size="9.5" letter-spacing="1" fill="currentColor" style="font-family:var(--sans)">${esc(l)}</text>`; }).join("");
+  const polys = series.map((se, k) => {
+    const vals = axes.map(l => { const f = se.stats.find(x => x.l === l); return f ? Number(f.v) || 0 : 0; });
+    const scale = Math.max(0, ...vals) > 25 ? 100 : 21;
+    const pts = vals.map((v, i) => pt(i, Math.max(.03, Math.min(1, v / scale))));
+    return `<polygon points="${pts.map(q => q.map(v => v.toFixed(1)).join(",")).join(" ")}" fill="${se.color}" fill-opacity=".2" stroke="${se.color}" stroke-width="1.8" stroke-linejoin="round"${k ? ' stroke-dasharray="5 3"' : ""}/>` + pts.map(([x, y]) => `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.2" fill="${se.color}"/>`).join("");
+  }).join("");
+  return `<svg class="radar" viewBox="0 0 300 232" role="img" aria-label="ステータスのレーダーチャート">${grid}${spokes}${polys}${labels}</svg>`;
+}
 const spoilOpen = new Set();
+function spoilWrap(inner, key){
+  const open = spoilOpen.has(key);
+  return `<div class="spoil${open ? " open" : ""}" data-spoil="${esc(key)}"><div class="spoil-inner"${open ? "" : ' aria-hidden="true" inert'}>${inner}</div>
+    <button type="button" class="spoil-btn" data-spoil-btn aria-label="ネタバレを含みます。タップして表示"><span class="spoil-t">⚠ ネタバレを含みます</span><span class="spoil-s">見る場合は、タップしてください</span></button></div>`;
+}
 function statusHtml(c){
   const k = c.coc;
-  if(!k || (!k.stats.length && !k.derived.length && !k.skills.length && !k.memo && !k.after.length)) return "";
+  if(!k || (!k.stats.length && !k.derived.length && !k.skills.length && !k.memo && !k.after.length && !k.spells.length)) return "";
   const vals = k.stats.map(s => Number(s.v) || 0);
   const scale = Math.max(0, ...vals) > 25 ? 100 : 21;
   const pct = (v, m) => Math.max(0, Math.min(100, (Number(v) / m) * 100)) || 0;
@@ -1891,16 +1988,15 @@ function statusHtml(c){
   }).join("");
   const skills = [...k.skills].sort((a, b) => b.v - a.v);
   const inner = `${k.edition ? `<p class="st-tag rv">CoC ${esc(k.edition)}</p>` : ""}
+    ${k.stats.length >= 3 ? `<div class="radar-wrap rv">${radarSvg([{ stats: k.stats, color: accOf(c).col }])}</div>` : ""}
     ${stats ? `<div class="statgrid" aria-label="能力値">${stats}</div>` : ""}
     ${derived ? `<div class="statgrid" aria-label="ステータス">${derived}</div>` : ""}
     ${skills.length ? `<details class="sk rv"><summary>技能（${skills.length}件）</summary><ul class="skills">${skills.map(s => `<li><span>${esc(s.n)}</span><span>${esc(s.v)}</span></li>`).join("")}</ul></details>` : ""}
+    ${k.spells.length ? `<h3 class="h3 rv">覚えた呪文</h3><ul class="spells rv">${k.spells.map(([n, d]) => `<li><span class="sp-n">${esc(n)}</span>${d ? `<span class="sp-d">${esc(d)}</span>` : ""}</li>`).join("")}</ul>` : ""}
     ${afterHtml(k)}
     ${k.memo ? `<p class="prose-pre rv" style="margin-top:1.2rem">${esc(k.memo)}</p>` : ""}
     ${/^https?:\/\//.test(k.source) ? `<p class="rv" style="margin-top:1rem"><a href="${esc(k.source)}" target="_blank" rel="noopener noreferrer" style="letter-spacing:.14em;font-size:.82rem">キャラクターシートを開く</a></p>` : ""}`;
-  if(!k.spoiler) return inner;
-  const open = spoilOpen.has(c.id);
-  return `<div class="spoil${open ? " open" : ""}" data-spoil="${esc(c.id)}"><div class="spoil-inner"${open ? "" : ' aria-hidden="true" inert'}>${inner}</div>
-    <button type="button" class="spoil-btn" data-spoil-btn aria-label="ネタバレを含みます。タップして表示"><span class="spoil-t">⚠ ネタバレを含みます</span><span class="spoil-s">見る場合は、タップしてください</span></button></div>`;
+  return k.spoiler ? spoilWrap(inner, c.id) : inner;
 }
 /* GALLERY：タグで絞り込み・大きく見せる（本人・UCYS相手で共通） */
 function galListHtml(o, a, attr, seedBase){
@@ -1908,6 +2004,11 @@ function galListHtml(o, a, attr, seedBase){
   if(!items.length) return `<p class="empty">まだありません。</p>`;
   return `<div class="gal-list">${items.map(([x, i], n) => `<button type="button" class="gal-item rv" style="transition-delay:${Math.min(n, 6) * 50}ms" ${attr}="${i}"><span class="gal-img">${thumb(x, seedBase + i)}</span><span class="gal-cap"><span class="cap-t">${esc(x.t)}</span>${x.tags.length ? `<span class="fuse-tags">${x.tags.map(t => pill(t)).join("")}</span>` : ""}</span></button>`).join("")}</div>`;
 }
+const FUSE_WARN = "基本的にタグ内容のネタバレがありますので閲覧はご注意ください。<br>シナリオ内容のネタバレの無いもののみ『ネタバレ無』のタグが付いています。";
+const fusePanel = (o, f, attrTag) => `<p class="fuse-warn">${FUSE_WARN}</p>
+  <div class="fuse-bar">${tagBar(o.tags.fusetter, f, attrTag)}${o.fusetter.length > 1 ? `<span class="fuse-order" title="上が新しい順">NEW ↑　OLD ↓</span>` : ""}</div>
+  ${o.tags.fusetter.some(t => /^r-?18/i.test(t)) ? `<p class="uc-note">※ R18タグの投稿は、18歳以上の方のみご覧ください。</p>` : ""}
+  <div class="uc-list">${fuseListHtml(o, f)}</div>`;
 const galPanel = (o, a, attrTag, attrItem, seedBase) => `${tagBar(o.tags.art, a, attrTag)}
   ${o.tags.art.some(t => /^r-?18/i.test(t)) ? `<p class="uc-note">※ R18タグの作品は、18歳以上の方のみご覧ください。</p>` : ""}
   <div class="uc-list">${galListHtml(o, a, attrItem, seedBase)}</div>`;
@@ -1954,6 +2055,20 @@ function ucPartner(){ const c = cdChar(); return c && c.ucys.find(u => u.id === 
 function ucysHtml(c){
   return `${c.ucys.length > 1 ? `<div class="uc-sel" role="group" aria-label="うちよそ相手">${c.ucys.map((u, i) => `<button type="button" class="uc-chip" data-ucys="${esc(u.id)}" aria-pressed="false"><span class="thumb-s fs">${thumb(Object.assign({}, listImgOf(u) || {}, { name: u.name }), i + 30)}</span><span>${esc(u.name)}</span></button>`).join("")}</div>` : ""}<div class="uc-body"></div>`;
 }
+function compareHtml(c, u){
+  const a = c.coc, b = u.coc;
+  const ca = accOf(c).col, cb = accOf(u).col;
+  const val = (k, l) => { const f = [...k.stats, ...k.derived].find(x => x.l === l); return f ? (typeof f.v === "number" ? f.v : num(f.v)) : null; };
+  const labels = [...new Set([...a.stats.map(x => x.l), ...b.stats.map(x => x.l)])];
+  const dl = [...new Set([...a.derived, ...b.derived].map(x => x.l))].filter(l => !labels.includes(l) && val(a, l) != null && val(b, l) != null);
+  const rows = [...labels, ...dl];
+  if(!rows.length) return "";
+  const cell = (v, other) => v == null ? `<td class="cmp-n">−</td>` : `<td class="${other != null && v > other ? "cmp-hi" : ""}">${esc(v)}</td>`;
+  const inner = `<div class="cmp-legend"><span><i style="background:${esc(ca)}"></i>${esc(c.name)}</span><span><i class="dash" style="border-color:${esc(cb)}"></i>${esc(u.name)}</span></div>
+    ${(a.stats.length >= 3 || b.stats.length >= 3) ? `<div class="radar-wrap">${radarSvg([{ stats: a.stats, color: ca }, { stats: b.stats, color: cb }])}</div>` : ""}
+    <table class="cmp-table"><thead><tr><th></th><th>${esc(c.name)}</th><th>${esc(u.name)}</th></tr></thead><tbody>${rows.map(l => { const x = val(a, l), y = val(b, l); return `<tr><th scope="row">${esc(l)}</th>${cell(x, y)}${cell(y, x)}</tr>`; }).join("")}</tbody></table>`;
+  return (a.spoiler || b.spoiler) ? spoilWrap(inner, a.spoiler ? c.id : "p:" + u.id) : inner;
+}
 function renderUc(){
   const c = cdChar(), u = ucPartner(), host = $(".uc-body");
   if(!host) return;
@@ -1963,6 +2078,8 @@ function renderUc(){
   const subs = [["profile", "PROFILE"]];
   if(u.fusetter.length) subs.push(["fuse", "FUSE"]);
   if(u.art.length) subs.push(["art", "GALLERY"]);
+  const cmpHtml = (c.coc.stats.length || c.coc.derived.length || u.coc.stats.length || u.coc.derived.length) ? compareHtml(c, u) : "";
+  if(cmpHtml) subs.push(["cmp", "STATUS"]);
   if(ss.length) subs.push(["scen", "SCENARIO"]);
   if(!subs.some(([k]) => k === uc.sub)) uc.sub = "profile";
   const hid = k => k === uc.sub ? "" : " hidden";
@@ -1981,10 +2098,9 @@ function renderUc(){
       ${u.personality ? `<h3 class="h3 rv">性格</h3><p class="prose-pre rv">${esc(u.personality)}</p>` : ""}
     </div>
     ${u.fusetter.length ? `<div class="uc-panel" data-subp="fuse"${hid("fuse")}>
-      ${tagBar(u.tags.fusetter, uc.f, "data-ftag")}
-      ${hasR18 ? `<p class="uc-note">※ R18タグの投稿は、18歳以上の方のみご覧ください。</p>` : ""}
-      <div class="uc-list">${fuseListHtml(u, uc.f)}</div></div>` : ""}
+      ${fusePanel(u, uc.f, "data-ftag")}</div>` : ""}
     ${u.art.length ? `<div class="uc-panel" data-subp="art"${hid("art")}>${galPanel(u, uc.a, "data-atag", "data-uart", 5)}</div>` : ""}
+    ${cmpHtml ? `<div class="uc-panel" data-subp="cmp"${hid("cmp")}>${cmpHtml}</div>` : ""}
     ${ss.length ? `<div class="uc-panel" data-subp="scen"${hid("scen")}><ul class="scen">${ss.map(s => scenLi(s, c.id, false)).join("")}</ul></div>` : ""}`;
   if(u.poses.length) stageInit("uc", u, seed, host); else delete STG.uc;
   $$(".uc-chip").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.ucys === uc.pid)));
@@ -2033,10 +2149,7 @@ function renderDetail(id){
       ${tabs.map(([k, l], n) => `<button type="button" role="tab" id="cdt-${k}" aria-controls="cdp-${k}" aria-selected="${n === 0}" data-tab="${k}">${l}</button>`).join("")}
     </div>
     <div class="cd-panel" id="cdp-profile" role="tabpanel" aria-labelledby="cdt-profile">${profilePanel}</div>
-    ${c.fusetter.length ? `<div class="cd-panel" id="cdp-fusetter" role="tabpanel" aria-labelledby="cdt-fusetter" hidden>
-      ${tagBar(c.tags.fusetter, "ALL", "data-mftag")}
-      ${c.tags.fusetter.some(t => /^r-?18/i.test(t)) ? `<p class="uc-note">※ R18タグの投稿は、18歳以上の方のみご覧ください。</p>` : ""}
-      <div class="uc-list">${fuseListHtml(c, "ALL")}</div></div>` : ""}
+    ${c.fusetter.length ? `<div class="cd-panel" id="cdp-fusetter" role="tabpanel" aria-labelledby="cdt-fusetter" hidden>${fusePanel(c, "ALL", "data-mftag")}</div>` : ""}
     ${c.ucys.length ? `<div class="cd-panel" id="cdp-ucys" role="tabpanel" aria-labelledby="cdt-ucys" hidden>${ucysHtml(c)}</div>` : ""}
     ${st ? `<div class="cd-panel" id="cdp-status" role="tabpanel" aria-labelledby="cdt-status" hidden>${st}</div>` : ""}
     ${c.art.length ? `<div class="cd-panel" id="cdp-art" role="tabpanel" aria-labelledby="cdt-art" hidden>${galPanel(c, "ALL", "data-maTag", "data-art", i * 9 + 4)}</div>` : ""}
@@ -2066,6 +2179,30 @@ function ucPanelRefresh(which){
   observeReveal(host);
 }
 
+/* PC：選択中のキャラの立ち絵・差分を大きく表示 */
+const finePointer = () => matchMedia("(hover:hover) and (pointer:fine)").matches;
+let bigSt = null;
+const bigDlg = $("#bigDlg");
+function renderBig(){
+  const st = bigSt; if(!st) return;
+  const ps = st.ch.poses[st.pose], f = ps && st.face >= 0 ? ps.faces[st.face] : null, item = f || ps;
+  const src = item && (item._data || item.src);
+  $("#bigImg").innerHTML = src ? `<img src="${esc(src)}" alt="${esc(st.ch.name + (ps ? " " + ps.name : "") + (f ? " " + f.name : ""))}">` : placeholder(st.seed + st.pose * 5 + st.face + 2);
+  const poses = st.ch.poses.length > 1 ? st.ch.poses.map((p2, i) => `<button type="button" class="pose" data-bpose="${i}" aria-pressed="${i === st.pose}"><span class="thumb-s">${thumb(p2, st.seed + i + 2)}</span><span>${esc(p2.name)}</span></button>`).join("") : "";
+  const faces = ps && ps.faces.length ? [["-1", "基本", ps], ...ps.faces.map((x, k) => [String(k), x.name, x])].map(([k, n, it]) => `<button type="button" class="face" data-bface="${k}" aria-pressed="${+k === st.face}"><span class="thumb-s fs">${thumb(it, st.seed + 9)}</span><span>${esc(n)}</span></button>`).join("") : "";
+  $("#bigStrip").innerHTML = (poses ? `<div class="big-row">${poses}</div>` : "") + (faces ? `<div class="big-row">${faces}</div>` : "");
+}
+function openBig(st){
+  bigSt = st; renderBig();
+  if(typeof bigDlg.showModal === "function"){ if(!bigDlg.open) bigDlg.showModal(); } else bigDlg.setAttribute("open", "");
+}
+$("#bigClose").addEventListener("click", () => bigDlg.close());
+bigDlg.addEventListener("click", e => {
+  if(e.target === bigDlg || e.target.id === "bigImg") { bigDlg.close(); return; }
+  const bp = e.target.closest("[data-bpose]"), bf = e.target.closest("[data-bface]");
+  if(bp){ const n = +bp.dataset.bpose; if(n !== bigSt.pose){ const dir = n > bigSt.pose ? 1 : -1; bigSt.pose = n; bigSt.face = -1; bigSt.line = 0; stSync(bigSt, "pose", dir); renderBig(); } }
+  else if(bf){ bigSt.face = +bf.dataset.bface; stRenderBars(bigSt); stRenderStage(bigSt, "face", 0); renderBig(); }
+});
 $("#cdRoot").addEventListener("click", e => {
   const tb = e.target.closest("#cdTabs [data-tab]");
   if(tb){ cdTab(tb.dataset.tab); return; }
@@ -2119,6 +2256,7 @@ $("#cdRoot").addEventListener("click", e => {
   /* 立ち絵ステージ（本人／UCYS相手） */
   const g = e.target.closest(".stg"), st = g && STG[g.dataset.stg];
   if(!st) return;
+  if(e.target.closest(".cd-img") && finePointer() && !e.target.closest(".cd-serifu")){ openBig(st); return; }
   const pb = e.target.closest("[data-pose]");
   if(pb){ const n = +pb.dataset.pose; if(n === st.pose) return; const dir = n > st.pose ? 1 : -1; st.pose = n; st.face = -1; st.line = 0; stSync(st, "pose", dir); return; }
   const fb = e.target.closest("[data-face]");
@@ -2157,9 +2295,16 @@ function renderLatest(){
   $("#homeLatest").innerHTML = SITE.gallery.slice(0, 3).map((g, i) => tile(g, i)).join("");
   $("#homeLatestBlock").hidden = SITE.gallery.length === 0;
 }
+let homePick = null;
+function shuffled(a){ const r = [...a]; for(let i = r.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; }
 function renderHomeChars(){
-  const list = SITE.characters.slice(0, 6), host = $("#homeChars"); if(!host) return;
+  const host = $("#homeChars"); if(!host) return;
   $("#homeChar").hidden = SITE.characters.length === 0;
+  // トップを開くたびに、6人をランダムに選び直す（編集中の再描画では変えない）
+  if(!homePick || homePick.some(id => !SITE.characters.some(c => c.id === id)) || (homePick.length < 6 && homePick.length < SITE.characters.length)){
+    homePick = shuffled(SITE.characters).slice(0, 6).map(c => c.id);
+  }
+  const list = homePick.map(id => SITE.characters.find(c => c.id === id)).filter(Boolean);
   host.innerHTML = list.map((c, i) => {
     const it = listImgOf(c), col = safeColor(c.profile.color), ss = sessionsOf(c.id), latest = ss[0] ? ss[0].title : "";
     return `<a class="ccard" href="#character/${encId(c.id)}" data-go="character/${encId(c.id)}" style="--d:${i * 60}ms${col ? ";background:" + esc(col) : ""}">
@@ -2528,6 +2673,7 @@ function processImage(file, max = 1400){
 const fl = (label, path, val, ph) => `<label>${label}<input data-path="${path}" value="${esc(val)}"${ph ? ` placeholder="${esc(ph)}"` : ""}></label>`;
 const ar = (label, path, val, rows, as) => `<label>${label}<textarea data-path="${path}"${as ? ` data-as="${as}"` : ""} rows="${rows}">${esc(as ? AS[as].to(val) : val)}</textarea></label>`;
 const cl = (label, path, val, ph) => `<label>${label}<span class="colorrow"><input type="color" data-path="${path}" value="${hexOf(val)}" aria-label="${esc(label)}（色を選ぶ）"><input data-path="${path}" value="${esc(val)}" placeholder="${esc(ph || "#7a9cc6")}"></span></label>`;
+const multiBtn = arr => `<label class="ed-small filebtn">画像をまとめて追加<input class="vh" type="file" accept="image/*" multiple data-multi="${arr}"></label>`;
 const imgCtl = (path, o, seed) => `<div class="ed-img"><div class="thumb ck">${thumb(o, seed)}</div>
     <label class="ed-small filebtn">画像を選ぶ<input class="vh" type="file" accept="image/*" data-img="${path}"></label>
     ${o.src ? `<button type="button" class="ed-small" data-op="clear" data-obj="${path}">画像を外す</button>` : ""}</div>`;
@@ -2555,15 +2701,72 @@ function posesEd(owner, OP, seed){
         <div class="ed-faces"><span class="ed-lab">差分</span>
           ${ps.faces.map((f, fi) => `<div class="ed-face">${imgCtl(PP + ".faces." + fi, f, seed + pi * 3 + fi)}
             <div class="ed-fields">${fl("差分名", PP + ".faces." + fi + ".name", f.name)}${opsHtml(PP + ".faces", fi, ps.faces.length)}</div></div>`).join("")}
-          <button type="button" class="ed-small" data-op="add" data-arr="${PP}.faces">＋ 差分を追加</button>
+          <div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${PP}.faces">＋ 差分を追加</button>${multiBtn(PP + ".faces")}</div>
         </div>
         ${opsHtml(OP + ".poses", pi, owner.poses.length)}
       </div></div>`;
   }).join("");
-  return `${poses || `<p class="empty">立ち絵がまだありません。</p>`}<button type="button" class="ed-small" data-op="add" data-arr="${OP}.poses">＋ 立ち絵パターンを追加</button>`;
+  return `${poses || `<p class="empty">立ち絵がまだありません。</p>`}<div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${OP}.poses">＋ 立ち絵パターンを追加</button>${multiBtn(OP + ".poses")}</div>`;
+}
+const ptxtMsgs = {};
+/* PROFILE：貼り付けたテキストを読み取って入力 */
+const PLABELS = [
+  ["hw", /^身長\s*[\/／・]\s*体重$/], ["hair_eye", /^(髪色|髪の色|髪)\s*[\/／・]\s*(瞳色|目の色|瞳|目)$/], ["pron", /^一人称\s*[\/／・]\s*二人称$/], ["bb", /^誕生日\s*[\/／・]\s*血液型$/],
+  ["kana", /^(よみ|ふりがな|フリガナ|読み|ヨミ|読み仮名)$/], ["name", /^(名前|氏名|キャラクター名|PC名|探索者名)$/], ["age", /^年齢$/], ["sex", /^性別$/],
+  ["height", /^身長$/], ["weight", /^体重$/], ["job", /^職業$/], ["birthplace", /^(出身|出身地)$/], ["hair", /^(髪色|髪の色|髪)$/], ["eye", /^(瞳色|目の色|瞳|目)$/],
+  ["first", /^一人称$/], ["second", /^二人称$/], ["birthday", /^誕生日$/], ["blood", /^血液型$/], ["likes", /^(好きなもの|好き)$/], ["dislikes", /^(嫌いなもの|嫌い)$/],
+  ["color", /^(イメージカラー|テーマカラー|カラー)$/], ["personality", /^性格$/], ["traits", /^(特徴表|特徴)$/], ["relation", /^(関係性|関係)$/], ["owner", /^(作者|PLさん|PL)$/]
+];
+function parseProfileText(text){
+  const entries = [];
+  String(text || "").split(/\r?\n/).forEach(line => {
+    if(!line.trim()) return;
+    let m = /^\s*[【\[［]([^】\]］]{1,16})[】\]］]\s*[:：]?\s*(.*)$/.exec(line) || /^\s*([^:：【】\[\]［］]{1,16}?)\s*[:：]\s*(.*)$/.exec(line);
+    if(m) entries.push({ label: m[1].trim(), value: m[2].trim() });
+    else if(entries.length) entries[entries.length - 1].value += "\n" + line.trim();
+  });
+  const set = {}, top = {}, extra = [], used = [];
+  const parts = v => v.split(/[\/／・,、，\n]+/).map(x => x.trim()).filter(Boolean);
+  entries.forEach(({ label, value }) => {
+    const hit = PLABELS.find(([, re]) => re.test(label));
+    if(!hit){ if(value) extra.push([label, value]); return; }
+    const key = hit[0]; if(!value) return;
+    used.push(label);
+    if(key === "hw"){ const a = parts(value); a.forEach(x => { if(/kg|キロ/i.test(x)) set.weight = x; else if(/cm|センチ|m$/i.test(x)) set.height = x; }); if(!set.height && !set.weight){ set.height = a[0] || ""; set.weight = a[1] || ""; } }
+    else if(key === "hair_eye"){ const a = parts(value); set.hair = a[0] || ""; set.eye = a[1] || ""; }
+    else if(key === "pron"){ const a = parts(value); set.first = a[0] || ""; set.second = a[1] || ""; }
+    else if(key === "bb"){ const a = parts(value); a.forEach(x => { if(/型|^[ABO]|AB/i.test(x) && /型|^(A|B|O|AB)$/i.test(x)) set.blood = x; else set.birthday = x; }); }
+    else if(key === "likes" || key === "dislikes"){ set[key] = parts(value).slice(0, 4).join("\n"); }
+    else if(key === "traits"){ set.traits = value.split(/[\/／・、，,\n]|①|②/).map(x => x.trim()).filter(Boolean).slice(0, 2); }
+    else if(key === "color"){ const hex = /#[0-9a-f]{3,8}/i.exec(value); const c2 = hex ? hex[0] : value; if(safeColor(c2)) set.color = c2; }
+    else if(["name", "personality", "relation", "owner"].includes(key)) top[key] = value;
+    else set[key] = value;
+  });
+  return { set, top, extra, used };
+}
+function applyProfileText(key, text){
+  const o = draft && getP(draft, key); if(!o) return;
+  const r = parseProfileText(text);
+  const setMsg = m => { ptxtMsgs[key] = m; const el = $(`[data-ptxt-msg="${key}"]`); if(el) el.textContent = m; };
+  let n = 0; const names = [];
+  Object.keys(r.set).forEach(k => {
+    const v = r.set[k];
+    if(k === "traits"){ if(v.length){ o.profile.traits = [v[0] || "", v[1] || ""]; n++; names.push("特徴表"); } }
+    else if(v){ o.profile[k] = v; n++; names.push(k); }
+  });
+  Object.keys(r.top).forEach(k => { if(r.top[k]){ o[k] = r.top[k]; n++; names.push(k); } });
+  r.extra.forEach(([k, v]) => { if(!o.profile.extra.some(x => x[0] === k)){ o.profile.extra.push([k, v]); } else { o.profile.extra.find(x => x[0] === k)[1] = v; } });
+  if(!n && !r.extra.length){ setMsg("読み取れる項目が見つかりませんでした。「年齢：17歳」のように、1行に1項目で、「：」でつないでください。"); return; }
+  setMsg(n + "項目を入力しました。" + (r.extra.length ? "読み取れなかった「" + r.extra.map(x => x[0]).slice(0, 4).join("」「") + "」は、「その他の項目」に入れました。" : "") + " 内容は下の欄で直せます。");
+  markDirty(); renderEditor();
 }
 function profileEd(o, OP){
-  return `<div class="ed-fields"><div class="ed-2">${PROFILE_FIELDS.map(([l, key]) => fl(l, `${OP}.profile.${key}`, o.profile[key])).join("")}</div>
+  return `<div class="ed-import"><label>テキストを貼り付けて入力（「項目：内容」を1行ずつ。「身長/体重：160cm/48kg」のようなまとめ書きも読めます）
+      <textarea data-ptxt="${OP}" rows="5" placeholder="年齢：17歳&#10;性別：女性&#10;身長/体重：160cm/48kg&#10;職業：高校生&#10;好き：夜の散歩、甘いもの&#10;特徴表：手が冷たい／古い傷跡"></textarea></label>
+      <div class="ed-imp-row"><button type="button" class="ed-small" data-op="ptxt-run" data-obj="${OP}">読み取って入力する</button></div>
+      <p class="ed-imp-msg" data-ptxt-msg="${OP}" role="status">${esc(ptxtMsgs[OP] || "")}</p></div>
+    <div class="ed-fields"><div class="ed-2">${PROFILE_FIELDS.map(([l, key]) => fl(l, `${OP}.profile.${key}`, o.profile[key])).join("")}</div>
+      <div class="ed-2">${fl("特徴表（1つ目）", OP + ".profile.traits.0", o.profile.traits[0])}${fl("特徴表（2つ目）", OP + ".profile.traits.1", o.profile.traits[1])}</div>
       ${ar("好きなもの（1行に1つ、4つくらいまで。2つ目以降は小さく目立たなく表示されます）", OP + ".profile.likes", o.profile.likes, 4)}
       ${ar("嫌いなもの（同じく、1行に1つ。2つ目以降は小さく表示）", OP + ".profile.dislikes", o.profile.dislikes, 4)}
       ${cl("イメージカラー（入力した色が表示されます）", OP + ".profile.color", o.profile.color, "#7a9cc6 / 青 など")}
@@ -2572,13 +2775,17 @@ function profileEd(o, OP){
 
 /* fusetter（ふせったーのリンク置き場）の編集：本人・UCYS相手で共通 */
 function fuseEd(o, OP){
+  const add = `<div class="ed-addrow"><button type="button" class="ed-small" data-op="add-top" data-arr="${OP}.fusetter">＋ 上に追加（NEW）</button></div>`;
+  const addB = `<div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${OP}.fusetter">＋ 下に追加（OLD）</button></div>`;
   return `<div class="ed-fields">${ar("タグの一覧（1行に1つ。ここに足すと、下で選べます）", OP + ".tags.fusetter", o.tags.fusetter, 3, "lines")}</div>
+    <p class="ed-lab">サイトでは、上が新しい（NEW）、下が古い（OLD）順に並びます。</p>
+    ${add}
     ${o.fusetter.map((x, xi) => {
       const XP = OP + ".fusetter." + xi;
       return `<div class="ed-face ed-one"><div class="ed-fields">${fl("タイトル", XP + ".t", x.t)}${fl("ふせったーのURL", XP + ".url", x.url, "https://fusetter.com/…")}${fl("ひとこと（空でも可）", XP + ".note", x.note)}
         ${tagChecks(XP + ".tags", o.tags.fusetter, x.tags)}${opsHtml(OP + ".fusetter", xi, o.fusetter.length)}</div></div>`;
     }).join("") || `<p class="empty">まだありません。</p>`}
-    <button type="button" class="ed-small" data-op="add" data-arr="${OP}.fusetter">＋ FUSEを追加</button>`;
+    ${addB}`;
 }
 
 /* GALLERYの編集：本人・UCYS相手で共通（タグ分けできます） */
@@ -2588,7 +2795,7 @@ function galEd(o, OP, seed){
       const XP = OP + ".art." + xi;
       return `<div class="ed-face">${imgCtl(XP, x, seed + xi)}<div class="ed-fields">${fl("タイトル", XP + ".t", x.t)}${tagChecks(XP + ".tags", o.tags.art, x.tags)}${opsHtml(OP + ".art", xi, o.art.length)}</div></div>`;
     }).join("") || `<p class="empty">まだありません。</p>`}
-    <button type="button" class="ed-small" data-op="add" data-arr="${OP}.art">＋ 画像を追加</button>`;
+    <div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${OP}.art">＋ 画像を追加</button>${multiBtn(OP + ".art")}</div>`;
 }
 /* UCYS（うちよそ相手）の編集 */
 function partnerEd(u, UP, seed){
@@ -2607,7 +2814,13 @@ function partnerEd(u, UP, seed){
     ${det(K + ":profile", "PROFILE", profileEd(u, UP))}
     ${det(K + ":words", "セリフ・性格", words)}
     ${det(K + ":fuse", "FUSE（ふせったー置き場）", fuse)}
-    ${det(K + ":art", "GALLERY", art)}`;
+    ${det(K + ":art", "GALLERY", art)}
+    ${det(K + ":status", "STATUS（UCYSでの比較用）", `<div class="ed-fields">
+      <label class="chk"><input type="checkbox" data-booltoggle="${UP}.coc.spoiler"${u.coc.spoiler ? " checked" : ""}>この相手のステータスに、ネタバレ防止のぼかしをかける（UCYSの比較表示）</label>
+      ${impBox(UP)}
+      ${fl("版", UP + ".coc.edition", u.coc.edition, "6版 / 7版")}
+      ${ar("能力値（1行に「STR: 12」）", UP + ".coc.stats", u.coc.stats, 4, "stats")}
+      ${ar("HP・MP・SANなど（「HP: 11 / 11」「幸運: 75」）", UP + ".coc.derived", u.coc.derived, 4, "derived")}</div>`)}`;
 }
 
 /* 参加シナリオ（SESSIONと連動）の編集 */
@@ -2631,6 +2844,18 @@ function scenEd(c){
     </div>`;
 }
 
+function impBox(key){
+  return `<div class="ed-import">
+      <label>外部JSONを貼り付け（ココフォリア駒／キャラクター保管所の .js／このサイトの形式）。テーマカラーがあれば、イメージカラーに入ります
+        <textarea data-imp="text" data-ci="${key}" rows="4" placeholder='{"kind":"character","data":{…}}'></textarea></label>
+      <div class="ed-imp-row">
+        <label class="ed-small filebtn">ファイルから<input class="vh" type="file" accept=".json,.js,.txt,application/json" data-imp-file="${key}"></label>
+        <input data-imp="url" data-ci="${key}" placeholder="キャラクター保管所のURL（任意）" aria-label="キャラクター保管所のURL">
+        <button type="button" class="ed-small" data-op="imp-url" data-i="${key}">URLから取得</button>
+        <button type="button" class="ed-small" data-op="imp-run" data-i="${key}">貼り付けを取り込む</button>
+      </div>
+      <p class="ed-imp-msg" data-imp-msg="${key}" role="status"></p></div>`;
+}
 function edChara(c, i){
   const P = "characters." + i, K = "c:" + c.id, k = c.coc;
   const basic = `<div class="ed-fields">
@@ -2645,16 +2870,7 @@ function edChara(c, i){
   const words = `<div class="ed-fields">${ar("共通セリフ（1行に1つ。「／」で区切ると、縦の枠が分かれます）", P + ".lines", c.lines, 4, "lines")}
       ${ar("性格", P + ".personality", c.personality, 5)}
       ${ar("さらに詳しく（性格の下に、折りたたんで表示。興味のある人だけが開いて読めます）", P + ".more", c.more, 6)}</div>`;
-  const imp = `<div class="ed-import">
-      <label>外部JSONを貼り付け（ココフォリア駒／キャラクター保管所の .js／このサイトの形式）
-        <textarea data-imp="text" data-ci="${i}" rows="4" placeholder='{"kind":"character","data":{…}}'></textarea></label>
-      <div class="ed-imp-row">
-        <label class="ed-small filebtn">ファイルから<input class="vh" type="file" accept=".json,.js,.txt,application/json" data-imp-file="${i}"></label>
-        <input data-imp="url" data-ci="${i}" placeholder="キャラクター保管所のURL（任意）" aria-label="キャラクター保管所のURL">
-        <button type="button" class="ed-small" data-op="imp-url" data-i="${i}">URLから取得</button>
-        <button type="button" class="ed-small" data-op="imp-run" data-i="${i}">貼り付けを取り込む</button>
-      </div>
-      <p class="ed-imp-msg" data-imp-msg="${i}" role="status"></p></div>`;
+  const imp = impBox(P);
   const afterEd = `${k.after.map((a, ai) => {
       const AP = P + ".coc.after." + ai, perm = !a.cured.trim();
       return `<div class="ed-face ed-one"><div class="ed-fields">${fl("後遺症の名前", AP + ".name", a.name)}
@@ -2671,6 +2887,7 @@ function edChara(c, i){
       ${ar("能力値（1行に「STR: 12」）", P + ".coc.stats", k.stats, 4, "stats")}
       ${ar("HP・MP・SANなど（「HP: 11 / 11」「幸運: 75」）", P + ".coc.derived", k.derived, 4, "derived")}
       ${ar("技能（1行に「目星: 60」）", P + ".coc.skills", k.skills, 6, "skills")}
+      ${ar("覚えた呪文（1行に「呪文名: 説明」。説明は空でも可）", P + ".coc.spells", k.spells, 4, "facts")}
       ${ar("備考", P + ".coc.memo", k.memo, 3)}
       ${fl("キャラクターシートのURL（任意）", P + ".coc.source", k.source, "https://…")}</div>
     <div class="ed-lab" style="margin:1rem 0 .4rem">後遺症（完治日を過ぎると、目立たない表示に自動で変わります）</div>${afterEd}`;
@@ -2715,7 +2932,7 @@ function edSession(s, si){
       ${fl("詳細・ログのURL（Notionなど。任意）", SP + ".url", s.url, "https://…")}
       <div class="ed-faces"><span class="ed-lab">ココフォリアの部屋画像（SESSION一覧のカードに表示されます。なければ自動の飾りになります）</span>
         ${s.rooms.map((r, ri) => `<div class="ed-face">${imgCtl(SP + ".rooms." + ri, r, si * 5 + ri)}<div class="ed-fields">${fl("キャプション（空でも可）", SP + ".rooms." + ri + ".t", r.t)}${opsHtml(SP + ".rooms", ri, s.rooms.length)}</div></div>`).join("")}
-        <button type="button" class="ed-small" data-op="add" data-arr="${SP}.rooms">＋ 部屋画像を追加</button></div>
+        <div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${SP}.rooms">＋ 部屋画像を追加</button>${multiBtn(SP + ".rooms")}</div></div>
       <div><span class="ed-lab">参加したキャラクター（チェックすると、そのキャラのPROFILEにも出ます）</span>${chars || `<p class="empty">キャラクターがまだありません。</p>`}</div>
       ${fl("未登録の参加者など（自由記入）", SP + ".others", s.others)}
       ${opsHtml("sessions", si, draft.sessions.length)}
@@ -2850,13 +3067,33 @@ $("#edList").addEventListener("change", async e => {
     try{
       const r = await processImage(inp.files[0], /poses|rooms/.test(path) ? 1800 : 1400);
       o._data = r.dataUrl; o.src = newPath(path.startsWith("gallery") ? "gallery" : "character", r.ext);
+      const fname = nameFromFile(inp.files[0]);   // ファイル名をタイトルにする
+      if(/(^|\.)(poses|faces)\.\d+$/.test(path)) o.name = fname;
+      else if("t" in o && (!o.t || /^(新しい|イラスト \d|関連イラスト|画像)/.test(o.t))) o.t = fname;
       markDirty(); renderEditor();
     }catch(err){ setState("画像を読み込めませんでした。別のファイルを試してください。"); }
     return;
   }
+  const mi = t.closest("[data-multi]");
+  if(mi && mi.files.length){
+    const arrPath = mi.dataset.multi, arr = getP(draft, arrPath); if(!arr) return;
+    const files = [...mi.files].sort((a, b) => a.name.localeCompare(b.name, "ja", { numeric: true })); mi.value = "";
+    const field = /\.(poses|faces)$/.test(arrPath) ? "name" : "t", big = /poses|rooms/.test(arrPath);
+    let n = 0, ok = 0;
+    for(const f of files){
+      setState("画像を処理中… " + (++n) + "/" + files.length);
+      try{
+        const r = await processImage(f, big ? 1800 : 1400);
+        const item = blankFor(arrPath); item[field] = nameFromFile(f); item._data = r.dataUrl; item.src = newPath("character", r.ext);
+        arr.push(item); ok++;
+      }catch(err){ /* 読み込めなかった画像は飛ばす */ }
+    }
+    setState(ok + "枚を登録しました（ファイル名がタイトルになります）");
+    markDirty(); renderEditor(); return;
+  }
   const f = t.closest("[data-imp-file]");
   if(f && f.files[0]){
-    const i = +f.dataset.impFile;
+    const i = f.dataset.impFile;
     try{ const tx = await f.files[0].text(); f.value = ""; applyImport(i, tx); }
     catch(err){ setImpMsg(i, "ファイルを読み込めませんでした。"); }
     return;
@@ -2898,6 +3135,7 @@ $("#edList").addEventListener("change", async e => {
 });
 
 const todayFull = () => { const n = new Date(); return n.getFullYear() + "." + String(n.getMonth() + 1).padStart(2, "0") + "." + String(n.getDate()).padStart(2, "0"); };
+const nameFromFile = f => String(f.name || "").replace(/\.[^.]+$/, "");
 function blankFor(arrPath){
   const last = arrPath.split(".").pop(), arr = getP(draft, arrPath) || [];
   const uid36 = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 4);
@@ -2931,10 +3169,18 @@ $("#edList").addEventListener("click", e => {
   const b = e.target.closest("[data-op]"); if(!b || b.disabled) return;
   const op = b.dataset.op;
   if(op === "imp-run"){
-    const i = +b.dataset.i, ta = $(`[data-imp="text"][data-ci="${i}"]`);
+    const i = b.dataset.i, ta = $(`[data-imp="text"][data-ci="${i}"]`);
     applyImport(i, ta ? ta.value : ""); return;
   }
-  if(op === "imp-url"){ fetchImport(+b.dataset.i); return; }
+  if(op === "imp-url"){ fetchImport(b.dataset.i); return; }
+  if(op === "ptxt-run"){
+    const key = b.dataset.obj, ta = $(`[data-ptxt="${key}"]`);
+    applyProfileText(key, ta ? ta.value : ""); return;
+  }
+  if(op === "add-top"){
+    const arr0 = getP(draft, b.dataset.arr); if(!arr0) return;
+    arr0.unshift(blankFor(b.dataset.arr)); markDirty(); renderEditor(); return;
+  }
   if(op === "simp-run"){ const ta = $('[data-simp="text"]'); importSessions(ta ? ta.value : ""); return; }
   if(op === "link" || op === "unlink" || op === "newsess"){
     const cid = b.dataset.cid;
@@ -3095,13 +3341,13 @@ function importSessions(text){
 
 /* --- editor: external JSON import --- */
 function setImpMsg(i, msg){ impMsgs[i] = msg; const el = $(`[data-imp-msg="${i}"]`); if(el) el.textContent = msg; }
-function applyImport(i, text){
-  const c = draft && draft.characters[i]; if(!c) return;
+function applyImport(key, text){
+  const c = draft && getP(draft, key); if(!c) return;
   let o;
   try{ o = parseImportText(text); }
-  catch(err){ setImpMsg(i, "JSONを読み取れませんでした。{ から } までを、そのまま貼り付けてください。"); return; }
+  catch(err){ setImpMsg(key, "JSONを読み取れませんでした。{ から } までを、そのまま貼り付けてください。"); return; }
   const r = convertImported(o);
-  if(!r){ setImpMsg(i, "対応していない形式です。ココフォリア駒、キャラクター保管所の .js、このサイトの形式に対応しています。"); return; }
+  if(!r){ setImpMsg(key, "対応していない形式です。ココフォリア駒、キャラクター保管所の .js、このサイトの形式に対応しています。"); return; }
   if(r.stats.length) c.coc.stats = r.stats;
   if(r.derived.length) c.coc.derived = r.derived;
   if(r.skills.length) c.coc.skills = r.skills;
@@ -3109,9 +3355,12 @@ function applyImport(i, text){
   if(r.source) c.coc.source = r.source;
   if(r.edition && (!c.coc.edition || r.stats.length)) c.coc.edition = r.edition;
   Object.keys(r.profile).forEach(k => { if(r.profile[k] && !c.profile[k]) c.profile[k] = r.profile[k]; });
-  if(r.name && (!c.name || /^(キャラクター名|新しいキャラクター)/.test(c.name))) c.name = r.name;
-  openKeys.add("c:" + c.id); openKeys.add("c:" + c.id + ":status");
-  impMsgs[i] = r.kind + "を取り込みました：能力値" + r.stats.length + "件、派生" + r.derived.length + "件、技能" + r.skills.length + "件。" + (r.notes.length ? " " + r.notes.join(" ") : "") + " 内容は下の欄で直せます。";
+  if(r.name && (!c.name || /^(キャラクター名|新しいキャラクター|新しい相手)/.test(c.name))) c.name = r.name;
+  let colorMsg = "";
+  if(r.color && safeColor(r.color)){ c.profile.color = r.color.trim(); colorMsg = " イメージカラーを " + c.profile.color + " にしました（取り込んだテーマカラー）。"; }
+  const pre = Array.isArray(c.ucys) ? "c:" : "u:";
+  openKeys.add(pre + c.id); openKeys.add(pre + c.id + ":status");
+  impMsgs[key] = r.kind + "を取り込みました：能力値" + r.stats.length + "件、派生" + r.derived.length + "件、技能" + r.skills.length + "件。" + colorMsg + (r.notes.length ? " " + r.notes.join(" ") : "") + " 内容は下の欄で直せます。";
   markDirty(); renderEditor();
 }
 async function fetchImport(i){
@@ -3220,7 +3469,7 @@ function show(v, fromLoad){
     el.classList.toggle("enter", on && !fromLoad);
   });
   document.body.dataset.view = r.view;
-  if(r.view === "home") requestAnimationFrame(fitTitle);
+  if(r.view === "home"){ requestAnimationFrame(fitTitle); if(!fromLoad){ homePick = null; renderHomeChars(); } }
   const navKey = r.view === "charadetail" ? "character" : r.view;
   $$(".subnav a").forEach(a => { if(a.dataset.go === navKey) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
   window.scrollTo(0, 0);
