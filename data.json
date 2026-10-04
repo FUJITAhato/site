@@ -1434,109 +1434,76 @@
           "lines": [
             "この世の女ぜーんぶ／俺の婚約者だっつの♡"
           ],
-          "faces": []
-        },
-        {
-          "name": "♡",
-          "src": "images/c-muu5f646snd.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "おねがい",
-          "src": "images/c-muu5f66daxb.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "てれ…",
-          "src": "images/c-muu5f68n1al.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "にこっ",
-          "src": "images/c-muu5f69siwj.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "は？",
-          "src": "images/c-muu5f6awasy.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "やる気",
-          "src": "images/c-muu5f6c06b7.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "嫌笑い",
-          "src": "images/c-muu5f6e64mj.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "口尖らせ",
-          "src": "images/c-muu5f6fb0sd.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "しんど…",
-          "src": "images/c-muu5f67kh7g.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "危機",
-          "src": "images/c-muu5f6d1z6g.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "黒笑顔",
-          "src": "images/c-muu5f6gh9oj.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "笑顔！",
-          "src": "images/c-muu5f6hml2k.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "笑顔♡",
-          "src": "images/c-muu5f6iqbc3.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "大爆笑",
-          "src": "images/c-muu5f6kz3o5.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "真面目キレ",
-          "src": "images/c-muu5f6jvppi.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "目逸らし…",
-          "src": "images/c-muu5f6m4rze.png",
-          "lines": [],
-          "faces": []
-        },
-        {
-          "name": "目逸らし",
-          "src": "images/c-muu5f6n9t99.png",
-          "lines": [],
-          "faces": []
+          "faces": [
+            {
+              "name": "♡",
+              "src": "images/c-muu64f23fp1.png"
+            },
+            {
+              "name": "てれ…",
+              "src": "images/c-muu64f5ri17.png"
+            },
+            {
+              "name": "にこっ",
+              "src": "images/c-muu64f6wxoi.png"
+            },
+            {
+              "name": "おねがい",
+              "src": "images/c-muu64f35of8.png"
+            },
+            {
+              "name": "は？",
+              "src": "images/c-muu64f816c6.png"
+            },
+            {
+              "name": "やる気",
+              "src": "images/c-muu64f96o7b.png"
+            },
+            {
+              "name": "嫌笑い",
+              "src": "images/c-muu64fbefku.png"
+            },
+            {
+              "name": "口尖らせ",
+              "src": "images/c-muu64fckgx5.png"
+            },
+            {
+              "name": "笑顔！",
+              "src": "images/c-muu64fevsmb.png"
+            },
+            {
+              "name": "目逸らし",
+              "src": "images/c-muu64fkjkm6.png"
+            },
+            {
+              "name": "目逸らし…",
+              "src": "images/c-muu64fjeg53.png"
+            },
+            {
+              "name": "笑顔♡",
+              "src": "images/c-muu64fg0j65.png"
+            },
+            {
+              "name": "大爆笑",
+              "src": "images/c-muu64fi9670.png"
+            },
+            {
+              "name": "しんど⋯",
+              "src": "images/c-muu64f47qx8.png"
+            },
+            {
+              "name": "危機",
+              "src": "images/c-muu64fa9z6o.png"
+            },
+            {
+              "name": "真面目キレ",
+              "src": "images/c-muu64fh52ud.png"
+            },
+            {
+              "name": "黒笑顔",
+              "src": "images/c-muu64fdqaao.png"
+            }
+          ]
         }
       ],
       "art": [],
@@ -1996,7 +1963,52 @@
           "lines": [
             "未来のお嫁さんに／百本の薔薇を！／野郎共には、はい ゴボウ。"
           ],
-          "faces": []
+          "faces": [
+            {
+              "name": "ふふん！",
+              "src": "images/c-muu6d97hcmk.png"
+            },
+            {
+              "name": "基本",
+              "src": "images/c-muu6d99i583.png"
+            },
+            {
+              "name": "にこっ",
+              "src": "images/c-muu6d96hbao.png"
+            },
+            {
+              "name": "えー",
+              "src": "images/c-muu6d95gtxr.png"
+            },
+            {
+              "name": "キラキラ",
+              "src": "images/c-muu6d95zatv.png"
+            },
+            {
+              "name": "はわ",
+              "src": "images/c-muu6d96z0ne.png"
+            },
+            {
+              "name": "むっ",
+              "src": "images/c-muu6d98irn2.png"
+            },
+            {
+              "name": "ん？",
+              "src": "images/c-muu6d9907dm.png"
+            },
+            {
+              "name": "笑顔",
+              "src": "images/c-muu6d99zw79.png"
+            },
+            {
+              "name": "白目",
+              "src": "images/c-muu6d9ahw0d.png"
+            },
+            {
+              "name": "ブレ",
+              "src": "images/c-muu6d97zva7.png"
+            }
+          ]
         },
         {
           "name": "GODARCA",
@@ -3087,7 +3099,56 @@
           "name": "制服",
           "src": "images/c-muqb2ckk004.png",
           "lines": [],
-          "faces": []
+          "faces": [
+            {
+              "name": "かお",
+              "src": "images/c-muu67mfy909.png"
+            },
+            {
+              "name": "基本",
+              "src": "images/c-muu67mlrmpg.png"
+            },
+            {
+              "name": "基本2",
+              "src": "images/c-muu67mmxvv0.png"
+            },
+            {
+              "name": "…",
+              "src": "images/c-muu67mcfly8.png"
+            },
+            {
+              "name": "あ？",
+              "src": "images/c-muu67mdmg93.png"
+            },
+            {
+              "name": "おこ！",
+              "src": "images/c-muu67metim7.png"
+            },
+            {
+              "name": "きらい",
+              "src": "images/c-muu67mh35rr.png"
+            },
+            {
+              "name": "は…？",
+              "src": "images/c-muu67miau6m.png"
+            },
+            {
+              "name": "はっ",
+              "src": "images/c-muu67mjgz63.png"
+            },
+            {
+              "name": "ふーん",
+              "src": "images/c-muu67mkncn0.png"
+            },
+            {
+              "name": "目逸らし",
+              "src": "images/c-muu67mo3r7m.png"
+            },
+            {
+              "name": "涙…",
+              "src": "images/c-muu67mpa66q.png"
+            }
+          ]
         }
       ],
       "art": [],
@@ -3110,7 +3171,68 @@
         ]
       },
       "fusetter": [],
-      "ucys": [],
+      "ucys": [
+        {
+          "id": "umuu69c6tgh",
+          "name": "歳鹿 秋貂 ",
+          "relation": "",
+          "owner": "",
+          "desc": "",
+          "personality": "",
+          "profile": {
+            "kana": "さいかく しゅうてん",
+            "age": "",
+            "sex": "",
+            "height": "",
+            "weight": "",
+            "job": "",
+            "birthplace": "",
+            "hair": "",
+            "eye": "",
+            "first": "",
+            "second": "",
+            "birthday": "",
+            "blood": "",
+            "likes": "",
+            "dislikes": "",
+            "color": "",
+            "extra": [],
+            "traits": [
+              "",
+              ""
+            ]
+          },
+          "lines": [],
+          "poses": [],
+          "tags": {
+            "fusetter": [
+              "SS",
+              "R18",
+              "その他",
+              "ネタバレ無"
+            ],
+            "art": [
+              "ディスプレイ",
+              "skeb",
+              "イラスト",
+              "R18"
+            ]
+          },
+          "fusetter": [],
+          "coc": {
+            "edition": "",
+            "memo": "",
+            "source": "",
+            "stats": [],
+            "derived": [],
+            "skills": [],
+            "spells": [],
+            "spoiler": false,
+            "after": []
+          },
+          "art": []
+        }
+      ],
       "coc": {
         "edition": "",
         "memo": "",
