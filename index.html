@@ -856,6 +856,42 @@ dialog.bigdlg [aria-pressed="true"] .thumb-s{ border-color:#fff; outline:1px sol
 .seg-b{ min-width:5em; padding:.55em 1.3em; border:1.5px solid var(--mute); border-radius:999px; font-size:.86rem; letter-spacing:.16em; color:var(--mute); cursor:pointer; transition:background .2s,color .2s,border-color .2s; }
 .seg-b:hover{ border-color:var(--ink); color:var(--ink); }
 .seg-b[aria-pressed="true"]{ background:var(--ink); border-color:var(--ink); color:var(--bg); }
+
+/* sessions without an image: a plain white card */
+.scard-img.blank{ background:#fff; box-shadow:inset 0 0 0 1px var(--line); }
+.sd-blank{ aspect-ratio:16/9; background:#fff; box-shadow:inset 0 -1px 0 var(--line); }
+
+/* WORK: price tabs */
+.wk-follow{ display:flex; flex-wrap:wrap; align-items:center; gap:.5rem .9rem; margin:1.4rem 0 0; padding:.85rem 1rem; border:1px solid var(--line); font-size:.9rem; line-height:1.7; }
+.wk-follow[hidden]{ display:none; }
+.wk-panel{ animation:fade .45s ease both; }
+.wk-row{ display:flex; justify-content:space-between; align-items:baseline; gap:1.2rem; padding:.85rem 0; border-bottom:1px solid var(--line); }
+.wk-l{ font-size:.95rem; line-height:1.7; }
+.wk-v{ font-family:var(--serif); font-size:1.2rem; text-align:right; flex:none; max-width:58%; line-height:1.5; }
+.wk-row.ind{ padding-left:1.4rem; }
+.wk-row.ind .wk-l{ font-size:.84rem; color:var(--mute); }
+.wk-row.ind .wk-v{ font-size:1.02rem; color:var(--mute); }
+.wk-h{ margin:1.8rem 0 .1rem; font-family:var(--sans); font-size:.72rem; font-weight:500; letter-spacing:.26em; color:var(--mute); }
+.wk-n{ margin:.9rem 0 0; font-size:.8rem; line-height:1.9; color:var(--mute); }
+.wk-cautions li{ font-size:.9rem; line-height:1.95; margin:.45em 0; }
+
+/* WORK: stronger follower note, quieter Japanese-in-numbers, emphasised full-body rows */
+.wk-follow{ background:rgba(255,198,79,.2); border:1.5px solid #FFC64F; box-shadow:0 0 0 4px rgba(255,198,79,.14); padding:1rem 1.15rem; gap:.6rem 1rem; font-size:1.02rem; font-weight:700; line-height:1.7; }
+.wk-follow .pill{ background:#FFC64F; border-color:#FFC64F; color:#20373B; font-weight:700; opacity:1; font-size:.84rem; padding:.12em 1.1em; }
+.wk-j{ font-size:.74em; letter-spacing:.04em; }
+.wk-row.emph{ background:linear-gradient(90deg, rgba(255,198,79,.26), rgba(255,198,79,0) 88%); border-left:3px solid #FFC64F; padding-left:.85rem; }
+.wk-row.emph .wk-l{ font-weight:700; font-size:1.06rem; }
+.wk-row.emph .wk-v{ font-size:1.5rem; font-weight:500; }
+
+/* ===== WORK: same colours as the top page (neutral base, saffron accent kept) ===== */
+body[data-view="work"]{ --bg:#f7f8fa; --ink:#222326; --mute:#83868e; --line:#dcdfe5; --panel:#eef0f4; --btnbg:#222326; --btnink:#f7f8fa; --acc2:#222326; --hi:#FFC64F; --xbg:#FFC64F; --xink:#222326; }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) body[data-view="work"]{ --bg:#15171b; --ink:#e8e9ed; --mute:#8b8f99; --line:#2c2f36; --panel:#1c1f25; --btnbg:#e8e9ed; --btnink:#15171b; --acc2:#e8e9ed; } }
+.wk-follow .pill{ color:#222326; }
+
+/* WORK: a clear break between the base prices and the options */
+.wk-h{ margin:3.4rem 0 .3rem; padding-top:1.7rem; border-top:1px solid var(--line); }
+.wk-panel>.wk-h:first-child,.wk-panel>.h3+.wk-h{ margin-top:1.4rem; padding-top:0; border-top:0; }
+#wkRest[hidden]{ display:none; }
 </style>
 </head>
 <body data-view="home">
@@ -1003,10 +1039,13 @@ dialog.bigdlg [aria-pressed="true"] .thumb-s{ border-color:#fff; outline:1px sol
       <span class="status" id="status"><i></i><span id="statusText"></span></span>
       <p class="xnote" id="statusNote"></p>
 
-      <h2 class="h2">料金</h2>
-      <div id="menu"></div>
-      <p class="xnote">金額は目安です。内容によって変わる場合があります。</p>
+      <p class="wk-follow" id="wkFollow"><span class="pill">FOLLOWER</span><span id="wkFollowT"></span></p>
 
+      <h2 class="h2">料金</h2>
+      <div class="pf-tabs wk-tabs" id="wkTabs" role="tablist" aria-label="料金の項目"></div>
+      <div id="wkPanel"></div>
+
+      <div id="wkRest">
       <h2 class="h2">依頼の流れ</h2>
       <ol class="flow" id="flow"></ol>
 
@@ -1024,15 +1063,16 @@ dialog.bigdlg [aria-pressed="true"] .thumb-s{ border-color:#fff; outline:1px sol
         <span class="vh" role="status" id="tplMsg"></span>
       </div>
 
-      <h2 class="h2">お願いごと</h2>
-      <ul class="list" id="rules"></ul>
-
       <h2 class="h2">依頼する</h2>
       <p>XのDMで、希望する内容・用途・締め切りを送ってください。</p>
       <a class="btn" data-x-href href="https://x.com/Lv103000" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         <span>XのDMを開く</span>
       </a>
+
+      <h2 class="h2">注意事項</h2>
+      <ul class="list wk-cautions" id="cautions"></ul>
+      </div>
     </div>
   </section>
 
@@ -1050,7 +1090,7 @@ dialog.bigdlg [aria-pressed="true"] .thumb-s{ border-color:#fff; outline:1px sol
   <section class="view" data-view="edit" hidden>
     <div class="wrap page">
       <h1 class="page-title" tabindex="-1">Edit</h1>
-      <p class="page-sub">プロフィール・キャラクター・シナリオ・ギャラリーの編集</p>
+      <p class="page-sub">プロフィール・キャラクター・シナリオ・ギャラリー・依頼料金の編集</p>
 
       <details class="ed-help">
         <summary>公開までの流れ</summary>
@@ -1069,6 +1109,7 @@ dialog.bigdlg [aria-pressed="true"] .thumb-s{ border-color:#fff; outline:1px sol
           <button type="button" data-tab="character" aria-pressed="true">CHARACTER</button>
           <button type="button" data-tab="session" aria-pressed="false">SESSION</button>
           <button type="button" data-tab="gallery" aria-pressed="false">GALLERY</button>
+          <button type="button" data-tab="work" aria-pressed="false">WORK</button>
         </div>
         <span class="ed-state" id="edState" role="status"></span>
       </div>
@@ -1096,7 +1137,8 @@ dialog.bigdlg [aria-pressed="true"] .thumb-s{ border-color:#fff; outline:1px sol
 
 <footer><span id="copy"></span></footer>
 
-<div class="pv" id="pv" hidden><span>プレビュー中（未公開）</span><a href="#edit" data-go="edit">編集に戻る</a></div>
+<div class="pv" id="pv" hidden><span>プレビュー中（未公開）</span><a href="#edit" data-go="edit">編集に戻る</a>
+</div>
 
 <dialog id="sessDlg" class="sdlg" aria-label="シナリオの詳細">
   <button type="button" class="sd-close" id="sessDlgClose">CLOSE</button>
@@ -1182,22 +1224,389 @@ const SITE = {
     }
   },
 
-  commission: {
-    open: true,
-    note: "同時に受けられる数に限りがあります。受付状況が変わったらXでお知らせします。",
-    menu: [
-      ["アイコン", "¥3,000〜"],
-      ["バストアップ", "¥5,000〜"],
-      ["全身イラスト", "¥8,000〜"],
-      ["キャラクター設定画", "¥12,000〜"]
+  work: {
+    "open": true,
+    "note": "同時に受けられる数に限りがあります。受付状況が変わったらXでお知らせします。",
+    "follower": "フォロワーさんの場合　基本料金からおひとつのみ −¥1,000",
+    "tabs": [
+      {
+        "id": "size",
+        "title": "サイズ・形式",
+        "heading": "サイズ / 形式",
+        "url": "",
+        "rows": [
+          {
+            "l": "サイズ",
+            "v": "",
+            "i": false,
+            "h": true,
+            "e": false
+          },
+          {
+            "l": "アイコン",
+            "v": "1000px × 1000px",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "全身",
+            "v": "縦横 1100px〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ディスプレイ",
+            "v": "縦横 1300px〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "イラスト・スチル",
+            "v": "縦横 1500px〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "納品",
+            "v": "",
+            "i": false,
+            "h": true,
+            "e": false
+          },
+          {
+            "l": "形式",
+            "v": "png（希望あればjpgもお付けします）",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "解像度",
+            "v": "350dpi",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "人数",
+            "v": "ソロ or コンビ",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": []
+      },
+      {
+        "id": "solo",
+        "title": "ソロ",
+        "heading": "ソロ基本料金",
+        "url": "",
+        "rows": [
+          {
+            "l": "アイコン（1000px×1000px）",
+            "v": "¥2,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ウエストアップ（腰上まで）",
+            "v": "¥4,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "全身（+表情2種）",
+            "v": "¥10,000",
+            "i": false,
+            "h": false,
+            "e": true
+          },
+          {
+            "l": "座り全身",
+            "v": "¥7,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ミニキャラ",
+            "v": "¥2,500",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "オプション",
+            "v": "",
+            "i": false,
+            "h": true,
+            "e": false
+          },
+          {
+            "l": "表情差分：3点追加",
+            "v": "+¥1,500",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "描き下ろし表情差分：3点追加",
+            "v": "+¥3,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "APNG差分：1点",
+            "v": "+¥600",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "小物追加（コストの高いもの）",
+            "v": "+¥2,000〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "衣装/ポーズ差分",
+            "v": "+¥4,000〜12,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "早期納品（2週間以内）",
+            "v": "制作費の+30%加算",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "商用利用（要相談）",
+            "v": "制作費の+50%加算",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": [
+          "※【 小物追加 】のオプションの料金設定については、複雑な小物によっては値段が加算します。小物についてはご依頼前にご相談ください。",
+          "※【 表情差分 】は約一週間で納品できます。全身立ち絵納品後あとから追加でご依頼なども承りますのでご相談ください。",
+          "※【 衣装/ポーズ差分 】のオプションの料金追加は、基本料金を元に価格が変動します。"
+        ]
+      },
+      {
+        "id": "combo",
+        "title": "コンビ",
+        "heading": "コンビ基本料金",
+        "url": "",
+        "rows": [
+          {
+            "l": "アイコン（1000px×1000px）",
+            "v": "¥4,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ウエストアップ（腰上まで）",
+            "v": "¥8,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "全身",
+            "v": "¥17,000",
+            "i": false,
+            "h": false,
+            "e": true
+          },
+          {
+            "l": "表情差分 各3種（書き下ろし）",
+            "v": "¥5,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "┗ 構図再利用の場合",
+            "v": "¥4,000",
+            "i": true,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ミニキャラ",
+            "v": "¥4,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "オプション",
+            "v": "",
+            "i": false,
+            "h": true,
+            "e": false
+          },
+          {
+            "l": "書き下ろし差分に追加：各キャラ3点追加",
+            "v": "+¥3,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "構図再利用で差分追加：各キャラ3点追加",
+            "v": "+¥3,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "APNG差分：1点",
+            "v": "+¥1,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "小物追加（コストの高いもの）",
+            "v": "+¥2,000〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "衣装/ポーズ差分",
+            "v": "+¥4,000〜12,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "早期納品（2週間以内）",
+            "v": "制作費の+30%加算",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "商用利用（要相談）",
+            "v": "制作費の+50%加算",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": [
+          "※お２人が並ぶ姿の立ち絵です。ソロ×２よりもお得な価格で、がっつりと絡みます！",
+          "※【 小物追加 】のオプションの料金設定については、複雑な小物によっては値段が加算します。小物についてはご依頼前にご相談ください。",
+          "※【 表情差分 】は約一週間で納品できます。全身立ち絵納品後あとから追加でご依頼なども承りますのでご相談ください。",
+          "※【 衣装/ポーズ差分 】のオプションの料金追加は、基本料金を元に価格が変動します。"
+        ]
+      },
+      {
+        "id": "display",
+        "title": "ディスプレイ",
+        "heading": "ディスプレイ基本料金",
+        "url": "",
+        "rows": [
+          {
+            "l": "1枚（縦横ご指定ください）",
+            "v": "¥1,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "鳩作立ち絵をご使用の場合",
+            "v": "¥500",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": [
+          "（縦横ご指定のない場合、ディスプレイラフの制作枚数が増えますので＋500円頂きます）"
+        ]
+      },
+      {
+        "id": "still",
+        "title": "イラスト・スチル",
+        "heading": "イラスト・スチル基本料金",
+        "url": "",
+        "rows": [
+          {
+            "l": "画面内に4人まで",
+            "v": "¥20,000",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": [
+          "細かい指定があったり複雑な構図の場合は +¥1,500〜応相談となります"
+        ]
+      },
+      {
+        "id": "skeb",
+        "title": "skeb",
+        "heading": "skeb",
+        "url": "https://skeb.jp/@Lv103000",
+        "bare": true,
+        "rows": [
+          {
+            "l": "ご依頼のやりとりをしたくない方向けです",
+            "v": "",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "金額によってクオリティに差があります",
+            "v": "",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": []
+      }
     ],
-    flow: [
+    "cautions": [
+      "ご依頼頂くキャラクターの所有権がご依頼主様に無い場合、必ず所有者の方に許可を得てのご依頼をお願い致します。※トラブルがあった場合こちらで責任は負いかねます。",
+      "\"オリジナルキャラクターのみ\"承っております。",
+      "R18/R18G の依頼不可となります。",
+      "版権キャラクターのご依頼は受け付けておりません。",
+      "著作権の譲渡は行っておりません。自作発言/二次配布は禁止しております。",
+      "公序良俗に反するご利用は禁止しております。",
+      "第三者による加筆、加工はお控えください。",
+      "YouTubeなどの広告収益を含む商用利用の際はご相談ください。",
+      "ご依頼頂いた制作物を実績サンプルやSNSに掲載することがあります。",
+      "その他気になることがありましたら遠慮なくご相談ください。"
+    ],
+    "flow": [
       "XのDMで、内容・用途・締め切りを送る",
       "見積りと納期をお返しする",
       "支払いを確認したら制作を始める",
       "ラフ、線画、完成の順に確認してもらう",
       "データを納品する"
-    ],
+    ]
+  },
+
+  commission: {
     template: `►使用用途：
 ►依頼人数：ソロ／コンビ
 ►追加オプション：必要な人のみ記入
@@ -1288,12 +1697,7 @@ const SITE = {
 ►納品後、実績としてSNSへの作品公開可能or不可
 
 ►その他相談／備考欄
-（作品公開不可の場合、+制作費の+30%加算）`,
-    rules: [
-      "商用利用や二次配布は、事前に相談してください。",
-      "制作物は、実績として当サイトやSNSに掲載することがあります。掲載してほしくない場合は依頼時に伝えてください。",
-      "大きな修正は、進行段階によりお断りする場合があります。"
-    ]
+（作品公開不可の場合、+制作費の+30%加算）`
   },
 
   /* 初期の見本です。data.json がサイトの隣にあれば、そちらが優先されます。 */
@@ -1426,14 +1830,27 @@ requestAnimationFrame(fitTitle);
 })();
 
 
-const W = SITE.commission;
-$("#status").classList.toggle("closed", !W.open);
-$("#statusText").textContent = W.open ? "依頼受付中" : "現在は受付停止中";
-$("#statusNote").textContent = W.note;
-$("#menu").innerHTML = W.menu.map(([a,b]) => `<div class="price"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join("");
-$("#flow").innerHTML = W.flow.map(s => `<li>${esc(s)}</li>`).join("");
-$("#rules").innerHTML = W.rules.map(s => `<li>${esc(s)}</li>`).join("");
+const W = SITE.commission;   // ご依頼テンプレートの文面
 
+/* WORK：料金（タブ）・注意事項・依頼の流れ */
+let wkTab = null;
+const wkVal = v => esc(v).replace(/([^\u0000-\u007F\u00A5\uFFE5\u301C\uFF5E\u2212\u2013\u00D7]+)/g, '<span class="wk-j">$1</span>');   // 数字より大きく見える日本語は、少し小さく
+const wkRows = rows => rows.map(r => r.h ? `<h3 class="wk-h">${esc(r.l)}</h3>` : `<div class="wk-row${r.i ? " ind" : ""}${r.e ? " emph" : ""}"><span class="wk-l">${esc(r.l)}</span>${r.v ? `<span class="wk-v">${wkVal(r.v)}</span>` : ""}</div>`).join("");
+function renderWork(){
+  const w = SITE.work; if(!$("#wkTabs")) return;
+  $("#status").classList.toggle("closed", !w.open);
+  $("#statusText").textContent = w.open ? "依頼受付中" : "現在は受付停止中";
+  $("#statusNote").textContent = w.note;
+  $("#wkFollow").hidden = !w.follower.trim(); $("#wkFollowT").textContent = w.follower;
+  if(!w.tabs.some(t => t.id === wkTab)) wkTab = w.tabs[0] ? w.tabs[0].id : null;
+  $("#wkTabs").innerHTML = w.tabs.map(t => `<button type="button" role="tab" data-wk="${esc(t.id)}" aria-selected="${t.id === wkTab}">${esc(t.title || "（名称なし）")}</button>`).join("");
+  const t = w.tabs.find(x => x.id === wkTab);
+  $("#wkPanel").innerHTML = t ? `<div class="wk-panel tab-in" role="tabpanel">${t.heading ? `<h3 class="h3" style="margin-top:.4rem">${esc(t.heading)}</h3>` : ""}${wkRows(t.rows)}${t.notes.map(n => `<p class="wk-n">${esc(n)}</p>`).join("")}${/^https?:\/\//.test(t.url) ? `<p style="margin-top:1.4rem"><a class="btn" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">${/skeb/i.test(t.url) ? "skebで依頼する" : esc(t.title) + "を開く"} <span aria-hidden="true">↗</span></a></p>` : ""}</div>` : `<p class="empty">準備中です。</p>`;
+  $("#wkRest").hidden = !!(t && t.bare);   // skebなど、このタブでは下の説明を出さない
+  $("#flow").innerHTML = w.flow.map(x => `<li>${esc(x)}</li>`).join("");
+  $("#cautions").innerHTML = w.cautions.map(x => `<li>${esc(x)}</li>`).join("");
+}
+$("#wkTabs").addEventListener("click", e => { const b = e.target.closest("[data-wk]"); if(!b) return; wkTab = b.dataset.wk; renderWork(); });
 
 /* --- request template (copy) --- */
 let tplTab = "t";
@@ -1581,12 +1998,26 @@ function normSiteProfile(p){
   sc.busy = (Array.isArray(sc.busy) ? sc.busy : []).map(String).filter(x => /^\d{4}-\d{2}-\d{2}$/.test(x));
   return p;
 }
+function normWork(w){
+  w = w && typeof w === "object" ? w : {};
+  w.open = w.open !== false; w.note = dstr(w.note); w.follower = dstr(w.follower);
+  w.tabs = (Array.isArray(w.tabs) ? w.tabs : []).map((t, i) => ({
+    id: dstr(t && t.id) || ("t" + (i + 1)), title: dstr(t && t.title), heading: dstr(t && t.heading),
+    url: dstr(t && t.url) || ((t && t.id) === "skeb" ? "https://skeb.jp/@Lv103000" : ""),
+    bare: t && t.bare !== undefined ? !!t.bare : (t && t.id) === "skeb",
+    rows: (Array.isArray(t && t.rows) ? t.rows : []).map(r => ({ l: dstr(r && r.l), v: dstr(r && r.v), i: !!(r && r.i), h: !!(r && r.h), e: !!(r && r.e) })),
+    notes: normTags(t && t.notes)
+  }));
+  w.cautions = normTags(w.cautions); w.flow = normTags(w.flow);
+  return w;
+}
 /* 全データをまとめて整える（旧形式の「参加シナリオ」文字列は SESSION に移す） */
 function normAll(d){
   d.characters = (Array.isArray(d.characters) ? d.characters : []).map(normChar);
   d.sessions = (Array.isArray(d.sessions) ? d.sessions : []).map(normSession);
   d.gallery = Array.isArray(d.gallery) ? d.gallery : [];
   d.profile = normSiteProfile(d.profile);
+  d.work = normWork(d.work);
   d.charTags = normTags(d.charTags).filter(Boolean);
   if(!d.charTags.length) d.charTags = ["高校生", "大学生", "警察", "医療", "芸能", "アウトロー"];
   d.characters.forEach(c => {
@@ -1620,6 +2051,14 @@ const AS = {
                const m = /^(-?\d+(?:\.\d+)?)\s*\/\s*(-?\d+(?:\.\d+)?)$/.exec(v);
                return m ? { l, v: Number(m[1]), max: Number(m[2]) } : { l, v: /^-?\d+(?:\.\d+)?$/.test(v) ? Number(v) : v };
              }) },
+  workrows: { to: a => (a || []).map(r => r.h ? "# " + r.l : (r.e ? "* " : "") + (r.i ? "> " : "") + r.l + (r.v ? " | " + r.v : "")).join("\n"),
+              from: t => t.split("\n").filter(l => l.trim()).map(l => {
+                if(/^#\s*/.test(l)) return { l: l.replace(/^#\s*/, "").trim(), v: "", i: false, h: true, e: false };
+                let ind = false, emph = false, body = l;
+                for(let n = 0; n < 2; n++){ if(/^>\s*/.test(body)){ ind = true; body = body.replace(/^>\s*/, ""); } else if(/^\*\s*/.test(body)){ emph = true; body = body.replace(/^\*\s*/, ""); } }
+                const k = body.indexOf("|");
+                return k >= 0 ? { l: body.slice(0, k).trim(), v: body.slice(k + 1).trim(), i: ind, h: false, e: emph } : { l: body.trim(), v: "", i: ind, h: false, e: emph };
+              }) },
   skills: { to: a => (a || []).map(o => o.n + ": " + o.v).join("\n"),
             from: t => splitKV(t).map(([n, v]) => ({ n, v: num(v) })).filter(o => o.v != null) }
 };
@@ -1793,6 +2232,16 @@ function renderSortOptions(){
   if(![...$("#cSort").options].some(o => o.value === cl8.sort)) cl8.sort = "default";
   $("#cSort").value = cl8.sort;
 }
+/* 並び替えの項目に合わせて、カードの2行目（標準では「最新」）に出す内容を変える。値がなければ空白 */
+function sortLine(c, ss){
+  const key = cl8.sort, show = v => (v == null || v === "") ? "" : String(v);
+  if(key === "name") return { label: "よみ", text: show(c.profile.kana) };
+  if(key === "count") return { label: "参加", text: ss.length ? ss.length + "件" : "" };
+  if(key === "height") return { label: "身長", text: show(c.profile.height).trim() };
+  if(key === "age") return { label: "年齢", text: show(c.profile.age).trim() };
+  if(key.startsWith("stat:")){ const l = key.slice(5), f = [...c.coc.stats, ...c.coc.derived].find(x => x.l === l); return { label: l, text: f ? show(f.v) : "" }; }
+  return { label: "最新", text: ss[0] ? ss[0].title : "" };
+}
 function renderCharacters(){
   const list = SITE.characters;
   renderSortOptions();
@@ -1827,10 +2276,10 @@ function renderCharacters(){
   if(!list.length){ $("#charas").innerHTML = `<p class="empty">準備中です。</p>`; return; }
   if(!rows.length){ $("#charas").innerHTML = `<p class="empty">条件に合うキャラクターはいません。</p>`; return; }
   $("#charas").innerHTML = `<div class="cgrid">${rows.map(({ c, i, ss }, n) => {
-    const it = listImgOf(c), col = safeColor(c.profile.color), latest = ss[0] ? ss[0].title : "";
+    const it = listImgOf(c), col = safeColor(c.profile.color), sub = sortLine(c, ss);
     return `<a class="ccard" href="#character/${encId(c.id)}" data-go="character/${encId(c.id)}" style="--d:${Math.min(n, 12) * 50}ms${col ? ";background:" + esc(col) : ""}">
       <span class="cimg">${thumb(Object.assign({}, it || {}, { name: c.name }), i + 3)}</span>
-      <span class="ccap"><span class="cn">${esc(c.name)}</span>${c.origin ? `<span class="cs"><b>出身</b>${esc(c.origin)}</span>` : ""}${latest ? `<span class="cs"><b>最新</b>${esc(latest)}</span>` : ""}</span>
+      <span class="ccap"><span class="cn">${esc(c.name)}</span>${c.origin ? `<span class="cs"><b>出身</b>${esc(c.origin)}</span>` : ""}${sub.text ? `<span class="cs"><b>${esc(sub.label)}</b>${esc(sub.text)}</span>` : ""}</span>
     </a>`;
   }).join("")}</div>`;
 }
@@ -2323,7 +2772,7 @@ function renderHomeChars(){
     </a>`;
   }).join("");
 }
-function renderData(){ renderHomeChars(); renderCharacters(); renderChips(); renderGallery(); renderLatest(); renderSessions(); renderProfile(); }
+function renderData(){ renderHomeChars(); renderCharacters(); renderChips(); renderGallery(); renderLatest(); renderSessions(); renderProfile(); renderWork(); }
 $("#chips").addEventListener("click", e => {
   const b = e.target.closest(".chip"); if(!b) return;
   currentCat = b.dataset.cat; renderGallery();
@@ -2341,10 +2790,11 @@ async function loadPublished(){
       if(Array.isArray(d.sessions)) SITE.sessions = d.sessions;
       if(d.profile && typeof d.profile === "object") SITE.profile = d.profile;
       if(Array.isArray(d.charTags)) SITE.charTags = d.charTags;
+      if(d.work && typeof d.work === "object") SITE.work = d.work;
     }
   }catch(e){ /* data.json が無い／file:// のときは見本を表示 */ }
   normAll(SITE);
-  published = { characters: clone(SITE.characters), gallery: clone(SITE.gallery), sessions: clone(SITE.sessions), profile: clone(SITE.profile), charTags: clone(SITE.charTags) };
+  published = { characters: clone(SITE.characters), gallery: clone(SITE.gallery), sessions: clone(SITE.sessions), profile: clone(SITE.profile), charTags: clone(SITE.charTags), work: clone(SITE.work) };
   renderData();
 }
 const ready = loadPublished();
@@ -2422,35 +2872,13 @@ $("#pfBody").addEventListener("click", e => {
    ============================================================ */
 let sessQ = "", sessSys = "ALL", sessChar = "";
 function hashStr(s){ let h = 2166136261; for(const ch of String(s)){ h ^= ch.codePointAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
-/* 画像がないときの、シナリオごとに形の違う白い飾り（文字と細い線）。地の色はサイトの配色から選びます */
-const SESS_BG = [["#519CAB", "#6BB0BE"], ["#20373B", "#2F5058"], ["#3F8797", "#519CAB"], ["#2A474C", "#20373B"], ["#E0A93A", "#F0BC52"]];
-function sessArt(s){
-  const h = hashStr(s.id + s.title), bg = SESS_BG[h % SESS_BG.length];
-  const glyph = [...(s.title || "S")][0] || "S";
-  const gid = "sg" + (uid++);
-  const cx = 40 + (h >> 4) % 240, r1 = 70 + (h >> 9) % 40, tilt = 8 + (h >> 12) % 30;
-  const W = "rgba(255,255,255,";
-  return `<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <defs><linearGradient id="${gid}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${bg[0]}"/><stop offset="1" stop-color="${bg[1]}"/></linearGradient></defs>
-    <rect width="320" height="180" fill="url(#${gid})"/>
-    <circle cx="${cx}" cy="150" r="${r1}" fill="none" stroke="${W}.55)" stroke-width="1"/>
-    <circle cx="${cx}" cy="150" r="${Math.round(r1 * .66)}" fill="none" stroke="${W}.4)" stroke-width="1"/>
-    <path d="M-10 ${40 + tilt}L330 ${-20 + tilt}M-10 ${72 + tilt}L330 ${12 + tilt}" stroke="${W}.35)" stroke-width="1"/>
-    <rect x="14" y="14" width="292" height="152" fill="none" stroke="${W}.8)" stroke-width="1"/>
-    <rect x="19" y="19" width="282" height="142" fill="none" stroke="${W}.35)" stroke-width="1"/>
-    <text x="298" y="150" text-anchor="end" font-size="104" fill="${W}.28)" stroke="${W}.9)" stroke-width=".8" style="font-family:var(--serif)">${esc(glyph)}</text>
-    <text x="32" y="42" font-size="9" letter-spacing="3.5" fill="${W}.95)" style="font-family:var(--sans)">SESSION</text>
-    ${s.date ? `<text x="32" y="138" font-size="11" letter-spacing="2" fill="${W}.95)" style="font-family:var(--serif)">${esc(s.date)}</text>` : ""}
-    ${s.system ? `<text x="32" y="154" font-size="9" letter-spacing="2" fill="${W}.85)" style="font-family:var(--sans)">${esc(s.system)}</text>` : ""}
-  </svg>`;
-}
 const sessCover = s => {
   const r = s.rooms.find(x => x._data || x.src);
-  return r ? `<img src="${esc(r._data || r.src)}" alt="${esc(s.title)}のココフォリア部屋" loading="lazy">` : sessArt(s);
+  return r ? `<img src="${esc(r._data || r.src)}" alt="${esc(s.title)}のココフォリア部屋" loading="lazy">` : "";
 };
 function sessCard(s, n){
   return `<button type="button" class="scard" data-sid="${esc(s.id)}" style="--d:${Math.min(n, 12) * 45}ms">
-    <span class="scard-img">${sessCover(s)}${s.rooms.filter(x => x._data || x.src).length > 1 ? `<span class="scard-n">${s.rooms.filter(x => x._data || x.src).length}</span>` : ""}</span>
+    <span class="scard-img${s.rooms.some(x => x._data || x.src) ? "" : " blank"}">${sessCover(s)}${s.rooms.filter(x => x._data || x.src).length > 1 ? `<span class="scard-n">${s.rooms.filter(x => x._data || x.src).length}</span>` : ""}</span>
     <span class="scard-body"><span class="scard-d">${esc(s.date || "日付未設定")}</span><span class="scard-t">${esc(s.title)}</span>${(s.system || s.format) ? `<span class="scard-p">${s.system ? pill(s.system) : ""}${s.format ? pill(s.format) : ""}</span>` : ""}</span>
   </button>`;
 }
@@ -2510,7 +2938,7 @@ function showSession(id){
   }).join("");
   const url = safeUrl(s.url);
   $("#sessDlgBody").innerHTML = `
-    <div class="sd-rooms">${rooms.length ? rooms.map(r => `<figure><button type="button" class="sd-zoom" data-zoom="${esc(s.rooms.indexOf(r))}" aria-label="画像を大きく表示"><img src="${esc(r._data || r.src)}" alt="${esc(r.t || s.title + "のココフォリア部屋")}"></button>${r.t ? `<figcaption>${esc(r.t)}</figcaption>` : ""}</figure>`).join("") : `<div class="sd-art">${sessArt(s)}</div>`}</div>
+    <div class="sd-rooms">${rooms.length ? rooms.map(r => `<figure><button type="button" class="sd-zoom" data-zoom="${esc(s.rooms.indexOf(r))}" aria-label="画像を大きく表示"><img src="${esc(r._data || r.src)}" alt="${esc(r.t || s.title + "のココフォリア部屋")}"></button>${r.t ? `<figcaption>${esc(r.t)}</figcaption>` : ""}</figure>`).join("") : `<div class="sd-blank" aria-hidden="true"></div>`}</div>
     <div class="sd-info">
       <p class="scard-d">${esc(s.date || "日付未設定")}</p>
       <h2 class="sd-title">${esc(s.title)}</h2>
@@ -2635,6 +3063,7 @@ function applyDraft(){
   SITE.sessions = draft.sessions;
   SITE.profile = draft.profile;
   SITE.charTags = draft.charTags;
+  SITE.work = draft.work;
   renderData();
   updatePv();
 }
@@ -2990,6 +3419,26 @@ function edProfile(){
     `<div class="ed-groups-h"><span class="ed-lab">PROFILEページのタブ</span></div>` + groups +
     `<button type="button" class="ed-small" data-op="add" data-arr="${PP}.groups" style="margin-top:.8rem">＋ タブ（項目グループ）を追加</button>`;
 }
+/* WORK（依頼料金）の編集 */
+function edWork(){
+  const w = draft.work;
+  const basic = `<div class="ed-fields">
+      <label class="chk"><input type="checkbox" data-booltoggle="work.open"${w.open ? " checked" : ""}>依頼を受け付けている（外すと「受付停止中」の表示になります）</label>
+      ${ar("受付状況の一言", "work.note", w.note, 2)}
+      ${fl("フォロワーさんの割引の文言（空なら表示しません）", "work.follower", w.follower)}
+      ${ar("依頼の流れ（1行に1つ）", "work.flow", w.flow, 6, "lines")}
+      ${ar("注意事項（1行に1つ）", "work.cautions", w.cautions, 12, "lines")}</div>`;
+  const tabs = w.tabs.map((t, ti) => {
+    const TP = "work.tabs." + ti;
+    return det("wk:" + t.id, esc(t.title || "（名称なし）"), `<div class="ed-fields">${fl("タブの名前", TP + ".title", t.title)}${fl("見出し（タブの中の題）", TP + ".heading", t.heading)}${fl("リンク（skebのページなど。空なら表示しません）", TP + ".url", t.url, "https://…")}
+      <label class="chk"><input type="checkbox" data-booltoggle="${TP}.bare"${t.bare ? " checked" : ""}>このタブを開いている間は、下の「依頼の流れ・テンプレート・依頼する・注意事項」を隠す（skeb用）</label>
+      ${ar("料金の表（1行に1つ。「ラベル | 金額」の形。「# 」で始めると見出し、「> 」で字下げ、「* 」で目立たせます）", TP + ".rows", t.rows, 14, "workrows")}
+      ${ar("注記（1行に1つ。※など）", TP + ".notes", t.notes, 4, "lines")}
+      ${opsHtml("work.tabs", ti, w.tabs.length)}</div>`);
+  }).join("");
+  return det("wk:basic", "受付状況・注意事項・依頼の流れ", basic) + `<div class="ed-groups-h"><span class="ed-lab">料金のタブ（SIZE・ソロ・コンビなど）</span></div>` + tabs +
+    `<button type="button" class="ed-small" data-op="add" data-arr="work.tabs" style="margin-top:.8rem">＋ タブを追加</button>`;
+}
 function edGallery(g, i){
   const P = "gallery." + i;
   return `<article class="ed-item g">
@@ -3004,11 +3453,13 @@ function renderEditor(){
   $$('.view[data-view="edit"] .ed-tabs button').forEach(b => b.setAttribute("aria-pressed", String(b.dataset.tab === tab)));
   $("#edAdd").textContent = tab === "character" ? "＋ キャラクターを追加" : tab === "session" ? "＋ シナリオを追加" : "＋ 作品を追加";
   $("#edMultiWrap").hidden = tab !== "gallery";
-  $("#edAdd").hidden = tab === "profile";
-  if(tab === "profile"){
+  $("#edAdd").hidden = tab === "profile" || tab === "work";
+  if(tab === "work"){
+    $("#edList").innerHTML = edWork();
+  } else if(tab === "profile"){
     $("#edList").innerHTML = edProfile();
   } else if(tab === "character"){
-    $("#edList").innerHTML = `<details class="ed-sec" data-k="chartags"${openKeys.has("chartags") ? " open" : ""}><summary>キャラクターのタグの一覧（一覧ページの絞り込み用）</summary><div class="ed-secbody"><div class="ed-fields">${ar("1行に1つ。標準：高校生・大学生・警察・医療・芸能・アウトロー。各キャラへの付け方は、キャラクターの「基本情報」で選びます", "charTags", draft.charTags, 6, "lines")}</div></div></details>` +
+    $("#edList").innerHTML = `<div class="ed-addrow ed-topadd"><button type="button" class="ed-small ed-bigadd" data-op="add-char-top">＋ キャラクターを追加</button><span class="ed-lab">先頭に追加されます（一番下のボタンは、最後に追加）</span></div><details class="ed-sec" data-k="chartags"${openKeys.has("chartags") ? " open" : ""}><summary>キャラクターのタグの一覧（一覧ページの絞り込み用）</summary><div class="ed-secbody"><div class="ed-fields">${ar("1行に1つ。標準：高校生・大学生・警察・医療・芸能・アウトロー。各キャラへの付け方は、キャラクターの「基本情報」で選びます", "charTags", draft.charTags, 6, "lines")}</div></div></details>` +
       (draft.characters.length ? draft.characters.map(edChara).join("") : `<p class="empty">まだありません。下のボタンで追加してください。</p>`);
   } else if(tab === "session"){
     const systems = [...new Set(draft.sessions.map(s => s.system).filter(Boolean))];
@@ -3037,8 +3488,9 @@ async function openEditor(){
   await ready;
   if(!editorReady){
     const saved = await idbGet("draft");
-    draft = saved || { characters: clone(published.characters), gallery: clone(published.gallery), sessions: clone(published.sessions), profile: clone(published.profile), charTags: clone(published.charTags), dirty: false };
+    draft = saved || { characters: clone(published.characters), gallery: clone(published.gallery), sessions: clone(published.sessions), profile: clone(published.profile), charTags: clone(published.charTags), work: clone(published.work), dirty: false };
     if(!draft.profile) draft.profile = clone(published.profile);
+    if(!draft.work) draft.work = clone(published.work);
     normAll(draft);
     editorReady = true;
     if(draft.characters[0]){ openKeys.add("c:" + draft.characters[0].id); openKeys.add("c:" + draft.characters[0].id + ":basic"); }
@@ -3153,6 +3605,7 @@ function blankFor(arrPath){
   if(last === "characters") return normChar({ id: "c" + uid36(), name: "新しいキャラクター" }, arr.length);
   if(last === "ucys") return normPartner({ id: "u" + uid36(), name: "新しい相手" }, arr.length);
   if(last === "sessions") return normSession({ id: "s" + uid36(), title: "新しいシナリオ", date: todayFull() }, arr.length);
+  if(last === "tabs") return { id: "t" + uid36(), title: "新しいタブ", heading: "", rows: [], notes: [] };
   if(last === "after") return { name: "新しい後遺症", onset: "", cured: "", detail: "", more: "", showInProfile: true };
   if(last === "groups") return { id: "g" + uid36(), title: "新しい項目", kind: "", blocks: [] };
   if(last === "blocks") return { t: "新しい見出し", body: "" };
@@ -3195,6 +3648,14 @@ $("#edList").addEventListener("click", e => {
     const key = b.dataset.obj, ta = $(`[data-ptxt="${key}"]`);
     applyProfileText(key, ta ? ta.value : ""); return;
   }
+  if(op === "add-char-top"){
+    const item = blankFor("characters"); draft.characters.unshift(item);
+    $("#edQ").value = "";
+    openKeys.add("c:" + item.id); openKeys.add("c:" + item.id + ":basic");
+    markDirty(); renderEditor();
+    const first = $("#edList > details.ed-chara"); if(first){ first.scrollIntoView({ block: "start" }); const f = $("input[data-path]", first); if(f) f.focus({ preventScroll: true }); }
+    return;
+  }
   if(op === "add-top"){
     const arr0 = getP(draft, b.dataset.arr); if(!arr0) return;
     arr0.unshift(blankFor(b.dataset.arr)); markDirty(); renderEditor(); return;
@@ -3224,6 +3685,7 @@ $("#edList").addEventListener("click", e => {
     if(b.dataset.arr === "characters") openKeys.add("c:" + item.id);
     if(/\.ucys$/.test(b.dataset.arr)) openKeys.add("uk:" + item.id);
     if(/\.groups$/.test(b.dataset.arr)) openKeys.add("pg:" + item.id);
+    if(/\.tabs$/.test(b.dataset.arr)) openKeys.add("wk:" + item.id);
     markDirty(); renderEditor(); return;
   }
   const arr = getP(draft, b.dataset.arr), i = +b.dataset.i; if(!arr) return;
@@ -3439,7 +3901,7 @@ function collectAssets(x){
 }
 $("#edExport").addEventListener("click", async () => {
   if(!draft) return;
-  const out = { characters: stripData(draft.characters), gallery: stripData(draft.gallery), sessions: stripData(draft.sessions), profile: stripData(draft.profile), charTags: clone(draft.charTags) };
+  const out = { characters: stripData(draft.characters), gallery: stripData(draft.gallery), sessions: stripData(draft.sessions), profile: stripData(draft.profile), charTags: clone(draft.charTags), work: clone(draft.work) };
   const news = collectAssets([draft.characters, draft.gallery, draft.sessions]);
   setState("書き出し中…");
   try{
@@ -3450,7 +3912,7 @@ $("#edExport").addEventListener("click", async () => {
     const ok = await download(await zip.generateAsync({ type: "blob" }), "site-update.zip");
     setState(ok ? "site-update.zip を保存しました。解凍して、GitHubにアップロードしてください。" : "保存をキャンセルしました。");
   }catch(err){
-    const ok = await download(new Blob([JSON.stringify({ characters: embedData(draft.characters), gallery: embedData(draft.gallery), sessions: embedData(draft.sessions), profile: embedData(draft.profile), charTags: clone(draft.charTags) }, null, 2)], { type: "application/json" }), "data.json");
+    const ok = await download(new Blob([JSON.stringify({ characters: embedData(draft.characters), gallery: embedData(draft.gallery), sessions: embedData(draft.sessions), profile: embedData(draft.profile), charTags: clone(draft.charTags), work: clone(draft.work) }, null, 2)], { type: "application/json" }), "data.json");
     setState(ok ? "ZIPを作れなかったため、画像を埋め込んだ data.json を保存しました。これだけをアップロードしてください。" : "保存をキャンセルしました。");
   }
 });
@@ -3463,7 +3925,7 @@ $("#edReset").addEventListener("click", async e => {
   }
   delete b.dataset.arm; b.textContent = "下書きを破棄";
   await idbDel("draft");
-  draft = { characters: clone(published.characters), gallery: clone(published.gallery), sessions: clone(published.sessions), profile: clone(published.profile), charTags: clone(published.charTags), dirty: false };
+  draft = { characters: clone(published.characters), gallery: clone(published.gallery), sessions: clone(published.sessions), profile: clone(published.profile), charTags: clone(published.charTags), work: clone(published.work), dirty: false };
   previewing = false; applyDraft(); renderEditor();
   setState("公開中の内容に戻しました");
 });
