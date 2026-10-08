@@ -1,6 +1,247 @@
 {
   "characters": [
     {
+      "id": "cmuzqd17geo",
+      "name": "黒杜 椿真",
+      "en": "KUROMORI TUBAME",
+      "role": "HO：陰",
+      "desc": "",
+      "personality": "",
+      "more": "",
+      "origin": "イザナミの棺",
+      "profile": {
+        "kana": "くろもり　つばめ",
+        "age": "23",
+        "sex": "男",
+        "height": "184cm",
+        "weight": "筋肉質",
+        "job": "公安刑事",
+        "birthplace": "",
+        "hair": "黒から白のグラデ",
+        "eye": "鬼灯（オレンジ）",
+        "first": "俺",
+        "second": "アンタ",
+        "birthday": "11月13日",
+        "blood": "O型",
+        "likes": "",
+        "dislikes": "",
+        "color": "",
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
+      },
+      "lines": [],
+      "poses": [],
+      "art": [],
+      "cats": [
+        "警察"
+      ],
+      "listImg": {
+        "src": "images/c-muzqexi210j.png"
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [
+        {
+          "id": "umuzqfb9mvd",
+          "name": "白南 誉流",
+          "relation": "バディ",
+          "owner": "からこさん",
+          "desc": "",
+          "personality": "",
+          "profile": {
+            "kana": "",
+            "age": "",
+            "sex": "",
+            "height": "",
+            "weight": "",
+            "job": "",
+            "birthplace": "",
+            "hair": "",
+            "eye": "",
+            "first": "",
+            "second": "",
+            "birthday": "",
+            "blood": "",
+            "likes": "",
+            "dislikes": "",
+            "color": "",
+            "extra": [],
+            "traits": [
+              "",
+              ""
+            ]
+          },
+          "lines": [],
+          "poses": [],
+          "tags": {
+            "fusetter": [
+              "SS",
+              "R18",
+              "その他",
+              "ネタバレ無"
+            ],
+            "art": [
+              "ディスプレイ",
+              "skeb",
+              "イラスト",
+              "R18"
+            ]
+          },
+          "fusetter": [],
+          "coc": {
+            "edition": "",
+            "memo": "",
+            "source": "",
+            "stats": [],
+            "derived": [],
+            "skills": [],
+            "spells": [],
+            "spoiler": false,
+            "after": []
+          },
+          "art": []
+        }
+      ],
+      "coc": {
+        "edition": "7版",
+        "memo": "",
+        "source": "https://iachara.com/view/15171778",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 75
+          },
+          {
+            "l": "CON",
+            "v": 70
+          },
+          {
+            "l": "POW",
+            "v": 90
+          },
+          {
+            "l": "DEX",
+            "v": 70
+          },
+          {
+            "l": "APP",
+            "v": 60
+          },
+          {
+            "l": "SIZ",
+            "v": 65
+          },
+          {
+            "l": "INT",
+            "v": 65
+          },
+          {
+            "l": "EDU",
+            "v": 80
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 13,
+            "max": 13
+          },
+          {
+            "l": "MP",
+            "v": 18,
+            "max": 18
+          },
+          {
+            "l": "SAN",
+            "v": 90,
+            "max": 90
+          },
+          {
+            "l": "幸運",
+            "v": 65,
+            "max": 65
+          },
+          {
+            "l": "BLD",
+            "v": "+1"
+          },
+          {
+            "l": "MOV",
+            "v": 9
+          }
+        ],
+        "skills": [
+          {
+            "n": "目星",
+            "v": 80
+          },
+          {
+            "n": "聞き耳",
+            "v": 70
+          },
+          {
+            "n": "図書館",
+            "v": 20
+          },
+          {
+            "n": "回避",
+            "v": 80
+          },
+          {
+            "n": "近接戦闘（剣鞭）",
+            "v": 85
+          },
+          {
+            "n": "応急手当",
+            "v": 70
+          },
+          {
+            "n": "隠密",
+            "v": 55
+          },
+          {
+            "n": "精神分析",
+            "v": 81
+          },
+          {
+            "n": "追跡",
+            "v": 70
+          },
+          {
+            "n": "ナビゲート",
+            "v": 34
+          },
+          {
+            "n": "信用",
+            "v": 50
+          },
+          {
+            "n": "威圧",
+            "v": 70
+          }
+        ],
+        "spells": [],
+        "spoiler": true,
+        "after": []
+      }
+    },
+    {
       "id": "cmuodxom57j",
       "name": "折鶴 祝",
       "en": "OZ IORI",
@@ -182,7 +423,7 @@
         }
       ],
       "listImg": {
-        "src": "images/c-muqtst69crv.png"
+        "src": "images/c-muzpymfal87.png"
       },
       "ucys": [
         {
@@ -8237,21 +8478,6 @@
       "rooms": []
     },
     {
-      "id": "smuofolt91ep",
-      "title": "333さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt92w8",
       "title": "鳩",
       "date": "",
@@ -8627,21 +8853,6 @@
       "rooms": []
     },
     {
-      "id": "smuofolt93085",
-      "title": "ましもさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt931ak",
       "title": "にこらさん",
       "date": "",
@@ -8777,21 +8988,6 @@
       "rooms": []
     },
     {
-      "id": "smuofolt941ts",
-      "title": "かんら",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt942dv",
       "title": "てつたろうさん",
       "date": "",
@@ -8852,21 +9048,6 @@
       "rooms": []
     },
     {
-      "id": "smuofolt9476c",
-      "title": "けとるさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt948rg",
       "title": "すそのさん",
       "date": "",
@@ -8884,21 +9065,6 @@
     {
       "id": "smuofolt949fb",
       "title": "なつおさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt950k2",
-      "title": "あねよさん",
       "date": "",
       "system": "",
       "note": "",
@@ -8972,21 +9138,6 @@
       "rooms": []
     },
     {
-      "id": "smuofolt957xk",
-      "title": "あじたまごはんさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt958ev",
       "title": "いなり寿司さん",
       "date": "",
@@ -9004,36 +9155,6 @@
     {
       "id": "smuofolt959y1",
       "title": "ぱよさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt963x2",
-      "title": "やまかさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt964yl",
-      "title": "cotocoさん",
       "date": "",
       "system": "",
       "note": "",
@@ -9075,6 +9196,46 @@
       "partners": [],
       "rooms": [],
       "members": []
+    },
+    {
+      "id": "smuzpzja56x",
+      "title": "すぶにぐらし",
+      "date": "2026.10.09",
+      "system": "",
+      "note": "",
+      "url": "",
+      "others": "",
+      "kp": "からこさん",
+      "pls": "あつがやさん",
+      "format": "PL",
+      "partners": [],
+      "rooms": [],
+      "members": [
+        {
+          "cid": "cmuodxom57j",
+          "with": []
+        }
+      ]
+    },
+    {
+      "id": "smuzqmovdmb",
+      "title": "イザナミの棺",
+      "date": "2026.10.05",
+      "system": "",
+      "note": "",
+      "url": "",
+      "others": "",
+      "kp": "",
+      "pls": "",
+      "format": "",
+      "partners": [],
+      "rooms": [],
+      "members": [
+        {
+          "cid": "cmuzqd17geo",
+          "with": []
+        }
+      ]
     }
   ],
   "profile": {
@@ -9088,8 +9249,8 @@
         "FUJITA HATO（ふじた鳩）"
       ],
       [
-        "使用ツール",
-        "ここに使っているツール"
+        "形式",
+        "半テキ or 完テキ"
       ],
       [
         "連絡先",
@@ -9098,12 +9259,16 @@
       [
         "連絡について",
         "土日祝はご連絡が返せません。"
+      ],
+      [
+        "現在の連絡速度",
+        "多忙のため返信に3〜5日頂いています！"
       ]
     ],
     "likes": [
-      "ここに好きなもの",
-      "音楽・ゲーム・本など",
-      "自由に追加してください"
+      "TRPG（CoC／インセイン）",
+      "映画鑑賞とドラマ鑑賞",
+      "最近FF14に取り組んでいます！"
     ],
     "groups": [
       {
@@ -9362,5 +9527,391 @@
     "医療",
     "芸能",
     "アウトロー"
-  ]
+  ],
+  "work": {
+    "open": true,
+    "note": "同時に受けられる数に限りがあります。受付状況が変わったらXでお知らせします。",
+    "follower": "フォロワーさんの場合　基本料金からおひとつのみ −¥1,000",
+    "tabs": [
+      {
+        "id": "size",
+        "title": "サイズ・形式",
+        "heading": "サイズ / 形式",
+        "url": "",
+        "bare": false,
+        "rows": [
+          {
+            "l": "サイズ",
+            "v": "",
+            "i": false,
+            "h": true,
+            "e": false
+          },
+          {
+            "l": "アイコン",
+            "v": "1000px × 1000px",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "全身",
+            "v": "縦横 1100px〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ディスプレイ",
+            "v": "縦横 1300px〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "イラスト・スチル",
+            "v": "縦横 1500px〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "納品",
+            "v": "",
+            "i": false,
+            "h": true,
+            "e": false
+          },
+          {
+            "l": "形式",
+            "v": "png（希望あればjpgもお付けします）",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "解像度",
+            "v": "350dpi",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "人数",
+            "v": "ソロ or コンビ",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": []
+      },
+      {
+        "id": "solo",
+        "title": "ソロ",
+        "heading": "ソロ基本料金",
+        "url": "",
+        "bare": false,
+        "rows": [
+          {
+            "l": "アイコン（1000px×1000px）",
+            "v": "¥2,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ウエストアップ（腰上まで）",
+            "v": "¥4,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "全身（+表情2種）",
+            "v": "¥10,000",
+            "i": false,
+            "h": false,
+            "e": true
+          },
+          {
+            "l": "座り全身",
+            "v": "¥7,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ミニキャラ",
+            "v": "¥2,500",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "オプション",
+            "v": "",
+            "i": false,
+            "h": true,
+            "e": false
+          },
+          {
+            "l": "表情差分：3点追加",
+            "v": "+¥1,500",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "描き下ろし表情差分：3点追加",
+            "v": "+¥3,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "APNG差分：1点",
+            "v": "+¥600",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "小物追加（コストの高いもの）",
+            "v": "+¥2,000〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "衣装/ポーズ差分",
+            "v": "+¥4,000〜12,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "早期納品（2週間以内）",
+            "v": "制作費の+30%加算",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "商用利用（要相談）",
+            "v": "制作費の+50%加算",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": [
+          "※【 小物追加 】のオプションの料金設定については、複雑な小物によっては値段が加算します。小物についてはご依頼前にご相談ください。",
+          "※【 表情差分 】は約一週間で納品できます。全身立ち絵納品後あとから追加でご依頼なども承りますのでご相談ください。",
+          "※【 衣装/ポーズ差分 】のオプションの料金追加は、基本料金を元に価格が変動します。"
+        ]
+      },
+      {
+        "id": "combo",
+        "title": "コンビ",
+        "heading": "コンビ基本料金",
+        "url": "",
+        "bare": false,
+        "rows": [
+          {
+            "l": "アイコン（1000px×1000px）",
+            "v": "¥4,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ウエストアップ（腰上まで）",
+            "v": "¥8,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "全身",
+            "v": "¥17,000",
+            "i": false,
+            "h": false,
+            "e": true
+          },
+          {
+            "l": "表情差分 各3種（書き下ろし）",
+            "v": "¥5,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "┗ 構図再利用の場合",
+            "v": "¥4,000",
+            "i": true,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "ミニキャラ",
+            "v": "¥4,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "オプション",
+            "v": "",
+            "i": false,
+            "h": true,
+            "e": false
+          },
+          {
+            "l": "書き下ろし差分に追加：各キャラ3点追加",
+            "v": "+¥3,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "構図再利用で差分追加：各キャラ3点追加",
+            "v": "+¥3,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "APNG差分：1点",
+            "v": "+¥1,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "小物追加（コストの高いもの）",
+            "v": "+¥2,000〜",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "衣装/ポーズ差分",
+            "v": "+¥4,000〜12,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "早期納品（2週間以内）",
+            "v": "制作費の+30%加算",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "商用利用（要相談）",
+            "v": "制作費の+50%加算",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": [
+          "※お２人が並ぶ姿の立ち絵です。ソロ×２よりもお得な価格で、がっつりと絡みます！",
+          "※【 小物追加 】のオプションの料金設定については、複雑な小物によっては値段が加算します。小物についてはご依頼前にご相談ください。",
+          "※【 表情差分 】は約一週間で納品できます。全身立ち絵納品後あとから追加でご依頼なども承りますのでご相談ください。",
+          "※【 衣装/ポーズ差分 】のオプションの料金追加は、基本料金を元に価格が変動します。"
+        ]
+      },
+      {
+        "id": "display",
+        "title": "ディスプレイ",
+        "heading": "ディスプレイ基本料金",
+        "url": "",
+        "bare": false,
+        "rows": [
+          {
+            "l": "1枚（縦横ご指定ください）",
+            "v": "¥1,000",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "鳩作立ち絵をご使用の場合",
+            "v": "¥500",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": [
+          "（縦横ご指定のない場合、ディスプレイラフの制作枚数が増えますので＋500円頂きます）"
+        ]
+      },
+      {
+        "id": "still",
+        "title": "イラスト・スチル",
+        "heading": "イラスト・スチル基本料金",
+        "url": "",
+        "bare": false,
+        "rows": [
+          {
+            "l": "画面内に4人まで",
+            "v": "¥20,000",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": [
+          "細かい指定があったり複雑な構図の場合は +¥1,500〜応相談となります"
+        ]
+      },
+      {
+        "id": "skeb",
+        "title": "skeb",
+        "heading": "skeb",
+        "url": "https://skeb.jp/@Lv103000",
+        "bare": true,
+        "rows": [
+          {
+            "l": "ご依頼のやりとりをしたくない方向けです",
+            "v": "",
+            "i": false,
+            "h": false,
+            "e": false
+          },
+          {
+            "l": "金額によってクオリティに差があります",
+            "v": "",
+            "i": false,
+            "h": false,
+            "e": false
+          }
+        ],
+        "notes": []
+      }
+    ],
+    "cautions": [
+      "ご依頼頂くキャラクターの所有権がご依頼主様に無い場合、必ず所有者の方に許可を得てのご依頼をお願い致します。※トラブルがあった場合こちらで責任は負いかねます。",
+      "\"オリジナルキャラクターのみ\"承っております。",
+      "R18/R18G の依頼不可となります。",
+      "版権キャラクターのご依頼は受け付けておりません。",
+      "著作権の譲渡は行っておりません。自作発言/二次配布は禁止しております。",
+      "公序良俗に反するご利用は禁止しております。",
+      "第三者による加筆、加工はお控えください。",
+      "YouTubeなどの広告収益を含む商用利用の際はご相談ください。",
+      "ご依頼頂いた制作物を実績サンプルやSNSに掲載することがあります。",
+      "その他気になることがありましたら遠慮なくご相談ください。"
+    ],
+    "flow": [
+      "XのDMで、内容・用途・締め切りを送る",
+      "見積りと納期をお返しする",
+      "支払いを確認したら制作を始める",
+      "ラフ、線画、完成の順に確認してもらう",
+      "データを納品する"
+    ]
+  }
 }
