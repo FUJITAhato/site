@@ -415,10 +415,10 @@
       ],
       "art": [
         {
-          "t": "折鶴子供",
-          "src": "images/c-muu5cwqj07f.png",
+          "t": "概念モンスター　（作：あんどう本舗さん）",
+          "src": "images/c-mv5ibkootl3.jpg",
           "tags": [
-            "らくがき"
+            "skeb"
           ]
         },
         {
@@ -426,6 +426,13 @@
           "src": "images/c-muzr5sotqw8.png",
           "tags": [
             "イラスト"
+          ]
+        },
+        {
+          "t": "折鶴子供",
+          "src": "images/c-muu5cwqj07f.png",
+          "tags": [
+            "らくがき"
           ]
         }
       ],
@@ -505,12 +512,27 @@
             "art": [
               "らくがき",
               "イラスト",
+              "skeb",
               "R18",
               "その他"
             ]
           },
           "fusetter": [],
           "art": [
+            {
+              "t": "概念モンスター　（作：あんどう本舗さん）",
+              "src": "images/c-mv5idu1tb4b.jpg",
+              "tags": [
+                "skeb"
+              ]
+            },
+            {
+              "t": " ",
+              "src": "images/c-mv5ii4bnr1v.jpg",
+              "tags": [
+                "らくがき"
+              ]
+            },
             {
               "t": "水着",
               "src": "images/c-muu5808atx1.png",
@@ -4488,7 +4510,7 @@
           "with": []
         }
       ],
-      "kp": "",
+      "kp": "むつこさん",
       "pls": "",
       "format": "PL",
       "partners": [],
@@ -8508,21 +8530,6 @@
       "rooms": []
     },
     {
-      "id": "smuofolt9472",
-      "title": "藍乃さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt95hq",
       "title": "ちのさん",
       "date": "",
@@ -8540,21 +8547,6 @@
     {
       "id": "smuofolt96g8",
       "title": "はるこさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt973d",
-      "title": "すぺさん",
       "date": "",
       "system": "",
       "note": "",
@@ -8898,36 +8890,6 @@
       "rooms": []
     },
     {
-      "id": "smuofolt9330l",
-      "title": "あさきさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt934dd",
-      "title": "りんさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt935xk",
       "title": "KPレス",
       "date": "",
@@ -8958,113 +8920,8 @@
       "rooms": []
     },
     {
-      "id": "smuofolt9375v",
-      "title": "ちゃっぴさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt939b3",
       "title": "すだちさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt9408s",
-      "title": "かんらさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt942dv",
-      "title": "てつたろうさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt9444g",
-      "title": "花さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt945n9",
-      "title": "ミフコさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt946tc",
-      "title": "あぎぎさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt948rg",
-      "title": "すそのさん",
       "date": "",
       "system": "",
       "note": "",
@@ -9093,68 +8950,8 @@
       "rooms": []
     },
     {
-      "id": "smuofolt952fu",
-      "title": "じおんさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuofolt953ox",
       "title": "かつきさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt95485",
-      "title": "フユキさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt955cd",
-      "title": "めんこさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt958ev",
-      "title": "いなり寿司さん",
       "date": "",
       "system": "",
       "note": "",
@@ -9248,6 +9045,31 @@
       "members": [
         {
           "cid": "cmuzqd17geo",
+          "with": []
+        }
+      ]
+    },
+    {
+      "id": "smv5ijw26au",
+      "title": "慄け！因習村",
+      "date": "2026.9.23",
+      "system": "",
+      "note": "",
+      "url": "",
+      "others": "",
+      "kp": "鳩",
+      "pls": "くらげさん／ナバテアさん",
+      "format": "KP",
+      "partners": [],
+      "rooms": [
+        {
+          "src": "images/c-mv5in2im9j8.png",
+          "t": "全生還！"
+        }
+      ],
+      "members": [
+        {
+          "cid": "cmuq2uvy18o",
           "with": []
         }
       ]
@@ -9544,7 +9366,7 @@
     "アウトロー"
   ],
   "work": {
-    "open": true,
+    "open": false,
     "note": "同時に受けられる数に限りがあります。受付状況が変わったらXでお知らせします。",
     "follower": "フォロワーさんの場合　基本料金からおひとつのみ −¥1,000",
     "tabs": [
