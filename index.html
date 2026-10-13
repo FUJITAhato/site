@@ -892,6 +892,20 @@ body[data-view="work"]{ --bg:#f7f8fa; --ink:#222326; --mute:#83868e; --line:#dcd
 .wk-h{ margin:3.4rem 0 .3rem; padding-top:1.7rem; border-top:1px solid var(--line); }
 .wk-panel>.wk-h:first-child,.wk-panel>.h3+.wk-h{ margin-top:1.4rem; padding-top:0; border-top:0; }
 #wkRest[hidden]{ display:none; }
+
+/* ===== SNS / PROFILE / CHARACTER list / SESSION / GALLERY: same colours as the top page ===== */
+body[data-view="sns"],body[data-view="profile"],body[data-view="character"],body[data-view="session"],body[data-view="gallery"]{
+  --bg:#f7f8fa; --ink:#222326; --mute:#83868e; --line:#dcdfe5; --panel:#eef0f4;
+  --btnbg:#222326; --btnink:#f7f8fa; --acc2:#222326; --hi:#FFC64F; --xbg:#FFC64F; --xink:#222326; --card:#222326; --cardink:#f7f8fa;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) body[data-view="sns"],:root:not([data-theme="light"]) body[data-view="profile"],:root:not([data-theme="light"]) body[data-view="character"],:root:not([data-theme="light"]) body[data-view="session"],:root:not([data-theme="light"]) body[data-view="gallery"]{
+    --bg:#15171b; --ink:#e8e9ed; --mute:#8b8f99; --line:#2c2f36; --panel:#1c1f25; --btnbg:#e8e9ed; --btnink:#15171b; --acc2:#e8e9ed; --card:#e8e9ed; --cardink:#15171b;
+  }
+}
+body[data-view="profile"] .cal-d.busy{ background:repeating-linear-gradient(135deg,#c9ccd2 0 3px,#e6e8ec 3px 6px); border-color:#c9ccd2; color:#6b6f78; }
+.cap-go{ color:var(--mute); font-size:.85em; }
+.lb-link{ margin:.4rem 18px 18px; }
 </style>
 </head>
 <body data-view="home">
@@ -1163,6 +1177,7 @@ body[data-view="work"]{ --bg:#f7f8fa; --ink:#222326; --mute:#83868e; --line:#dcd
       <div><h3 id="lbTitle"></h3><p id="lbMeta"></p></div>
       <button class="lb-close" type="button" id="lbClose">CLOSE</button>
     </div>
+    <a class="btn lb-link" id="lbLink" href="#" target="_blank" rel="noopener noreferrer" hidden></a>
   </div>
 </dialog>
 
@@ -1785,7 +1800,7 @@ function thumb(item, seed){
 function tile(item, i){
   return `<button class="tile" type="button" data-i="${i}">
     <span class="thumb">${thumb(item, i)}</span>
-    <span class="cap"><span class="cap-t">${esc(item.t)}</span>
+    <span class="cap"><span class="cap-t">${esc(item.t)}${safeUrl(item.url) ? ' <span class="cap-go" aria-hidden="true">↗</span>' : ""}</span>
     <span class="cap-m">${item.c ? `<span>${esc(item.c)}</span>` : ""}${item.d ? `<span>${esc(item.d)}</span>` : ""}</span></span>
   </button>`;
 }
@@ -1939,7 +1954,7 @@ function normPartner(u, i){
   normFuse(u);
   u.coc = normCoc(u.coc);
   u.art = Array.isArray(u.art) ? u.art : [];
-  u.art.forEach(x => { x.t = dstr(x.t); x.src = dstr(x.src); x.tags = normTags(x.tags); });
+  u.art.forEach(x => { x.t = dstr(x.t); x.src = dstr(x.src); x.url = dstr(x.url); x.tags = normTags(x.tags); });
   return u;
 }
 function normSession(s, i){
@@ -1967,7 +1982,7 @@ function normChar(c, i){
   if(!c.poses.length && (c.src || c._data)){ c.poses.push({ name: "立ち絵 1", src: c.src || "", _data: c._data, faces: [], lines: [] }); }
   delete c.src; delete c._data;
   c.art = Array.isArray(c.art) ? c.art : [];
-  c.art.forEach(x => { x.t = dstr(x.t); x.src = dstr(x.src); x.tags = normTags(x.tags); });
+  c.art.forEach(x => { x.t = dstr(x.t); x.src = dstr(x.src); x.url = dstr(x.url); x.tags = normTags(x.tags); });
   c.cats = normTags(c.cats).filter(Boolean);
   c.listImg = (c.listImg && typeof c.listImg === "object") ? c.listImg : {};
   c.listImg.src = dstr(c.listImg.src);
@@ -2016,6 +2031,7 @@ function normAll(d){
   d.characters = (Array.isArray(d.characters) ? d.characters : []).map(normChar);
   d.sessions = (Array.isArray(d.sessions) ? d.sessions : []).map(normSession);
   d.gallery = Array.isArray(d.gallery) ? d.gallery : [];
+  d.gallery.forEach(g => { if(g && typeof g === "object") g.url = dstr(g.url); });
   d.profile = normSiteProfile(d.profile);
   d.work = normWork(d.work);
   d.charTags = normTags(d.charTags).filter(Boolean);
@@ -2198,6 +2214,16 @@ const dateKey = s => {
 const sortedSessions = list => [...list].sort((a, b) => dateKey(b).localeCompare(dateKey(a)));
 const sessionsOf = cid => sortedSessions(SITE.sessions.filter(s => s.members.some(m => m.cid === cid)));
 const safeUrl = u => /^https?:\/\//i.test(String(u || "")) ? String(u) : "";
+function linkLabel(url){
+  try{
+    const h = new URL(url).hostname.replace(/^www\./, "");
+    if(/poipiku/.test(h)) return "ポイピクで見る";
+    if(/(^|\.)skeb\.jp$/.test(h)) return "skebの納品ページを見る";
+    if(/pixiv/.test(h)) return "pixivで見る";
+    if(/(^|\.)(x|twitter)\.com$/.test(h)) return "Xで見る";
+    return h + " で見る";
+  }catch(e){ return "リンクを開く"; }
+}
 const pill = (t, extra) => `<span class="pill${extra || ""}">${esc(t)}</span>`;
 const encId = id => esc(encodeURIComponent(id));
 
@@ -2461,7 +2487,7 @@ function statusHtml(c){
 function galListHtml(o, a, attr, seedBase){
   const items = o.art.map((x, i) => [x, i]).filter(([x]) => a === "ALL" || x.tags.includes(a));
   if(!items.length) return `<p class="empty">まだありません。</p>`;
-  return `<div class="gal-list">${items.map(([x, i], n) => `<button type="button" class="gal-item rv" style="transition-delay:${Math.min(n, 6) * 50}ms" ${attr}="${i}"><span class="gal-img">${thumb(x, seedBase + i)}</span><span class="gal-cap"><span class="cap-t">${esc(x.t)}</span>${x.tags.length ? `<span class="fuse-tags">${x.tags.map(t => pill(t)).join("")}</span>` : ""}</span></button>`).join("")}</div>`;
+  return `<div class="gal-list">${items.map(([x, i], n) => `<button type="button" class="gal-item rv" style="transition-delay:${Math.min(n, 6) * 50}ms" ${attr}="${i}"><span class="gal-img">${thumb(x, seedBase + i)}</span><span class="gal-cap"><span class="cap-t">${esc(x.t)}${safeUrl(x.url) ? ' <span class="cap-go" aria-hidden="true">↗</span>' : ""}</span>${x.tags.length ? `<span class="fuse-tags">${x.tags.map(t => pill(t)).join("")}</span>` : ""}</span></button>`).join("")}</div>`;
 }
 const FUSE_WARN = "基本的にタグ内容のネタバレがありますので閲覧はご注意ください。<br>シナリオ内容のネタバレの無いもののみ『ネタバレ無』のタグが付いています。";
 const fusePanel = (o, f, attrTag) => `<p class="fuse-warn">${FUSE_WARN}</p>
@@ -2980,6 +3006,8 @@ function showLb(item, title, meta){
   $("#lbImg").innerHTML = thumb(item, 1);
   $("#lbTitle").textContent = title || "";
   $("#lbMeta").textContent = meta || "";
+  const u = safeUrl(item && item.url), a = $("#lbLink");   // ポイピク・skeb納品ページなどへのリンク
+  if(u){ a.href = u; a.textContent = linkLabel(u) + " ↗"; a.hidden = false; } else { a.hidden = true; a.removeAttribute("href"); }
   if (typeof lb.showModal === "function") lb.showModal(); else lb.setAttribute("open", "");
 }
 function openLb(i){
@@ -3230,9 +3258,10 @@ function fuseEd(o, OP){
 /* GALLERYの編集：本人・UCYS相手で共通（タグ分けできます） */
 function galEd(o, OP, seed){
   return `<div class="ed-fields">${ar("タグの一覧（1行に1つ。標準：ディスプレイ・skeb・イラスト・R18）", OP + ".tags.art", o.tags.art, 4, "lines")}</div>
+    <div class="ed-addrow"><button type="button" class="ed-small" data-op="add-top" data-arr="${OP}.art">＋ 上に追加</button></div>
     ${o.art.map((x, xi) => {
       const XP = OP + ".art." + xi;
-      return `<div class="ed-face">${imgCtl(XP, x, seed + xi)}<div class="ed-fields">${fl("タイトル", XP + ".t", x.t)}${tagChecks(XP + ".tags", o.tags.art, x.tags)}${opsHtml(OP + ".art", xi, o.art.length)}</div></div>`;
+      return `<div class="ed-face">${imgCtl(XP, x, seed + xi)}<div class="ed-fields">${fl("タイトル", XP + ".t", x.t)}${fl("リンク（ポイピク・skeb納品ページなど。空でも可）", XP + ".url", x.url, "https://…")}${tagChecks(XP + ".tags", o.tags.art, x.tags)}${opsHtml(OP + ".art", xi, o.art.length)}</div></div>`;
     }).join("") || `<p class="empty">まだありません。</p>`}
     <div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${OP}.art">＋ 画像を追加</button>${multiBtn(OP + ".art")}</div>`;
 }
@@ -3443,7 +3472,7 @@ function edGallery(g, i){
   const P = "gallery." + i;
   return `<article class="ed-item g">
     ${imgCtl(P, g, i)}
-    <div class="ed-fields">${fl("タイトル", P + ".t", g.t)}${fl("カテゴリ", P + ".c", g.c).replace("<input ", '<input list="catList" ')}${fl("日付", P + ".d", g.d)}${fl("依頼者（空でも可）", P + ".by", g.by)}</div>
+    <div class="ed-fields">${fl("タイトル", P + ".t", g.t)}${fl("カテゴリ", P + ".c", g.c).replace("<input ", '<input list="catList" ')}${fl("日付", P + ".d", g.d)}${fl("依頼者（空でも可）", P + ".by", g.by)}${fl("リンク（ポイピク・skeb納品ページなど。空でも可）", P + ".url", g.url, "https://…")}</div>
     ${opsHtml("gallery", i, draft.gallery.length)}
   </article>`;
 }
@@ -3463,12 +3492,12 @@ function renderEditor(){
       (draft.characters.length ? draft.characters.map(edChara).join("") : `<p class="empty">まだありません。下のボタンで追加してください。</p>`);
   } else if(tab === "session"){
     const systems = [...new Set(draft.sessions.map(s => s.system).filter(Boolean))];
-    $("#edList").innerHTML = sessImportBox() +
+    $("#edList").innerHTML = `<div class="ed-addrow ed-topadd"><button type="button" class="ed-small ed-bigadd" data-op="add-top" data-arr="sessions">＋ シナリオを追加</button><span class="ed-lab">先頭に追加されます（一番下のボタンは、最後に追加）</span></div>` + sessImportBox() +
       `<datalist id="sysList">${systems.map(t => `<option value="${esc(t)}">`).join("")}</datalist>` +
       (draft.sessions.length ? draft.sessions.map(edSession).join("") : `<p class="empty">まだありません。下のボタンで追加するか、上から取り込んでください。</p>`);
   } else {
     const cats = [...new Set(draft.gallery.map(g => g.c).filter(Boolean))];
-    $("#edList").innerHTML = `<datalist id="catList">${cats.map(c => `<option value="${esc(c)}">`).join("")}</datalist>` +
+    $("#edList").innerHTML = `<div class="ed-addrow ed-topadd"><button type="button" class="ed-small ed-bigadd" data-op="add-top" data-arr="gallery">＋ 作品を追加</button><span class="ed-lab">先頭に追加されます（一番下のボタンは、最後に追加）</span></div><datalist id="catList">${cats.map(c => `<option value="${esc(c)}">`).join("")}</datalist>` +
       (draft.gallery.length ? draft.gallery.map(edGallery).join("") : `<p class="empty">まだありません。下のボタンで追加してください。</p>`);
   }
   Object.keys(impMsgs).forEach(i => { const el = $(`[data-imp-msg="${i}"]`); if(el) el.textContent = impMsgs[i]; });
@@ -3614,8 +3643,8 @@ function blankFor(arrPath){
   if(last === "poses") return { name: "立ち絵 " + (arr.length + 1), src: "", lines: [], faces: [] };
   if(last === "faces") return { name: "差分 " + (arr.length + 1), src: "" };
   if(last === "fusetter") return { t: "新しい投稿", url: "", note: "", tags: [] };
-  if(last === "art") return { t: "イラスト " + (arr.length + 1), src: "", tags: [] };
-  return { t: "新しい作品", c: "", d: today(), by: "", src: "" };
+  if(last === "art") return { t: "イラスト " + (arr.length + 1), src: "", url: "", tags: [] };
+  return { t: "新しい作品", c: "", d: today(), by: "", url: "", src: "" };
 }
 $("#edList").addEventListener("click", e => {
   const fmtBtn = e.target.closest("[data-fmt]");
@@ -3658,7 +3687,15 @@ $("#edList").addEventListener("click", e => {
   }
   if(op === "add-top"){
     const arr0 = getP(draft, b.dataset.arr); if(!arr0) return;
-    arr0.unshift(blankFor(b.dataset.arr)); markDirty(); renderEditor(); return;
+    const item0 = blankFor(b.dataset.arr); arr0.unshift(item0);
+    const path0 = b.dataset.arr;
+    if(path0 === "sessions"){ $("#edQ").value = ""; openKeys.add("s:" + item0.id); }
+    markDirty(); renderEditor();
+    if(path0 === "sessions" || path0 === "gallery"){
+      const f0 = $("#edList > details.ed-chara, #edList > article.ed-item");
+      if(f0){ f0.scrollIntoView({ block: "start" }); const i0 = $("input[data-path]", f0); if(i0) i0.focus({ preventScroll: true }); }
+    }
+    return;
   }
   if(op === "simp-run"){ const ta = $('[data-simp="text"]'); importSessions(ta ? ta.value : ""); return; }
   if(op === "link" || op === "unlink" || op === "newsess"){
