@@ -419,21 +419,24 @@
           "src": "images/c-mv5ibkootl3.jpg",
           "tags": [
             "skeb"
-          ]
+          ],
+          "url": ""
         },
         {
           "t": "作：厚賀屋さん",
           "src": "images/c-muzr5sotqw8.png",
           "tags": [
             "イラスト"
-          ]
+          ],
+          "url": ""
         },
         {
           "t": "折鶴子供",
           "src": "images/c-muu5cwqj07f.png",
           "tags": [
             "らくがき"
-          ]
+          ],
+          "url": ""
         }
       ],
       "listImg": {
@@ -524,42 +527,48 @@
               "src": "images/c-mv5idu1tb4b.jpg",
               "tags": [
                 "skeb"
-              ]
+              ],
+              "url": ""
             },
             {
               "t": " ",
               "src": "images/c-mv5ii4bnr1v.jpg",
               "tags": [
                 "らくがき"
-              ]
+              ],
+              "url": ""
             },
             {
               "t": "水着",
               "src": "images/c-muu5808atx1.png",
               "tags": [
                 "らくがき"
-              ]
+              ],
+              "url": ""
             },
             {
               "t": "ぶちょんが",
               "src": "images/c-muu5809b04w.png",
               "tags": [
                 "らくがき"
-              ]
+              ],
+              "url": ""
             },
             {
               "t": "みつかにちゃん",
               "src": "images/c-muu580acb66.png",
               "tags": [
                 "らくがき"
-              ]
+              ],
+              "url": ""
             },
             {
               "t": "販売員",
               "src": "images/c-muu580bgbuc.png",
               "tags": [
                 "らくがき"
-              ]
+              ],
+              "url": ""
             }
           ],
           "coc": {
@@ -2172,12 +2181,146 @@
       "fusetter": [],
       "ucys": [],
       "coc": {
-        "edition": "",
+        "edition": "6版",
         "memo": "",
-        "source": "",
-        "stats": [],
-        "derived": [],
-        "skills": [],
+        "source": "https://charahub.vercel.app/characters/b37135df-a9d0-41b3-81c0-ef9ba8d29937/view",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 14
+          },
+          {
+            "l": "CON",
+            "v": 18
+          },
+          {
+            "l": "POW",
+            "v": 12
+          },
+          {
+            "l": "DEX",
+            "v": 14
+          },
+          {
+            "l": "APP",
+            "v": 8
+          },
+          {
+            "l": "SIZ",
+            "v": 17
+          },
+          {
+            "l": "INT",
+            "v": 11
+          },
+          {
+            "l": "EDU",
+            "v": 14
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 18,
+            "max": 18
+          },
+          {
+            "l": "MP",
+            "v": 12,
+            "max": 12
+          },
+          {
+            "l": "SAN",
+            "v": 60,
+            "max": 60
+          }
+        ],
+        "skills": [
+          {
+            "n": "目星",
+            "v": 75
+          },
+          {
+            "n": "聞き耳",
+            "v": 80
+          },
+          {
+            "n": "図書館",
+            "v": 65
+          },
+          {
+            "n": "回避",
+            "v": 81
+          },
+          {
+            "n": "回避 (2回目 2/3)",
+            "v": 54
+          },
+          {
+            "n": "回避 (3回目 1/3)",
+            "v": 27
+          },
+          {
+            "n": "棍棒（警棒）",
+            "v": 85
+          },
+          {
+            "n": "こぶし（パンチ）",
+            "v": 50
+          },
+          {
+            "n": "キック",
+            "v": 25
+          },
+          {
+            "n": "頭突き",
+            "v": 10
+          },
+          {
+            "n": "杖",
+            "v": 50
+          },
+          {
+            "n": "応急手当",
+            "v": 35
+          },
+          {
+            "n": "精神分析",
+            "v": 85
+          },
+          {
+            "n": "水泳",
+            "v": 55
+          },
+          {
+            "n": "跳躍",
+            "v": 35
+          },
+          {
+            "n": "追跡",
+            "v": 21
+          },
+          {
+            "n": "登攀",
+            "v": 85
+          },
+          {
+            "n": "その他言語（英語）",
+            "v": 35
+          },
+          {
+            "n": "経理",
+            "v": 18
+          },
+          {
+            "n": "心理学",
+            "v": 85
+          },
+          {
+            "n": "法律",
+            "v": 12
+          }
+        ],
         "spoiler": false,
         "after": [],
         "spells": []
@@ -3005,7 +3148,8 @@
       ],
       "art": [],
       "cats": [
-        "アウトロー"
+        "アウトロー",
+        "芸能"
       ],
       "listImg": {
         "src": "images/c-muqtulnrt03.png"
@@ -3347,17 +3491,17 @@
       "more": "",
       "origin": "芋虫。",
       "profile": {
-        "kana": "",
-        "age": "",
-        "sex": "",
-        "height": "",
+        "kana": "おきつね　げん",
+        "age": "24歳",
+        "sex": "男性",
+        "height": "185cm",
         "weight": "",
-        "job": "",
-        "birthplace": "",
-        "hair": "",
-        "eye": "",
-        "first": "",
-        "second": "",
+        "job": "ラウンジピアニスト",
+        "birthplace": "関西",
+        "hair": "赤",
+        "eye": "翠",
+        "first": "オレ",
+        "second": "俺",
         "birthday": "",
         "blood": "",
         "likes": "",
@@ -3533,19 +3677,19 @@
       "more": "",
       "origin": "勝手にしんでろ。",
       "profile": {
-        "kana": "",
-        "age": "",
-        "sex": "",
-        "height": "",
+        "kana": "とがめ　けいすけ",
+        "age": "28",
+        "sex": "男",
+        "height": "172cm",
         "weight": "",
-        "job": "",
-        "birthplace": "",
-        "hair": "",
-        "eye": "",
-        "first": "",
-        "second": "",
-        "birthday": "",
-        "blood": "",
+        "job": "サラリーマン",
+        "birthplace": "兵庫",
+        "hair": "黒",
+        "eye": "黒",
+        "first": "俺",
+        "second": "あんた",
+        "birthday": "9月15日",
+        "blood": "B型",
         "likes": "",
         "dislikes": "",
         "color": "#252326",
@@ -3947,6 +4091,82 @@
         "spoiler": false,
         "after": [],
         "spells": []
+      }
+    },
+    {
+      "id": "cmv6v48yooi",
+      "name": "リュカ",
+      "en": "Lucas Swan White",
+      "role": "",
+      "desc": "",
+      "personality": "",
+      "more": "",
+      "origin": "ハイドア・ユートピア",
+      "profile": {
+        "kana": "",
+        "age": "23歳",
+        "sex": "男",
+        "height": "185cm",
+        "weight": "",
+        "job": "博士の助手",
+        "birthplace": "",
+        "hair": "赤色",
+        "eye": "翠色",
+        "first": "オレ",
+        "second": "アンタ",
+        "birthday": "3月3日",
+        "blood": "O型",
+        "likes": "猫\n研究\n博士\nタマキ",
+        "dislikes": "犬\n余暇\n博士とタマキ以外の人間",
+        "color": "#ff8579",
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
+      },
+      "lines": [],
+      "poses": [
+        {
+          "name": "リュカ立ち絵",
+          "src": "images/c-mv6v5nirh6c.png",
+          "lines": [],
+          "faces": []
+        }
+      ],
+      "art": [],
+      "cats": [
+        "インセイン"
+      ],
+      "listImg": {
+        "src": ""
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [],
+      "coc": {
+        "edition": "インセイン",
+        "memo": "",
+        "source": "",
+        "stats": [],
+        "derived": [],
+        "skills": [],
+        "spells": [],
+        "spoiler": false,
+        "after": []
       }
     },
     {
@@ -4470,6 +4690,1005 @@
         "spoiler": false,
         "after": []
       }
+    },
+    {
+      "id": "cmv6w093a20",
+      "name": "早乙女 兎姫",
+      "en": "SAOTOME TOKI",
+      "role": "",
+      "desc": "",
+      "personality": "前向きで元気、声が大きくハキハキとした性格。産まれはお嬢様だが、いまは貧乏一般人。家事全般が壊滅的な不器用人間\n（『メカいじりは炊事洗濯とは別の神経回路を使っておりますの！』とのこと。）極度の面食いで男女問わず惚れっぽい。\n思い込みが激しく、空回りすることも多々ある。",
+      "more": "▌『ぶちけん』\n大学サークルのみんなが大好き！兄姉や妹弟のように好いているが、オリジナルグッズを作ったりと『推し』のような愛で方をしている。\n\nサークルに入ったきっかけは\n『タダ飯が食べられる』という噂を聞いたから。\n威風堂々と『このサークルでは定期的にお食事会があるとききまして！』と入学初日に乗り込んだ。\n\n▌家族構成\n父、母、姉、姉、兄、兄、自分\n\n地主の一族でとても……お金持ち！\n謙虚で真面目な一族。家の力を借りず子供は皆15歳から自立せねばならず、何か功績を残した者が家督を継げる。\nとはいえ家族仲は超良好！仲良し！\n甘やかされて育った末っ子うさぎ！\n ",
+      "origin": "038",
+      "profile": {
+        "kana": "さおとめ　とき",
+        "age": "25歳",
+        "sex": "女性",
+        "height": "150cm",
+        "weight": "",
+        "job": "臨床工学技士",
+        "birthplace": "岩手",
+        "hair": "薄紫",
+        "eye": "紫",
+        "first": "わたくし",
+        "second": "あなた",
+        "birthday": "",
+        "blood": "",
+        "likes": "機械いじり\n和食\n酒\nおしゃれ",
+        "dislikes": "運動\nにんじん",
+        "color": "#c59fd7",
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
+      },
+      "lines": [
+        "わたくしは／あなたが大好きでしてよ！"
+      ],
+      "poses": [
+        {
+          "name": "全身",
+          "src": "images/c-mv6w1ufnkee.png",
+          "lines": [],
+          "faces": [
+            {
+              "name": "基本",
+              "src": "images/c-mv6w2wm9ywn.png"
+            },
+            {
+              "name": "うりゅりゅ",
+              "src": "images/c-mv6w2vooo3x.png"
+            },
+            {
+              "name": "え？",
+              "src": "images/c-mv6w2vqrs6r.png"
+            },
+            {
+              "name": "きゃるん",
+              "src": "images/c-mv6w2vsrc55.png"
+            },
+            {
+              "name": "ぎょっ！",
+              "src": "images/c-mv6w2vut80v.png"
+            },
+            {
+              "name": "きらきら",
+              "src": "images/c-mv6w2vwwvnq.png"
+            },
+            {
+              "name": "きらっきら！",
+              "src": "images/c-mv6w2vz1cfs.png"
+            },
+            {
+              "name": "きららん！",
+              "src": "images/c-mv6w2w15j9e.png"
+            },
+            {
+              "name": "じと",
+              "src": "images/c-mv6w2w38uur.png"
+            },
+            {
+              "name": "しゅん",
+              "src": "images/c-mv6w2w5dqls.png"
+            },
+            {
+              "name": "どきどき",
+              "src": "images/c-mv6w2w7gl5s.png"
+            },
+            {
+              "name": "ひっ",
+              "src": "images/c-mv6w2w9ldew.png"
+            },
+            {
+              "name": "ひひっ！",
+              "src": "images/c-mv6w2wbpw71.png"
+            },
+            {
+              "name": "ぷくーっ",
+              "src": "images/c-mv6w2wdueyj.png"
+            },
+            {
+              "name": "ふむふむ",
+              "src": "images/c-mv6w2wfzxkb.png"
+            },
+            {
+              "name": "べーーっ！",
+              "src": "images/c-mv6w2wi1sa0.png"
+            },
+            {
+              "name": "べーっ",
+              "src": "images/c-mv6w2wk5hdj.png"
+            },
+            {
+              "name": "基本手",
+              "src": "images/c-mv6w2wofi4x.png"
+            },
+            {
+              "name": "指差し！",
+              "src": "images/c-mv6w2wqjv6f.png"
+            },
+            {
+              "name": "私が",
+              "src": "images/c-mv6w2wsorp4.png"
+            },
+            {
+              "name": "涙",
+              "src": "images/c-mv6w2wuu7pf.png"
+            }
+          ]
+        }
+      ],
+      "art": [],
+      "cats": [
+        "大学生",
+        "医療"
+      ],
+      "listImg": {
+        "src": ""
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [],
+      "coc": {
+        "edition": "6版",
+        "memo": "",
+        "source": "https://iachara.com/view/10147002",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 10
+          },
+          {
+            "l": "CON",
+            "v": 14
+          },
+          {
+            "l": "POW",
+            "v": 15
+          },
+          {
+            "l": "DEX",
+            "v": 7
+          },
+          {
+            "l": "APP",
+            "v": 15
+          },
+          {
+            "l": "SIZ",
+            "v": 11
+          },
+          {
+            "l": "INT",
+            "v": 16
+          },
+          {
+            "l": "EDU",
+            "v": 18
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 13,
+            "max": 13
+          },
+          {
+            "l": "MP",
+            "v": 15,
+            "max": 15
+          },
+          {
+            "l": "SAN",
+            "v": 75,
+            "max": 75
+          }
+        ],
+        "skills": [
+          {
+            "n": "目星",
+            "v": 77
+          },
+          {
+            "n": "聞き耳",
+            "v": 77
+          },
+          {
+            "n": "図書館",
+            "v": 75
+          },
+          {
+            "n": "回避",
+            "v": 74
+          },
+          {
+            "n": "こぶし（パンチ）",
+            "v": 50
+          },
+          {
+            "n": "機械修理",
+            "v": 75
+          },
+          {
+            "n": "製作（ロボ）",
+            "v": 50
+          },
+          {
+            "n": "電気修理",
+            "v": 65
+          },
+          {
+            "n": "信用",
+            "v": 80
+          },
+          {
+            "n": "その他(英語)",
+            "v": 76
+          },
+          {
+            "n": "医学",
+            "v": 80
+          },
+          {
+            "n": "コンピューター",
+            "v": 14
+          },
+          {
+            "n": "生物学",
+            "v": 26
+          },
+          {
+            "n": "薬学",
+            "v": 46
+          }
+        ],
+        "spells": [],
+        "spoiler": false,
+        "after": []
+      }
+    },
+    {
+      "id": "cmv6wgmf88x",
+      "name": "黄河 琥珀",
+      "en": "",
+      "role": "",
+      "desc": "",
+      "personality": "生真面目ストイック舞台俳優\n大学卒業後に演劇を学び始めたので、かなりスタートが遅い。\n劇団オーディションにいくつも落ちてきたため、ビジュアルで拾ってくれたアイドル事務所の俳優部門に所属している。長髪は女子ウケが悪いと聞いたので伸ばしてみたが、周りからは『ワイルド系』と評判が良いことを本人は気づいていない。",
+      "more": "▌本名\n黄河 洸希（コウガ　コウキ）\n\n▌役者として　　　　　　　　　　　\n現在の活躍ジャンル：2.5次元\n得意ジャンル：殺陣、アクション\n苦手ジャンル：即興劇\n\n大学卒業後に演劇を学び始めたので、かなりスタートが遅い。\n劇団オーディションにいくつも落ちてきたため、ビジュアルで拾ってくれたアイドル事務所の俳優部門に所属している。\n事務所方針と経験の浅さから、ビジュアル売りや唄ダンス売りが圧倒的に多く、憧れの舞台俳優と今の自分がかけ離れていることにヤキモキしている。\n\n天才ではなく知覚や感受性も人並みの自覚があるため、特に【技術分野】の学びを怠らず舞台装置を味方につけて演劇に活かしている。\n\n▌性格\n才能がないと周りに言われ続けても、もう自分には演劇と舞台俳優への憧れしかない。\nこれを無くすとこれまでの人生が無駄になる。\n自分をここまで狂わせた演劇、そして舞台俳優の作り出す芸術が恐ろしく　狂おしく　恋焦がれ　気が狂いそうになっている。\n\nオーディション惨敗が続いた時期、どんな手を使ってでも役を勝ち取り、夢に近づきたいため、藁にもすがる思いでオカルトの類にまで手を出した。\n（本人はおまじないと思っており、あまり信じていない。自己暗示的な効果を期待してのこと）\n\n ",
+      "origin": "夜明けのカーテンコール",
+      "profile": {
+        "kana": "こうが こはく",
+        "age": "24歳",
+        "sex": "男性",
+        "height": "186cm",
+        "weight": "",
+        "job": "駆け出し舞台俳優",
+        "birthplace": "博多",
+        "hair": "黒",
+        "eye": "金",
+        "first": "俺",
+        "second": "お前",
+        "birthday": "12月24日",
+        "blood": "AB型",
+        "likes": "",
+        "dislikes": "",
+        "color": "#e3c100",
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
+      },
+      "lines": [
+        "俺は、俺のためなら／なんだってやる。"
+      ],
+      "poses": [
+        {
+          "name": "黄河立ち絵",
+          "src": "images/c-mv6wj21vsuh.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "照れ",
+          "src": "images/c-mv6wkgssocf.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "青ざめ",
+          "src": "images/c-mv6wkgtwe1w.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "通常",
+          "src": "images/c-mv6wkgv0lzf.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "怒り",
+          "src": "images/c-mv6wkgw3zhm.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "刀怒り",
+          "src": "images/c-mv6wkgx9ovv.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "黒塗り",
+          "src": "images/c-mv6wkgromed.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "爆照れ",
+          "src": "images/c-mv6wkgzj75a.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "爆笑",
+          "src": "images/c-mv6wkh0o810.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "にこっ",
+          "src": "images/c-mv6wkgqhrys.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "微笑み",
+          "src": "images/c-mv6wkh1tlmt.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "伏せ目",
+          "src": "images/c-mv6wkh2xnve.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "面倒",
+          "src": "images/c-mv6wkh41q43.png",
+          "lines": [],
+          "faces": []
+        }
+      ],
+      "art": [],
+      "cats": [
+        "インセイン",
+        "芸能"
+      ],
+      "listImg": {
+        "src": "images/c-mv6wu3az3wc.png"
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [],
+      "coc": {
+        "edition": "",
+        "memo": "",
+        "source": "",
+        "stats": [],
+        "derived": [],
+        "skills": [],
+        "spells": [],
+        "spoiler": false,
+        "after": []
+      }
+    },
+    {
+      "id": "cmv6vjwulub",
+      "name": "鶴来 繍",
+      "en": "TURUGI SYU",
+      "role": "",
+      "desc": "",
+      "personality": "▌顔だけはいい残念系 大型犬\n\n美大映像写真コースの3回生。\n夢はファッション関係のカメラマンになってモデルと結婚することな、散財大好き貧乏美大生。ハーフで顔だけはいいうえに極度の面食い。さらにガサツで大雑把……と、ここまでくると救いようがない。",
+      "more": "▌高い語学力\n母がイギリス人、父が日本人。\n\n元々家の中では英語での会話が多く、母国語の日本語同等に扱える。\n\nまた、ラテン語をつかった美術書を読むため現在勉強中であり、韓国語もアイドルのビジュアルカルチャーの強さを学ぶため勉強中。\n\n▌ガサツな大雑把人間\nこれといった特徴のない普通の大学生。\n……だと本人は思っているが、かなりガサツで大雑把。潔癖症の人間は発狂する。\n\nタダより怖いものは無い、ので、変なところで几帳面で警戒心のある男。\n\n▌性の倫理が崩壊しかけてるノンケ。\nもう童貞すてられるならお金払うからさァ……。\n\n・彼女はいた、が『私の部屋で靴下を半分だけ脱いだり、靴を片方だけ脱いで放置したり、靴下を履かないで私の家のフローリングをべたべた歩くのが本当に無理！やめてって言ったよね！？何回言ったと思ってんの！？』とキレられて別れた。一生なんてないんだね。\nその日は米津の『がらくた』を聴いて泣いた。\n\n▌家族構成　　　　　　　\n父(カメラマン)、母(元モデル)、姉(モデル)、妹(子役)\n圧倒的女性優位の家庭で父と2人尻に敷かれて育った。その反動で一人暮らしをはじめてからガサツで大雑把な自我と尊大な羞恥心がめきめき育ってしまった。\n\n ",
+      "origin": "OC×ON",
+      "profile": {
+        "kana": "つるぎ しゅう",
+        "age": "21",
+        "sex": "男性",
+        "height": "183cm",
+        "weight": "",
+        "job": "美大生（写真コース）",
+        "birthplace": "神戸",
+        "hair": "白黒",
+        "eye": "スカイブルー",
+        "first": "オレ",
+        "second": "アンタ",
+        "birthday": "12月14日",
+        "blood": "AB型",
+        "likes": "散財\nジャンクフード",
+        "dislikes": "1円単位で金を返してくる奴（気持ちよく奢らせて欲しい）\nエナドリ\nタダとかいう信用ならない事象",
+        "color": "#c2c2c2",
+        "extra": [],
+        "traits": [
+          "俊敏",
+          "バイリンガル"
+        ]
+      },
+      "lines": [
+        "俺は捧げる準備できてる。／出会う人がみんな／受け取る準備できてなかったね",
+        "……なにを？　\"\"童貞\"”"
+      ],
+      "poses": [
+        {
+          "name": "OC×ON",
+          "src": "images/c-mv6vlg29ip1.png",
+          "lines": [],
+          "faces": [
+            {
+              "name": "……",
+              "src": "images/c-mv6vm8bxp5j.png"
+            },
+            {
+              "name": "ウインク",
+              "src": "images/c-mv6vm8d4w2w.png"
+            },
+            {
+              "name": "通常",
+              "src": "images/c-mv6vm8j6i48.png"
+            },
+            {
+              "name": "ニコッ",
+              "src": "images/c-mv6vm8ed7sa.png"
+            },
+            {
+              "name": "はあ！",
+              "src": "images/c-mv6vm8fjcsy.png"
+            },
+            {
+              "name": "へえ！",
+              "src": "images/c-mv6vm8gtbvj.png"
+            },
+            {
+              "name": "んああ！",
+              "src": "images/c-mv6vm8i0w3m.png"
+            },
+            {
+              "name": "眉下げ笑顔",
+              "src": "images/c-mv6vm8ke2s7.png"
+            },
+            {
+              "name": "満面笑顔",
+              "src": "images/c-mv6vm8ll63q.png"
+            }
+          ]
+        }
+      ],
+      "art": [],
+      "cats": [
+        "大学生"
+      ],
+      "listImg": {
+        "src": ""
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [
+        {
+          "id": "umv6vvk26it",
+          "name": "律",
+          "relation": "爆裂片想い",
+          "owner": "わかさん",
+          "desc": "",
+          "personality": "",
+          "profile": {
+            "kana": "",
+            "age": "",
+            "sex": "",
+            "height": "",
+            "weight": "",
+            "job": "",
+            "birthplace": "",
+            "hair": "",
+            "eye": "",
+            "first": "",
+            "second": "",
+            "birthday": "",
+            "blood": "",
+            "likes": "",
+            "dislikes": "",
+            "color": "",
+            "extra": [],
+            "traits": [
+              "",
+              ""
+            ]
+          },
+          "lines": [],
+          "poses": [],
+          "tags": {
+            "fusetter": [
+              "SS",
+              "R18",
+              "その他",
+              "ネタバレ無"
+            ],
+            "art": [
+              "ディスプレイ",
+              "skeb",
+              "イラスト",
+              "R18"
+            ]
+          },
+          "fusetter": [],
+          "coc": {
+            "edition": "",
+            "memo": "",
+            "source": "",
+            "stats": [],
+            "derived": [],
+            "skills": [],
+            "spells": [],
+            "spoiler": false,
+            "after": []
+          },
+          "art": []
+        }
+      ],
+      "coc": {
+        "edition": "6版",
+        "memo": "",
+        "source": "https://iachara.com/view/10283806",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 11
+          },
+          {
+            "l": "CON",
+            "v": 10
+          },
+          {
+            "l": "POW",
+            "v": 13
+          },
+          {
+            "l": "DEX",
+            "v": 9
+          },
+          {
+            "l": "APP",
+            "v": 15
+          },
+          {
+            "l": "SIZ",
+            "v": 14
+          },
+          {
+            "l": "INT",
+            "v": 14
+          },
+          {
+            "l": "EDU",
+            "v": 15
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 12,
+            "max": 12
+          },
+          {
+            "l": "MP",
+            "v": 13,
+            "max": 13
+          },
+          {
+            "l": "SAN",
+            "v": 65,
+            "max": 65
+          }
+        ],
+        "skills": [
+          {
+            "n": "目星",
+            "v": 75
+          },
+          {
+            "n": "聞き耳",
+            "v": 75
+          },
+          {
+            "n": "図書館",
+            "v": 75
+          },
+          {
+            "n": "回避",
+            "v": 70
+          },
+          {
+            "n": "こぶし（パンチ）",
+            "v": 50
+          },
+          {
+            "n": "キック",
+            "v": 70
+          },
+          {
+            "n": "応急手当",
+            "v": 50
+          },
+          {
+            "n": "写真術",
+            "v": 75
+          },
+          {
+            "n": "説得",
+            "v": 70
+          },
+          {
+            "n": "その他（英語）",
+            "v": 75
+          },
+          {
+            "n": "その他（ラテン語）",
+            "v": 11
+          },
+          {
+            "n": "その他（韓国語）",
+            "v": 11
+          },
+          {
+            "n": "芸術（贋作鑑定）",
+            "v": 55
+          },
+          {
+            "n": "歴史",
+            "v": 50
+          }
+        ],
+        "spells": [],
+        "spoiler": false,
+        "after": []
+      }
+    },
+    {
+      "id": "cmv6upszwgy",
+      "name": "鶺鴒",
+      "en": "SEKIREI",
+      "role": "HO新人",
+      "desc": "",
+      "personality": "見た目と中身がまるで違う　今日も情緒が不安定後輩！\n\n自分のことには無頓着。見た目とは正反対に思い込みが激しく、一度火がつくとガッと進んでしまう猪突猛進タイプ。\n氷タイプの見た目した炎タイプ、外見詐欺。",
+      "more": "",
+      "origin": "都市伝説課",
+      "profile": {
+        "kana": "セキレイ",
+        "age": "23歳",
+        "sex": "男性",
+        "height": "185cm",
+        "weight": "",
+        "job": "都市伝説課職員",
+        "birthplace": "",
+        "hair": "雪色",
+        "eye": "黄鶺鴒",
+        "first": "ジブン、俺",
+        "second": "アンタ、〜さん",
+        "birthday": "12月24日",
+        "blood": "AB型",
+        "likes": "メイク\nやさしいもの",
+        "dislikes": "スプラッタ\nやさしくないもの",
+        "color": "#fff031",
+        "extra": [],
+        "traits": [
+          "",
+          ""
+        ]
+      },
+      "lines": [
+        "……、……／……地獄はいいけど／堕落は、やです"
+      ],
+      "poses": [
+        {
+          "name": "鶺鴒",
+          "src": "images/c-mv6ur6fijcy.png",
+          "lines": [],
+          "faces": [
+            {
+              "name": "通常",
+              "src": "images/c-mv6urlkzbwl.png"
+            },
+            {
+              "name": "汗",
+              "src": "images/c-mv6urlkafsv.png"
+            },
+            {
+              "name": "微笑み",
+              "src": "images/c-mv6urlkpf9e.png"
+            }
+          ]
+        }
+      ],
+      "art": [],
+      "cats": [],
+      "listImg": {
+        "src": ""
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [],
+      "coc": {
+        "edition": "6版",
+        "memo": "＜2015特徴表：影が薄いを取得してください＞\r\n　生まれつき目立たない、忍び歩き隠れるに＋20％\r\n\r\n───────────────────\r\n📰性格📰\r\nジブン(俺)／キミ・其方様・〜さん\r\n無駄に背筋が伸びている。\r\n\r\n『しょくいんさん』のことが大好きでたまらない。\r\n頭の中で先輩の好きなところが108個、0.5秒で思いうかぶ。しかし『しょくいんさん』の迷惑になるのはよくないから1つしか口に出せない。嗚呼、好き、大好きだ。ジブンの事を覚えていてくれてるだろうか。\r\n『しょくいんさん』の役に立ちたい、褒められたい、こんなに大きくなったことを言いたい！\r\n………が、名乗れないうえに詮索もしてもらえない、困った……。実に困った……。\r\nいや、しかし『しょくいんさん』の可愛い後輩になったんだ。\r\nここはなんとかして功績を残して先輩のバディや、先輩の右腕に就任したい。右腕とはいわず五臓六腑すべてジブンが担いたい。いやでもさすがにここまで言うと引かれてしまう。先輩にとっては初対面のいま、警戒されるのは困ってしまう………ここは大人しく後輩として控えていよう……。すきだ、先輩。だいすきだ、先輩。交換日記とかしてくれるだろうか……。\r\n\r\n…………というくらい先輩が好きで自分のことには無頓着。見た目とは正反対に思い込みが激しく、一度火がつくとガッと進んでしまう猪突猛進タイプ。\r\n氷タイプの見た目した炎タイプ、外見詐欺。\r\n\r\n\r\n📰技能📰\r\n虐待されていたこともあり、親の機嫌が悪そうな声が聞こえればすぐに身を隠していた。\r\n（聞き耳・隠れる・回避）\r\n\r\n\r\n子供の頃から話し相手欲しさにコックリさんをしてみたり、キューピット様やさとるくんを頼ろうとしてみたり。花子さんや口裂け女を探すなど一時期よく調べていた。\r\n実際に人外が見えるようになり　調べるうち、中には危ないモノもいると知って自衛のためオカルト方面の勉強をした。\r\n（図書館・オカルト）\r\n\r\n幼い頃から家に放置されることも多く、何か壊れた時は1人で修理して使用していた。人外が見えるようになってからは「霊は電気に弱い」という眉唾を信じていざと言うときのため勉強するうち、大学も電気工学系を専攻していた。のめりこむと一直線。\r\n（電気修理）\r\n\r\n最初は虐待の痕を隠すために化粧を身につけたが、自身の影の薄さに特殊メイクを施せばどんな人にもなれる　その人の強さを貰える気がして、人を観察し同じ顔になっては出歩くことをしていたが　ドッペルゲンガーみたいだな、と思って以来は趣味に留めている。\r\n（制作：特殊メイク）\r\n\r\n\r\n\r\n📰本名📰\r\n尾関 乃愛（おぜき のあ）\r\n成長するにつれどんどん名前が似合わなくなっている自覚があるため、正直本名を名乗らないで良いと聞かされた時はホッとした。\r\n\r\n（ノアの方舟、ハワイ語：noa：自由、仏語：Noir：黒・正体不明）\r\n（鶺鴒の別名、石叩きや尾っぽを上下にして\"愛\"を教えた逸話から）\r\n\r\n好きなもの：先輩、やさしい都市伝説、メイク\r\n嫌いなもの：スプラッタ、やさしくないこと",
+        "source": "https://charasheet.vampire-blood.net/4696294",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 12
+          },
+          {
+            "l": "CON",
+            "v": 15
+          },
+          {
+            "l": "POW",
+            "v": 17
+          },
+          {
+            "l": "DEX",
+            "v": 12
+          },
+          {
+            "l": "APP",
+            "v": 6
+          },
+          {
+            "l": "SIZ",
+            "v": 17
+          },
+          {
+            "l": "INT",
+            "v": 13
+          },
+          {
+            "l": "EDU",
+            "v": 18
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 16,
+            "max": 16
+          },
+          {
+            "l": "MP",
+            "v": 17,
+            "max": 17
+          },
+          {
+            "l": "SAN",
+            "v": 85,
+            "max": 99
+          }
+        ],
+        "skills": [],
+        "spells": [],
+        "spoiler": true,
+        "after": []
+      }
+    },
+    {
+      "id": "cmv6txny3zd",
+      "name": "北 巳波",
+      "en": "KITA MINAMI",
+      "role": "誰ロHO4",
+      "desc": "",
+      "personality": "何か考えているようで、何も考えていない。\n……ようで、やっぱり考え込んでいる心配性。\n\n人に心配をかけるのが大の苦手で自由人や破天荒に振舞いがち(だが気分屋だったりよくわからないこだわりを見せることもしばしばな変人)\n\n表には出さないが無益な争いを嫌い、一歩引いて周りを見ることを好み、バンドに関しては「ファンとスタッフあってこそ」と考えているためそれらを最優先に動く。",
+      "more": "▌誰がロックを殺すのか HO4\nあなたには音楽の才能がある。\n\n▌母が世界的ヴァイオリニスト　　\n「音楽は心を癒す」をモットーに活動し、世界中から手を引かれている母による英才教育の影響で物心ついた頃から市民音楽団員として色々な楽器を触っていた。\n\n同年代と比較し身体が大きかったおかげで、小学校からはコントラバスを担当することになり、高校までの約9年間、ずっと弾いてきた。\n\n才能だけではなく、シンプルに音楽と練習が好きで暇さえあれば楽器を触ってる。\n\n\n▌軽音出身　　\n中学は吹奏楽部、高校でも入部する気だったが男子部員ゼロということで教師に言われるがまま軽音部に変更。\nコントラバスでジャズ系バンドに参加していたがよくある自然消滅。\n\nまだ楽器に触っていたいが学外オーケストラは母を知る人も多く、色々と面倒だったこともあり、退部はせずにどこか拾ってくれるバンドがあれば……と本格的にベースを始めた。\nロックにはそれまで触れてこなかったが、どいつもこいつも技術じゃなく熱量で弾いている、その空間が楽しかったので今も続けている。\n\n▌人間関係\n「エスパーじゃないから、口に出さなきゃわからない・口に出してしまうと戻せない」という考え方。だからこそ人の言葉によく左右される。\n\n怒られることを嫌い、褒められることを好むのはこのため。\n\n▌飼い猫と、……？　　　\n白い子猫のシルクと成猫のセドナ\n\nそしてなんだか猫っぽい……なにか神話的な……とにかく何かが家にいる、名前はアヴァロン。\n\n大切な家族として、3匹をこっそりと愛称で呼んでいる。毛玉(シルク)、セド、アヴ。\n\n▌家族\n母：北 雅琴（きた みやこ）\n父：犀咲 正博（さいさき まさひろ）\n\n離婚済みであるがふたりとも非常に仲が良い。\n\n離婚も『アーティスト活動に非常に不便だ』ということで合意（父は若干嫌がった）のうえで巳波が高校に上がるタイミングで成立。\n\n---\n\n▌「巳波」の由来\n\n縁起が良いヘビに、『未来がある』という意味の『巳』の字を母が入れたがった。\n\nそして父の『波のようにおだやかで暖かく、優しい人生が続くように』の願いを込めた。\n",
+      "origin": "誰がロックを殺すのか",
+      "profile": {
+        "kana": "きた　みなみ",
+        "age": "24歳",
+        "sex": "男性",
+        "height": "182cm",
+        "weight": "70kg",
+        "job": "ベーシスト",
+        "birthplace": "都道府県2つしか言えんからわからん",
+        "hair": "ピンク色(地毛は黒)",
+        "eye": "紫色",
+        "first": "俺",
+        "second": "お前",
+        "birthday": "6月3日",
+        "blood": "O型",
+        "likes": "ベース\n酒\nSNS\n家族\n猫",
+        "dislikes": "努力しないやつ\n病院",
+        "color": "#9E76B4",
+        "extra": [
+          [
+            "家族構成",
+            "母"
+          ],
+          [
+            "MBTI",
+            "ESTP-T  起業家"
+          ]
+        ],
+        "traits": [
+          "",
+          ""
+        ]
+      },
+      "lines": [
+        "なあ、俺／ロックだった？"
+      ],
+      "poses": [
+        {
+          "name": "通常",
+          "src": "images/c-mv6u01niw6j.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "ステージ",
+          "src": "images/c-mv6u01p0af8.png",
+          "lines": [],
+          "faces": []
+        },
+        {
+          "name": "正装",
+          "src": "images/c-mv6u01m14pp.png",
+          "lines": [],
+          "faces": []
+        }
+      ],
+      "art": [],
+      "cats": [
+        "芸能"
+      ],
+      "listImg": {
+        "src": ""
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [],
+      "coc": {
+        "edition": "6版",
+        "memo": "あなたには音楽の才能がある。\n全ての〈芸術（楽器演奏）〉の初期値が5ではなくDEX*2の値となる。",
+        "source": "https://charasheet.vampire-blood.net/4155948",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 13
+          },
+          {
+            "l": "CON",
+            "v": 17
+          },
+          {
+            "l": "POW",
+            "v": 15
+          },
+          {
+            "l": "DEX",
+            "v": 16
+          },
+          {
+            "l": "APP",
+            "v": 12
+          },
+          {
+            "l": "SIZ",
+            "v": 15
+          },
+          {
+            "l": "INT",
+            "v": 12
+          },
+          {
+            "l": "EDU",
+            "v": 12
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 16,
+            "max": 16
+          },
+          {
+            "l": "MP",
+            "v": 15,
+            "max": 15
+          },
+          {
+            "l": "SAN",
+            "v": 92,
+            "max": 92
+          }
+        ],
+        "skills": [],
+        "spells": [],
+        "spoiler": false,
+        "after": [
+          {
+            "name": "独占欲",
+            "onset": "",
+            "cured": "",
+            "detail": "",
+            "more": "恋人に対し**永久狂気：独占欲**を抱いている。\n\n避けることもできた狂気だが、自ら受け入れた。\n「だって、べつにいつもとかわんねーだろ　それ患っても」",
+            "showInProfile": true
+          }
+        ]
+      }
     }
   ],
   "gallery": [
@@ -4478,21 +5697,24 @@
       "c": "アイコン",
       "d": "2026.09",
       "by": "依頼者 A さん",
-      "src": ""
+      "src": "",
+      "url": ""
     },
     {
       "t": "全身イラスト 01",
       "c": "イラスト",
       "d": "2026.08",
       "by": "依頼者 B さん",
-      "src": ""
+      "src": "",
+      "url": ""
     },
     {
       "t": "キャラクター設定画 01",
       "c": "設定画",
       "d": "2026.08",
       "by": "依頼者 C さん",
-      "src": ""
+      "src": "",
+      "url": ""
     }
   ],
   "sessions": [
@@ -5842,7 +7064,12 @@
       "note": "",
       "url": "",
       "others": "鶴来 繍 (https:、app.notion.com、p、144d914ce7e280f8870efc5c2488cb65?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6vjwulub",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -5857,7 +7084,12 @@
       "note": "",
       "url": "",
       "others": "鶴来 繍 (https:、app.notion.com、p、144d914ce7e280f8870efc5c2488cb65?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6vjwulub",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -5887,7 +7119,12 @@
       "note": "",
       "url": "",
       "others": "黄河 琥珀 (https:、app.notion.com、p、136d914ce7e28055981eef5e26095456?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6wgmf88x",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -6542,7 +7779,12 @@
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -6557,7 +7799,12 @@
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -6572,7 +7819,12 @@
       "note": "",
       "url": "",
       "others": "北辻 満波 (https:、app.notion.com、p、175f826f1ba34e1b878e3f550e742db3?pvs=21)、北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -6707,7 +7959,12 @@
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -7007,7 +8264,12 @@
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -7022,7 +8284,12 @@
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -7097,7 +8364,12 @@
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -7127,7 +8399,12 @@
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -7367,7 +8644,12 @@
       "note": "",
       "url": "",
       "others": "北 巳波 (https:、app.notion.com、p、02e840e2ae974b3c96ea2c0dbd4a5ab9?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv6txny3zd",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -8530,471 +9812,6 @@
       "rooms": []
     },
     {
-      "id": "smuofolt95hq",
-      "title": "ちのさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt96g8",
-      "title": "はるこさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt98ir",
-      "title": "おいかわさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt99b0",
-      "title": "しまこさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt910xt",
-      "title": "まめよしさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt911h5",
-      "title": "ロッテさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt912zr",
-      "title": "しろがねさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt91307",
-      "title": "柚瀬さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt91411",
-      "title": "いぬさわさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt915mp",
-      "title": "木枯さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt916ud",
-      "title": "さえきさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt917dr",
-      "title": "つつじさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt9194d",
-      "title": "抹茶さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt920hu",
-      "title": "かまちさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt921uz",
-      "title": "紅花さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt922r7",
-      "title": "紅音さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt923q0",
-      "title": "ぁゃさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt9243z",
-      "title": "こまつさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt925uv",
-      "title": "すざくさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt926ko",
-      "title": "佐倉さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt9277y",
-      "title": "おしりさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt92908",
-      "title": "ケイさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt931ak",
-      "title": "にこらさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt932ia",
-      "title": "リオンさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt935xk",
-      "title": "KPレス",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt936p9",
-      "title": "明日原さん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt939b3",
-      "title": "すだちさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt949fb",
-      "title": "なつおさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt953ox",
-      "title": "かつきさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt959y1",
-      "title": "ぱよさん",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
-      "id": "smuofolt970cw",
-      "title": "しおしお",
-      "date": "",
-      "system": "",
-      "note": "",
-      "url": "",
-      "others": "",
-      "members": [],
-      "kp": "",
-      "pls": "",
-      "format": "",
-      "partners": [],
-      "rooms": []
-    },
-    {
       "id": "smuqfu9hn0qu",
       "title": "帳の里へようこそ",
       "date": "2026.09.20",
@@ -9363,7 +10180,8 @@
     "警察",
     "医療",
     "芸能",
-    "アウトロー"
+    "アウトロー",
+    "インセイン"
   ],
   "work": {
     "open": false,
