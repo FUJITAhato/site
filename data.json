@@ -10725,7 +10725,7 @@
           "sys": "CoC 6版",
           "time": "",
           "players": "",
-          "memo": "KPはと　PLからこさん",
+          "memo": "KP：鳩　PL：からこさん",
           "size": "タイマン／ソロ",
           "recruit": "",
           "promisedAt": "2026-10-15",
@@ -10747,10 +10747,10 @@
           "sys": "CoC 6版",
           "time": "",
           "players": "",
-          "memo": "PL：しろがねさん",
+          "memo": "",
           "size": "2PL",
           "recruit": "",
-          "promisedAt": "",
+          "promisedAt": "2025-2-15",
           "url": ""
         },
         {
@@ -10758,11 +10758,21 @@
           "sys": "CoC 6版",
           "time": "",
           "players": "",
-          "memo": "お相手：しろがねさん",
+          "memo": "",
           "size": "タイマン／ソロ",
           "recruit": "",
-          "promisedAt": "",
+          "promisedAt": "2025-3-4",
           "url": ""
+        },
+        {
+          "t": "不完全無欠",
+          "sys": "CoC 6版",
+          "time": "",
+          "players": "",
+          "memo": "",
+          "size": "タイマン／ソロ",
+          "recruit": "",
+          "promisedAt": "2025-8-16"
         }
       ],
       "run": [],
