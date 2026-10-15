@@ -3482,6 +3482,148 @@
       }
     },
     {
+      "id": "cmuqn0g1hxi",
+      "name": "浦戸 カグヤ",
+      "en": "",
+      "role": "HO：月",
+      "desc": "",
+      "personality": "",
+      "more": "",
+      "origin": "同じ空には昇れない。",
+      "profile": {
+        "kana": "うらど かぐや",
+        "age": "280歳",
+        "sex": "男",
+        "height": "190cm",
+        "weight": "筋肉質",
+        "job": "夜間清掃員",
+        "birthplace": "？？？",
+        "hair": "銀髪",
+        "eye": "黒（元は黒髪赤眼）",
+        "first": "俺",
+        "second": "お前",
+        "birthday": "しらん",
+        "blood": "しらん",
+        "likes": "いばら！！！！\nコーヒー牛乳",
+        "dislikes": "我慢",
+        "color": "#24506B",
+        "extra": [
+          [
+            "本名",
+            "Vurado Cagula　ヴラド・カギュラ"
+          ]
+        ],
+        "traits": [
+          "",
+          ""
+        ]
+      },
+      "lines": [],
+      "poses": [
+        {
+          "name": "私服",
+          "src": "images/c-muqn2i46lpn.png",
+          "lines": [
+            "五百万⋯いる？"
+          ],
+          "faces": [
+            {
+              "name": "あほらし…",
+              "src": "images/c-mv9ui1xmgdq.png"
+            },
+            {
+              "name": "イラッ…",
+              "src": "images/c-mv9ui1zv4z4.png"
+            },
+            {
+              "name": "ちーん",
+              "src": "images/c-mv9ui21kqmm.png"
+            },
+            {
+              "name": "なんもわからん！",
+              "src": "images/c-mv9ui23f6k2.png"
+            },
+            {
+              "name": "にこ",
+              "src": "images/c-mv9ui25e4sv.png"
+            },
+            {
+              "name": "はわわ…",
+              "src": "images/c-mv9ui277s6n.png"
+            },
+            {
+              "name": "ふ…",
+              "src": "images/c-mv9ui296zgf.png"
+            },
+            {
+              "name": "ブレ",
+              "src": "images/c-mv9ui2b8rzr.png"
+            },
+            {
+              "name": "考える",
+              "src": "images/c-mv9ui2d5in7.png"
+            },
+            {
+              "name": "照れ",
+              "src": "images/c-mv9ui2f4jvg.png"
+            },
+            {
+              "name": "照れクワっ",
+              "src": "images/c-mv9ui2hava8.png"
+            },
+            {
+              "name": "舌ペロ",
+              "src": "images/c-mv9ui2j9t0t.png"
+            },
+            {
+              "name": "通常",
+              "src": "images/c-mv9ui2l3lbh.png"
+            },
+            {
+              "name": "通常（…）",
+              "src": "images/c-mv9ui2mzajo.png"
+            },
+            {
+              "name": "微笑み",
+              "src": "images/c-mv9ui2owsh1.png"
+            }
+          ]
+        }
+      ],
+      "art": [],
+      "cats": [],
+      "listImg": {
+        "src": "images/c-muqtwg3nisu.png"
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [],
+      "coc": {
+        "edition": "",
+        "memo": "",
+        "source": "",
+        "stats": [],
+        "derived": [],
+        "skills": [],
+        "spoiler": false,
+        "after": [],
+        "spells": []
+      }
+    },
+    {
       "id": "cmuqb03lfk5",
       "name": "興経 弦",
       "en": "OKITUNE GEN",
@@ -4012,82 +4154,6 @@
             "v": 70
           }
         ],
-        "spoiler": false,
-        "after": [],
-        "spells": []
-      }
-    },
-    {
-      "id": "cmuqn0g1hxi",
-      "name": "浦戸 カグヤ",
-      "en": "",
-      "role": "HO：月",
-      "desc": "",
-      "personality": "",
-      "more": "",
-      "origin": "同じ空には昇れない。",
-      "profile": {
-        "kana": "",
-        "age": "",
-        "sex": "",
-        "height": "",
-        "weight": "",
-        "job": "",
-        "birthplace": "",
-        "hair": "",
-        "eye": "",
-        "first": "",
-        "second": "",
-        "birthday": "",
-        "blood": "",
-        "likes": "",
-        "dislikes": "",
-        "color": "#24506B",
-        "extra": [],
-        "traits": [
-          "",
-          ""
-        ]
-      },
-      "lines": [],
-      "poses": [
-        {
-          "name": "私服",
-          "src": "images/c-muqn2i46lpn.png",
-          "lines": [
-            "五百万⋯いる？"
-          ],
-          "faces": []
-        }
-      ],
-      "art": [],
-      "cats": [],
-      "listImg": {
-        "src": "images/c-muqtwg3nisu.png"
-      },
-      "tags": {
-        "fusetter": [
-          "SS",
-          "R18",
-          "その他",
-          "ネタバレ無"
-        ],
-        "art": [
-          "ディスプレイ",
-          "skeb",
-          "イラスト",
-          "R18"
-        ]
-      },
-      "fusetter": [],
-      "ucys": [],
-      "coc": {
-        "edition": "",
-        "memo": "",
-        "source": "",
-        "stats": [],
-        "derived": [],
-        "skills": [],
         "spoiler": false,
         "after": [],
         "spells": []
@@ -4688,6 +4754,327 @@
         ],
         "spells": [],
         "spoiler": false,
+        "after": []
+      }
+    },
+    {
+      "id": "cmv9tjs53bf",
+      "name": "鯉渕 庵司",
+      "en": "KOIBUCHI ANJI",
+      "role": "HO禍",
+      "desc": "",
+      "personality": "\n厚顔無恥のヒモ　もとい、相方専用 家政夫！\n\nヒモ気質で物怖じしない、悪くいえば厚顔無恥。\n趣味が人助けレベルの男だが、派手な髪色、いかついアクセサリーに端的な言動、さらに常に口角の下がった面倒そうな顔……と、人助けしているように見えない。本人は相手が怯えていても気にせず声をかけるマイペース男。",
+      "more": "\n家族構成など\n父、母、自分、弟\n父が有名な歴史小説家、母が地主の一人娘。\nかなり裕福な家庭で生まれ育ち、自由に重きを置いて育てられる。\n\n私立の幼小中高をでてからエスカレーターで大学に行くのもつまらないので県外受験して京都へ。\n\n仕送りもしてくれると言われていたが、とある理由（うち他所関連参照）から断って、友人の世話になっている。\n\n・得意：人に話しかけること\n・苦手：家事全般（人のためならやる）\n\n所属：管理栄養学科\n実はそこまで料理は好きじゃない。\nが、やったことのないことに挑戦したかった。なにより人助けが好きな本人としても『人の役に立ってる』感があるので管理栄養士を目指している。座学の方が得意で、実技でともいえる料理の腕前は一般的な主婦に毛が生えたレベル。\nただ、レシピさえあれば大抵何でも作れる特技はある。\n\nとにかく褒められたい！\nいい人ではなく『人助けをしている自分』が最高に大好き。小さい頃、不審者を通報して褒め称えられ賞状までもらったことを喜びに喜んで…………この**褒められたい**という原動力で生きる男が爆誕した。\n周りに褒められるのきもちいい〜〜〜！全世界俺を求めてくれ〜〜！！\n\nヒモ気質　　　　　　　　　　　　　　　　\n現在、同い年で実家の太い相方に家賃水道ガス光熱費諸々……ライフラインを全て賄ってもらっている。ネトフリのアカウントやアマプラも共有してもらっている。終わっている。\n\nその対価として、炊事洗濯家事を行っているが本人がガサツなため、まともにやっているのは炊事くらいという、終わりっぷり。\n　",
+      "origin": "辜月のN",
+      "profile": {
+        "kana": "こいぶち　あんじ",
+        "age": "21歳",
+        "sex": "男",
+        "height": "185cm",
+        "weight": "痩せ型",
+        "job": "大学生（管理栄養学科）",
+        "birthplace": "鎌倉",
+        "hair": "灰と赤",
+        "eye": "青灰",
+        "first": "俺",
+        "second": "お前",
+        "birthday": "10月15日",
+        "blood": "AB型",
+        "likes": "抹茶味\n卵料理\n家事",
+        "dislikes": "酢漬け\nぶぶ漬け",
+        "color": "#cf6a00",
+        "extra": [
+          [
+            "身体的特徴",
+            "左腕の二の腕から下が欠損"
+          ]
+        ],
+        "traits": [
+          "信頼のおける人",
+          "俊敏"
+        ]
+      },
+      "lines": [],
+      "poses": [
+        {
+          "name": "辜月のN",
+          "src": "images/c-mv9tobfjeso.png",
+          "lines": [
+            "俺が、アイツいないと無理なの。／わかる？"
+          ],
+          "faces": [
+            {
+              "name": "通常",
+              "src": "images/c-mv9tq02n0hq.png"
+            },
+            {
+              "name": "うぐ",
+              "src": "images/c-mv9tpztz4op.png"
+            },
+            {
+              "name": "うぐっスマホ",
+              "src": "images/c-mv9tpzudbi1.png"
+            },
+            {
+              "name": "にこっ",
+              "src": "images/c-mv9tpzursos.png"
+            },
+            {
+              "name": "にこっコップ",
+              "src": "images/c-mv9tpzv6cjm.png"
+            },
+            {
+              "name": "にこっ手",
+              "src": "images/c-mv9tpzvkle8.png"
+            },
+            {
+              "name": "むすっ",
+              "src": "images/c-mv9tpzvym97.png"
+            },
+            {
+              "name": "基本コップ",
+              "src": "images/c-mv9tpzwbj12.png"
+            },
+            {
+              "name": "驚き",
+              "src": "images/c-mv9tpzwpach.png"
+            },
+            {
+              "name": "驚きスマホ",
+              "src": "images/c-mv9tpzx5ddp.png"
+            },
+            {
+              "name": "考えスマホ",
+              "src": "images/c-mv9tpzxj7lv.png"
+            },
+            {
+              "name": "考える",
+              "src": "images/c-mv9tpzxxrhp.png"
+            },
+            {
+              "name": "考え手",
+              "src": "images/c-mv9tpzyby53.png"
+            },
+            {
+              "name": "困る",
+              "src": "images/c-mv9tpzypdmk.png"
+            },
+            {
+              "name": "困るスマホ",
+              "src": "images/c-mv9tpzz27ho.png"
+            },
+            {
+              "name": "困る手",
+              "src": "images/c-mv9tpzzhcfc.png"
+            },
+            {
+              "name": "笑顔",
+              "src": "images/c-mv9tpzzvekt.png"
+            },
+            {
+              "name": "笑顔スマホ",
+              "src": "images/c-mv9tq00apnk.png"
+            },
+            {
+              "name": "青ざめ",
+              "src": "images/c-mv9tq00onjc.png"
+            },
+            {
+              "name": "青ざめスマホ",
+              "src": "images/c-mv9tq0126ru.png"
+            },
+            {
+              "name": "痛い",
+              "src": "images/c-mv9tq01hrab.png"
+            },
+            {
+              "name": "痛いスマホ",
+              "src": "images/c-mv9tq01uod5.png"
+            },
+            {
+              "name": "痛い手",
+              "src": "images/c-mv9tq0293cn.png"
+            },
+            {
+              "name": "呆れ",
+              "src": "images/c-mv9tq031as9.png"
+            }
+          ]
+        },
+        {
+          "name": "基本",
+          "src": "images/c-mv9u7uv4omb.png",
+          "lines": [],
+          "faces": [
+            {
+              "name": "あ",
+              "src": "images/c-mv9u8k8dli6.png"
+            },
+            {
+              "name": "イライラ",
+              "src": "images/c-mv9u8kbxq9w.png"
+            },
+            {
+              "name": "にまー…",
+              "src": "images/c-mv9u8kfc5ha.png"
+            },
+            {
+              "name": "ふふん！",
+              "src": "images/c-mv9u8kiptm2.png"
+            },
+            {
+              "name": "ぼんやり",
+              "src": "images/c-mv9u8km37py.png"
+            },
+            {
+              "name": "むかっ",
+              "src": "images/c-mv9u8kpi9br.png"
+            },
+            {
+              "name": "んむ",
+              "src": "images/c-mv9u8kssg53.png"
+            },
+            {
+              "name": "照れ",
+              "src": "images/c-mv9u8kw2bsm.png"
+            }
+          ]
+        }
+      ],
+      "art": [],
+      "cats": [
+        "大学生"
+      ],
+      "listImg": {
+        "src": "images/c-mv9udwowyqn.png"
+      },
+      "tags": {
+        "fusetter": [
+          "SS",
+          "R18",
+          "その他",
+          "ネタバレ無"
+        ],
+        "art": [
+          "ディスプレイ",
+          "skeb",
+          "イラスト",
+          "R18"
+        ]
+      },
+      "fusetter": [],
+      "ucys": [],
+      "coc": {
+        "edition": "6版",
+        "memo": "",
+        "source": "https://iachara.com/view/10916107",
+        "stats": [
+          {
+            "l": "STR",
+            "v": 8
+          },
+          {
+            "l": "CON",
+            "v": 14
+          },
+          {
+            "l": "POW",
+            "v": 14
+          },
+          {
+            "l": "DEX",
+            "v": 13
+          },
+          {
+            "l": "APP",
+            "v": 9
+          },
+          {
+            "l": "SIZ",
+            "v": 16
+          },
+          {
+            "l": "INT",
+            "v": 15
+          },
+          {
+            "l": "EDU",
+            "v": 15
+          }
+        ],
+        "derived": [
+          {
+            "l": "HP",
+            "v": 15,
+            "max": 15
+          },
+          {
+            "l": "MP",
+            "v": 14,
+            "max": 14
+          },
+          {
+            "l": "SAN",
+            "v": 40,
+            "max": 40
+          }
+        ],
+        "skills": [
+          {
+            "n": "目星",
+            "v": 75
+          },
+          {
+            "n": "聞き耳",
+            "v": 75
+          },
+          {
+            "n": "図書館",
+            "v": 80
+          },
+          {
+            "n": "回避",
+            "v": 80
+          },
+          {
+            "n": "こぶし（パンチ）",
+            "v": 50
+          },
+          {
+            "n": "キック",
+            "v": 75
+          },
+          {
+            "n": "応急手当",
+            "v": 80
+          },
+          {
+            "n": "精神分析",
+            "v": 69
+          },
+          {
+            "n": "製作（(料理)）",
+            "v": 11
+          },
+          {
+            "n": "説得",
+            "v": 70
+          },
+          {
+            "n": "母国語（日本語）",
+            "v": 85
+          },
+          {
+            "n": "その他（英語）",
+            "v": 12
+          },
+          {
+            "n": "歴史",
+            "v": 80
+          }
+        ],
+        "spells": [],
+        "spoiler": true,
         "after": []
       }
     },
@@ -6357,7 +6744,12 @@
       "note": "# ド！！！！！！！！\n\n本当に本当に本当に嬉しかった！！！全てが！！！！！！！！！！！！！！！！！！\n\nいばらちゃんが太陽でよかった。いばらちゃんが相方だったからここまで頑張れました！！！\n\n元々涙腺の弱い方ではあるのですがこんなにやさしい気持ちになれて、ろくでもない世界がちょっぴり好きになってしまう素敵な体験を毎回させて頂けて、すごく幸せな時間でした！世界が愛おしいよ！\n\n相方として共に駆け抜けてくださった⑧さんが力強く立ち続けてくださったおかげでべちょべちょに泣きながらもやってやらあ！！と前のめりでずんずん進むことができました！RPが上手すぎて、テキセの良さを浴びた……す、すごすぎる……本当に⑧さんにお金払ってシナリオリプレイ小説本を作りたい。文才。美しい。\n\n⑧さんの紡ぐ言葉ひとつひとつに、いばらちゃんの強く美しい凛としたお姿と、年相応にかわいい女の子らしさが見えてメロメロになっちゃった……くうううう…………好きだ！！！！！\n\nKPむぶさんはタイムキーパーがうますぎる。たぶんKPをさせていただく機会ができたら、むぶさんリスペクトの回し方になるとおもう……めっ……ちゃくちゃ時間が綺麗でずっと『すごい！ねえ！すごい！誰か！話聞いてこのKPさんすごくて！！』とわあきゃあしていました、ひとりで…………でもこんなに泣いて笑って世界を愛せたのは間違いなくKPむぶさんのおかげだと思います！ありがとうございました！！\n\n見返すとたくさんの日数をおふたりと一緒に遊んでいましたが、毎回が楽しくてあっという間の日々でした！\n\n**同じ空には昇れない。サイコーーー！！！！（夏休み映画のヤツ）**",
       "url": "https://accurate-dinghy-8de.notion.site/2f8d914ce7e2803982e3dd337a5d73c0?source=copy_link",
       "others": "浦戸カグヤ (https:、app.notion.com、p、324d914ce7e280bd8c97f14e4987d608?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmuqn0g1hxi",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "PL",
@@ -6968,7 +7360,12 @@
       "note": "",
       "url": "",
       "others": "鯉渕 庵司 (https:、app.notion.com、p、1f4d914ce7e280c5b4cbf2fd9fae04da?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv9tjs53bf",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
@@ -7103,7 +7500,12 @@
       "note": "",
       "url": "",
       "others": "鯉渕 庵司 (https:、app.notion.com、p、1f4d914ce7e280c5b4cbf2fd9fae04da?pvs=21)",
-      "members": [],
+      "members": [
+        {
+          "cid": "cmv9tjs53bf",
+          "with": []
+        }
+      ],
       "kp": "",
       "pls": "",
       "format": "",
