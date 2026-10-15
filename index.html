@@ -955,6 +955,40 @@ a.seg-b{ display:inline-flex; align-items:center; gap:.4em; text-decoration:none
 .scn-arch[open]>summary::after{ content:"－"; }
 .scn-arch>summary small{ font-size:.9em; opacity:.8; }
 .scn-arch .scn-i.expired{ opacity:.45; }
+
+/* SESSION: count per year */
+.sess-y small{ font-family:var(--sans); font-size:.4em; font-weight:400; letter-spacing:.16em; color:var(--mute); margin-left:.9em; vertical-align:.25em; }
+/* PROFILE schedule: prominent hours, prominent status, roomier before the calendar */
+.sch-times{ margin:.4rem 0 2rem; padding:.3rem 0 .3rem 1.1rem; border-left:4px solid #FFC64F; }
+.sch-k{ margin:0 0 .7rem; font-size:.76rem; letter-spacing:.26em; color:var(--mute); }
+.sch-k small{ font-size:.95em; letter-spacing:.1em; }
+.sch-row{ display:flex; flex-wrap:wrap; align-items:center; gap:.3rem 1.1rem; padding:.45rem 0; }
+.sch-l{ background:#FFC64F; color:#222326; font-weight:700; font-size:.95rem; letter-spacing:.2em; line-height:1.6; padding:.15em 1em; border-radius:999px; }
+.sch-v{ font-family:var(--serif); font-weight:500; font-size:clamp(1.55rem,7vw,2.2rem); line-height:1.3; letter-spacing:.02em; }
+.sch-now{ margin-top:3.2rem; }
+.pf-rules.big{ margin:0; }
+.pf-rules.big li{ display:grid; gap:.6rem; padding:1.2rem 0; border-bottom:1px solid var(--line); }
+.pf-rules.big .pf-rl{ flex:none; font-size:.9rem; color:var(--mute); line-height:1.7; }
+.pf-st{ justify-self:start; font-family:var(--serif); font-weight:500; font-size:clamp(1.4rem,6.4vw,1.9rem); line-height:1.35; padding:.28em 1.05em; border-radius:999px; }
+.pf-st.open{ background:#FFC64F; color:#222326; }
+.pf-st.closed{ background:var(--ink); color:var(--bg); }
+.sch-note{ margin:1.6rem 0 3rem; font-size:.9rem; line-height:1.9; color:var(--mute); }
+.sch-now+.pf-rules.big{ margin-top:.4rem; }
+.sch-v .tr{ white-space:nowrap; }
+
+/* PROFILE schedule: label text white, hours + status in the same font as 「遊べる時間帯」, status text back to normal */
+.sch-l{ color:#fff; text-shadow:0 1px 2px rgba(34,35,38,.28); }
+.sch-v{ font-family:var(--sans); }
+.pf-st{ font-family:var(--sans); font-size:1rem; font-weight:400; letter-spacing:.08em; line-height:1.6; padding:.5em 1.3em; }
+
+/* hours: smaller, quieter, tabular layout */
+.sch-times{ border-left-width:3px; padding:.2rem 0 .2rem 1rem; }
+.sch-row{ display:grid; grid-template-columns:5.1rem minmax(0,1fr); align-items:center; gap:.4rem .9rem; padding:.75rem 0; }
+.sch-row+.sch-row{ border-top:1px solid var(--line); }
+.sch-l{ justify-self:start; min-width:4.6rem; text-align:center; font-size:.84rem; letter-spacing:.22em; padding:.12em .9em .12em 1.1em; }
+.sch-v{ font-size:clamp(1.02rem,4.7vw,1.28rem); font-weight:400; letter-spacing:.1em; line-height:1.5; font-variant-numeric:tabular-nums; display:flex; flex-wrap:wrap; gap:.15rem 1.1rem; }
+.sch-v .tr{ display:inline-block; white-space:nowrap; padding:.05em 0 .12em; border-bottom:1px solid color-mix(in srgb, var(--ink) 35%, transparent); }
+.sch-v .tr i{ font-style:normal; color:var(--mute); font-size:.85em; margin:0 .45em; }
 </style>
 </head>
 <body data-view="home">
@@ -1279,7 +1313,7 @@ const SITE = {
     },
     groups: [
       { id: "schedule", title: "スケジュール", kind: "schedule", page: "play", blocks: [
-        { t: "予定の組み方について", body: "平日 21:00〜25:00\n土日祝13:00〜18:00 21:00〜25:00\n（丸一日とることも出来ますが、休憩を挟んでくださるとうれしいです！）\nあくまで目安なので融通が効くかと思います\n遊んでくださるみなさんに合わせられれば幸いです！" }
+        { t: "予定の組み方について", body: "（丸一日とることも出来ますが、休憩を挟んでくださるとうれしいです！）\nあくまで目安なので融通が効くかと思います\n遊んでくださるみなさんに合わせられれば幸いです！" }
       ] },
       { id: "style", page: "play", title: "セッション傾向", kind: "", blocks: [
         { t: "探索・推理 ＞ RP ＞ PLのぐちゃ", body: "PLとPCは別と考えています！\nPLがやりたいことをPCにやらせるため、どう辻褄を合わせてRPをするか等が楽しいタイプです！\n基本は全生還目指していますが同卓者さんが満足してくだされば何でもハッピー！\nみんなで楽しんで遊ぶことを第一目標にしています！" }
@@ -1295,6 +1329,7 @@ const SITE = {
       ] }
     ],
     schedule: {
+      times: [{ l: "平日", v: "21:00〜25:00" }, { l: "土日祝", v: "13:00〜18:00 21:00〜25:00" }],
       rules: [
         { label: "3時間×5日（予備日含め）までのシナリオ", text: "白の日ならいつでも", open: true },
         { label: "3時間×6日以上（予備日含め）のシナリオ", text: "2026年12月まで停止中", open: false }
@@ -2099,6 +2134,12 @@ function normSiteProfile(p){
   }).filter(x => x.t.trim());
   p.scenarios = { wantNote: sn.wantNote !== undefined ? dstr(sn.wantNote) : DEFAULT_WANT_NOTE, want: normScens(sn.want), run: normScens(sn.run), runUrl: sn.runUrl !== undefined ? dstr(sn.runUrl) : DEFAULT_RUN_URL };
   const sc = (p.schedule && typeof p.schedule === "object") ? p.schedule : (p.schedule = {});
+  const hadTimes = Array.isArray(sc.times);
+  sc.times = (hadTimes ? sc.times : [{ l: "平日", v: "21:00〜25:00" }, { l: "土日祝", v: "13:00〜18:00 21:00〜25:00" }]).map(t => ({ l: dstr(t && t.l), v: dstr(t && t.v) })).filter(t => t.l || t.v);
+  if(!hadTimes){   // 古いデータ：先頭の文章に入っていた同じ時間帯の行は、目立つ表示に移したので外す
+    const sg = p.groups.find(x => x.kind === "schedule");
+    if(sg && sg.blocks[0]) sg.blocks[0].body = sg.blocks[0].body.split("\n").filter(l => !/^\s*(平日|土日祝)\s*\d/.test(l)).join("\n");
+  }
   sc.rules = (Array.isArray(sc.rules) ? sc.rules : []).map(r => ({ label: dstr(r && r.label), text: dstr(r && r.text), open: !(r && r.open === false) }));
   sc.note = dstr(sc.note);
   sc.busy = (Array.isArray(sc.busy) ? sc.busy : []).map(String).filter(x => /^\d{4}-\d{2}-\d{2}$/.test(x));
@@ -2160,6 +2201,8 @@ const AS = {
              }) },
   scens: { to: a => (a || []).map(x => { const c = [x.t, x.sys, x.time, x.players, x.memo]; while(c.length > 1 && !String(c[c.length - 1]).trim()) c.pop(); return c.join(" | "); }).join("\n"),
            from: t => t.split("\n").filter(l => l.trim()).map(l => { const c = l.split("|").map(x => x.trim()); return { t: c[0] || "", sys: c[1] || "", time: c[2] || "", players: c[3] || "", memo: c.slice(4).join(" | ") }; }).filter(x => x.t) },
+  times: { to: a => (a || []).map(t => t.l + " | " + t.v).join("\n"),
+           from: t => t.split("\n").filter(l => l.trim()).map(l => { const k = l.indexOf("|"); return k >= 0 ? { l: l.slice(0, k).trim(), v: l.slice(k + 1).trim() } : { l: l.trim(), v: "" }; }) },
   workrows: { to: a => (a || []).map(r => r.h ? "# " + r.l : (r.e ? "* " : "") + (r.i ? "> " : "") + r.l + (r.v ? " | " + r.v : "")).join("\n"),
               from: t => t.split("\n").filter(l => l.trim()).map(l => {
                 if(/^#\s*/.test(l)) return { l: l.replace(/^#\s*/, "").trim(), v: "", i: false, h: true, e: false };
@@ -2950,12 +2993,13 @@ let pfTab = "about", scnMode = "want", scnSys = "ALL", scnSize = "ALL", scnRec =
 function pfBlock(b, open){
   return `<details class="pf-block"${open ? " open" : ""}><summary>${esc(b.t || "（見出しなし）")}</summary><div class="pf-body prose-pre">${esc(b.body)}</div></details>`;
 }
-function pfScheduleHtml(g, p, openFirst){
+function pfScheduleHtml(g, p){
   const sc = p.schedule;
-  return `${g.blocks.map((b, i) => pfBlock(b, openFirst && i === 0)).join("")}
-    <h3 class="h3">現在のスケジュールについて</h3>
-    ${sc.rules.length ? `<ul class="pf-rules">${sc.rules.map(r => `<li class="${r.open ? "open" : "closed"}"><span class="pf-rl">${esc(r.label)}</span><span class="status${r.open ? "" : " closed"}"><i></i><span>${esc(r.text)}</span></span></li>`).join("")}</ul>` : ""}
-    ${sc.note ? `<p class="xnote" style="margin:.8rem 0 1.2rem">${esc(sc.note)}</p>` : ""}
+  const times = sc.times.length ? `<div class="sch-times"><p class="sch-k">遊べる時間帯 <small>（目安）</small></p>${sc.times.map(t => `<div class="sch-row"><span class="sch-l">${esc(t.l)}</span><span class="sch-v">${esc(t.v).split(/\s+/).filter(Boolean).map(x => `<span class="tr">${x.replace(/〜/g, "<i>〜</i>")}</span>`).join(" ")}</span></div>`).join("")}</div>` : "";
+  return `${times}${g.blocks.map(b => pfBlock(b, false)).join("")}
+    <h3 class="h3 sch-now">現在のスケジュールについて</h3>
+    ${sc.rules.length ? `<ul class="pf-rules big">${sc.rules.map(r => `<li class="${r.open ? "open" : "closed"}"><span class="pf-rl">${esc(r.label)}</span><span class="pf-st ${r.open ? "open" : "closed"}">${esc(r.text)}</span></li>`).join("")}</ul>` : ""}
+    ${sc.note ? `<p class="sch-note">${esc(sc.note)}</p>` : ""}
     <div class="cal" id="calPublic">${calHtml(calView.y, calView.m, new Set(sc.busy), false)}</div>`;
 }
 /* シナリオ：遊びたい／回せる を切り替え */
@@ -3031,7 +3075,7 @@ function renderProfile(){
     html = pfScenHtml(p);
   } else {
     const gs = p.groups.filter(g => g.page === pfTab);
-    html = gs.length ? gs.map((g, gi) => `<section class="pf-sec">${gs.length > 1 ? `<h2 class="pf-gt">${esc(g.title)}</h2>` : ""}${g.kind === "schedule" ? pfScheduleHtml(g, p, gi === 0) : (g.blocks.length ? g.blocks.map((b, i) => pfBlock(b, gi === 0 && i === 0)).join("") : `<p class="empty">準備中です。</p>`)}</section>`).join("") : `<p class="empty">準備中です。</p>`;
+    html = gs.length ? gs.map((g, gi) => `<section class="pf-sec">${gs.length > 1 ? `<h2 class="pf-gt">${esc(g.title)}</h2>` : ""}${g.kind === "schedule" ? pfScheduleHtml(g, p) : (g.blocks.length ? g.blocks.map(b => pfBlock(b, false)).join("") : `<p class="empty">準備中です。</p>`)}</section>`).join("") : `<p class="empty">準備中です。</p>`;
   }
   host.innerHTML = `<div class="pf-panel tab-in" role="tabpanel">${html}</div>`;
 }
@@ -3096,9 +3140,11 @@ function renderSessions(){
     return;
   }
   let html = "", year = null, n = 0;
+  const yearOf = s => dateKey(s).slice(0, 4) || "日付なし", yc = {};
+  list.forEach(s => { yc[yearOf(s)] = (yc[yearOf(s)] || 0) + 1; });
   list.forEach(s => {
-    const y = dateKey(s).slice(0, 4) || "日付なし";
-    if(y !== year){ if(year !== null) html += "</div>"; html += `<h2 class="sess-y">${esc(y)}</h2><div class="sess-grid">`; year = y; }
+    const y = yearOf(s);
+    if(y !== year){ if(year !== null) html += "</div>"; html += `<h2 class="sess-y">${esc(y)} <small>${yc[y]}件</small></h2><div class="sess-grid">`; year = y; }
     html += sessCard(s, n++);
   });
   $("#sessList").innerHTML = html + "</div>";
@@ -3621,6 +3667,7 @@ function edProfile(){
     <button type="button" class="ed-small" data-op="add" data-arr="${PP}.pages">＋ タブを追加</button></div>`;
   const sc = p.schedule;
   const schedule = `<div class="ed-fields">
+    ${ar("遊べる時間帯（スケジュールの一番上に大きく出ます。1行に1つ。「平日 | 21:00〜25:00」の形）", PP + ".schedule.times", sc.times, 3, "times")}
     ${sc.rules.map((r, ri) => `<div class="ed-face ed-one"><div class="ed-fields">${fl("シナリオの区分", PP + ".schedule.rules." + ri + ".label", r.label)}${fl("状況の文言", PP + ".schedule.rules." + ri + ".text", r.text)}
       <label class="chk"><input type="checkbox" data-booltoggle="${PP}.schedule.rules.${ri}.open"${r.open ? " checked" : ""}>受付中として表示する（外すと「停止中」の見た目になります）</label>${opsHtml(PP + ".schedule.rules", ri, sc.rules.length)}</div></div>`).join("")}
     <button type="button" class="ed-small" data-op="add" data-arr="${PP}.schedule.rules">＋ 区分を追加</button>
