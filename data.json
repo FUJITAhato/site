@@ -10501,104 +10501,124 @@
       "wantNote": " \n・日程を決めないまま1年経過\n・メンバー追加がないまま1年経過\n\nこれらのお約束は、覚えていられる自信がなく、予定を拘束するのも申し訳ないので『白紙』とさせてもらいます！すみません！\n",
       "want": [
         {
+          "t": "ミノタウロスの証人",
+          "sys": "CoC 6版",
+          "time": "",
+          "players": "",
+          "memo": "お兄さんになって\"く\"だ\"さ\"い\"！！！！",
+          "size": "2PL",
+          "recruit": "PL募集",
+          "promisedAt": ""
+        },
+        {
           "t": "レプリカントの葬列",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "KP：椎さん　PL：cotocoさん",
           "size": "2PL",
           "recruit": "",
-          "promisedAt": "2026-10-15"
+          "promisedAt": "2026-10-15",
+          "url": ""
         },
         {
           "t": "ラルダンテステップ",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "とにかくこのシナリオで遊びた〜い！\nPL希望の方がいればシナリオを購入して拝読します！",
           "size": "タイマン／ソロ",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": "https://booth.pm/ja/items/7420449"
         },
         {
           "t": "東京ゴーストマティカ",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "4PL",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": "https://booth.pm/ja/items/4264686"
         },
         {
           "t": "ルベライトジャム",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "それ以上",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "Miniature",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "それ以上",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "神と悪魔のおまじない",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "それ以上",
           "recruit": "PL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "ラプラスのクォーター達",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "それ以上",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "深夜春闌",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "決定メンバー：からこさん",
           "size": "4PL",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "生活",
-          "sys": "",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "お相手：からこさん",
           "size": "2PL",
           "recruit": "KP募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "UNISON HOTEL",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "4PL",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "ホテル・ラインハルト",
@@ -10608,97 +10628,107 @@
           "memo": "",
           "size": "4PL",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "燃えゆく海馬",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "3PL",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "彁(かせい)",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "2PL",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "天使工場",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "2PL",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "Mua",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "",
           "size": "2PL",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "ファウストとショコラ",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "お相手：からこさん",
           "size": "2PL",
           "recruit": "KP募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": ""
         },
         {
           "t": "揃いのクズ",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
-          "memo": "https://booth.pm/ja/items/5058061",
+          "memo": "",
           "size": "タイマン／ソロ",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": "https://booth.pm/ja/items/5058061"
         },
         {
           "t": "WAKUWAKUARANRAN",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
-          "memo": "https://kanihaoisii.booth.pm/items/6016696",
+          "memo": "",
           "size": "タイマン／ソロ",
           "recruit": "KPPL募集",
-          "promisedAt": ""
+          "promisedAt": "",
+          "url": "https://kanihaoisii.booth.pm/items/6016696"
         },
         {
           "t": "yarazunoame",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "KP：からこさん",
           "size": "タイマン／ソロ",
           "recruit": "",
-          "promisedAt": "2026-6-17"
+          "promisedAt": "2026-10-15",
+          "url": ""
         },
         {
           "t": "パラダイスキップ",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "KPはと　PLからこさん",
           "size": "タイマン／ソロ",
           "recruit": "",
-          "promisedAt": "2026-6-17"
+          "promisedAt": "2026-10-15",
+          "url": ""
         },
         {
           "t": "コーネリアスの棺",
@@ -10708,27 +10738,30 @@
           "memo": "KP：鳩　PL：からこさん",
           "size": "4PL",
           "recruit": "PL募集",
-          "promisedAt": "2026-6-2"
+          "promisedAt": "2026-10-15",
+          "url": ""
         },
         {
           "t": "愛罠蜂",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "PL：しろがねさん",
           "size": "2PL",
           "recruit": "",
-          "promisedAt": "2025-2-15"
+          "promisedAt": "2025-2-15",
+          "url": ""
         },
         {
           "t": "父の不倫に感謝します。",
-          "sys": "6版",
+          "sys": "CoC 6版",
           "time": "",
           "players": "",
           "memo": "お相手：しろがねさん",
           "size": "タイマン／ソロ",
           "recruit": "",
-          "promisedAt": "2025-3-4"
+          "promisedAt": "2025-3-4",
+          "url": ""
         }
       ],
       "run": [],
