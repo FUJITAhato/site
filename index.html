@@ -2145,6 +2145,14 @@ function normChar(c, i){
   c.coc = normCoc(c.coc);
   return c;
 }
+function parseYmd(v){   // 2025-1-10 / 2025/1/10 / 2025.01.10 / 2025年1月10日 / 20250110 → 2025-01-10（読めなければ ""）
+  const t = String(v == null ? "" : v).trim().replace(/[０-９]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0));
+  const m = /^(\d{4})\s*[-\/.年]\s*(\d{1,2})\s*[-\/.月]\s*(\d{1,2})\s*日?$/.exec(t) || /^(\d{4})(\d{2})(\d{2})$/.exec(t);
+  if(!m) return "";
+  const y = +m[1], mo = +m[2], d = +m[3], dt = new Date(y, mo - 1, d);
+  if(dt.getFullYear() !== y || dt.getMonth() !== mo - 1 || dt.getDate() !== d) return "";
+  return y + "-" + String(mo).padStart(2, "0") + "-" + String(d).padStart(2, "0");
+}
 const SCN_SIZES = ["タイマン／ソロ", "2PL", "3PL", "4PL", "それ以上"];
 const SCN_REC = ["KP募集", "PL募集", "KPPL募集"];
 const DEFAULT_WANT_NOTE = "・日程を決めないまま1年経過\n・メンバー追加がないまま1年経過\nこれらのお約束は、覚えていられる自信がないので、申し訳ありませんが白紙とさせてもらいます…！すみません！";
@@ -2178,7 +2186,7 @@ function normSiteProfile(p){
     const o = { t: dstr(x && x.t), sys: dstr(x && x.sys), time: dstr(x && x.time), players: dstr(x && x.players), memo: dstr(x && x.memo), size: dstr(x && x.size), recruit: dstr(x && x.recruit), promisedAt: dstr(x && x.promisedAt), url: dstr(x && x.url) };
     if(!SCN_SIZES.includes(o.size)) o.size = sizeFromPlayers(o.players);
     if(!SCN_REC.includes(o.recruit)) o.recruit = "";
-    if(!/^\d{4}-\d{2}-\d{2}$/.test(o.promisedAt)) o.promisedAt = "";
+    o.promisedAt = parseYmd(o.promisedAt);
     return o;
   }).filter(x => x.t.trim());
   p.scenarios = { wantNote: sn.wantNote !== undefined ? dstr(sn.wantNote) : DEFAULT_WANT_NOTE, want: normScens(sn.want), run: normScens(sn.run), runUrl: sn.runUrl !== undefined ? dstr(sn.runUrl) : DEFAULT_RUN_URL };
@@ -3062,17 +3070,18 @@ function addMonths(ymd, n){
 }
 const ARCHIVE_MONTHS = 4;   // 期限超過になってから、この月数がたつと「しまってあるもの」へ
 const promiseState = x => {
-  if(!x.promisedAt) return "open";
-  const exp = addYear(x.promisedAt), t = todayYmd();
+  const pa = parseYmd(x.promisedAt);
+  if(!pa) return "open";
+  const exp = addYear(pa), t = todayYmd();
   if(t < exp) return "promised";
   return t >= addMonths(exp, ARCHIVE_MONTHS) ? "archived" : "expired";
 };
 const recBadge = r => r ? `<span class="rec rec-${SCN_REC.indexOf(r)}">${esc(r)}</span>` : "";
 function scnItem(x, state){
   const metas = [x.sys, x.time, state !== "open" ? x.size : ""].filter(Boolean).map(v => pill(v)).join("");
-  const exp = x.promisedAt ? addYear(x.promisedAt) : "";
+  const pa = parseYmd(x.promisedAt), exp = pa ? addYear(pa) : "";
   const title = safeUrl(x.url) ? `<a class="scn-t scn-lnk" href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.t)} <span aria-hidden="true">↗</span></a>` : `<span class="scn-t">${esc(x.t)}</span>`;
-  return `<li class="scn-i ${state}"><span class="scn-h">${recBadge(x.recruit)}${title}</span>${metas ? `<span class="scn-m">${metas}</span>` : ""}${x.memo ? `<span class="scn-n">${esc(x.memo)}</span>` : ""}${state === "promised" ? `<span class="scn-d">お約束した日 ${esc(dotDate(x.promisedAt))}　／　期限 ${esc(dotDate(exp))}</span>` : state === "expired" ? `<span class="scn-d">${esc(dotDate(exp))} に期限超過</span>` : ""}</li>`;
+  return `<li class="scn-i ${state}"><span class="scn-h">${recBadge(x.recruit)}${title}</span>${metas ? `<span class="scn-m">${metas}</span>` : ""}${x.memo ? `<span class="scn-n">${esc(x.memo)}</span>` : ""}${state === "promised" ? `<span class="scn-d">お約束した日 ${esc(dotDate(pa))}　／　期限 ${esc(dotDate(exp))}</span>` : state === "expired" ? `<span class="scn-d">${esc(dotDate(exp))} に期限超過</span>` : ""}</li>`;
 }
 function pfScenHtml(p){
   const sn = p.scenarios, runLink = safeUrl(sn.runUrl);
@@ -3719,7 +3728,7 @@ function edProfile(){
             <label>募集<select data-path="${WP}.recruit"><option value="">未設定</option>${SCN_REC.map(z => `<option value="${esc(z)}"${z === x.recruit ? " selected" : ""}>${esc(z)}</option>`).join("")}</select></label></div>
           ${ar("メモ（空でも可）", WP + ".memo", x.memo, 2)}
           <label class="chk"><input type="checkbox" data-promise="${WP}"${x.promisedAt ? " checked" : ""}>お約束済み（チェックした日が自動で記録されます）</label>
-          ${x.promisedAt ? `${fl("お約束した日（自動で入ります。直せます。例 2026-10-14）", WP + ".promisedAt", x.promisedAt, "2026-10-14")}<p class="ed-lab">${promiseState(x) === "archived" ? "期限超過（" + esc(dotDate(addYear(x.promisedAt))) + "）から4か月たったので、サイトでは「しまってあるもの」（タップで開く）に入っています。" : promiseState(x) === "expired" ? "1年たったので、サイトでは「期限超過」に表示されています（" + esc(dotDate(addYear(x.promisedAt))) + "）。4か月たつと、「しまってあるもの」に移ります。" : "期限は " + esc(dotDate(addYear(x.promisedAt))) + " です。この日になると自動で「期限超過」に移り、さらに4か月たつと「しまってあるもの」に移ります。"}</p>` : ""}
+          ${x.promisedAt ? `${fl("お約束した日（自動で入ります。直せます。例 2026-10-14）", WP + ".promisedAt", x.promisedAt, "2026-10-14")}<p class="ed-lab">${!parseYmd(x.promisedAt) ? "日付として読み取れません。「2026-10-14」や「2026.10.14」の形で入れてください（今は「募集中」として扱われます）。" : promiseState(x) === "archived" ? "期限超過（" + esc(dotDate(addYear(parseYmd(x.promisedAt)))) + "）から4か月たったので、サイトでは「しまってあるもの」（タップで開く）に入っています。" : promiseState(x) === "expired" ? "1年たったので、サイトでは「期限超過」に表示されています（" + esc(dotDate(addYear(parseYmd(x.promisedAt)))) + "）。4か月たつと、「しまってあるもの」に移ります。" : "期限は " + esc(dotDate(addYear(parseYmd(x.promisedAt)))) + " です。この日になると自動で「期限超過」に移り、さらに4か月たつと「しまってあるもの」に移ります。"}</p>` : ""}
           ${opsHtml(PP + ".scenarios.want", xi, p.scenarios.want.length)}</div></div>`;
       }).join("") || `<p class="empty">まだありません。</p>`}
       <div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${PP}.scenarios.want">＋ 下に追加</button></div>
@@ -3853,6 +3862,12 @@ $("#edList").addEventListener("input", e => {
 });
 $("#edList").addEventListener("change", async e => {
   const t = e.target;
+  const dp = t.closest && t.closest('[data-path$=".promisedAt"]');
+  if(dp){
+    const norm = parseYmd(dp.value);
+    if(norm) setP(draft, dp.dataset.path, norm);
+    markDirty(); renderEditor(); return;
+  }
   const inp = t.closest("[data-img]");
   if(inp && inp.files[0]){
     const path = inp.dataset.img, o = getP(draft, path); if(!o) return;
