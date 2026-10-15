@@ -989,6 +989,55 @@ a.seg-b{ display:inline-flex; align-items:center; gap:.4em; text-decoration:none
 .sch-v{ font-size:clamp(1.02rem,4.7vw,1.28rem); font-weight:400; letter-spacing:.1em; line-height:1.5; font-variant-numeric:tabular-nums; display:flex; flex-wrap:wrap; gap:.15rem 1.1rem; }
 .sch-v .tr{ display:inline-block; white-space:nowrap; padding:.05em 0 .12em; border-bottom:1px solid color-mix(in srgb, var(--ink) 35%, transparent); }
 .sch-v .tr i{ font-style:normal; color:var(--mute); font-size:.85em; margin:0 .45em; }
+
+/* 遊びたい（募集中）: each size group is a rounded, tinted card */
+.scn-card{ --gt:#f3efe4; --ga:#e0c66d; border:1px solid color-mix(in srgb, var(--ga) 55%, var(--line)); border-radius:22px; background:var(--gt); padding:1.15rem 1.2rem .5rem; margin-top:1.9rem; }
+.scn-card.g0{ --gt:#f6f0df; --ga:#e3c46b; }
+.scn-card.g1{ --gt:#e9f0f6; --ga:#8fb4cf; }
+.scn-card.g2{ --gt:#eaf2e8; --ga:#93c192; }
+.scn-card.g3{ --gt:#f3eaf2; --ga:#c99bc1; }
+.scn-card.g4{ --gt:#ecebe8; --ga:#a8a59c; }
+.scn-card.g5{ --gt:#eff0f3; --ga:#b9bcc6; }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .scn-card{ --gt:rgba(255,255,255,.04) !important; }
+}
+.scn-card .scn-gh{ margin:0 0 .2rem; padding:0 0 .8rem; border-bottom:3px solid var(--ga); display:flex; align-items:baseline; justify-content:space-between; gap:1rem; font-size:1.35rem; }
+.scn-card .scn-gh::before{ content:none; }
+.scn-gn{ font-family:var(--serif); font-weight:500; letter-spacing:.04em; }
+.scn-gc{ font-family:var(--sans); font-size:.78rem; letter-spacing:.14em; color:var(--mute); }
+.scn-card .scn-i{ border-bottom:1px dashed color-mix(in srgb, var(--ga) 60%, var(--line)); padding:1.05rem 0; }
+.scn-card .scn-i:last-child{ border-bottom:0; }
+.scn-lnk{ text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--ink) 40%, transparent); }
+.scn-lnk:hover{ border-bottom-color:#FFC64F; }
+.scn-lnk span{ font-size:.8em; color:var(--mute); }
+/* editor: 遊びたい items as clear cards, search, system chips, url row */
+.ed-want{ border:1px solid var(--line); border-radius:18px; padding:1rem 1rem 1.15rem; margin:1.2rem 0; background:var(--panel); }
+.ed-wh{ display:flex; flex-wrap:wrap; align-items:center; gap:.4rem .8rem; padding-bottom:.8rem; margin-bottom:1rem; border-bottom:2px solid #FFC64F; }
+.ed-wn{ font-family:var(--serif); font-size:1rem; color:var(--mute); }
+.ed-wt{ flex:1; min-width:8rem; font-family:var(--serif); font-size:1.2rem; line-height:1.4; }
+.ed-wb{ display:flex; flex-wrap:wrap; gap:.35rem; }
+.ed-wb .pill{ font-size:.7rem; padding:.02em .8em; }
+.ed-chips{ display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.5rem; }
+.sys-b{ min-width:0 !important; padding:.4em 1.1em !important; font-size:.82rem !important; }
+.ed-urlrow{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.6rem; align-items:end; }
+.ed-urlrow .ed-open{ min-height:2.7rem; padding:0 1.2em; border:1px solid var(--line); border-radius:999px; white-space:nowrap; }
+.ed-wsearch{ display:flex; gap:.8rem; align-items:center; margin:.4rem 0 .6rem; }
+.ed-wsearch input{ flex:1; min-width:0; font:inherit; font-size:16px; color:var(--ink); background:var(--bg); border:1px solid var(--line); padding:.45em 1em; }
+
+/* 遊びたい（募集中）: size cards in the top page's neutral palette (white card, hairlines, saffron accent only) */
+.scn-card,.scn-card.g0,.scn-card.g1,.scn-card.g2,.scn-card.g3,.scn-card.g4,.scn-card.g5{ --gt:#ffffff; --ga:#FFC64F; }
+.scn-card{ background:#ffffff; border:1px solid var(--line); border-radius:22px; box-shadow:0 1px 2px rgba(34,35,38,.05); padding:1.2rem 1.25rem .5rem; margin-top:1.9rem; }
+.scn-card .scn-gh{ position:relative; margin:0 0 .2rem; padding:.05rem 0 .9rem 1rem; border-bottom:1px solid var(--line); }
+.scn-card .scn-gh::before{ content:""; position:absolute; left:0; top:.28em; bottom:1rem; width:4px; border-radius:3px; background:#FFC64F; margin:0; height:auto; align-self:auto; }
+.scn-card .scn-i{ border-bottom:1px solid var(--line); }
+.scn-card .scn-i:last-child{ border-bottom:0; }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .scn-card{ background:var(--panel); box-shadow:none; }
+}
+
+/* シナリオタイトルを少し小さく */
+.scn-t{ font-size:1.03rem; line-height:1.55; }
+.scn-lnk span{ font-size:.78em; }
 </style>
 </head>
 <body data-view="home">
@@ -2126,7 +2175,7 @@ function normSiteProfile(p){
   });
   const sn = (p.scenarios && typeof p.scenarios === "object") ? p.scenarios : {};
   const normScens = a => (Array.isArray(a) ? a : []).map(x => {
-    const o = { t: dstr(x && x.t), sys: dstr(x && x.sys), time: dstr(x && x.time), players: dstr(x && x.players), memo: dstr(x && x.memo), size: dstr(x && x.size), recruit: dstr(x && x.recruit), promisedAt: dstr(x && x.promisedAt) };
+    const o = { t: dstr(x && x.t), sys: dstr(x && x.sys), time: dstr(x && x.time), players: dstr(x && x.players), memo: dstr(x && x.memo), size: dstr(x && x.size), recruit: dstr(x && x.recruit), promisedAt: dstr(x && x.promisedAt), url: dstr(x && x.url) };
     if(!SCN_SIZES.includes(o.size)) o.size = sizeFromPlayers(o.players);
     if(!SCN_REC.includes(o.recruit)) o.recruit = "";
     if(!/^\d{4}-\d{2}-\d{2}$/.test(o.promisedAt)) o.promisedAt = "";
@@ -3022,7 +3071,8 @@ const recBadge = r => r ? `<span class="rec rec-${SCN_REC.indexOf(r)}">${esc(r)}
 function scnItem(x, state){
   const metas = [x.sys, x.time, state !== "open" ? x.size : ""].filter(Boolean).map(v => pill(v)).join("");
   const exp = x.promisedAt ? addYear(x.promisedAt) : "";
-  return `<li class="scn-i ${state}"><span class="scn-h">${recBadge(x.recruit)}<span class="scn-t">${esc(x.t)}</span></span>${metas ? `<span class="scn-m">${metas}</span>` : ""}${x.memo ? `<span class="scn-n">${esc(x.memo)}</span>` : ""}${state === "promised" ? `<span class="scn-d">お約束した日 ${esc(dotDate(x.promisedAt))}　／　期限 ${esc(dotDate(exp))}</span>` : state === "expired" ? `<span class="scn-d">${esc(dotDate(exp))} に期限超過</span>` : ""}</li>`;
+  const title = safeUrl(x.url) ? `<a class="scn-t scn-lnk" href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.t)} <span aria-hidden="true">↗</span></a>` : `<span class="scn-t">${esc(x.t)}</span>`;
+  return `<li class="scn-i ${state}"><span class="scn-h">${recBadge(x.recruit)}${title}</span>${metas ? `<span class="scn-m">${metas}</span>` : ""}${x.memo ? `<span class="scn-n">${esc(x.memo)}</span>` : ""}${state === "promised" ? `<span class="scn-d">お約束した日 ${esc(dotDate(x.promisedAt))}　／　期限 ${esc(dotDate(exp))}</span>` : state === "expired" ? `<span class="scn-d">${esc(dotDate(exp))} に期限超過</span>` : ""}</li>`;
 }
 function pfScenHtml(p){
   const sn = p.scenarios, runLink = safeUrl(sn.runUrl);
@@ -3050,7 +3100,7 @@ function pfScenHtml(p){
   const sec = (title, n, inner, cls) => n ? `<section class="scn-sec ${cls || ""}"><h2 class="pf-gt">${title} <small>${n}</small></h2>${inner}</section>` : "";
   const open = rows.filter(r => r.st === "open"), promised = rows.filter(r => r.st === "promised"), expired = rows.filter(r => r.st === "expired"), archived = rows.filter(r => r.st === "archived");
   const groups = [...SCN_SIZES, ""].map(z => ({ z, list: open.filter(r => (r.x.size || "") === z) })).filter(g => g.list.length);
-  const openHtml = groups.map(g => `<h3 class="scn-gh">${esc(g.z || "人数未設定")} <small>${g.list.length}</small></h3><ul class="scn">${g.list.map(r => scnItem(r.x, "open")).join("")}</ul>`).join("");
+  const openHtml = groups.map(g => `<section class="scn-card g${g.z ? SCN_SIZES.indexOf(g.z) : 5}" aria-label="${esc(g.z || "その他")}"><h3 class="scn-gh"><span class="scn-gn">${esc(g.z || "その他")}</span><span class="scn-gc">${g.list.length}件</span></h3><ul class="scn">${g.list.map(r => scnItem(r.x, "open")).join("")}</ul></section>`).join("");
   const byOrder = list => list.map(r => scnItem(r.x, r.st)).join("");
   return `${toggle}
     ${sn.wantNote.trim() ? `<div class="scn-note" role="note"><span class="pill">お約束について</span><p>${esc(sn.wantNote)}</p></div>` : ""}
@@ -3383,6 +3433,12 @@ function posesEd(owner, OP, seed){
   return `${poses || `<p class="empty">立ち絵がまだありません。</p>`}<div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${OP}.poses">＋ 立ち絵パターンを追加</button>${multiBtn(OP + ".poses")}</div>`;
 }
 const ptxtMsgs = {};
+let wantQ = "";
+function applyWantFilter(){
+  const q = kata2hira(wantQ).trim(); let vis = 0, total = 0;
+  $$("#edList .ed-want").forEach(el => { total++; const okk = !q || (el.dataset.q || "").includes(q); el.hidden = !okk; if(okk) vis++; });
+  const c = $("#wantCount"); if(c) c.textContent = total ? (q ? vis + " / " + total + "件" : total + "件") : "";
+}
 /* PROFILE：貼り付けたテキストを読み取って入力 */
 const PLABELS = [
   ["hw", /^身長\s*[\/／・]\s*体重$/], ["hair_eye", /^(髪色|髪の色|髪)\s*[\/／・]\s*(瞳色|目の色|瞳|目)$/], ["pron", /^一人称\s*[\/／・]\s*二人称$/], ["bb", /^誕生日\s*[\/／・]\s*血液型$/],
@@ -3648,10 +3704,17 @@ function edProfile(){
       ${ar("「遊びたい」の一番上に出す注意書き（空なら表示しません）", PP + ".scenarios.wantNote", p.scenarios.wantNote, 5)}
       <span class="ed-lab">遊びたいシナリオ（「お約束済み」にチェックすると、その日が自動で記録され、1年たつと「期限超過」に移ります）</span>
       <div class="ed-addrow"><button type="button" class="ed-small" data-op="add-top" data-arr="${PP}.scenarios.want">＋ 上に追加</button></div>
+      <div class="ed-wsearch"><input type="search" data-wantq placeholder="遊びたいシナリオを検索（タイトル・システム・メモなど）" aria-label="遊びたいシナリオを検索" value="${esc(wantQ)}"><span class="ed-state" id="wantCount" role="status"></span></div>
       ${p.scenarios.want.map((x, xi) => {
         const WP = PP + ".scenarios.want." + xi;
-        return `<div class="ed-face ed-one"><div class="ed-fields">${fl("タイトル", WP + ".t", x.t)}
-          <div class="ed-2">${fl("システム", WP + ".sys", x.sys)}${fl("所要時間（空でも可）", WP + ".time", x.time)}</div>
+        const sysAll = [...new Set(["CoC 6版", "CoC 7版", ...draft.sessions.map(z => z.system), ...p.scenarios.want.map(w => w.sys), ...p.scenarios.run.map(w => w.sys)].filter(Boolean))];
+        const qd = esc(kata2hira([x.t, x.sys, x.memo, x.size, x.recruit, x.url].join(" ")));
+        return `<div class="ed-want" data-q="${qd}">
+          <div class="ed-wh"><span class="ed-wn">No.${xi + 1}</span><span class="ed-wt">${esc(x.t || "（タイトルなし）")}</span><span class="ed-wb">${x.size ? pill(x.size) : ""}${x.recruit ? `<span class="rec rec-${SCN_REC.indexOf(x.recruit)}">${esc(x.recruit)}</span>` : ""}${x.promisedAt ? pill("お約束済み") : ""}</span></div>
+          <div class="ed-fields">${fl("タイトル", WP + ".t", x.t)}
+          <div><span class="ed-lab">システム（タップで選べます。もう一度押すと外れます）</span><div class="ed-chips">${sysAll.map(v => `<button type="button" class="seg-b sys-b" data-sys-pick="${esc(WP)}" data-val="${esc(v)}" aria-pressed="${x.sys === v}">${esc(v)}</button>`).join("")}</div></div>
+          <div class="ed-2">${fl("そのほかのシステム（ない場合はここに入力）", WP + ".sys", x.sys)}${fl("所要時間（空でも可）", WP + ".time", x.time)}</div>
+          <div class="ed-urlrow">${fl("リンク（シナリオのページなど。空でも可）", WP + ".url", x.url, "https://…")}<button type="button" class="ed-small ed-open" data-open-url="${esc(WP)}">開く ↗</button></div>
           <div class="ed-2"><label>人数<select data-path="${WP}.size"><option value="">未設定</option>${SCN_SIZES.map(z => `<option value="${esc(z)}"${z === x.size ? " selected" : ""}>${esc(z)}</option>`).join("")}</select></label>
             <label>募集<select data-path="${WP}.recruit"><option value="">未設定</option>${SCN_REC.map(z => `<option value="${esc(z)}"${z === x.recruit ? " selected" : ""}>${esc(z)}</option>`).join("")}</select></label></div>
           ${ar("メモ（空でも可）", WP + ".memo", x.memo, 2)}
@@ -3733,6 +3796,7 @@ function renderEditor(){
   }
   Object.keys(impMsgs).forEach(i => { const el = $(`[data-imp-msg="${i}"]`); if(el) el.textContent = impMsgs[i]; });
   applyEdFilter();
+  applyWantFilter();
 }
 function applyEdFilter(){
   const show = tab === "character" || tab === "session";
@@ -3744,6 +3808,7 @@ function applyEdFilter(){
   $("#edCount").textContent = q ? vis + " / " + total + "件" : total + (tab === "character" ? "人" : "件");
 }
 $("#edQ").addEventListener("input", applyEdFilter);
+$("#edList").addEventListener("input", e => { if(e.target.matches && e.target.matches("[data-wantq]")){ wantQ = e.target.value; applyWantFilter(); } });
 async function openEditor(){
   await ready;
   if(!editorReady){
@@ -3771,6 +3836,11 @@ $("#edList").addEventListener("input", e => {
   const as = el.dataset.as, path = el.dataset.path;
   const v = as ? AS[as].from(el.value) : el.value;
   setP(draft, path, v);
+  const mw = /^profile\.scenarios\.want\.(\d+)\./.exec(path);
+  if(mw){
+    const box = el.closest(".ed-want"), it = draft.profile.scenarios.want[+mw[1]];
+    if(box && it){ box.dataset.q = kata2hira([it.t, it.sys, it.memo, it.size, it.recruit, it.url].join(" ")); if(/\.t$/.test(path)){ const h = $(".ed-wt", box); if(h) h.textContent = it.t || "（タイトルなし）"; } }
+  }
   if(!as){
     $$(`[data-path="${path}"]`, $("#edList")).forEach(x => {
       if(x === el) return;
@@ -3886,6 +3956,22 @@ function blankFor(arrPath){
   return { t: "新しい作品", c: "", d: today(), by: "", url: "", src: "" };
 }
 $("#edList").addEventListener("click", e => {
+  const sp = e.target.closest("[data-sys-pick]");
+  if(sp){
+    const WP = sp.dataset.sysPick, o = getP(draft, WP); if(!o) return;
+    const v = sp.dataset.val; o.sys = o.sys === v ? "" : v;
+    const box = sp.closest(".ed-want");
+    $$("[data-sys-pick]", box).forEach(b2 => b2.setAttribute("aria-pressed", String(b2.dataset.val === o.sys)));
+    const inp = $(`input[data-path="${WP}.sys"]`, box); if(inp) inp.value = o.sys;
+    box.dataset.q = kata2hira([o.t, o.sys, o.memo, o.size, o.recruit, o.url].join(" "));
+    markDirty(); return;
+  }
+  const ou = e.target.closest("[data-open-url]");
+  if(ou){
+    const o = getP(draft, ou.dataset.openUrl), u = safeUrl(o && o.url);
+    if(u) window.open(u, "_blank", "noopener"); else setState("リンクが空か、http で始まっていないため、開けません。");
+    return;
+  }
   const fmtBtn = e.target.closest("[data-fmt]");
   if(fmtBtn){
     const s2 = draft.sessions[+fmtBtn.dataset.si]; if(!s2) return;
