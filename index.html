@@ -1038,6 +1038,38 @@ a.seg-b{ display:inline-flex; align-items:center; gap:.4em; text-decoration:none
 /* シナリオタイトルを少し小さく */
 .scn-t{ font-size:1.03rem; line-height:1.55; }
 .scn-lnk span{ font-size:.78em; }
+
+/* GALLERY: many images per work, viewer, blur */
+.thumb,.gal-img{ position:relative; overflow:hidden; }
+.multi-badge{ position:absolute; right:.5rem; top:.5rem; min-width:1.7em; padding:.1em .6em; border-radius:999px; background:rgba(34,35,38,.72); color:#fff; font-size:.72rem; letter-spacing:.06em; text-align:center; line-height:1.6; z-index:2; }
+.multi-badge::before{ content:"▤ "; opacity:.8; }
+.is-blur img,.is-blur svg{ filter:blur(16px) saturate(.85); transform:scale(1.1); }
+.blur-badge{ position:absolute; inset:0; display:grid; place-items:center; z-index:1; pointer-events:none; }
+.blur-badge span{ background:rgba(34,35,38,.78); color:#fff; font-size:.8rem; letter-spacing:.14em; padding:.35em 1.1em; border-radius:999px; }
+.lb-view{ position:relative; }
+.lb-stage{ position:relative; display:grid; place-items:center; overflow:hidden; background:var(--panel); touch-action:pan-y; }
+.lb-stage img,.lb-stage svg{ width:100%; height:auto; max-height:70vh; object-fit:contain; display:block; cursor:pointer; user-select:none; -webkit-user-drag:none; }
+.lb-stage svg{ aspect-ratio:4/5; cursor:default; }
+.lb-nav{ position:absolute; top:50%; transform:translateY(-50%); width:2.6rem; height:2.6rem; border-radius:50%; background:rgba(255,255,255,.82); color:#222326; font-size:1.7rem; line-height:1; z-index:3; box-shadow:0 1px 6px rgba(0,0,0,.2); }
+.lb-prev{ left:.6rem; } .lb-next{ right:.6rem; }
+.lb-count{ display:flex; justify-content:center; align-items:center; gap:.9rem; padding:.7rem 0 0; font-size:.78rem; letter-spacing:.14em; color:var(--mute); }
+.lb-dots{ display:inline-flex; gap:.35rem; }
+.lb-dots i{ width:.45rem; height:.45rem; border-radius:50%; background:var(--line); }
+.lb-dots i.on{ background:#FFC64F; }
+.lb-stage.is-blur img,.lb-stage.is-blur svg{ filter:blur(22px) saturate(.8); transform:scale(1.12); cursor:default; }
+.lb-warn{ position:absolute; inset:0; display:grid; place-content:center; gap:1rem; justify-items:center; text-align:center; padding:1rem; background:rgba(247,248,250,.55); z-index:4; }
+.lb-warn p{ margin:0; font-family:var(--serif); font-size:1.2rem; }
+.lb-comment{ margin:1rem 0 0; font-size:.92rem; line-height:1.95; }
+/* editor */
+.ed-imgs{ display:grid; gap:.5rem; margin-bottom:.4rem; }
+.ed-imgrow{ display:flex; gap:10px; overflow-x:auto; padding:.2rem 0 .4rem; }
+.ed-im{ flex:none; width:84px; display:grid; gap:.3rem; }
+.ed-im .thumb{ aspect-ratio:4/5; width:84px; }
+.ed-imops{ display:flex; gap:.2rem; justify-content:space-between; }
+.img-x{ flex:1; font-size:.8rem; padding:.2em 0; border:1px solid var(--line); border-radius:6px; color:var(--ink); }
+.img-x:disabled{ opacity:.3; }
+.ed-blurs{ display:grid; gap:.4rem; }
+.ed-work{ padding:1rem 0; }
 </style>
 </head>
 <body data-view="home">
@@ -1304,11 +1336,12 @@ a.seg-b{ display:inline-flex; align-items:center; gap:.4em; text-decoration:none
 
 <dialog id="lb" aria-label="作品の詳細">
   <div class="lb-body">
-    <div class="thumb" id="lbImg"></div>
+    <div class="lb-view" id="lbImg"></div>
     <div class="lb-info">
       <div><h3 id="lbTitle"></h3><p id="lbMeta"></p></div>
       <button class="lb-close" type="button" id="lbClose">CLOSE</button>
     </div>
+    <p class="lb-comment prose-pre" id="lbComment" hidden></p>
     <a class="btn lb-link" id="lbLink" href="#" target="_blank" rel="noopener noreferrer" hidden></a>
   </div>
 </dialog>
@@ -1943,12 +1976,16 @@ function placeholder(seed){
   </svg>`;
 }
 function thumb(item, seed){
-  const s = item && (item._data || item.src);
+  const first = (item && item.imgs && item.imgs[0]) || item;
+  const s = first && (first._data || first.src);
   return s ? `<img src="${esc(s)}" alt="${esc((item && (item.t || item.name)) || "")}" loading="lazy">` : placeholder(seed);
 }
+const blurOn = x => !!(x && (x.spoiler || x.r18));
+const blurLabel = x => [x && x.spoiler ? "ネタバレ" : "", x && x.r18 ? "R18" : ""].filter(Boolean).join("・");
+const badgesHtml = x => `${itemImgs(x).length > 1 ? `<span class="multi-badge" aria-label="${itemImgs(x).length}枚">${itemImgs(x).length}</span>` : ""}${blurOn(x) ? `<span class="blur-badge"><span>${blurLabel(x)}</span></span>` : ""}`;
 function tile(item, i){
   return `<button class="tile" type="button" data-i="${i}">
-    <span class="thumb">${thumb(item, i)}</span>
+    <span class="thumb${blurOn(item) ? " is-blur" : ""}">${thumb(item, i)}${badgesHtml(item)}</span>
     <span class="cap"><span class="cap-t">${esc(item.t)}${safeUrl(item.url) ? ' <span class="cap-go" aria-hidden="true">↗</span>' : ""}</span>
     <span class="cap-m">${item.c ? `<span>${esc(item.c)}</span>` : ""}${item.d ? `<span>${esc(item.d)}</span>` : ""}</span></span>
   </button>`;
@@ -2077,6 +2114,14 @@ function normProfile(o){
   p.traits = [dstr(tr[0]), dstr(tr[1])];
   return p;
 }
+/* 作品（GALLERY）：画像を複数枚・コメント・ぼかし（ネタバレ／R18） */
+function normImgs(x){
+  x.imgs = (Array.isArray(x.imgs) ? x.imgs : []).map(i => ({ src: dstr(i && i.src), _data: i && i._data })).filter(i => i.src || i._data);
+  if(!x.imgs.length && (x.src || x._data)) x.imgs = [{ src: dstr(x.src), _data: x._data }];   // 古い「画像1枚」の作品を引き継ぐ
+  delete x.src; delete x._data;
+  x.comment = dstr(x.comment); x.spoiler = x.spoiler === true; x.r18 = x.r18 === true;
+}
+const itemImgs = x => (x && x.imgs && x.imgs.length) ? x.imgs : ((x && (x.src || x._data)) ? [{ src: x.src, _data: x._data }] : []);
 const normTags = a => Array.isArray(a) ? a.map(String) : [];
 function normFuse(o){
   const t = (o.tags && typeof o.tags === "object") ? o.tags : (o.tags = {});
@@ -2103,7 +2148,7 @@ function normPartner(u, i){
   normFuse(u);
   u.coc = normCoc(u.coc);
   u.art = Array.isArray(u.art) ? u.art : [];
-  u.art.forEach(x => { x.t = dstr(x.t); x.src = dstr(x.src); x.url = dstr(x.url); x.tags = normTags(x.tags); });
+  u.art.forEach(x => { x.t = dstr(x.t); x.url = dstr(x.url); x.tags = normTags(x.tags); normImgs(x); });
   return u;
 }
 function normSession(s, i){
@@ -2131,7 +2176,7 @@ function normChar(c, i){
   if(!c.poses.length && (c.src || c._data)){ c.poses.push({ name: "立ち絵 1", src: c.src || "", _data: c._data, faces: [], lines: [] }); }
   delete c.src; delete c._data;
   c.art = Array.isArray(c.art) ? c.art : [];
-  c.art.forEach(x => { x.t = dstr(x.t); x.src = dstr(x.src); x.url = dstr(x.url); x.tags = normTags(x.tags); });
+  c.art.forEach(x => { x.t = dstr(x.t); x.url = dstr(x.url); x.tags = normTags(x.tags); normImgs(x); });
   c.cats = normTags(c.cats).filter(Boolean);
   c.listImg = (c.listImg && typeof c.listImg === "object") ? c.listImg : {};
   c.listImg.src = dstr(c.listImg.src);
@@ -2220,7 +2265,7 @@ function normAll(d){
   d.characters = (Array.isArray(d.characters) ? d.characters : []).map(normChar);
   d.sessions = (Array.isArray(d.sessions) ? d.sessions : []).map(normSession);
   d.gallery = Array.isArray(d.gallery) ? d.gallery : [];
-  d.gallery.forEach(g => { if(g && typeof g === "object") g.url = dstr(g.url); });
+  d.gallery.forEach(g => { if(g && typeof g === "object"){ g.url = dstr(g.url); normImgs(g); } });
   d.profile = normSiteProfile(d.profile);
   d.work = normWork(d.work);
   d.charTags = normTags(d.charTags).filter(Boolean);
@@ -2680,7 +2725,7 @@ function statusHtml(c){
 function galListHtml(o, a, attr, seedBase){
   const items = o.art.map((x, i) => [x, i]).filter(([x]) => a === "ALL" || x.tags.includes(a));
   if(!items.length) return `<p class="empty">まだありません。</p>`;
-  return `<div class="gal-list">${items.map(([x, i], n) => `<button type="button" class="gal-item rv" style="transition-delay:${Math.min(n, 6) * 50}ms" ${attr}="${i}"><span class="gal-img">${thumb(x, seedBase + i)}</span><span class="gal-cap"><span class="cap-t">${esc(x.t)}${safeUrl(x.url) ? ' <span class="cap-go" aria-hidden="true">↗</span>' : ""}</span>${x.tags.length ? `<span class="fuse-tags">${x.tags.map(t => pill(t)).join("")}</span>` : ""}</span></button>`).join("")}</div>`;
+  return `<div class="gal-list">${items.map(([x, i], n) => `<button type="button" class="gal-item rv" style="transition-delay:${Math.min(n, 6) * 50}ms" ${attr}="${i}"><span class="gal-img${blurOn(x) ? " is-blur" : ""}">${thumb(x, seedBase + i)}${badgesHtml(x)}</span><span class="gal-cap"><span class="cap-t">${esc(x.t)}${safeUrl(x.url) ? ' <span class="cap-go" aria-hidden="true">↗</span>' : ""}</span>${x.tags.length ? `<span class="fuse-tags">${x.tags.map(t => pill(t)).join("")}</span>` : ""}</span></button>`).join("")}</div>`;
 }
 const FUSE_WARN = "基本的にタグ内容のネタバレがありますので閲覧はご注意ください。<br>シナリオ内容のネタバレの無いもののみ『ネタバレ無』のタグが付いています。";
 const fusePanel = (o, f, attrTag) => `<p class="fuse-warn">${FUSE_WARN}</p>
@@ -3268,14 +3313,42 @@ function openSession(id){
 
 /* --- lightbox --- */
 const lb = $("#lb");
+const lbSeen = new WeakSet();   // ぼかしを外した作品（このページを開いている間だけ覚えています）
+let lbItem = null, lbIdx = 0;
+function renderLb(){
+  const imgs = itemImgs(lbItem), n = imgs.length, cur = imgs[lbIdx];
+  const src = cur && (cur._data || cur.src), hidden = blurOn(lbItem) && !lbSeen.has(lbItem);
+  const warn = blurLabel(lbItem) + (lbItem && lbItem.r18 ? "（18歳以上の方のみ）" : "");
+  $("#lbImg").innerHTML = `<div class="lb-stage${hidden ? " is-blur" : ""}">${src ? `<img src="${esc(src)}" alt="${esc((lbItem && lbItem.t) || "")}${n > 1 ? "（" + (lbIdx + 1) + "/" + n + "枚目）" : ""}">` : placeholder(1)}
+    ${n > 1 && !hidden ? `<button type="button" class="lb-nav lb-prev" aria-label="前の画像">‹</button><button type="button" class="lb-nav lb-next" aria-label="次の画像">›</button>` : ""}
+    ${hidden ? `<div class="lb-warn"><p>${esc(warn)}</p><button type="button" class="btn lb-reveal">${lbItem.r18 ? "18歳以上です・表示する" : "表示する"}</button></div>` : ""}</div>
+    ${n > 1 ? `<div class="lb-count" aria-live="polite">${lbIdx + 1} / ${n}<span class="lb-dots" aria-hidden="true">${imgs.map((_, i) => `<i class="${i === lbIdx ? "on" : ""}"></i>`).join("")}</span></div>` : ""}`;
+  const cm = $("#lbComment"), t = lbItem && lbItem.comment ? lbItem.comment : "";
+  cm.hidden = !t.trim() || hidden; cm.textContent = t;
+}
+function lbStep(d){ const n = itemImgs(lbItem).length; if(n < 2 || (blurOn(lbItem) && !lbSeen.has(lbItem))) return; lbIdx = (lbIdx + d + n) % n; renderLb(); }
 function showLb(item, title, meta){
-  $("#lbImg").innerHTML = thumb(item, 1);
+  lbItem = item; lbIdx = 0;
   $("#lbTitle").textContent = title || "";
   $("#lbMeta").textContent = meta || "";
   const u = safeUrl(item && item.url), a = $("#lbLink");   // ポイピク・skeb納品ページなどへのリンク
   if(u){ a.href = u; a.textContent = linkLabel(u) + " ↗"; a.hidden = false; } else { a.hidden = true; a.removeAttribute("href"); }
+  renderLb();
   if (typeof lb.showModal === "function") lb.showModal(); else lb.setAttribute("open", "");
 }
+$("#lbImg").addEventListener("click", e => {
+  if(e.target.closest(".lb-reveal")){ lbSeen.add(lbItem); renderLb(); return; }
+  if(e.target.closest(".lb-prev")){ lbStep(-1); return; }
+  if(e.target.closest(".lb-next")){ lbStep(1); return; }
+  if(e.target.closest(".lb-stage img")) lbStep(1);   // 画像をクリックで、次の画像へ
+});
+let lbX = null, lbY = null;
+$("#lbImg").addEventListener("touchstart", e => { const t = e.changedTouches[0]; lbX = t.clientX; lbY = t.clientY; }, { passive: true });
+$("#lbImg").addEventListener("touchend", e => {   // 左右にスワイプで、前後の画像へ
+  if(lbX == null) return; const t = e.changedTouches[0], dx = t.clientX - lbX, dy = t.clientY - lbY; lbX = null;
+  if(Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.3) lbStep(dx < 0 ? 1 : -1);
+}, { passive: true });
+document.addEventListener("keydown", e => { if(lb.open && (e.key === "ArrowRight" || e.key === "ArrowLeft")){ lbStep(e.key === "ArrowRight" ? 1 : -1); } });
 function openLb(i){
   const g = SITE.gallery[i]; if(!g) return;
   showLb(g, g.t, [g.c, g.d, g.by].filter(Boolean).join("　"));
@@ -3406,7 +3479,21 @@ function processImage(file, max = 1400){
 const fl = (label, path, val, ph) => `<label>${label}<input data-path="${path}" value="${esc(val)}"${ph ? ` placeholder="${esc(ph)}"` : ""}></label>`;
 const ar = (label, path, val, rows, as) => `<label>${label}<textarea data-path="${path}"${as ? ` data-as="${as}"` : ""} rows="${rows}">${esc(as ? AS[as].to(val) : val)}</textarea></label>`;
 const cl = (label, path, val, ph) => `<label>${label}<span class="colorrow"><input type="color" data-path="${path}" value="${hexOf(val)}" aria-label="${esc(label)}（色を選ぶ）"><input data-path="${path}" value="${esc(val)}" placeholder="${esc(ph || "#7a9cc6")}"></span></label>`;
-const multiBtn = arr => `<label class="ed-small filebtn">画像をまとめて追加<input class="vh" type="file" accept="image/*" multiple data-multi="${arr}"></label>`;
+const multiBtn = arr => `<label class="ed-small filebtn">${/\.art$/.test(arr) ? "画像をまとめて追加（1枚ずつ別の作品に）" : "画像をまとめて追加"}<input class="vh" type="file" accept="image/*" multiple data-multi="${arr}"></label>`;
+/* 作品の画像（複数枚）・コメント・ぼかし */
+const ensureImgs = o => { if(!Array.isArray(o.imgs)) o.imgs = []; if(!o.imgs.length && (o.src || o._data)){ o.imgs.push({ src: o.src || "", _data: o._data }); delete o.src; delete o._data; } return o; };
+function imgsCtl(path, o, seed){
+  ensureImgs(o);
+  const n = o.imgs.length;
+  return `<div class="ed-imgs"><span class="ed-lab">画像（${n}枚。左から順に表示されます。複数まとめて選べます）</span>
+    <div class="ed-imgrow">${o.imgs.map((im, k) => `<div class="ed-im"><div class="thumb ck">${thumb({ imgs: [im] }, seed + k)}</div>
+        <div class="ed-imops"><button type="button" class="img-x" data-op="up" data-arr="${path}.imgs" data-i="${k}"${k === 0 ? " disabled" : ""} aria-label="左へ">←</button><button type="button" class="img-x" data-op="down" data-arr="${path}.imgs" data-i="${k}"${k >= n - 1 ? " disabled" : ""} aria-label="右へ">→</button><button type="button" class="img-x" data-op="del" data-arr="${path}.imgs" data-i="${k}" aria-label="この画像を外す">×</button></div></div>`).join("")}</div>
+    <label class="ed-small filebtn">＋ 画像を追加（複数選べます）<input class="vh" type="file" accept="image/*" multiple data-imgs="${path}"></label></div>`;
+}
+const workExtras = (P, o) => `${ar("コメント（作品を開いたときに表示されます。空でも可）", P + ".comment", o.comment, 3)}
+  <div class="ed-blurs"><span class="ed-lab">ぼかし（一覧と作品の画像を、タップするまでぼかします）</span>
+    <label class="chk"><input type="checkbox" data-booltoggle="${P}.spoiler"${o.spoiler ? " checked" : ""}>ネタバレのぼかし</label>
+    <label class="chk"><input type="checkbox" data-booltoggle="${P}.r18"${o.r18 ? " checked" : ""}>R18のぼかし（18歳以上の確認つき）</label></div>`;
 const imgCtl = (path, o, seed) => `<div class="ed-img"><div class="thumb ck">${thumb(o, seed)}</div>
     <label class="ed-small filebtn">画像を選ぶ<input class="vh" type="file" accept="image/*" data-img="${path}"></label>
     ${o.src ? `<button type="button" class="ed-small" data-op="clear" data-obj="${path}">画像を外す</button>` : ""}</div>`;
@@ -3533,7 +3620,7 @@ function galEd(o, OP, seed){
     <div class="ed-addrow"><button type="button" class="ed-small" data-op="add-top" data-arr="${OP}.art">＋ 上に追加</button></div>
     ${o.art.map((x, xi) => {
       const XP = OP + ".art." + xi;
-      return `<div class="ed-face">${imgCtl(XP, x, seed + xi)}<div class="ed-fields">${fl("タイトル", XP + ".t", x.t)}${fl("リンク（ポイピク・skeb納品ページなど。空でも可）", XP + ".url", x.url, "https://…")}${tagChecks(XP + ".tags", o.tags.art, x.tags)}${opsHtml(OP + ".art", xi, o.art.length)}</div></div>`;
+      return `<div class="ed-face ed-one ed-work">${imgsCtl(XP, x, seed + xi)}<div class="ed-fields">${fl("タイトル", XP + ".t", x.t)}${fl("リンク（ポイピク・skeb納品ページなど。空でも可）", XP + ".url", x.url, "https://…")}${workExtras(XP, x)}${tagChecks(XP + ".tags", o.tags.art, x.tags)}${opsHtml(OP + ".art", xi, o.art.length)}</div></div>`;
     }).join("") || `<p class="empty">まだありません。</p>`}
     <div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${OP}.art">＋ 画像を追加</button>${multiBtn(OP + ".art")}</div>`;
 }
@@ -3774,8 +3861,8 @@ function edWork(){
 function edGallery(g, i){
   const P = "gallery." + i;
   return `<article class="ed-item g">
-    ${imgCtl(P, g, i)}
-    <div class="ed-fields">${fl("タイトル", P + ".t", g.t)}${fl("カテゴリ", P + ".c", g.c).replace("<input ", '<input list="catList" ')}${fl("日付", P + ".d", g.d)}${fl("依頼者（空でも可）", P + ".by", g.by)}${fl("リンク（ポイピク・skeb納品ページなど。空でも可）", P + ".url", g.url, "https://…")}</div>
+    ${imgsCtl(P, g, i)}
+    <div class="ed-fields">${fl("タイトル", P + ".t", g.t)}${fl("カテゴリ", P + ".c", g.c).replace("<input ", '<input list="catList" ')}${fl("日付", P + ".d", g.d)}${fl("依頼者（空でも可）", P + ".by", g.by)}${fl("リンク（ポイピク・skeb納品ページなど。空でも可）", P + ".url", g.url, "https://…")}${workExtras(P, g)}</div>
     ${opsHtml("gallery", i, draft.gallery.length)}
   </article>`;
 }
@@ -3882,6 +3969,21 @@ $("#edList").addEventListener("change", async e => {
     }catch(err){ setState("画像を読み込めませんでした。別のファイルを試してください。"); }
     return;
   }
+  const mg = t.closest("[data-imgs]");
+  if(mg && mg.files.length){
+    const o = getP(draft, mg.dataset.imgs); if(!o) return;
+    ensureImgs(o);
+    const files = [...mg.files].sort((a, b) => a.name.localeCompare(b.name, "ja", { numeric: true })); mg.value = "";
+    const kind = mg.dataset.imgs.startsWith("gallery") ? "gallery" : "character";
+    let n = 0, okc = 0;
+    for(const f of files){
+      setState("画像を処理中… " + (++n) + "/" + files.length);
+      try{ const r = await processImage(f); o.imgs.push({ src: newPath(kind, r.ext), _data: r.dataUrl }); okc++; }catch(err){ /* 読み込めなかった画像は飛ばす */ }
+    }
+    if(okc && (!o.t || /^(新しい|イラスト \d|関連イラスト|画像)/.test(o.t))) o.t = nameFromFile(files[0]);
+    setState(okc + "枚を、この作品に追加しました");
+    markDirty(); renderEditor(); return;
+  }
   const mi = t.closest("[data-multi]");
   if(mi && mi.files.length){
     const arrPath = mi.dataset.multi, arr = getP(draft, arrPath); if(!arr) return;
@@ -3892,7 +3994,8 @@ $("#edList").addEventListener("change", async e => {
       setState("画像を処理中… " + (++n) + "/" + files.length);
       try{
         const r = await processImage(f, big ? 1800 : 1400);
-        const item = blankFor(arrPath); item[field] = nameFromFile(f); item._data = r.dataUrl; item.src = newPath("character", r.ext);
+        const item = blankFor(arrPath); item[field] = nameFromFile(f);
+        if(/\.art$/.test(arrPath)) item.imgs = [{ src: newPath("character", r.ext), _data: r.dataUrl }]; else { item._data = r.dataUrl; item.src = newPath("character", r.ext); }
         arr.push(item); ok++;
       }catch(err){ /* 読み込めなかった画像は飛ばす */ }
     }
@@ -3967,8 +4070,8 @@ function blankFor(arrPath){
   if(last === "poses") return { name: "立ち絵 " + (arr.length + 1), src: "", lines: [], faces: [] };
   if(last === "faces") return { name: "差分 " + (arr.length + 1), src: "" };
   if(last === "fusetter") return { t: "新しい投稿", url: "", note: "", tags: [] };
-  if(last === "art") return { t: "イラスト " + (arr.length + 1), src: "", url: "", tags: [] };
-  return { t: "新しい作品", c: "", d: today(), by: "", url: "", src: "" };
+  if(last === "art") return { t: "イラスト " + (arr.length + 1), imgs: [], url: "", comment: "", spoiler: false, r18: false, tags: [] };
+  return { t: "新しい作品", c: "", d: today(), by: "", url: "", imgs: [], comment: "", spoiler: false, r18: false };
 }
 $("#edList").addEventListener("click", e => {
   const sp = e.target.closest("[data-sys-pick]");
@@ -4068,8 +4171,8 @@ $("#edList").addEventListener("click", e => {
   const arr = getP(draft, b.dataset.arr), i = +b.dataset.i; if(!arr) return;
   if(op === "del"){
     if(!b.dataset.arm){
-      b.dataset.arm = "1"; b.textContent = "もう一度押すと削除";
-      setTimeout(() => { if(b.isConnected){ delete b.dataset.arm; b.textContent = "削除"; } }, 3000);
+      const orig = b.textContent; b.dataset.arm = "1"; b.textContent = b.classList.contains("img-x") ? "本当に？" : "もう一度押すと削除";
+      setTimeout(() => { if(b.isConnected){ delete b.dataset.arm; b.textContent = orig; } }, 3000);
       return;
     }
     arr.splice(i, 1);
@@ -4100,7 +4203,7 @@ $("#edMulti").addEventListener("change", async e => {
     setState("画像を処理中… " + (++n) + "/" + files.length);
     try{
       const r = await processImage(f);
-      draft.gallery.push({ t: f.name.replace(/\.[^.]+$/, ""), c: lastCat, d: today(), by: "", src: newPath("gallery", r.ext), _data: r.dataUrl });
+      draft.gallery.push({ t: f.name.replace(/\.[^.]+$/, ""), c: lastCat, d: today(), by: "", url: "", imgs: [{ src: newPath("gallery", r.ext), _data: r.dataUrl }], comment: "", spoiler: false, r18: false });
     }catch(err){ /* 読み込めなかった画像は飛ばす */ }
   }
   markDirty(); renderEditor();
