@@ -416,27 +416,48 @@
       "art": [
         {
           "t": "概念モンスター　（作：あんどう本舗さん）",
-          "src": "images/c-mv5ibkootl3.jpg",
           "tags": [
             "skeb"
           ],
-          "url": ""
+          "url": "",
+          "imgs": [
+            {
+              "src": "images/c-mv5ibkootl3.jpg"
+            }
+          ],
+          "comment": "",
+          "spoiler": false,
+          "r18": false
         },
         {
           "t": "作：厚賀屋さん",
-          "src": "images/c-muzr5sotqw8.png",
           "tags": [
             "イラスト"
           ],
-          "url": ""
+          "url": "",
+          "imgs": [
+            {
+              "src": "images/c-muzr5sotqw8.png"
+            }
+          ],
+          "comment": "",
+          "spoiler": false,
+          "r18": false
         },
         {
           "t": "折鶴子供",
-          "src": "images/c-muu5cwqj07f.png",
           "tags": [
             "らくがき"
           ],
-          "url": ""
+          "url": "",
+          "imgs": [
+            {
+              "src": "images/c-muu5cwqj07f.png"
+            }
+          ],
+          "comment": "",
+          "spoiler": false,
+          "r18": false
         }
       ],
       "listImg": {
@@ -524,51 +545,93 @@
           "art": [
             {
               "t": "概念モンスター　（作：あんどう本舗さん）",
-              "src": "images/c-mv5idu1tb4b.jpg",
               "tags": [
                 "skeb"
               ],
-              "url": ""
+              "url": "",
+              "imgs": [
+                {
+                  "src": "images/c-mv5idu1tb4b.jpg"
+                }
+              ],
+              "comment": "",
+              "spoiler": false,
+              "r18": false
             },
             {
               "t": " ",
-              "src": "images/c-mv5ii4bnr1v.jpg",
               "tags": [
                 "らくがき"
               ],
-              "url": ""
+              "url": "",
+              "imgs": [
+                {
+                  "src": "images/c-mv5ii4bnr1v.jpg"
+                }
+              ],
+              "comment": "",
+              "spoiler": false,
+              "r18": false
             },
             {
               "t": "水着",
-              "src": "images/c-muu5808atx1.png",
               "tags": [
                 "らくがき"
               ],
-              "url": ""
+              "url": "",
+              "imgs": [
+                {
+                  "src": "images/c-muu5808atx1.png"
+                }
+              ],
+              "comment": "",
+              "spoiler": false,
+              "r18": false
             },
             {
               "t": "ぶちょんが",
-              "src": "images/c-muu5809b04w.png",
               "tags": [
                 "らくがき"
               ],
-              "url": ""
+              "url": "",
+              "imgs": [
+                {
+                  "src": "images/c-muu5809b04w.png"
+                }
+              ],
+              "comment": "",
+              "spoiler": false,
+              "r18": false
             },
             {
               "t": "みつかにちゃん",
-              "src": "images/c-muu580acb66.png",
               "tags": [
                 "らくがき"
               ],
-              "url": ""
+              "url": "",
+              "imgs": [
+                {
+                  "src": "images/c-muu580acb66.png"
+                }
+              ],
+              "comment": "",
+              "spoiler": false,
+              "r18": false
             },
             {
               "t": "販売員",
-              "src": "images/c-muu580bgbuc.png",
               "tags": [
                 "らくがき"
               ],
-              "url": ""
+              "url": "",
+              "imgs": [
+                {
+                  "src": "images/c-muu580bgbuc.png"
+                }
+              ],
+              "comment": "",
+              "spoiler": false,
+              "r18": false
             }
           ],
           "coc": {
@@ -6267,28 +6330,69 @@
   ],
   "gallery": [
     {
-      "t": "アイコン制作 01",
-      "c": "アイコン",
-      "d": "2026.09",
-      "by": "依頼者 A さん",
-      "src": "",
-      "url": ""
+      "t": "全身立ち絵／表情差分／ディスプレイ",
+      "c": "立ち絵",
+      "d": "2022/3/21",
+      "by": "しろがね様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mv9y99dhir9.png"
+        },
+        {
+          "src": "images/g-mv9y99eps1l.png"
+        },
+        {
+          "src": "images/g-mv9y99f3n2p.jpg"
+        }
+      ],
+      "comment": "**※制服デザイン【餅月ありあ】様**\n\nCoC『女王が食むは強欲であれ』HO4さんです。\n\n依頼者さんのぴくるーを元に相談を重ねました。\n\n小さめの瞳で長身、顔を隠す包帯を纏った少女さんを描かせて頂きました！\n\nケープありはしっかり塗り、ケープなしはココフォリア映えする色味で仕上げています。\n\nまた、たくさんの表情でセッションに御協力させて頂けたことが嬉しかったです！ありがとうございました！",
+      "spoiler": false,
+      "r18": false
     },
     {
-      "t": "全身イラスト 01",
-      "c": "イラスト",
-      "d": "2026.08",
+      "t": "全身立ち絵／表情差分／ディスプレイ",
+      "c": "立ち絵",
+      "d": "2022/1/17",
+      "by": "おいかわ様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mv9y5uypj4e.jpg"
+        }
+      ],
+      "comment": "『舐薬』HO2さんのご依頼でした！\n\nお顔はぴくるーさんを元に、他はイメージをお聞きして相談を重ねながら制作いたしました。\n\nイメージカラーが白・青のアイドルさんのステージ衣装とのことで、気合を入れました。\n\nお力添え出来てうれしかったです！\n\nこの度はご依頼ありがとうございました！",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "全身立ち絵／表情差分／ディスプレイ",
+      "c": "立ち絵",
+      "d": "2021/10/27",
       "by": "しろがね様",
-      "src": "",
-      "url": ""
+      "url": "",
+      "imgs": [],
+      "comment": "CoC『ドロップアウト・ディスパイア』届け人さんです。\n\nお顔はぴくるーさんを元に、あとは自由にデザインをして良いとのことでしたので武器の拳銃に合わせてデザインさせて頂きました！\n\n表情でもご協力させていただけて嬉しかったです！\n\nありがとうございました！",
+      "spoiler": false,
+      "r18": false
     },
     {
       "t": "ソロ／全身・差分・ディスプレイ",
       "c": "立ち絵",
       "d": "2021/9/14",
       "by": "春唄様",
-      "src": "images/g-mv9q03zdkgq.png",
-      "url": ""
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mv9xx3lrlbg.png"
+        },
+        {
+          "src": "images/g-mv9xwch8d31.jpg"
+        }
+      ],
+      "comment": "CoC『ジャンヌの猟犬』HO3の司祭さんです！\n\n丁寧なご依頼文を基に、いくつかパターンを提示して相談をしながら制作しました。\n\nスタイルの良い体型、そしてフリルをたくさん使って良いとのお許しを頂けて楽しかったです！\n\nご依頼ありがとうございました！",
+      "spoiler": false,
+      "r18": false
     }
   ],
   "sessions": [
@@ -10961,7 +11065,8 @@
           "memo": "KP：あつがやさん\nPL：からこさん、りうさん、鳩\n（2027年10月予定）",
           "size": "",
           "recruit": "",
-          "promisedAt": "2026-10-16"
+          "promisedAt": "2026-10-16",
+          "url": ""
         },
         {
           "t": "ウエハハ",
@@ -10971,7 +11076,8 @@
           "memo": "KP：はと　PL：からこさん、とさおさん",
           "size": "",
           "recruit": "",
-          "promisedAt": "2026-10-16"
+          "promisedAt": "2026-10-16",
+          "url": ""
         },
         {
           "t": "ミノタウロスの証人",
