@@ -1070,6 +1070,29 @@ a.seg-b{ display:inline-flex; align-items:center; gap:.4em; text-decoration:none
 .img-x:disabled{ opacity:.3; }
 .ed-blurs{ display:grid; gap:.4rem; }
 .ed-work{ padding:1rem 0; }
+
+/* プレイマップ */
+.pm{ background:#fff; border:1px solid var(--line); border-radius:22px; padding:.6rem 1.25rem .9rem; }
+.pm-note{ margin:0 0 .9rem; font-size:.84rem; color:var(--mute); line-height:1.8; }
+.pm-list{ display:grid; }
+.pm-row{ display:grid; grid-template-columns:minmax(6.2rem,38%) minmax(0,1fr); align-items:center; gap:.9rem; padding:.62rem 0; }
+.pm-row+.pm-row{ border-top:1px solid color-mix(in srgb, var(--line) 55%, transparent); }
+.pm-l{ font-size:.92rem; line-height:1.5; letter-spacing:.03em; }
+.pm-bar{ display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:5px; }
+.pm-s{ display:block; height:12px; border-radius:4px; background:#e8eaef; }
+.pm-s.on.s1,.pm-set.on.s1{ background:#FCE7B4; } .pm-s.on.s2,.pm-set.on.s2{ background:#FADB8E; } .pm-s.on.s3,.pm-set.on.s3{ background:#F7CF69; }
+.pm-s.on.s4,.pm-set.on.s4{ background:#F4C247; } .pm-s.on.s5,.pm-set.on.s5{ background:#F0B32A; }
+@media (min-width:760px){ .pm-list{ grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:3rem; } .pm-row:nth-child(2){ border-top:0; } }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pm{ background:var(--panel); } :root:not([data-theme="light"]) .pm-s{ background:rgba(255,255,255,.1); } }
+.ed-pmlist{ display:grid; gap:.3rem; }
+.ed-pmrow{ display:grid; grid-template-columns:minmax(0,1fr) auto auto; align-items:center; gap:.5rem .7rem; padding:.4rem 0; border-bottom:1px dotted var(--line); }
+.ed-pml{ min-width:0; font:inherit; font-size:16px; color:var(--ink); background:var(--bg); border:1px solid var(--line); padding:.4em .6em; width:100%; }
+.ed-pmbar{ display:grid; grid-template-columns:repeat(5,1.55rem); gap:4px; }
+.pm-set{ height:1.55rem; border-radius:5px; background:#e1e4ea; border:0; padding:0; cursor:pointer; }
+.pm-set:hover{ outline:2px solid #FFC64F; }
+.ed-pmops{ display:flex; gap:.25rem; }
+.ed-pmops .img-x{ width:1.9rem; flex:none; }
+@media (max-width:560px){ .ed-pmrow{ grid-template-columns:minmax(0,1fr) auto; } .ed-pmops{ grid-column:1 / -1; justify-content:flex-end; } }
 </style>
 </head>
 <body data-view="home">
@@ -1377,7 +1400,33 @@ const SITE = {
       ["連絡先", "X のDM"]
     ],
     likes: ["ここに好きなもの", "音楽・ゲーム・本など", "自由に追加してください"],
-    pages: [{ id: "play", title: "遊び方" }, { id: "talk", page: "talk", title: "交流・NG" }],
+    playmap: { title: "プレイマップ", page: "play", note: "",
+      items: [
+        { l: "クラシック", v: 5 },
+        { l: "ホラー", v: 3 },
+        { l: "ミステリ", v: 5 },
+        { l: "戦闘", v: 3 },
+        { l: "コメディ", v: 4 },
+        { l: "エモ", v: 5 },
+        { l: "恋愛・うちよそ", v: 5 },
+        { l: "友情", v: 4 },
+        { l: "バディ", v: 4 },
+        { l: "シティ", v: 4 },
+        { l: "クローズド", v: 4 },
+        { l: "1〜2PL", v: 5 },
+        { l: "3PL以上", v: 5 },
+        { l: "秘匿HO", v: 5 },
+        { l: "PvP", v: 3 },
+        { l: "高ロスト", v: 3 },
+        { l: "短時間", v: 5 },
+        { l: "長時間", v: 5 },
+        { l: "推理", v: 4 },
+        { l: "茶番", v: 4 },
+        { l: "RP", v: 5 },
+        { l: "感情表現", v: 5 },
+        { l: "CS練り", v: 4 }
+      ] },
+    pages: [{ id: "play", title: "遊び方" }, { id: "talk", title: "交流・NG" }],
     scenarios: {
       runUrl: "https://accurate-dinghy-8de.notion.site/SCENARIO-cfc88d57ed97493882dbfe0f33be18d9?source=copy_link",
       wantNote: "・日程を決めないまま1年経過\n・メンバー追加がないまま1年経過\nこれらのお約束は、覚えていられる自信がないので、申し訳ありませんが白紙とさせてもらいます…！すみません！",
@@ -2226,6 +2275,10 @@ function normSiteProfile(p){
   p.groups.forEach(g => {
     if(!p.pages.some(x => x.id === g.page)) g.page = (defPage[g.id] && p.pages.some(x => x.id === defPage[g.id])) ? defPage[g.id] : p.pages[p.pages.length - 1].id;
   });
+  const pm = (p.playmap && typeof p.playmap === "object") ? p.playmap : {};   // プレイマップ（5段階の項目表）
+  p.playmap = { title: dstr(pm.title) || "プレイマップ", note: dstr(pm.note),
+    page: p.pages.some(x => x.id === pm.page) ? pm.page : (p.pages.some(x => x.id === "play") ? "play" : p.pages[0].id),
+    items: (Array.isArray(pm.items) ? pm.items : []).map(x => ({ l: dstr(x && x.l), v: Math.max(0, Math.min(5, Math.round(Number(x && x.v)) || 0)) })).filter(x => x.l.trim()) };
   const sn = (p.scenarios && typeof p.scenarios === "object") ? p.scenarios : {};
   const normScens = a => (Array.isArray(a) ? a : []).map(x => {
     const o = { t: dstr(x && x.t), sys: dstr(x && x.sys), time: dstr(x && x.time), players: dstr(x && x.players), memo: dstr(x && x.memo), size: dstr(x && x.size), recruit: dstr(x && x.recruit), promisedAt: dstr(x && x.promisedAt), url: dstr(x && x.url) };
@@ -2305,6 +2358,8 @@ const AS = {
            from: t => t.split("\n").filter(l => l.trim()).map(l => { const c = l.split("|").map(x => x.trim()); return { t: c[0] || "", sys: c[1] || "", time: c[2] || "", players: c[3] || "", memo: c.slice(4).join(" | ") }; }).filter(x => x.t) },
   times: { to: a => (a || []).map(t => t.l + " | " + t.v).join("\n"),
            from: t => t.split("\n").filter(l => l.trim()).map(l => { const k = l.indexOf("|"); return k >= 0 ? { l: l.slice(0, k).trim(), v: l.slice(k + 1).trim() } : { l: l.trim(), v: "" }; }) },
+  playmap: { to: a => (a || []).map(x => x.l + " | " + x.v).join("\n"),
+             from: t => t.split("\n").filter(l => l.trim()).map(l => { const k = l.lastIndexOf("|"); const n = k >= 0 ? Number(l.slice(k + 1).replace(/[^\d.]/g, "")) : NaN; return { l: (k >= 0 ? l.slice(0, k) : l).trim(), v: Math.max(0, Math.min(5, Math.round(n) || 0)) }; }) },
   workrows: { to: a => (a || []).map(r => r.h ? "# " + r.l : (r.e ? "* " : "") + (r.i ? "> " : "") + r.l + (r.v ? " | " + r.v : "")).join("\n"),
               from: t => t.split("\n").filter(l => l.trim()).map(l => {
                 if(/^#\s*/.test(l)) return { l: l.replace(/^#\s*/, "").trim(), v: "", i: false, h: true, e: false };
@@ -3104,6 +3159,12 @@ function pfScheduleHtml(g, p){
     ${sc.note ? `<p class="sch-note">${esc(sc.note)}</p>` : ""}
     <div class="cal" id="calPublic">${calHtml(calView.y, calView.m, new Set(sc.busy), false)}</div>`;
 }
+/* プレイマップ：項目ごとの5段階（濃いほど右まで埋まる） */
+function pfPlaymapHtml(p){
+  const pm = p.playmap;
+  return `<section class="pf-sec pm-sec"><h2 class="pf-gt">${esc(pm.title)}</h2>${pm.note ? `<p class="pm-note">${esc(pm.note)}</p>` : ""}
+    <div class="pm"><div class="pm-list">${pm.items.map(x => `<div class="pm-row"><span class="pm-l">${esc(x.l)}</span><span class="pm-bar" role="img" aria-label="${esc(x.l)}：5段階中${x.v}">${[1, 2, 3, 4, 5].map(n => `<i class="pm-s s${n}${n <= x.v ? " on" : ""}"></i>`).join("")}</span></div>`).join("")}</div></div></section>`;
+}
 /* シナリオ：遊びたい／回せる を切り替え */
 /* お約束済み → 1年たつと「期限超過」へ */
 const addYear = ymd => { const [y, m, d] = ymd.split("-").map(Number); return (y + 1) + "-" + pad2(m) + "-" + pad2(d); };
@@ -3179,7 +3240,8 @@ function renderProfile(){
     html = pfScenHtml(p);
   } else {
     const gs = p.groups.filter(g => g.page === pfTab);
-    html = gs.length ? gs.map((g, gi) => `<section class="pf-sec">${gs.length > 1 ? `<h2 class="pf-gt">${esc(g.title)}</h2>` : ""}${g.kind === "schedule" ? pfScheduleHtml(g, p) : (g.blocks.length ? g.blocks.map(b => pfBlock(b, false)).join("") : `<p class="empty">準備中です。</p>`)}</section>`).join("") : `<p class="empty">準備中です。</p>`;
+    const pmHtml = (p.playmap.items.length && p.playmap.page === pfTab) ? pfPlaymapHtml(p) : "";
+    html = (gs.length ? gs.map((g, gi) => `<section class="pf-sec">${gs.length > 1 ? `<h2 class="pf-gt">${esc(g.title)}</h2>` : ""}${g.kind === "schedule" ? pfScheduleHtml(g, p) : (g.blocks.length ? g.blocks.map(b => pfBlock(b, false)).join("") : `<p class="empty">準備中です。</p>`)}</section>`).join("") : (pmHtml ? "" : `<p class="empty">準備中です。</p>`)) + pmHtml;
   }
   host.innerHTML = `<div class="pf-panel tab-in" role="tabpanel">${html}</div>`;
 }
@@ -3821,6 +3883,18 @@ function edProfile(){
       <div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${PP}.scenarios.want">＋ 下に追加</button></div>
       ${fl("「回せる」を押したときに開くページのURL（空にすると、このサイト内の一覧を切り替える形に戻ります）", PP + ".scenarios.runUrl", p.scenarios.runUrl, "https://…")}
       ${ar("回せるシナリオ（上のURLを入れている間は、サイトには表示されません）", PP + ".scenarios.run", p.scenarios.run, 8, "scens")}</div>`;
+  const pmx = p.playmap;
+  const pmEd = `<div class="ed-fields">${fl("見出し", PP + ".playmap.title", pmx.title)}
+      <label>表示するタブ<select data-path="${PP}.playmap.page">${p.pages.map(pg => `<option value="${esc(pg.id)}"${pg.id === pmx.page ? " selected" : ""}>${esc(pg.title || "（名称なし）")}</option>`).join("")}</select></label>
+      ${ar("ひとこと（見出しの下に出ます。例：濃いほど好きです。空でも可）", PP + ".playmap.note", pmx.note, 2)}
+      <span class="ed-lab">項目（右の5つのマスをタップして、5段階で選びます。同じマスをもう一度押すと1段階下がります）</span>
+      <div class="ed-addrow"><button type="button" class="ed-small" data-op="add-top" data-arr="${PP}.playmap.items">＋ 上に追加</button></div>
+      <div class="ed-pmlist">${pmx.items.map((x, i) => { const IP = PP + ".playmap.items." + i; return `<div class="ed-pmrow"><input class="ed-pml" data-path="${IP}.l" value="${esc(x.l)}" aria-label="項目名">
+        <span class="ed-pmbar" role="group" aria-label="5段階">${[1, 2, 3, 4, 5].map(n => `<button type="button" class="pm-set s${n}${n <= x.v ? " on" : ""}" data-pm="${IP}" data-n="${n}" aria-pressed="${n <= x.v}" aria-label="${n}段階"></button>`).join("")}</span>
+        <span class="ed-pmops"><button type="button" class="img-x" data-op="up" data-arr="${PP}.playmap.items" data-i="${i}"${i === 0 ? " disabled" : ""} aria-label="上へ">↑</button><button type="button" class="img-x" data-op="down" data-arr="${PP}.playmap.items" data-i="${i}"${i >= pmx.items.length - 1 ? " disabled" : ""} aria-label="下へ">↓</button><button type="button" class="img-x" data-op="del" data-arr="${PP}.playmap.items" data-i="${i}" aria-label="削除">×</button></span></div>`; }).join("") || `<p class="empty">まだありません。</p>`}</div>
+      <div class="ed-addrow"><button type="button" class="ed-small" data-op="add" data-arr="${PP}.playmap.items">＋ 下に追加</button></div>
+      <details class="ed-sec" data-k="pf:pmtxt"${openKeys.has("pf:pmtxt") ? " open" : ""}><summary>まとめて入力・貼り付け（テキスト）</summary><div class="ed-secbody">
+        ${ar("1行に1項目。「項目名 | 1〜5の数字」の形です", PP + ".playmap.items", pmx.items, 10, "playmap")}</div></details></div>`;
   const pagesEd = `<div class="ed-fields"><p class="ed-lab">PROFILEのタブは、「プロフィール」→ ここで決めたタブ → 「シナリオ」の順に並びます。下の項目グループを、どのタブに入れるか選べます。</p>
     ${p.pages.map((pg, pi) => `<div class="ed-face ed-one"><div class="ed-fields">${fl("タブの名前", PP + ".pages." + pi + ".title", pg.title)}${opsHtml(PP + ".pages", pi, p.pages.length)}</div></div>`).join("")}
     <button type="button" class="ed-small" data-op="add" data-arr="${PP}.pages">＋ タブを追加</button></div>`;
@@ -3834,7 +3908,7 @@ function edProfile(){
     <span class="ed-lab">カレンダー：日付を押すと「予定あり」と「空き」が切り替わります（白＝空き）</span>
     <div class="cal" id="edCal">${calHtml(calEd.y, calEd.m, new Set(sc.busy), true)}</div></div>`;
   return det("pf:sched", "スケジュール（受付状況とカレンダー）", schedule) + det("pf:about", "プロフィール（自己紹介・項目）", about) +
-    det("pf:scen", "シナリオ（遊びたい／回せる）", scenEdHtml) + det("pf:pages", "タブのまとめ方", pagesEd) +
+    det("pf:scen", "シナリオ（遊びたい／回せる）", scenEdHtml) + det("pf:pm", "プレイマップ（5段階の項目表）", pmEd) + det("pf:pages", "タブのまとめ方", pagesEd) +
     `<div class="ed-groups-h"><span class="ed-lab">項目グループ（タブの中の文章）</span></div>` + groups +
     `<button type="button" class="ed-small" data-op="add" data-arr="${PP}.groups" style="margin-top:.8rem">＋ 項目グループを追加</button>`;
 }
@@ -4024,7 +4098,7 @@ $("#edList").addEventListener("change", async e => {
   const bt = t.closest("[data-booltoggle]");
   if(bt){ setP(draft, bt.dataset.booltoggle, bt.checked); markDirty(); return; }
   const tl = t.closest("[data-path]");
-  if(tl && /(^charTags$|\.tags\.(fusetter|art)$)/.test(tl.dataset.path)){ renderEditor(); return; }   // タグの一覧を直したら、選択欄も作り直す
+  if(tl && /(^charTags$|\.tags\.(fusetter|art)$|\.playmap\.items$)/.test(tl.dataset.path)){ renderEditor(); return; }   // タグの一覧を直したら、選択欄も作り直す
   const tt = t.closest("[data-tagtoggle]");
   if(tt){
     const arr = getP(draft, tt.dataset.tagtoggle); if(!Array.isArray(arr)) return;
@@ -4060,6 +4134,7 @@ function blankFor(arrPath){
   if(last === "ucys") return normPartner({ id: "u" + uid36(), name: "新しい相手" }, arr.length);
   if(last === "sessions") return normSession({ id: "s" + uid36(), title: "新しいシナリオ", date: todayFull() }, arr.length);
   if(last === "tabs") return { id: "t" + uid36(), title: "新しいタブ", heading: "", rows: [], notes: [] };
+  if(arrPath.endsWith("playmap.items")) return { l: "新しい項目", v: 3 };
   if(last === "want") return { t: "新しいシナリオ", sys: "", time: "", players: "", memo: "", size: "", recruit: "", promisedAt: "" };
   if(last === "after") return { name: "新しい後遺症", onset: "", cured: "", detail: "", more: "", showInProfile: true };
   if(last === "groups") return { id: "g" + uid36(), title: "新しい項目", kind: "", page: ((draft.profile.pages[0] || {}).id) || "", blocks: [] };
@@ -4074,6 +4149,13 @@ function blankFor(arrPath){
   return { t: "新しい作品", c: "", d: today(), by: "", url: "", imgs: [], comment: "", spoiler: false, r18: false };
 }
 $("#edList").addEventListener("click", e => {
+  const pmb = e.target.closest("[data-pm]");
+  if(pmb){
+    const o = getP(draft, pmb.dataset.pm); if(!o) return;
+    const n = +pmb.dataset.n; o.v = o.v === n ? n - 1 : n;   // 同じマスをもう一度で、1段階下げる
+    $$(`[data-pm="${pmb.dataset.pm}"]`).forEach(b2 => { const k = +b2.dataset.n; b2.classList.toggle("on", k <= o.v); b2.setAttribute("aria-pressed", String(k <= o.v)); });
+    markDirty(); return;
+  }
   const sp = e.target.closest("[data-sys-pick]");
   if(sp){
     const WP = sp.dataset.sysPick, o = getP(draft, WP); if(!o) return;
