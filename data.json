@@ -33,13 +33,20 @@
         ]
       },
       "lines": [],
-      "poses": [],
+      "poses": [
+        {
+          "name": "立ち絵　",
+          "src": "images/c-mvp156ifkbc.png",
+          "lines": [],
+          "faces": []
+        }
+      ],
       "art": [],
       "cats": [
         "警察"
       ],
       "listImg": {
-        "src": "images/c-muzqexi210j.png"
+        "src": "images/c-mvp15oe35md.png"
       },
       "tags": {
         "fusetter": [
@@ -411,6 +418,57 @@
           "src": "images/c-muq2ppaslpq.png",
           "lines": [],
           "faces": []
+        },
+        {
+          "name": "あ？",
+          "src": "images/c-mvp143rften.png",
+          "lines": [],
+          "faces": [
+            {
+              "name": "あ？",
+              "src": "images/c-mvp14h2mnjn.png"
+            },
+            {
+              "name": "あん？",
+              "src": "images/c-mvp14h3qc9k.png"
+            },
+            {
+              "name": "ウインク",
+              "src": "images/c-mvp14h4ra44.png"
+            },
+            {
+              "name": "うう",
+              "src": "images/c-mvp14h5tom4.png"
+            },
+            {
+              "name": "うーん…",
+              "src": "images/c-mvp14h6vlnf.png"
+            },
+            {
+              "name": "ぐす……",
+              "src": "images/c-mvp14h7w4mt.png"
+            },
+            {
+              "name": "にっ",
+              "src": "images/c-mvp14h90kba.png"
+            },
+            {
+              "name": "はあ！？",
+              "src": "images/c-mvp14ha2ifx.png"
+            },
+            {
+              "name": "はぁあ",
+              "src": "images/c-mvp14hb50gx.png"
+            },
+            {
+              "name": "ん",
+              "src": "images/c-mvp14hc9x8w.png"
+            },
+            {
+              "name": "困る",
+              "src": "images/c-mvp14hdb6xv.png"
+            }
+          ]
         }
       ],
       "art": [
@@ -6434,6 +6492,429 @@
     }
   ],
   "gallery": [
+    {
+      "t": "ソロ／立ち絵・表情差分・衣装差分・ディスプレイ",
+      "c": "立ち絵",
+      "d": "2024/4/29",
+      "by": "ひろむ様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp3d7ywnmm.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ソロ／立ち絵・表情差分・衣装差分・ディスプレイ",
+      "c": "立ち絵",
+      "d": "2024/4/27",
+      "by": "",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp36wf3ez1.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ミニキャラ",
+      "c": "ミニキャラ",
+      "d": "2024/4/27",
+      "by": "",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp2yrrraya.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2024/4/27",
+      "by": "",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp2x0yjaaw.png"
+        }
+      ],
+      "comment": "プライベート納品のため一部のみ公開。",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2024/3/29",
+      "by": "",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp2s692ci1.png"
+        }
+      ],
+      "comment": "プライベート納品のため一部のみ公開。\nジャンヌの猟犬、司祭さん",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ソロ／全身立ち絵・表情差分・戦闘差分",
+      "c": "立ち絵",
+      "d": "2024/1/3",
+      "by": "",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp2q6h0vcn.png"
+        }
+      ],
+      "comment": "烏が群れては、無彩色。",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ソロ／全身立ち絵",
+      "c": "立ち絵",
+      "d": "2026.10",
+      "by": "2024/1/31",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp2m99p42m.png"
+        },
+        {
+          "src": "images/g-mvp3a1h2ayy.png"
+        }
+      ],
+      "comment": "SSS.S",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "全身立ち絵／表情差分／ディスプレイ",
+      "c": "立ち絵",
+      "d": "2024/2/23",
+      "by": "",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp2i5ag0k4.png"
+        }
+      ],
+      "comment": "庭師は何を口遊む。",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "全身立ち絵／表情差分／ディスプレイ",
+      "c": "立ち絵",
+      "d": "2024/2/20",
+      "by": "なるみん様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp2cvp3nmv.png"
+        }
+      ],
+      "comment": "烏が群れては無彩色。",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2023/12/25",
+      "by": "",
+      "url": "https://skeb.jp/@Lv103000/works/11",
+      "imgs": [
+        {
+          "src": "images/g-mvp2aqe0kit.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2023/11/23",
+      "by": "",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp28q853vp.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2023/11/23",
+      "by": "",
+      "url": "https://skeb.jp/@Lv103000/works/9",
+      "imgs": [
+        {
+          "src": "images/g-mvp26sl0ndp.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2023/11/23",
+      "by": "",
+      "url": "https://skeb.jp/@Lv103000/works/7",
+      "imgs": [
+        {
+          "src": "images/g-mvp27aasz2y.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2023/11/23",
+      "by": "",
+      "url": "https://skeb.jp/@Lv103000/works/6",
+      "imgs": [
+        {
+          "src": "images/g-mvp25tqhugt.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "コンビ全身立ち絵／表情差分／ディスプレイ",
+      "c": "",
+      "d": "2023/11/13",
+      "by": "お豆さん",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp21bnmsqd.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ミニキャラ",
+      "c": "ミニキャラ",
+      "d": "2023/9/24",
+      "by": "なるみん様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp1zioj7ql.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ソロ／全身・表情差分",
+      "c": "立ち絵",
+      "d": "2023/9/18",
+      "by": "しろがね様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp1wk8vf6m.png"
+        },
+        {
+          "src": "images/g-mvp1wkbah6y.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ソロ／全身・表情差分",
+      "c": "立ち絵",
+      "d": "2023/9/17",
+      "by": "柚瀬さま",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp1uoi35t2.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ソロ／戦闘差分",
+      "c": "立ち絵",
+      "d": "2023/8/28",
+      "by": "YouKey様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp1rno1q22.png"
+        }
+      ],
+      "comment": "既存キャラクターの戦闘差分",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2023/8/28",
+      "by": "",
+      "url": "https://skeb.jp/@Lv103000/works/5",
+      "imgs": [
+        {
+          "src": "images/g-mvp1pre9l0i.png"
+        }
+      ],
+      "comment": "計3件納品　skebページに詳細あり。",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2023/8/14",
+      "by": "Lenya Vermillion さま",
+      "url": "https://skeb.jp/@Lv103000/works/4",
+      "imgs": [
+        {
+          "src": "images/g-mvp1n6unbtu.png"
+        }
+      ],
+      "comment": "計4件納品　skebページに詳細あり。",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ソロ／全身立ち絵",
+      "c": "立ち絵",
+      "d": "2023/8/8",
+      "by": "なるみん様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp1kdj42rn.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "Skeb",
+      "c": "skeb",
+      "d": "2026.10",
+      "by": "",
+      "url": "https://skeb.jp/@Lv103000/works/3",
+      "imgs": [
+        {
+          "src": "images/g-mvp1h9cykia.png"
+        }
+      ],
+      "comment": "計6件納品　skebページに詳細あり。\n\n普段はバンドマンで格好いいカップルのテーマパーク・インスタ・浮かれテンション・ノリノリカップルフォトという大好きな要素ばかりのご依頼ですごく楽しかったです！！！\n\nピンクの髪色や白めのお肌の色など同じ要素でも個人差を出して描かけたところや、可愛らしい色合いでまとまるよう工夫いたしました！\n\n今後も楽しい人生を歩めますように！\nリクエスありがとうございました！！！！",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "ソロ／全身立ち絵",
+      "c": "立ち絵",
+      "d": "2023/7/25",
+      "by": "たろう様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp1fyblonq.png"
+        },
+        {
+          "src": "images/g-mvp1fye36v0.png"
+        }
+      ],
+      "comment": "JOKER≒JOKER　HO♢﻿\n\n怪盗の参謀女性を描かせていただきました！\n\n怪盗団の素敵な衣装デザインを元に、PCさんらしいカスタマイスと義足のデザインラフをいくつかご用意させていただくのがとても楽しかったです！\n\nお衣装が素敵でしたのでなるべくマント内も見えるようなポーズ＋スレンダーなモデル体型が際立つポーズをご用意いたしました。\n\n4人で並んだ時、真中寄りになる立ち位置かと思いましたのでシルエットの広がりは抑え目ですがスレンダーなモデル体型が出やすいように捻りを加え、女性の魅力と参謀や他メンバーと比較してお姉さんとしての迫力が出るように意識しています。\n\n義足にはイメージカラーの宝石を沈めております。\n\n今回も素敵なご依頼ありがとうございました！とても楽しかったです！",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "skeb",
+      "c": "skeb",
+      "d": "2023/6/17",
+      "by": "",
+      "url": "https://skeb.jp/@Lv103000/works/2",
+      "imgs": [
+        {
+          "src": "images/g-mvp1db7o6qg.png"
+        }
+      ],
+      "comment": "",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "コンビ／ 全身・表情差分・ディスプレイ",
+      "c": "立ち絵",
+      "d": "2023/5/27",
+      "by": "たろう様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp1b7ace81.png"
+        },
+        {
+          "src": "images/g-mvp1b7dedrx.png"
+        },
+        {
+          "src": "images/g-mvp1b7frsk5.png"
+        }
+      ],
+      "comment": "『ようこそ！迷冥市役所都市伝説課へ！』のコンビ立ち絵・差分・ディスプレイを制作させていただきました！\n\n麗しいオネェの担当者様とのんびりとした新人様の中華風コンビとのことで、とっっても好きなものばかりで楽しく描かせていただきました……！\n\n●全体について\nおふたりの資料を元に【体格差】【肌艶】で個人差が出るよう工夫させていただきました。\n\n●色味と装飾について\n『都市伝説課』というシナリオ名から連想する独特な世界観×チャイナという最高に素敵な組み合わせが映えるよう　がつん、と影を落としメリハリがつくよう工夫致しました。\n（お部屋が暗いor明るいどちらでも映えるようにお顔周りの色味を調整しております）\n\nポーズ・お化粧・お衣装・髪型と数パターンラフを提示して選んでいただく時間が、身なりに気を使われているおふたりのフィッティングをしているようでとてもたのしかったです！\n\nこの度はご依頼ありがとうございました！",
+      "spoiler": false,
+      "r18": false
+    },
+    {
+      "t": "全身立ち絵／ディスプレイ・その他",
+      "c": "立ち絵",
+      "d": "2023/5/27",
+      "by": "ひろむ様",
+      "url": "",
+      "imgs": [
+        {
+          "src": "images/g-mvp18euv58t.png"
+        },
+        {
+          "src": "images/g-mvp18exdwfb.png"
+        }
+      ],
+      "comment": "ご依頼で透明感のある男性立ち絵を制作させいただきました！\n\nシンガーソングライターPCさんとのことで、イメージソングにあわせたラフをいくつかご用意させていただくのがとても楽しかったです！\n\nシンプルで現実寄りのお召し物とのリクエストでしたので質感や皺感で立ち絵映えする情報量が出るよう工夫致しました。\nまた、透明感にこだわりつつも、のっぺりとした印象にならないようにポーズや空気感の工夫をさせて頂きました！\n\nトリミングやディスプレイなども合わせて行いました。\n\nとても楽しく充実した時間をありがとうございました！！",
+      "spoiler": false,
+      "r18": false
+    },
     {
       "t": "全身立ち絵",
       "c": "立ち絵",
